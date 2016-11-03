@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.androidpath.R;
-import com.androidpath.buttonselector3.ButtonSelectorActivtiy3;
+import com.androidpath.buttonselector30.ButtonSelectorActivtiy3;
+import com.androidpath.clickreponse31.ButtonTestActivity31;
 import com.androidpath.layoutdemo2.LayoutActivity2;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent3 = new Intent(MainActivity.this, ButtonSelectorActivtiy3.class);
                 startActivity(intent3);
                 break;
+            case R.id.buttontestactivity31:
+                Intent intent31 = new Intent(MainActivity.this, ButtonTestActivity31.class);
+                startActivity(intent31);
+                break;
+
             default:
                 break;
         }

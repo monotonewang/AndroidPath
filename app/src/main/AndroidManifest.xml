@@ -18,7 +18,11 @@
         <!--this is layout activity-->
         <activity android:name=".layoutdemo2.LayoutActivity2" />
         <!--this is buttonselector activity-->
-        <activity android:name=".buttonselector3.ButtonSelectorActivtiy3" />
+        <activity android:name=".buttonselector30.ButtonSelectorActivtiy3" />
+        <activity android:name=".clickreponse31.ButtonTestActivity31" />
+        <activity android:name=".clickreponse31.ButtonClickListenActivity31" />
+        <activity android:name=".clickreponse31.ButtonClickListenActivity32" />
+        <activity android:name=".clickreponse31.ButtonClickListenActivity33" />
 
     </application>
 
