@@ -17,6 +17,7 @@
         </activity>
         <!--this is layout activity-->
         <activity android:name=".layoutdemo2.LayoutActivity2" />
+        <!--this is buttonselector activity-->
         <activity android:name=".buttonselector3.ButtonSelectorActivtiy3" />
 
     </application>
