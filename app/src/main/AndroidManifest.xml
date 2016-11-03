@@ -31,6 +31,9 @@
         <activity android:name=".imageviewtest.MainActivity33" />
         <!--this is viewTest activity-->
         <activity android:name=".viewtest34.MainActivity34" />
+        <activity android:name=".widget.view.HandActivity" />
+
+
     </application>
 
 </manifest>

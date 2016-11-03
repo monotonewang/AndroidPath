@@ -9,6 +9,7 @@ import com.androidpath.R;
 import com.androidpath.buttonselector30.ButtonSelectorActivtiy3;
 import com.androidpath.clickreponse31.ButtonTestActivity31;
 import com.androidpath.edittextdemo32.MainActivity32;
+import com.androidpath.widget.view.HandActivity;
 import com.androidpath.imageviewtest.MainActivity33;
 import com.androidpath.layoutdemo2.LayoutActivity2;
 import com.androidpath.viewtest34.MainActivity34;
@@ -47,7 +48,13 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent34 = new Intent(MainActivity.this, MainActivity34.class);
                 startActivity(intent34);
                 break;
+            case R.id.handview:
+                Intent handview = new Intent(MainActivity.this, HandActivity.class);
+                startActivity(handview);
+                break;
+
             default:
+
                 break;
 
         }
