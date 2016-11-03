@@ -27,7 +27,10 @@
 
         <!--this is editTextDemo activity-->
         <activity android:name=".edittextdemo32.MainActivity32" />
-
+        <!--this is imageviewTest activity-->
+        <activity android:name=".imageviewtest.MainActivity33" />
+        <!--this is viewTest activity-->
+        <activity android:name=".viewtest34.MainActivity34" />
     </application>
 
 </manifest>

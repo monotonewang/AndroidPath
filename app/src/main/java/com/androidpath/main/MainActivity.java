@@ -9,7 +9,9 @@ import com.androidpath.R;
 import com.androidpath.buttonselector30.ButtonSelectorActivtiy3;
 import com.androidpath.clickreponse31.ButtonTestActivity31;
 import com.androidpath.edittextdemo32.MainActivity32;
+import com.androidpath.imageviewtest.MainActivity33;
 import com.androidpath.layoutdemo2.LayoutActivity2;
+import com.androidpath.viewtest34.MainActivity34;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,8 +39,17 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent32 = new Intent(MainActivity.this, MainActivity32.class);
                 startActivity(intent32);
                 break;
+            case R.id.imageviewTest33:
+                Intent intent33 = new Intent(MainActivity.this, MainActivity33.class);
+                startActivity(intent33);
+                break;
+            case R.id.viewTest34:
+                Intent intent34 = new Intent(MainActivity.this, MainActivity34.class);
+                startActivity(intent34);
+                break;
             default:
                 break;
+
         }
     }
 }
