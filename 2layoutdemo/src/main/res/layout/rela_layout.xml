@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:text="welcome to website"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/welcome_text" />
+    
+    <EditText 
+        android:id="@+id/name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/name_text"
+        android:layout_below="@id/welcome_text"/>
+    
+    <EditText 
+        android:id="@+id/pwd_edit"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/name_edit"
+        android:layout_alignLeft="@id/name_edit"
+        />
+    
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="pwd"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/name_text"
+        android:layout_alignBaseline="@id/pwd_edit"/>
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:layout_below="@id/pwd_edit"
+       android:layout_centerHorizontal="true"
+      
+        />
+    <!--  android:layout_alignParentRight="true" 放置在父容器的右边-->
+    
+
+</RelativeLayout>

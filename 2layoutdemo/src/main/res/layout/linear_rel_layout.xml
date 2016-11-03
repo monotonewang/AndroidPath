@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#55ff0000"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:background="#ffff0000"/>
+        
+        <TextView 
+              android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="website"
+            android:gravity="center"
+            android:textSize="22sp"/>
+        
+         <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sure"
+            android:background="#ffff0000"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:paddingTop="15dp"
+       android:paddingLeft="15dp"
+       android:paddingRight="15dp"
+        >
+        
+        <TextView
+            android:id="@+id/name_text"
+             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="username"/>
+        <EditText 
+             android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/name_text"
+            android:layout_alignBaseline="@id/name_text"/>
+    </RelativeLayout>
+    
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+       android:paddingLeft="15dp"
+       android:paddingRight="15dp"
+
+        >
+        
+        <TextView
+            android:id="@+id/pwd_text"
+             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="password"/>
+        <EditText 
+             android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/pwd_text"
+            android:layout_alignBaseline="@id/pwd_text"/>
+    </RelativeLayout>
+    
+     <TextView 
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:text="forget pwd"
+         android:textSize="10sp"
+         android:layout_marginLeft="15dp"
+         android:textColor="#660000ff"/>
+    
+
+</LinearLayout>
