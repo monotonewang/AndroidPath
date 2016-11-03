@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AndroidPath</string>
     <string name="action_settings2">setting</string>
+    <string name="hello_world">helloword</string>
 </resources>

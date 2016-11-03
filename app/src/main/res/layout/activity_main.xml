@@ -27,22 +27,35 @@
         android:id="@+id/buttonselectordemo3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
         android:background="@drawable/tv_shape3"
         android:onClick="onClick"
-        android:layout_margin="@dimen/activity_tv_margin"
         android:padding="@dimen/activity_tv_padding"
         android:text="buttonselectordemo3"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/activity_tv_size" />
+
     <TextView
         android:id="@+id/buttontestactivity31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
         android:background="@drawable/tv_shape3"
         android:onClick="onClick"
-        android:layout_margin="@dimen/activity_tv_margin"
         android:padding="@dimen/activity_tv_padding"
         android:text="buttontestactivity31"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
+
+    <TextView
+        android:id="@+id/edittextdemo32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="edittextdemo32"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/activity_tv_size" />
 </LinearLayout>

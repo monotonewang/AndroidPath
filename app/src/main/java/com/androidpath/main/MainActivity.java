@@ -8,6 +8,7 @@ import android.view.View;
 import com.androidpath.R;
 import com.androidpath.buttonselector30.ButtonSelectorActivtiy3;
 import com.androidpath.clickreponse31.ButtonTestActivity31;
+import com.androidpath.edittextdemo32.MainActivity32;
 import com.androidpath.layoutdemo2.LayoutActivity2;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,7 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent31 = new Intent(MainActivity.this, ButtonTestActivity31.class);
                 startActivity(intent31);
                 break;
-
+            case R.id.edittextdemo32:
+                Intent intent32 = new Intent(MainActivity.this, MainActivity32.class);
+                startActivity(intent32);
+                break;
             default:
                 break;
         }
