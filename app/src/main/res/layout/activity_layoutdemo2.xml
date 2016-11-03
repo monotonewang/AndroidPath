@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".main.MainActivity">
+
+    <TextView
+        android:id="@+id/layoutdemo2LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="LinearLayout"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
+
+    <TextView
+        android:id="@+id/layoutdemo2LinearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="LinearLayout2"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
+
+    <TextView
+        android:id="@+id/layoutdemo2LinearBaseLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="layoutdemo2LinearBaseLine"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
+
+    <TextView
+        android:id="@+id/layoutdemo2LinearRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="LinearRelativeLayout"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
+
+    <TextView
+        android:id="@+id/layoutdemo2RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="RelativeLayout"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
+
+    <TextView
+        android:id="@+id/layoutdemo2FrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="FrameLayout"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
+
+    <TextView
+        android:id="@+id/layoutdemo2GridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="GridLayout"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
+
+    <FrameLayout
+        android:id="@+id/layoutdemo2Fargment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/colorPrimary"/>
+</LinearLayout>
