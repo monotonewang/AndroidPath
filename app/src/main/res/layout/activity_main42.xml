@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择职业" />
+    
+    <Spinner 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/job_array"
+        android:spinnerMode="dialog"
+        android:prompt="@string/spinner_title"
+        />
+    
+     <TextView
+         android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择菜名" />
+    
+    <Spinner 
+        android:id="@+id/menu_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+       
+        />
+    
+
+</LinearLayout>

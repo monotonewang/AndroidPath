@@ -2,4 +2,25 @@
     <string name="app_name">AndroidPath</string>
     <string name="action_settings2">setting</string>
     <string name="hello_world">helloword</string>
+    <!--42-->
+    <string name="spinner_title">请选择职业</string>
+
+    <string-array name="job_array">
+        <item>程序员</item>
+        <item>公务员</item>
+        <item>架构师</item>
+        <item>律师</item>
+        <item>医生</item>
+        <item>厨师</item>
+    </string-array>
+
+    <string-array name="menu_array">
+        <item>鱼香肉丝</item>
+        <item>红烧肉</item>
+        <item>佛跳墙</item>
+        <item>油闷大虾</item>
+        <item>清蒸鲈鱼</item>
+        <item>大闸蟹</item>
+    </string-array>
+
 </resources>

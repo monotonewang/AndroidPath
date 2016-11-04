@@ -70,6 +70,7 @@
         android:text="imageviewTest33"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/activity_tv_size" />
+
     <TextView
         android:id="@+id/viewTest34"
         android:layout_width="wrap_content"
@@ -81,6 +82,7 @@
         android:text="viewTest34"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/activity_tv_size" />
+
     <TextView
         android:id="@+id/handview"
         android:layout_width="wrap_content"
@@ -92,6 +94,7 @@
         android:text="handview"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/activity_tv_size" />
+
     <TextView
         android:id="@+id/buttonbgcolor40"
         android:layout_width="wrap_content"
@@ -101,6 +104,54 @@
         android:onClick="onClick"
         android:padding="@dimen/activity_tv_padding"
         android:text="buttonbgcolor40"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
+
+    <TextView
+        android:id="@+id/checkRadio41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="checkRadio41"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
+
+    <TextView
+        android:id="@+id/spinnerDemo42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="spinnerDemo42"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
+
+    <TextView
+        android:id="@+id/spinnerDemo43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="spinnerDemo43"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
+
+    <TextView
+        android:id="@+id/spinnerSimpleAdapter44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="spinnerSimpleAdapter44"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/activity_tv_size" />
 </LinearLayout>

@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button 
+        android:onClick="clickAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击添加歌曲"/>
+    <Button 
+        android:onClick="clickDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击删除歌曲"/>
+
+   <Spinner 
+       android:id="@+id/spinner"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+</LinearLayout>

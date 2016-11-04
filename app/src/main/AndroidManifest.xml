@@ -33,6 +33,10 @@
         <activity android:name=".viewtest34.MainActivity34" />
         <activity android:name=".widget.view.HandActivity" />
         <activity android:name=".buttonbgcolor40.MainActivity40" />
+        <activity android:name=".checkradio41.MainActivity41" />
+        <activity android:name=".spinnerdemo42.MainActivity42" />
+        <activity android:name=".spinnerdemo43.MainActivity43" />
+        <activity android:name=".spinnersimpleAdapter44.MainActivity44" />
 
 
     </application>
