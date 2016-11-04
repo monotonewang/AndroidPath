@@ -28,7 +28,7 @@
         <activity android:name=".controls.clickreponse31.ButtonClickListenActivity33" />
 
         <!--this is editTextDemo activity-->
-        <activity android:name=".controls.edittextdemo32.MainActivity32" />
+        <activity android:name=".controls.edittext.edittextdemo32.MainActivity32" />
         <!--this is imageviewTest activity-->
         <activity android:name=".controls.imageviewtest.MainActivity33" />
         <!--this is viewTest activity-->
@@ -43,10 +43,18 @@
         <activity android:name=".actiivty.activityjump50.MainActivity50" />
         <activity android:name=".actiivty.activityjump50.OtherActivity50" />
         <activity android:name=".actiivty.activityjump50.SecondActivity50" />
+
+        <activity android:name=".controls.edittext.autocompletetext51.MainActivity51" />
+
+        <activity android:name=".controls.spinner.spinnerlink52.MainActivity52" />
         <!--this is activityPassValue activity-->
         <activity android:name=".actiivty.activitypassvalue54.MainActivity54" />
         <activity android:name=".actiivty.activitypassvalue54.ResultActivity54" />
         <activity android:name=".actiivty.activitypassvalue54.SecondActivity54" />
+
+        <activity android:name=".actiivty.activitypass2value55.MainActivity55" />
+        <activity android:name=".actiivty.activitypass2value55.ResultActivity55" />
+        <activity android:name=".actiivty.activitypass2value55.SecondActivity55" />
 
 
     </application>

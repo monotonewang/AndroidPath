@@ -7,5 +7,15 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <!-- MainActivity1 tvStyle -->
+    <style name="tvStyle">
+        <item name="android:textSize">@dimen/activity_tv_size</item>
+        <item name="android:layout_margin">@dimen/activity_tv_margin</item>
+        <item name="android:padding">@dimen/activity_tv_padding</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:background">@drawable/tv_shape3</item>
+    </style>
 </resources>

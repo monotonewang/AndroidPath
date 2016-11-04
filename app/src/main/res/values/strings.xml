@@ -4,6 +4,23 @@
     <string name="hello_world">helloword</string>
     <!--42-->
     <string name="spinner_title">请选择职业</string>
+    <string name="layoutdemo2">layoutdemo2</string>
+    <string name="buttonselectordemo3">buttonselectordemo3</string>
+    <string name="buttontestactivity31">buttontestactivity31</string>
+    <string name="edittextdemo32">edittextdemo32</string>
+    <string name="imageviewtest33">imageviewTest33</string>
+    <string name="viewtest34">viewTest34</string>
+    <string name="handview">handview</string>
+    <string name="buttonbgcolor40">buttonbgcolor40</string>
+    <string name="checkradio41">checkRadio41</string>
+    <string name="spinnerdemo42">spinnerDemo42</string>
+    <string name="spinnerdemo43">spinnerDemo43</string>
+    <string name="spinnersimpleadapter44">spinnerSimpleAdapter44</string>
+    <string name="activityjump50">activityJump50</string>
+    <string name="activitypassvalue50">activityPassValue50</string>
+    <string name="autoCompleteText51">autoCompleteText51</string>
+    <string name="spinnerlink52">spinnerLink52</string>
+    <string name="activitypassvalue55">activityPassValue55</string>
 
     <string-array name="job_array">
         <item>程序员</item>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cities>
+<province name="浙江">
+<item>杭州</item>
+<item>宁波</item>
+<item>温州</item>
+<item>嘉兴</item>
+<item>湖州</item>
+<item>绍兴</item>
+<item>金华</item>
+<item>衢州</item>
+<item>舟山</item>
+<item>台州</item>
+<item>丽水</item>
+</province>
+<province name="福建">
+<item>福州</item>
+<item>厦门</item>
+<item>莆田</item>
+<item>三明</item>
+<item>泉州</item>
+<item>漳州</item>
+<item>南平</item>
+<item>龙岩</item>
+<item>宁德</item>
+</province>
+<province name="江西">
+<item>南昌</item>
+<item>景德镇</item>
+<item>萍乡</item>
+<item>九江</item>
+<item>新余</item>
+<item>鹰潭</item>
+<item>赣州</item>
+<item>吉安</item>
+<item>宜春</item>
+<item>抚州</item>
+<item>上饶</item>
+</province>
+</cities>

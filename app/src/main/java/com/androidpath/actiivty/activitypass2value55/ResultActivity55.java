@@ -1,15 +1,16 @@
-package com.androidpath.controls.edittextdemo32;
+package com.androidpath.actiivty.activitypass2value55;
 
 import android.app.Activity;
 import android.os.Bundle;
 
 import com.androidpath.R;
 
-public class MainActivity32 extends Activity {
-
+public class ResultActivity55 extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main32);
+		setContentView(R.layout.result_layout55);
+		
 	}
 }

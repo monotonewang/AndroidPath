@@ -5,178 +5,88 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".main.MainActivity">
 
     <TextView
         android:id="@+id/layoutdemo2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="layoutdemo2"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/layoutdemo2" />
 
     <TextView
         android:id="@+id/buttonselectordemo3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="buttonselectordemo3"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/buttonselectordemo3" />
 
     <TextView
         android:id="@+id/buttontestactivity31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="buttontestactivity31"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/buttontestactivity31" />
 
     <TextView
         android:id="@+id/edittextdemo32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="edittextdemo32"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/edittextdemo32" />
 
     <TextView
         android:id="@+id/imageviewTest33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="imageviewTest33"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/imageviewtest33" />
 
     <TextView
         android:id="@+id/viewTest34"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="viewTest34"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/viewtest34" />
 
     <TextView
         android:id="@+id/handview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="handview"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/handview" />
 
     <TextView
         android:id="@+id/buttonbgcolor40"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="buttonbgcolor40"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/buttonbgcolor40" />
 
     <TextView
         android:id="@+id/checkRadio41"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="checkRadio41"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/checkradio41" />
 
     <TextView
         android:id="@+id/spinnerDemo42"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="spinnerDemo42"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/spinnerdemo42" />
 
     <TextView
         android:id="@+id/spinnerDemo43"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="spinnerDemo43"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/spinnerdemo43" />
 
     <TextView
         android:id="@+id/spinnerSimpleAdapter44"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="spinnerSimpleAdapter44"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/spinnersimpleadapter44" />
 
     <TextView
         android:id="@+id/activityJump50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="activityJump50"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/activityjump50" />
 
     <TextView
         android:id="@+id/activityPassValue50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/activity_tv_margin"
-        android:background="@drawable/tv_shape3"
-        android:onClick="onClick"
-        android:padding="@dimen/activity_tv_padding"
-        android:text="activityPassValue50"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/activity_tv_size" />
+        style="@style/tvStyle"
+        android:text="@string/activitypassvalue50" />
 
+    <TextView
+        android:id="@+id/autoCompleteText51"
+        style="@style/tvStyle"
+        android:text="@string/autoCompleteText51" />
+    <TextView
+        android:id="@+id/spinnerLink52"
+        style="@style/tvStyle"
+        android:text="@string/spinnerlink52" />
+    <TextView
+        android:id="@+id/activityPassValue55"
+        style="@style/tvStyle"
+        android:text="@string/activitypassvalue55" />
 </LinearLayout>

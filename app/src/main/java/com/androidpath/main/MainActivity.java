@@ -6,16 +6,19 @@ import android.view.View;
 
 import com.androidpath.R;
 import com.androidpath.actiivty.activityjump50.MainActivity50;
+import com.androidpath.actiivty.activitypass2value55.MainActivity55;
 import com.androidpath.actiivty.activitypassvalue54.MainActivity54;
 import com.androidpath.controls.buttonbgcolor40.MainActivity40;
 import com.androidpath.controls.buttonselector30.ButtonSelectorActivtiy3;
 import com.androidpath.controls.checkradio41.MainActivity41;
 import com.androidpath.controls.clickreponse31.ButtonTestActivity31;
-import com.androidpath.controls.edittextdemo32.MainActivity32;
+import com.androidpath.controls.edittext.autocompletetext51.MainActivity51;
+import com.androidpath.controls.edittext.edittextdemo32.MainActivity32;
 import com.androidpath.controls.imageviewtest.MainActivity33;
 import com.androidpath.controls.layoutdemo2.LayoutActivity2;
 import com.androidpath.controls.spinner.spinnerdemo42.MainActivity42;
 import com.androidpath.controls.spinner.spinnerdemo43.MainActivity43;
+import com.androidpath.controls.spinner.spinnerlink52.MainActivity52;
 import com.androidpath.controls.spinner.spinnersimpleAdapter44.MainActivity44;
 import com.androidpath.controls.viewtest34.MainActivity34;
 import com.androidpath.widget.view.HandActivity;
@@ -71,6 +74,15 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.activityJump50:
                 startActivity(new Intent(MainActivity.this, MainActivity50.class));
+                break;
+            case R.id.autoCompleteText51:
+                startActivity(new Intent(MainActivity.this, MainActivity51.class));
+                break;
+            case R.id.spinnerLink52:
+                startActivity(new Intent(MainActivity.this, MainActivity52.class));
+                break;
+            case R.id.activityPassValue55:
+                startActivity(new Intent(MainActivity.this, MainActivity55.class));
                 break;
 
             default:
