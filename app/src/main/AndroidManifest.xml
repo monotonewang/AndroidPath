@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.androidpath">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <application
+        android:name=".main.ApplicationMain"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,27 +18,35 @@
             </intent-filter>
         </activity>
         <!--this is layout activity-->
-        <activity android:name=".layoutdemo2.LayoutActivity2" />
+        <activity android:name=".controls.layoutdemo2.LayoutActivity2" />
         <!--this is buttonselector activity-->
-        <activity android:name=".buttonselector30.ButtonSelectorActivtiy3" />
+        <activity android:name=".controls.buttonselector30.ButtonSelectorActivtiy3" />
         <!--this is buttontest and buttonclick activity-->
-        <activity android:name=".clickreponse31.ButtonTestActivity31" />
-        <activity android:name=".clickreponse31.ButtonClickListenActivity31" />
-        <activity android:name=".clickreponse31.ButtonClickListenActivity32" />
-        <activity android:name=".clickreponse31.ButtonClickListenActivity33" />
+        <activity android:name=".controls.clickreponse31.ButtonTestActivity31" />
+        <activity android:name=".controls.clickreponse31.ButtonClickListenActivity31" />
+        <activity android:name=".controls.clickreponse31.ButtonClickListenActivity32" />
+        <activity android:name=".controls.clickreponse31.ButtonClickListenActivity33" />
 
         <!--this is editTextDemo activity-->
-        <activity android:name=".edittextdemo32.MainActivity32" />
+        <activity android:name=".controls.edittextdemo32.MainActivity32" />
         <!--this is imageviewTest activity-->
-        <activity android:name=".imageviewtest.MainActivity33" />
+        <activity android:name=".controls.imageviewtest.MainActivity33" />
         <!--this is viewTest activity-->
-        <activity android:name=".viewtest34.MainActivity34" />
+        <activity android:name=".controls.viewtest34.MainActivity34" />
         <activity android:name=".widget.view.HandActivity" />
-        <activity android:name=".buttonbgcolor40.MainActivity40" />
-        <activity android:name=".checkradio41.MainActivity41" />
-        <activity android:name=".spinnerdemo42.MainActivity42" />
-        <activity android:name=".spinnerdemo43.MainActivity43" />
-        <activity android:name=".spinnersimpleAdapter44.MainActivity44" />
+        <activity android:name=".controls.buttonbgcolor40.MainActivity40" />
+        <activity android:name=".controls.checkradio41.MainActivity41" />
+        <activity android:name=".controls.spinner.spinnerdemo42.MainActivity42" />
+        <activity android:name=".controls.spinner.spinnerdemo43.MainActivity43" />
+        <activity android:name=".controls.spinner.spinnersimpleAdapter44.MainActivity44" />
+        <!--this is activityJump activity-->
+        <activity android:name=".actiivty.activityjump50.MainActivity50" />
+        <activity android:name=".actiivty.activityjump50.OtherActivity50" />
+        <activity android:name=".actiivty.activityjump50.SecondActivity50" />
+        <!--this is activityPassValue activity-->
+        <activity android:name=".actiivty.activitypassvalue54.MainActivity54" />
+        <activity android:name=".actiivty.activitypassvalue54.ResultActivity54" />
+        <activity android:name=".actiivty.activitypassvalue54.SecondActivity54" />
 
 
     </application>

@@ -2,76 +2,77 @@ package com.androidpath.main;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.androidpath.R;
-import com.androidpath.buttonbgcolor40.MainActivity40;
-import com.androidpath.buttonselector30.ButtonSelectorActivtiy3;
-import com.androidpath.checkradio41.MainActivity41;
-import com.androidpath.clickreponse31.ButtonTestActivity31;
-import com.androidpath.edittextdemo32.MainActivity32;
-import com.androidpath.imageviewtest.MainActivity33;
-import com.androidpath.layoutdemo2.LayoutActivity2;
-import com.androidpath.spinnerdemo42.MainActivity42;
-import com.androidpath.spinnerdemo43.MainActivity43;
-import com.androidpath.spinnersimpleAdapter44.MainActivity44;
-import com.androidpath.viewtest34.MainActivity34;
+import com.androidpath.actiivty.activityjump50.MainActivity50;
+import com.androidpath.actiivty.activitypassvalue54.MainActivity54;
+import com.androidpath.controls.buttonbgcolor40.MainActivity40;
+import com.androidpath.controls.buttonselector30.ButtonSelectorActivtiy3;
+import com.androidpath.controls.checkradio41.MainActivity41;
+import com.androidpath.controls.clickreponse31.ButtonTestActivity31;
+import com.androidpath.controls.edittextdemo32.MainActivity32;
+import com.androidpath.controls.imageviewtest.MainActivity33;
+import com.androidpath.controls.layoutdemo2.LayoutActivity2;
+import com.androidpath.controls.spinner.spinnerdemo42.MainActivity42;
+import com.androidpath.controls.spinner.spinnerdemo43.MainActivity43;
+import com.androidpath.controls.spinner.spinnersimpleAdapter44.MainActivity44;
+import com.androidpath.controls.viewtest34.MainActivity34;
 import com.androidpath.widget.view.HandActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main1);
     }
 
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.layoutdemo2:
-                Intent intent2 = new Intent(MainActivity.this, LayoutActivity2.class);
-                startActivity(intent2);
+                startActivity(new Intent(MainActivity.this, LayoutActivity2.class));
                 break;
             case R.id.buttonselectordemo3:
-                Intent intent3 = new Intent(MainActivity.this, ButtonSelectorActivtiy3.class);
-                startActivity(intent3);
+                startActivity(new Intent(MainActivity.this, ButtonSelectorActivtiy3.class));
                 break;
             case R.id.buttontestactivity31:
-                Intent intent31 = new Intent(MainActivity.this, ButtonTestActivity31.class);
-                startActivity(intent31);
+                startActivity(new Intent(MainActivity.this, ButtonTestActivity31.class));
                 break;
             case R.id.edittextdemo32:
-                Intent intent32 = new Intent(MainActivity.this, MainActivity32.class);
-                startActivity(intent32);
+                startActivity(new Intent(MainActivity.this, MainActivity32.class));
                 break;
             case R.id.imageviewTest33:
-                Intent intent33 = new Intent(MainActivity.this, MainActivity33.class);
-                startActivity(intent33);
+                startActivity(new Intent(MainActivity.this, MainActivity33.class));
                 break;
             case R.id.viewTest34:
-                Intent intent34 = new Intent(MainActivity.this, MainActivity34.class);
-                startActivity(intent34);
+                startActivity(new Intent(MainActivity.this, MainActivity34.class));
                 break;
             case R.id.handview:
-                Intent handview = new Intent(MainActivity.this, HandActivity.class);
-                startActivity(handview);
+                startActivity(new Intent(MainActivity.this, HandActivity.class));
                 break;
             case R.id.buttonbgcolor40:
-                Intent intent40 = new Intent(MainActivity.this, MainActivity40.class);
-                startActivity(intent40);
+                startActivity(new Intent(MainActivity.this, MainActivity40.class));
+                break;
             case R.id.checkRadio41:
-                Intent intent41 = new Intent(MainActivity.this, MainActivity41.class);
-                startActivity(intent41);
+                startActivity(new Intent(MainActivity.this, MainActivity41.class));
+                break;
             case R.id.spinnerDemo42:
-                Intent intent42 = new Intent(MainActivity.this, MainActivity42.class);
-                startActivity(intent42);
+                startActivity(new Intent(MainActivity.this, MainActivity42.class));
+                break;
             case R.id.spinnerDemo43:
-                Intent intent43 = new Intent(MainActivity.this, MainActivity43.class);
-                startActivity(intent43);
+                startActivity(new Intent(MainActivity.this, MainActivity43.class));
+                break;
             case R.id.spinnerSimpleAdapter44:
-                Intent intent44 = new Intent(MainActivity.this, MainActivity44.class);
-                startActivity(intent44);
+                startActivity(new Intent(MainActivity.this, MainActivity44.class));
+                break;
+            case R.id.activityPassValue50:
+                startActivity(new Intent(MainActivity.this, MainActivity54.class));
+                break;
+            case R.id.activityJump50:
+                startActivity(new Intent(MainActivity.this, MainActivity50.class));
+                break;
+
             default:
 
                 break;
