@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.androidpath.R;
+import com.androidpath.buttonbgcolor40.MainActivity40;
 import com.androidpath.buttonselector30.ButtonSelectorActivtiy3;
 import com.androidpath.clickreponse31.ButtonTestActivity31;
 import com.androidpath.edittextdemo32.MainActivity32;
@@ -52,7 +53,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent handview = new Intent(MainActivity.this, HandActivity.class);
                 startActivity(handview);
                 break;
-
+            case R.id.buttonbgcolor40:
+                Intent intent40=new Intent(MainActivity.this, MainActivity40.class);
+                startActivity(intent40);
             default:
 
                 break;

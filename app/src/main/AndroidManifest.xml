@@ -32,6 +32,7 @@
         <!--this is viewTest activity-->
         <activity android:name=".viewtest34.MainActivity34" />
         <activity android:name=".widget.view.HandActivity" />
+        <activity android:name=".buttonbgcolor40.MainActivity40" />
 
 
     </application>

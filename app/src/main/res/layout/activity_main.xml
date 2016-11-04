@@ -92,4 +92,15 @@
         android:text="handview"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/activity_tv_size" />
+    <TextView
+        android:id="@+id/buttonbgcolor40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_tv_margin"
+        android:background="@drawable/tv_shape3"
+        android:onClick="onClick"
+        android:padding="@dimen/activity_tv_padding"
+        android:text="buttonbgcolor40"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/activity_tv_size" />
 </LinearLayout>
