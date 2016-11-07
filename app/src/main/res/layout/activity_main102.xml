@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="请点击选择头像" />
+    
+    <ImageView 
+        android:id="@+id/head_imageView"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/none"
+        android:onClick="clickSelect"/>
+    
+
+</LinearLayout>

@@ -7,86 +7,188 @@
     android:orientation="vertical"
     tools:context=".main.MainActivity">
 
-    <TextView
-        android:id="@+id/layoutdemo2"
-        style="@style/tvStyle"
-        android:text="@string/layoutdemo2" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/buttonselectordemo3"
-        style="@style/tvStyle"
-        android:text="@string/buttonselectordemo3" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/buttontestactivity31"
-        style="@style/tvStyle"
-        android:text="@string/buttontestactivity31" />
+            <TextView
+                android:id="@+id/layoutdemo2"
+                style="@style/tvStyle"
+                android:text="@string/layoutdemo2" />
 
-    <TextView
-        android:id="@+id/edittextdemo32"
-        style="@style/tvStyle"
-        android:text="@string/edittextdemo32" />
+            <TextView
+                android:id="@+id/buttonselectordemo3"
+                style="@style/tvStyle"
+                android:text="@string/buttonselectordemo3" />
 
-    <TextView
-        android:id="@+id/imageviewTest33"
-        style="@style/tvStyle"
-        android:text="@string/imageviewtest33" />
+            <TextView
+                android:id="@+id/buttontestactivity31"
+                style="@style/tvStyle"
+                android:text="@string/buttontestactivity31" />
 
-    <TextView
-        android:id="@+id/viewTest34"
-        style="@style/tvStyle"
-        android:text="@string/viewtest34" />
+            <TextView
+                android:id="@+id/edittextdemo32"
+                style="@style/tvStyle"
+                android:text="@string/edittextdemo32" />
 
-    <TextView
-        android:id="@+id/handview"
-        style="@style/tvStyle"
-        android:text="@string/handview" />
+            <TextView
+                android:id="@+id/imageviewTest33"
+                style="@style/tvStyle"
+                android:text="@string/imageviewtest33" />
 
-    <TextView
-        android:id="@+id/buttonbgcolor40"
-        style="@style/tvStyle"
-        android:text="@string/buttonbgcolor40" />
+            <TextView
+                android:id="@+id/viewTest34"
+                style="@style/tvStyle"
+                android:text="@string/viewtest34" />
 
-    <TextView
-        android:id="@+id/checkRadio41"
-        style="@style/tvStyle"
-        android:text="@string/checkradio41" />
+            <TextView
+                android:id="@+id/handview"
+                style="@style/tvStyle"
+                android:text="@string/handview" />
 
-    <TextView
-        android:id="@+id/spinnerDemo42"
-        style="@style/tvStyle"
-        android:text="@string/spinnerdemo42" />
+            <TextView
+                android:id="@+id/buttonbgcolor40"
+                style="@style/tvStyle"
+                android:text="@string/buttonbgcolor40" />
 
-    <TextView
-        android:id="@+id/spinnerDemo43"
-        style="@style/tvStyle"
-        android:text="@string/spinnerdemo43" />
+            <TextView
+                android:id="@+id/checkRadio41"
+                style="@style/tvStyle"
+                android:text="@string/checkradio41" />
 
-    <TextView
-        android:id="@+id/spinnerSimpleAdapter44"
-        style="@style/tvStyle"
-        android:text="@string/spinnersimpleadapter44" />
+            <TextView
+                android:id="@+id/spinnerDemo42"
+                style="@style/tvStyle"
+                android:text="@string/spinnerdemo42" />
 
-    <TextView
-        android:id="@+id/activityJump50"
-        style="@style/tvStyle"
-        android:text="@string/activityjump50" />
+            <TextView
+                android:id="@+id/spinnerDemo43"
+                style="@style/tvStyle"
+                android:text="@string/spinnerdemo43" />
 
-    <TextView
-        android:id="@+id/activityPassValue50"
-        style="@style/tvStyle"
-        android:text="@string/activitypassvalue50" />
+            <TextView
+                android:id="@+id/spinnerSimpleAdapter44"
+                style="@style/tvStyle"
+                android:text="@string/spinnersimpleadapter44" />
 
-    <TextView
-        android:id="@+id/autoCompleteText51"
-        style="@style/tvStyle"
-        android:text="@string/autoCompleteText51" />
-    <TextView
-        android:id="@+id/spinnerLink52"
-        style="@style/tvStyle"
-        android:text="@string/spinnerlink52" />
-    <TextView
-        android:id="@+id/activityPassValue55"
-        style="@style/tvStyle"
-        android:text="@string/activitypassvalue55" />
+            <TextView
+                android:id="@+id/activityJump50"
+                style="@style/tvStyle"
+                android:text="@string/activityjump50" />
+
+            <TextView
+                android:id="@+id/activityPassValue50"
+                style="@style/tvStyle"
+                android:text="@string/activitypassvalue50" />
+
+            <TextView
+                android:id="@+id/autoCompleteText51"
+                style="@style/tvStyle"
+                android:text="@string/autoCompleteText51" />
+
+            <TextView
+                android:id="@+id/spinnerLink52"
+                style="@style/tvStyle"
+                android:text="@string/spinnerlink52" />
+
+            <TextView
+                android:id="@+id/activityPassValue55"
+                style="@style/tvStyle"
+                android:text="@string/activitypassvalue55" />
+
+            <TextView
+                android:id="@+id/getResult60"
+                style="@style/tvStyle"
+                android:text="@string/getresult60" />
+
+            <TextView
+                android:id="@+id/taskDemo61"
+                style="@style/tvStyle"
+                android:text="@string/taskdemo61" />
+
+            <TextView
+                android:id="@+id/AysncDemoOne70"
+                style="@style/tvStyle"
+                android:text="@string/aysncdemoone70" />
+
+            <TextView
+                android:id="@+id/AysncDemoTwo71"
+                style="@style/tvStyle"
+                android:text="@string/aysncdemotwo71" />
+
+            <TextView
+                android:id="@+id/AysncGetImage72"
+                style="@style/tvStyle"
+                android:text="@string/aysncgetimage72" />
+
+            <TextView
+                android:id="@+id/AysncGetProgress73"
+                style="@style/tvStyle"
+                android:text="@string/aysncgetprogress73" />
+
+            <TextView
+                android:id="@+id/ActivityFlagDemo74"
+                style="@style/tvStyle"
+                android:text="@string/activityflagdemo74" />
+
+            <TextView
+                android:id="@+id/ImageViewDeal75"
+                style="@style/tvStyle"
+                android:text="@string/imageviewdeal75" />
+
+            <TextView
+                android:id="@+id/ActivitySaveInstance76"
+                style="@style/tvStyle"
+                android:text="@string/activitysaveinstance76" />
+
+            <TextView
+                android:id="@+id/listViewAdapter80"
+                style="@style/tvStyle"
+                android:text="@string/listviewadapter80" />
+
+            <TextView
+                android:id="@+id/listViewAddData81"
+                style="@style/tvStyle"
+                android:text="@string/listviewadddata81" />
+
+            <TextView
+                android:id="@+id/LVSimpleAdapter82"
+                style="@style/tvStyle"
+                android:text="@string/lvsimpleadapter82" />
+
+            <TextView
+                android:id="@+id/LVDataParse83"
+                style="@style/tvStyle"
+                android:text="@string/lvdataparse83" />
+
+            <TextView
+                android:id="@+id/ListViewJoke90"
+                style="@style/tvStyle"
+                android:text="@string/listviewjoke90" />
+
+            <TextView
+                android:id="@+id/BaseAdapterPack100"
+                style="@style/tvStyle"
+                android:text="@string/baseadapterpack100" />
+
+            <TextView
+                android:id="@+id/LvExpandable101"
+                style="@style/tvStyle"
+                android:text="@string/lvexpandable101" />
+            <TextView
+                android:id="@+id/GradView102"
+                style="@style/tvStyle"
+                android:text="@string/gradview102" />
+
+            <TextView
+                android:id="@+id/LVEmptyView103"
+                style="@style/tvStyle"
+                android:text="@string/lvemptyview103" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

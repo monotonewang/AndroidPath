@@ -21,6 +21,24 @@
     <string name="autoCompleteText51">autoCompleteText51</string>
     <string name="spinnerlink52">spinnerLink52</string>
     <string name="activitypassvalue55">activityPassValue55</string>
+    <string name="getresult60">getResult60</string>
+    <string name="taskdemo61">taskDemo61</string>
+    <string name="aysncdemoone70">AysncDemoOne70</string>
+    <string name="aysncdemotwo71">AysncDemoTwo71</string>
+    <string name="aysncgetimage72">AysncGetImage72</string>
+    <string name="aysncgetprogress73">AysncGetProgress73</string>
+    <string name="activityflagdemo74">ActivityFlagDemo74</string>
+    <string name="imageviewdeal75">ImageViewDeal75</string>
+    <string name="activitysaveinstance76">ActivitySaveInstance76</string>
+    <string name="listviewadapter80">listViewAdapter80</string>
+    <string name="listviewadddata81">listViewAddData81</string>
+    <string name="lvsimpleadapter82">LVSimpleAdapter82</string>
+    <string name="lvdataparse83">LVDataParse83</string>
+    <string name="listviewjoke90">ListViewJoke90</string>
+    <string name="baseadapterpack100">BaseAdapterPack100</string>
+    <string name="lvexpandable101">LvExpandable101</string>
+    <string name="gradview102">GradView102</string>
+    <string name="lvemptyview103">LVEmptyView103</string>
 
     <string-array name="job_array">
         <item>程序员</item>

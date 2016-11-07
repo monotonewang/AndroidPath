@@ -3,6 +3,8 @@
     package="com.androidpath">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".main.ApplicationMain"
         android:allowBackup="true"
@@ -55,6 +57,47 @@
         <activity android:name=".activity.applicationpassvalue55.MainActivity55" />
         <activity android:name=".activity.applicationpassvalue55.ResultActivity55" />
         <activity android:name=".activity.applicationpassvalue55.SecondActivity55" />
+
+        <activity android:name=".activity.getresult60.MainActivity60" />
+        <activity android:name=".activity.getresult60.SecondActivity60" />
+        <activity android:name=".activity.saveinstance76.MainActivity76" />
+        <activity
+            android:name=".activity.taskdemo61.MainActivity61"
+            android:label="this is first page" />
+
+        <activity
+            android:name=".activity.taskdemo61.SecondActivity61"
+            android:label="this is second page"
+            android:launchMode="singleInstance" />
+
+        <activity
+            android:name=".activity.taskdemo61.ThirdActivity61"
+            android:label="this is third page" />
+
+        <activity
+            android:name=".activity.taskdemo61.FourthActivity61"
+            android:label="this is fouth page" />
+
+        <activity android:name=".activity.flagdemo74.MainActivity74" />
+        <activity android:name=".activity.flagdemo74.SecondActivity74" />
+
+        <activity android:name=".async.demoone70.MainActivity70" />
+        <activity android:name=".async.demotwo71.MainActivity71" />
+        <activity android:name=".async.getimagestrong72.MainActivity72" />
+        <activity android:name=".async.progresslow73.MainActivity73" />
+        <activity android:name=".controls.imageviewdeal75.MainActivity75" />
+        <!--This is listview activity-->
+        <activity android:name=".listview.baseadapter80.MainActivity80" />
+        <activity android:name=".listview.adddata81.MainActivity81" />
+        <activity android:name=".listview.simpleadapter82.MainActivity82" />
+        <activity android:name=".listview.listviewdataparse83.MainActivity83" />
+        <activity android:name=".listview.listviewjoke90.MainActivity90" />
+        <activity android:name=".listview.baseadapterpack100.MainActivity100" />
+        <activity android:name=".listview.listviewexpandable101.MainActivity101" />
+        <activity android:name=".listview.gradview102.MainActivity102" />
+        <activity android:name=".listview.gradview102.HeadImageActivity102" />
+        <activity android:name=".listview.lvemptyview103.MainActivity103" />
+        <activity android:name=".listview.lvemptyview103.SecondActivity103" />
 
 
     </application>

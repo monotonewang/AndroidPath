@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+          "fengxiang": "北风",
+                "fengli": "3-4级",
+                "high": "高温 5℃",
+                "type": "晴",
+                "low": "低温 -6℃",
+                "date": "30日星期三"
+    -->
+
+    <TextView
+        android:id="@+id/date_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日期" />
+
+    <TextView
+        android:id="@+id/fx_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="风向" />
+
+    <TextView
+        android:id="@+id/fl_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="风力" />
+
+    <TextView
+        android:id="@+id/high_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高温" />
+
+    <TextView
+        android:id="@+id/low_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="低温" />
+
+    <TextView
+        android:id="@+id/type_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天气" />
+
+</LinearLayout>
