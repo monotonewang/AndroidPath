@@ -155,8 +155,10 @@ public class MainActivity50 extends BaseActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 SystemClock.sleep(500);
-                                Uri uriPackage=Uri.parse("package://"+"com.androidpath");
-                                Intent intent =new Intent(Settings.ACTION_APPLICATION_SETTINGS,uriPackage);
+                                Uri uriPackage=Uri.parse("package:"+"com.androidpath");
+                                Intent intent =new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,uriPackage);//根据包名跳到应用详情页面
+//                                Intent intent =new Intent(Settings.ACTION_APPLICATION_SETTINGS);//应用列表界面
+//                                Intent intent =new Intent(Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS);//开发人员界面
                                 startActivity(intent);
                             }
                         }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
