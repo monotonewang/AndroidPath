@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.androidpath.R;
-import com.androidpath.actiivty.activityjump50.MainActivity50;
-import com.androidpath.actiivty.activitypass2value55.MainActivity55;
-import com.androidpath.actiivty.activitypassvalue54.MainActivity54;
+import com.androidpath.activity.activityjump50.MainActivity50;
+import com.androidpath.activity.applicationpassvalue55.MainActivity55;
+import com.androidpath.activity.activitypassvalue54.MainActivity54;
 import com.androidpath.controls.buttonbgcolor40.MainActivity40;
 import com.androidpath.controls.buttonselector30.ButtonSelectorActivtiy3;
 import com.androidpath.controls.checkradio41.MainActivity41;

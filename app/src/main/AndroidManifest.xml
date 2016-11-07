@@ -40,21 +40,21 @@
         <activity android:name=".controls.spinner.spinnerdemo43.MainActivity43" />
         <activity android:name=".controls.spinner.spinnersimpleAdapter44.MainActivity44" />
         <!--this is activityJump activity-->
-        <activity android:name=".actiivty.activityjump50.MainActivity50" />
-        <activity android:name=".actiivty.activityjump50.OtherActivity50" />
-        <activity android:name=".actiivty.activityjump50.SecondActivity50" />
+        <activity android:name=".activity.activityjump50.MainActivity50" />
+        <activity android:name=".activity.activityjump50.OtherActivity50" />
+        <activity android:name=".activity.activityjump50.SecondActivity50" />
 
         <activity android:name=".controls.edittext.autocompletetext51.MainActivity51" />
 
         <activity android:name=".controls.spinner.spinnerlink52.MainActivity52" />
         <!--this is activityPassValue activity-->
-        <activity android:name=".actiivty.activitypassvalue54.MainActivity54" />
-        <activity android:name=".actiivty.activitypassvalue54.ResultActivity54" />
-        <activity android:name=".actiivty.activitypassvalue54.SecondActivity54" />
+        <activity android:name=".activity.activitypassvalue54.MainActivity54" />
+        <activity android:name=".activity.activitypassvalue54.ResultActivity54" />
+        <activity android:name=".activity.activitypassvalue54.SecondActivity54" />
 
-        <activity android:name=".actiivty.activitypass2value55.MainActivity55" />
-        <activity android:name=".actiivty.activitypass2value55.ResultActivity55" />
-        <activity android:name=".actiivty.activitypass2value55.SecondActivity55" />
+        <activity android:name=".activity.applicationpassvalue55.MainActivity55" />
+        <activity android:name=".activity.applicationpassvalue55.ResultActivity55" />
+        <activity android:name=".activity.applicationpassvalue55.SecondActivity55" />
 
 
     </application>

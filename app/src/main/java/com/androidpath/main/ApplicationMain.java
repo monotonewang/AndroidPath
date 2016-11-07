@@ -16,6 +16,32 @@ import java.util.List;
 public class ApplicationMain extends Application {
 
     private static List<AppCompatActivity> mActivityList = new LinkedList<>();
+    //application pass value
+    private String name, age, gender;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
     @Override
     public void onCreate() {
@@ -36,10 +62,13 @@ public class ApplicationMain extends Application {
             }
         }
     }
-    public static int getActivityListSize(){
-        if(mActivityList!=null){
+
+    public static int getActivityListSize() {
+        if (mActivityList != null) {
             return mActivityList.size();
         }
         return 0;
     }
+
+
 }

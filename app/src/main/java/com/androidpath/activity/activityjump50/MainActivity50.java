@@ -1,4 +1,4 @@
-package com.androidpath.actiivty.activityjump50;
+package com.androidpath.activity.activityjump50;
 
 import android.Manifest;
 import android.content.ComponentName;
@@ -9,9 +9,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.SystemClock;
+import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -21,9 +21,10 @@ import com.androidpath.main.BaseActivity;
 
 import java.io.File;
 
+
 public class MainActivity50 extends BaseActivity {
 
-    private Intent intentCallPhone;
+    private final Intent intentCallPhone = new Intent(Intent.ACTION_CALL);
     private final int callPhonePerssion = 1;
     private String TAG = "MainActivity50";
 
@@ -99,53 +100,23 @@ public class MainActivity50 extends BaseActivity {
 
     //直接拨号的action必须和data属性配合使用，如果不设置data属性，就会找不到对应的activity
     public void clickCall(View view) {
-        // 直接拨号
-        intentCallPhone = new Intent(Intent.ACTION_CALL);
+
         // 构建数据对象，数据对象必须用Uri来封装
-        Uri uri = Uri.parse("tel://10000");
+        Uri uri = Uri.parse("tel:10000");
         intentCallPhone.setData(uri);
 
         //Permission
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CALL_PHONE)) {
-                Toast.makeText(this, "添加了这个就可以打电话了", Toast.LENGTH_SHORT).show();
-                new AlertDialog.Builder(this).setMessage("拨打电话").setPositiveButton("确定", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Log.e(TAG, "onClick: " + ApplicationMain.getActivityListSize());
-                        SystemClock.sleep(500);
-                        ActivityCompat.requestPermissions(MainActivity50.this, new String[]{Manifest.permission.CALL_PHONE}, callPhonePerssion);
-                        Toast.makeText(MainActivity50.this, "requestPermissions", Toast.LENGTH_SHORT).show();
-                    }
-                }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Log.e(TAG, "onClick: " + ApplicationMain.getActivityListSize());
-                        SystemClock.sleep(500);
-                        ApplicationMain.finishAllActivity();
-                        System.exit(0);
-//                        Process.killProcess(Process.myPid());
-                    }
-                }).show();
-
-            } else {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, callPhonePerssion);
-                Toast.makeText(this, "requestPermissions", Toast.LENGTH_SHORT).show();
-            }
+            ActivityCompat.requestPermissions(MainActivity50.this, new String[]{Manifest.permission.CALL_PHONE}, callPhonePerssion);
+        } else {
+            startActivity(intentCallPhone);
         }
-
-//        startActivity(intent);
     }
+
 
     /**
      * 请求权限回调
+     *
      * @param requestCode
      * @param permissions
      * @param grantResults
@@ -156,12 +127,49 @@ public class MainActivity50 extends BaseActivity {
         switch (requestCode) {
             case callPhonePerssion:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(this, "yes", Toast.LENGTH_SHORT).show();
                     startActivity(intentCallPhone);
                 } else {
-                    Toast.makeText(this, "No", Toast.LENGTH_SHORT).show();
+                    if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CALL_PHONE)) {
+                        Toast.makeText(this, "添加了这个就可以打电话了", Toast.LENGTH_SHORT).show();
+                        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                        builder.setTitle("标题");
+                        builder.setMessage("拨打电话").setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                SystemClock.sleep(500);
+                                ActivityCompat.requestPermissions(MainActivity50.this, new String[]{Manifest.permission.CALL_PHONE}, callPhonePerssion);
+                            }
+                        }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                SystemClock.sleep(500);
+                                ApplicationMain.finishAllActivity();
+                                android.os.Process.killProcess(android.os.Process.myPid());
+                                System.exit(0);
+                            }
+                        }).show();
+                    } else {
+                        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                        builder.setTitle("手动设置权限");
+                        builder.setMessage("您之前已经取消了授权，请到应用里面去设置").setPositiveButton("去设置", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                SystemClock.sleep(500);
+                                Uri uriPackage=Uri.parse("package://"+"com.androidpath");
+                                Intent intent =new Intent(Settings.ACTION_APPLICATION_SETTINGS,uriPackage);
+                                startActivity(intent);
+                            }
+                        }).setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                SystemClock.sleep(500);
+                                ApplicationMain.finishAllActivity();
+                                android.os.Process.killProcess(android.os.Process.myPid());
+                                System.exit(0);
+                            }
+                        }).show();
+                    }
                 }
-
         }
     }
 

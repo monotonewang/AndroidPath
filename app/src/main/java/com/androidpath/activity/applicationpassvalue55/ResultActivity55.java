@@ -1,4 +1,4 @@
-package com.androidpath.actiivty.activitypass2value55;
+package com.androidpath.activity.applicationpassvalue55;
 
 import android.app.Activity;
 import android.os.Bundle;

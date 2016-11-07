@@ -1,21 +1,22 @@
-package com.androidpath.actiivty.activitypass2value55;
+package com.androidpath.activity.applicationpassvalue55;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.androidpath.R;
+import com.androidpath.main.ApplicationMain;
 
 public class SecondActivity55 extends Activity {
 
-    private MyGloable55 myGloable;
+    private ApplicationMain myGloable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second55);
 
-        myGloable = (MyGloable55) getApplication();
+        myGloable = (ApplicationMain) getApplication();
         String gender = myGloable.getGender();
         String name = myGloable.getName();
 

@@ -1,4 +1,4 @@
-package com.androidpath.actiivty.activityjump50;
+package com.androidpath.activity.activityjump50;
 
 import android.net.Uri;
 import android.os.Bundle;
