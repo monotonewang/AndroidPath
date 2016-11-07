@@ -98,6 +98,20 @@
         <activity android:name=".listview.gradview102.HeadImageActivity102" />
         <activity android:name=".listview.lvemptyview103.MainActivity103" />
         <activity android:name=".listview.lvemptyview103.SecondActivity103" />
+        <!--container-->
+        <activity android:name=".container.alertdialog110.MainActivity110" />
+        <activity android:name=".container.contextmenu111.MainActivity111" />
+        <activity android:name=".container.notification112.MainActivity112" />
+        <activity android:name=".container.optionmenu113.MainActivity113" />
+        <activity android:name=".container.popupmenu114.MainActivity114" />
+        <activity android:name=".container.subMenu115.MainActivity115" />
+        <activity android:name=".container.toastdemo116.MainActivity116" />
+        <activity android:name=".container.dymicaddmenu117.MainActivity117" />
+        <!--fragment-->
+        <activity android:name=".fragment.dialogframgment.MainActivity120" />
+        <activity android:name=".fragment.staticfragment121.MainActivity121" />
+        <activity android:name=".fragment.fragmentpassvalue122.MainActivity122" />
+        <activity android:name=".fragment.dynicaddfragment123.MainActivity123" />
 
 
     </application>

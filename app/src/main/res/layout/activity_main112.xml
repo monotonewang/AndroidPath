@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发出普通视图通知"
+        android:onClick="clickNormolNotify" />
+    
+     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发出大视图通知"
+        android:onClick="clickBigNotify" />
+     
+     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发出进度通知"
+        android:onClick="clickProgressNotify" />
+     
+     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发出自定义通知"
+        android:onClick="clickCustomNotify" />
+
+</LinearLayout>

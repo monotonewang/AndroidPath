@@ -39,6 +39,19 @@
     <string name="lvexpandable101">LvExpandable101</string>
     <string name="gradview102">GradView102</string>
     <string name="lvemptyview103">LVEmptyView103</string>
+    <string name="aleatdialog110">AleatDialog110</string>
+    <string name="contextmenu111">ContextMenu111</string>
+    <string name="notification112">Notification112</string>
+    <string name="help">帮助</string>
+    <string name="optionmenu113">OptionMenu113</string>
+    <string name="popupmenu114">PopupMenu114</string>
+    <string name="submenu115">SubMenu115</string>
+    <string name="toastdemo116">ToastDemo116</string>
+    <string name="dymicaddmenu117">DymicAddMenu117</string>
+    <string name="dialogfragment120">DialogFragment120</string>
+    <string name="staticfragment121">StaticFragment121</string>
+    <string name="dynicaddfragment123">DynicAddFragment123</string>
+    <string name="passvaluefragement122">PassValueFragement122</string>
 
     <string-array name="job_array">
         <item>程序员</item>

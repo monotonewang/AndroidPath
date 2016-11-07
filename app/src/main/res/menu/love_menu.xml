@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/movie_item"
+        android:title="看电影"
+        android:orderInCategory="2"/>
+    <item 
+        android:id="@+id/climb_item"
+        android:title="爬山"
+        android:orderInCategory="1"/>
+    
+      <item 
+        android:id="@+id/coding_item"
+        android:title="敲代码"
+        android:orderInCategory="1"/>
+      
+
+</menu>

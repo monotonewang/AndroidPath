@@ -16,6 +16,14 @@ import com.androidpath.async.demoone70.MainActivity70;
 import com.androidpath.async.demotwo71.MainActivity71;
 import com.androidpath.async.getimagestrong72.MainActivity72;
 import com.androidpath.async.progresslow73.MainActivity73;
+import com.androidpath.container.alertdialog110.MainActivity110;
+import com.androidpath.container.contextmenu111.MainActivity111;
+import com.androidpath.container.dymicaddmenu117.MainActivity117;
+import com.androidpath.container.notification112.MainActivity112;
+import com.androidpath.container.optionmenu113.MainActivity113;
+import com.androidpath.container.popupmenu114.MainActivity114;
+import com.androidpath.container.subMenu115.MainActivity115;
+import com.androidpath.container.toastdemo116.MainActivity116;
 import com.androidpath.controls.buttonbgcolor40.MainActivity40;
 import com.androidpath.controls.buttonselector30.ButtonSelectorActivtiy3;
 import com.androidpath.controls.checkradio41.MainActivity41;
@@ -30,14 +38,18 @@ import com.androidpath.controls.spinner.spinnerdemo43.MainActivity43;
 import com.androidpath.controls.spinner.spinnerlink52.MainActivity52;
 import com.androidpath.controls.spinner.spinnersimpleAdapter44.MainActivity44;
 import com.androidpath.controls.viewtest34.MainActivity34;
+import com.androidpath.fragment.dialogframgment.MainActivity120;
+import com.androidpath.fragment.dynicaddfragment123.MainActivity123;
+import com.androidpath.fragment.fragmentpassvalue122.MainActivity122;
+import com.androidpath.fragment.staticfragment121.MainActivity121;
 import com.androidpath.listview.adddata81.MainActivity81;
 import com.androidpath.listview.baseadapter80.MainActivity80;
 import com.androidpath.listview.baseadapterpack100.MainActivity100;
 import com.androidpath.listview.gradview102.MainActivity102;
 import com.androidpath.listview.listviewdataparse83.MainActivity83;
-import com.androidpath.listview.lvemptyview103.SecondActivity103;
 import com.androidpath.listview.listviewexpandable101.MainActivity101;
 import com.androidpath.listview.listviewjoke90.MainActivity90;
+import com.androidpath.listview.lvemptyview103.SecondActivity103;
 import com.androidpath.listview.simpleadapter82.MainActivity82;
 import com.androidpath.widget.view.HandActivity;
 
@@ -155,6 +167,42 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.LVEmptyView103:
                 startActivity(new Intent(MainActivity.this, SecondActivity103.class));
+                break;
+            case R.id.AleatDialog110:
+                startActivity(new Intent(MainActivity.this, MainActivity110.class));
+                break;
+            case R.id.ContextMenu111:
+                startActivity(new Intent(MainActivity.this, MainActivity111.class));
+                break;
+            case R.id.Notification112:
+                startActivity(new Intent(MainActivity.this, MainActivity112.class));
+                break;
+            case R.id.OptionMenu113:
+                startActivity(new Intent(MainActivity.this, MainActivity113.class));
+                break;
+            case R.id.PopupMenu114:
+                startActivity(new Intent(MainActivity.this, MainActivity114.class));
+                break;
+            case R.id.SubMenu115:
+                startActivity(new Intent(MainActivity.this, MainActivity115.class));
+                break;
+            case R.id.ToastDemo116:
+                startActivity(new Intent(MainActivity.this, MainActivity116.class));
+                break;
+            case R.id.DymicAddMenu117:
+                startActivity(new Intent(MainActivity.this, MainActivity117.class));
+                break;
+            case R.id.DialogFragment120:
+                startActivity(new Intent(MainActivity.this, MainActivity120.class));
+                break;
+            case R.id.StaticFragment121:
+                startActivity(new Intent(MainActivity.this, MainActivity121.class));
+                break;
+            case R.id.PassValueFragement122:
+                startActivity(new Intent(MainActivity.this, MainActivity122.class));
+                break;
+            case R.id.DynicAddFragment123:
+                startActivity(new Intent(MainActivity.this, MainActivity123.class));
                 break;
             default:
 

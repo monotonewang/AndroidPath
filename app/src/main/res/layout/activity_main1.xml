@@ -180,6 +180,7 @@
                 android:id="@+id/LvExpandable101"
                 style="@style/tvStyle"
                 android:text="@string/lvexpandable101" />
+
             <TextView
                 android:id="@+id/GradView102"
                 style="@style/tvStyle"
@@ -189,6 +190,65 @@
                 android:id="@+id/LVEmptyView103"
                 style="@style/tvStyle"
                 android:text="@string/lvemptyview103" />
+
+            <TextView
+                android:id="@+id/AleatDialog110"
+                style="@style/tvStyle"
+                android:text="@string/aleatdialog110" />
+
+            <TextView
+                android:id="@+id/ContextMenu111"
+                style="@style/tvStyle"
+                android:text="@string/contextmenu111" />
+
+            <TextView
+                android:id="@+id/Notification112"
+                style="@style/tvStyle"
+                android:text="@string/notification112" />
+
+            <TextView
+                android:id="@+id/OptionMenu113"
+                style="@style/tvStyle"
+                android:text="@string/optionmenu113" />
+
+            <TextView
+                android:id="@+id/PopupMenu114"
+                style="@style/tvStyle"
+                android:text="@string/popupmenu114" />
+
+            <TextView
+                android:id="@+id/SubMenu115"
+                style="@style/tvStyle"
+                android:text="@string/submenu115" />
+
+            <TextView
+                android:id="@+id/ToastDemo116"
+                style="@style/tvStyle"
+                android:text="@string/toastdemo116" />
+
+            <TextView
+                android:id="@+id/DymicAddMenu117"
+                style="@style/tvStyle"
+                android:text="@string/dymicaddmenu117" />
+
+            <TextView
+                android:id="@+id/DialogFragment120"
+                style="@style/tvStyle"
+                android:text="@string/dialogfragment120" />
+
+            <TextView
+                android:id="@+id/StaticFragment121"
+                style="@style/tvStyle"
+                android:text="@string/staticfragment121" />
+            <TextView
+                android:id="@+id/PassValueFragement122"
+                style="@style/tvStyle"
+                android:text="@string/passvaluefragement122" />
+            <TextView
+                android:id="@+id/DynicAddFragment123"
+                style="@style/tvStyle"
+                android:text="@string/dynicaddfragment123" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
