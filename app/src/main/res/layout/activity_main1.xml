@@ -380,11 +380,51 @@
                 android:id="@+id/AcitionBarCustomView194"
                 style="@style/tvStyle"
                 android:text="@string/acitionbarcustomview194" />
+
             <TextView
                 android:id="@+id/Asstes195"
                 style="@style/tvStyle"
                 android:text="@string/asstes195" />
 
+            <TextView
+                android:id="@+id/textViewViewPager210"
+                style="@style/tvStyle"
+                android:text="@string/textViewViewPager210" />
+
+            <TextView
+                android:id="@+id/chabaike211"
+                style="@style/tvStyle"
+                android:text="@string/chabaike211" />
+
+            <TextView
+                android:id="@+id/HeadViewPager212"
+                style="@style/tvStyle"
+                android:text="@string/HeadViewPager212" />
+
+            <TextView
+                android:id="@+id/WebView213"
+                style="@style/tvStyle"
+                android:text="@string/webview213" />
+
+            <TextView
+                android:id="@+id/FragmentViewPager214"
+                style="@style/tvStyle"
+                android:text="@string/FragmentViewPager214" />
+
+            <TextView
+                android:id="@+id/ActionBarViewPager215"
+                style="@style/tvStyle"
+                android:text="@string/actionbarviewpager215" />
+
+            <TextView
+                android:id="@+id/TabViewPager220"
+                style="@style/tvStyle"
+                android:text="@string/tabviewpager220" />
+
+            <TextView
+                android:id="@+id/TabViewPagerTwo221"
+                style="@style/tvStyle"
+                android:text="@string/TabViewPagerTwo221" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

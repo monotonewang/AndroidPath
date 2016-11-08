@@ -16,34 +16,6 @@ import com.androidpath.async.demoone70.MainActivity70;
 import com.androidpath.async.demotwo71.MainActivity71;
 import com.androidpath.async.getimagestrong72.MainActivity72;
 import com.androidpath.async.progresslow73.MainActivity73;
-import com.androidpath.container.actionbar190.customview.MainActivity194;
-import com.androidpath.container.actionbar190.demo190.MainActivity190;
-import com.androidpath.container.actionbar190.list193.MainActivity193;
-import com.androidpath.container.actionbar190.provider191.MainActivity191;
-import com.androidpath.container.actionbar190.tab192.MainActivity192;
-import com.androidpath.container.alertdialog110.MainActivity110;
-import com.androidpath.container.asstes195.MainActivity195;
-import com.androidpath.container.contextmenu111.MainActivity111;
-import com.androidpath.container.dymicaddmenu117.MainActivity117;
-import com.androidpath.container.notification112.MainActivity112;
-import com.androidpath.container.optionmenu113.MainActivity113;
-import com.androidpath.container.popupmenu114.MainActivity114;
-import com.androidpath.container.subMenu115.MainActivity115;
-import com.androidpath.container.toastdemo116.MainActivity116;
-import com.androidpath.controls.buttonbgcolor40.MainActivity40;
-import com.androidpath.controls.buttonselector30.ButtonSelectorActivtiy3;
-import com.androidpath.controls.checkradio41.MainActivity41;
-import com.androidpath.controls.clickreponse31.ButtonTestActivity31;
-import com.androidpath.controls.edittext.autocompletetext51.MainActivity51;
-import com.androidpath.controls.edittext.edittextdemo32.MainActivity32;
-import com.androidpath.controls.imageviewdeal75.MainActivity75;
-import com.androidpath.controls.imageviewtest.MainActivity33;
-import com.androidpath.controls.layoutdemo2.LayoutActivity2;
-import com.androidpath.controls.spinner.spinnerdemo42.MainActivity42;
-import com.androidpath.controls.spinner.spinnerdemo43.MainActivity43;
-import com.androidpath.controls.spinner.spinnerlink52.MainActivity52;
-import com.androidpath.controls.spinner.spinnersimpleAdapter44.MainActivity44;
-import com.androidpath.controls.viewtest34.MainActivity34;
 import com.androidpath.fragment.dialogframgment.MainActivity120;
 import com.androidpath.fragment.dynicaddfragment123.MainActivity123;
 import com.androidpath.fragment.fragmentpassvalue122.MainActivity122;
@@ -54,15 +26,6 @@ import com.androidpath.handler.handerimage180.MainActivity180;
 import com.androidpath.handler.handlerlightcycle182.MainActivity182;
 import com.androidpath.handler.handlerlopper184.MainActivity184;
 import com.androidpath.handler.updateui183.MainActivity183;
-import com.androidpath.listview.adddata81.MainActivity81;
-import com.androidpath.listview.baseadapter80.MainActivity80;
-import com.androidpath.listview.baseadapterpack100.MainActivity100;
-import com.androidpath.listview.gradview102.MainActivity102;
-import com.androidpath.listview.listviewdataparse83.MainActivity83;
-import com.androidpath.listview.listviewexpandable101.MainActivity101;
-import com.androidpath.listview.listviewjoke90.MainActivity90;
-import com.androidpath.listview.lvemptyview103.SecondActivity103;
-import com.androidpath.listview.simpleadapter82.MainActivity82;
 import com.androidpath.storge.contentResolverContacts161.MainActivity161;
 import com.androidpath.storge.contentobserver160.MainActivity160;
 import com.androidpath.storge.fileStorgetwo132.MainActivity132;
@@ -78,6 +41,51 @@ import com.androidpath.storge.sql.sqlclienttwo152.MainActivity152;
 import com.androidpath.storge.sql.sqldemo154.MainActivity154;
 import com.androidpath.storge.sql.sqlserverone151.MainActivity151;
 import com.androidpath.storge.sql.sqlservertwo153.MainActivity153;
+import com.androidpath.view.container.actionbar190.customview.MainActivity194;
+import com.androidpath.view.container.actionbar190.demo190.MainActivity190;
+import com.androidpath.view.container.actionbar190.list193.MainActivity193;
+import com.androidpath.view.container.actionbar190.provider191.MainActivity191;
+import com.androidpath.view.container.actionbar190.tab192.MainActivity192;
+import com.androidpath.view.container.alertdialog110.MainActivity110;
+import com.androidpath.view.container.asstes195.MainActivity195;
+import com.androidpath.view.container.contextmenu111.MainActivity111;
+import com.androidpath.view.container.dymicaddmenu117.MainActivity117;
+import com.androidpath.view.container.notification112.MainActivity112;
+import com.androidpath.view.container.optionmenu113.MainActivity113;
+import com.androidpath.view.container.popupmenu114.MainActivity114;
+import com.androidpath.view.container.subMenu115.MainActivity115;
+import com.androidpath.view.container.toastdemo116.MainActivity116;
+import com.androidpath.view.listview.adddata81.MainActivity81;
+import com.androidpath.view.listview.baseadapter80.MainActivity80;
+import com.androidpath.view.listview.baseadapterpack100.MainActivity100;
+import com.androidpath.view.listview.gradview102.MainActivity102;
+import com.androidpath.view.listview.listviewdataparse83.MainActivity83;
+import com.androidpath.view.listview.listviewexpandable101.MainActivity101;
+import com.androidpath.view.listview.listviewjoke90.MainActivity90;
+import com.androidpath.view.listview.lvemptyview103.SecondActivity103;
+import com.androidpath.view.listview.simpleadapter82.MainActivity82;
+import com.androidpath.view.normal.buttonbgcolor40.MainActivity40;
+import com.androidpath.view.normal.buttonselector30.ButtonSelectorActivtiy3;
+import com.androidpath.view.normal.checkradio41.MainActivity41;
+import com.androidpath.view.normal.clickreponse31.ButtonTestActivity31;
+import com.androidpath.view.normal.edittext.autocompletetext51.MainActivity51;
+import com.androidpath.view.normal.edittext.edittextdemo32.MainActivity32;
+import com.androidpath.view.normal.imageviewdeal75.MainActivity75;
+import com.androidpath.view.normal.imageviewtest.MainActivity33;
+import com.androidpath.view.normal.layoutdemo2.LayoutActivity2;
+import com.androidpath.view.normal.spinner.spinnerdemo42.MainActivity42;
+import com.androidpath.view.normal.spinner.spinnerdemo43.MainActivity43;
+import com.androidpath.view.normal.spinner.spinnerlink52.MainActivity52;
+import com.androidpath.view.normal.spinner.spinnersimpleAdapter44.MainActivity44;
+import com.androidpath.view.normal.viewtest34.MainActivity34;
+import com.androidpath.view.viewpager.actionbar215.MainActivity215;
+import com.androidpath.view.viewpager.chabaike211.MainActivity211;
+import com.androidpath.view.viewpager.cicle212.MainActivity212;
+import com.androidpath.view.viewpager.fragment214.MainActivity214;
+import com.androidpath.view.viewpager.tabone220.MainActivity220;
+import com.androidpath.view.viewpager.tabtwo221.MainActivity221;
+import com.androidpath.view.viewpager.textview210.MainActivity210;
+import com.androidpath.view.webview213.MainActivity213;
 import com.androidpath.widget.view.HandActivity;
 
 public class MainActivity extends BaseActivity {
@@ -311,6 +319,30 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.Asstes195:
                 startActivity(new Intent(MainActivity.this, MainActivity195.class));
+                break;
+            case R.id.textViewViewPager210:
+                startActivity(new Intent(MainActivity.this, MainActivity210.class));
+                break;
+            case R.id.chabaike211:
+                startActivity(new Intent(MainActivity.this, MainActivity211.class));
+                break;
+            case R.id.HeadViewPager212:
+                startActivity(new Intent(MainActivity.this, MainActivity212.class));
+                break;
+            case R.id.WebView213:
+                startActivity(new Intent(MainActivity.this, MainActivity213.class));
+                break;
+            case R.id.FragmentViewPager214:
+                startActivity(new Intent(MainActivity.this, MainActivity214.class));
+                break;
+            case R.id.ActionBarViewPager215:
+                startActivity(new Intent(MainActivity.this, MainActivity215.class));
+                break;
+            case R.id.TabViewPager220:
+                startActivity(new Intent(MainActivity.this, MainActivity220.class));
+                break;
+            case R.id.TabViewPagerTwo221:
+                startActivity(new Intent(MainActivity.this, MainActivity221.class));
                 break;
             default:
 

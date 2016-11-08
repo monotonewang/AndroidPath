@@ -79,6 +79,14 @@
     <string name="acitionbarlist193">AcitionBarList193</string>
     <string name="acitionbarcustomview194">AcitionBarCustomView194</string>
     <string name="asstes195">Asstes195</string>
+    <string name="textViewViewPager210">TextViewViewPager210</string>
+    <string name="chabaike211">Chabaike211</string>
+    <string name="HeadViewPager212">HeadViewPager212</string>
+    <string name="webview213">WebView213</string>
+    <string name="FragmentViewPager214">FragmentViewPager214</string>
+    <string name="actionbarviewpager215">ActionBarViewPager215</string>
+    <string name="tabviewpager220">TabViewPager220</string>
+    <string name="TabViewPagerTwo221">TabViewPagerTwo221</string>
 
     <string-array name="job_array">
         <item>程序员</item>
