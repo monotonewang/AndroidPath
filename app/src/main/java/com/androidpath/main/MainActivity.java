@@ -16,7 +16,13 @@ import com.androidpath.async.demoone70.MainActivity70;
 import com.androidpath.async.demotwo71.MainActivity71;
 import com.androidpath.async.getimagestrong72.MainActivity72;
 import com.androidpath.async.progresslow73.MainActivity73;
+import com.androidpath.container.actionbar190.customview.MainActivity194;
+import com.androidpath.container.actionbar190.demo190.MainActivity190;
+import com.androidpath.container.actionbar190.list193.MainActivity193;
+import com.androidpath.container.actionbar190.provider191.MainActivity191;
+import com.androidpath.container.actionbar190.tab192.MainActivity192;
 import com.androidpath.container.alertdialog110.MainActivity110;
+import com.androidpath.container.asstes195.MainActivity195;
 import com.androidpath.container.contextmenu111.MainActivity111;
 import com.androidpath.container.dymicaddmenu117.MainActivity117;
 import com.androidpath.container.notification112.MainActivity112;
@@ -43,6 +49,11 @@ import com.androidpath.fragment.dynicaddfragment123.MainActivity123;
 import com.androidpath.fragment.fragmentpassvalue122.MainActivity122;
 import com.androidpath.fragment.radiofragment124.MainActivity124;
 import com.androidpath.fragment.staticfragment121.MainActivity121;
+import com.androidpath.handler.handercycleiamge181.MainActivity181;
+import com.androidpath.handler.handerimage180.MainActivity180;
+import com.androidpath.handler.handlerlightcycle182.MainActivity182;
+import com.androidpath.handler.handlerlopper184.MainActivity184;
+import com.androidpath.handler.updateui183.MainActivity183;
 import com.androidpath.listview.adddata81.MainActivity81;
 import com.androidpath.listview.baseadapter80.MainActivity80;
 import com.androidpath.listview.baseadapterpack100.MainActivity100;
@@ -56,6 +67,9 @@ import com.androidpath.storge.contentResolverContacts161.MainActivity161;
 import com.androidpath.storge.contentobserver160.MainActivity160;
 import com.androidpath.storge.fileStorgetwo132.MainActivity132;
 import com.androidpath.storge.filestorge131.MainActivity131;
+import com.androidpath.storge.loadimage172.MainActivity172;
+import com.androidpath.storge.loadmanagercontact171.MainActivity171;
+import com.androidpath.storge.loadmanger170.MainActivity170;
 import com.androidpath.storge.sharedproference130.MainActivity130;
 import com.androidpath.storge.sql.simplecusoradapter155.MainActivity155;
 import com.androidpath.storge.sql.sql140.MainActivity140;
@@ -255,6 +269,48 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.contentResolverContacts161:
                 startActivity(new Intent(MainActivity.this, MainActivity161.class));
+                break;
+            case R.id.loadManager170:
+                startActivity(new Intent(MainActivity.this, MainActivity170.class));
+                break;
+            case R.id.loadManagerContact171:
+                startActivity(new Intent(MainActivity.this, MainActivity171.class));
+                break;
+            case R.id.LoadImage172:
+                startActivity(new Intent(MainActivity.this, MainActivity172.class));
+                break;
+            case R.id.HandlerImage180:
+                startActivity(new Intent(MainActivity.this, MainActivity180.class));
+                break;
+            case R.id.HandlerCycleImage181:
+                startActivity(new Intent(MainActivity.this, MainActivity181.class));
+                break;
+            case R.id.HandlerLightCycle182:
+                startActivity(new Intent(MainActivity.this, MainActivity182.class));
+                break;
+            case R.id.HandlerUpdateUI183:
+                startActivity(new Intent(MainActivity.this, MainActivity183.class));
+                break;
+            case R.id.HandlerLooper184:
+                startActivity(new Intent(MainActivity.this, MainActivity184.class));
+                break;
+            case R.id.AcitionBarDemo190:
+                startActivity(new Intent(MainActivity.this, MainActivity190.class));
+                break;
+            case R.id.AcitionBarProvider191:
+                startActivity(new Intent(MainActivity.this, MainActivity191.class));
+                break;
+            case R.id.AcitionBarTab192:
+                startActivity(new Intent(MainActivity.this, MainActivity192.class));
+                break;
+            case R.id.AcitionBarList193:
+                startActivity(new Intent(MainActivity.this, MainActivity193.class));
+                break;
+            case R.id.AcitionBarCustomView194:
+                startActivity(new Intent(MainActivity.this, MainActivity194.class));
+                break;
+            case R.id.Asstes195:
+                startActivity(new Intent(MainActivity.this, MainActivity195.class));
                 break;
             default:
 

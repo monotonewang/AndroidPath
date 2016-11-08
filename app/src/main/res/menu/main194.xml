@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.day19actionviewbar.MainActivity" >
+
+    <item 
+        android:id="@+id/searchView"
+        android:title="搜索"
+        android:icon="@drawable/w6"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="always"/>
+    
+    <item 
+        android:id="@+id/button"
+        android:title="随便"
+        android:icon="@drawable/w6"
+        android:actionViewClass="android.widget.Button"
+        android:showAsAction="always"/>
+
+</menu>

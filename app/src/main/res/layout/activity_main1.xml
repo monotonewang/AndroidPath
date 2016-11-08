@@ -265,46 +265,125 @@
                 android:id="@+id/fileStorge131"
                 style="@style/tvStyle"
                 android:text="@string/filestorge131" />
+
             <TextView
                 android:id="@+id/fileStorgeTwo132"
                 style="@style/tvStyle"
                 android:text="@string/filestorgetwo132" />
+
             <TextView
                 android:id="@+id/sqlDemo140"
                 style="@style/tvStyle"
                 android:text="@string/sqlDemo140" />
+
             <TextView
                 android:id="@+id/sqlClientOne150"
                 style="@style/tvStyle"
                 android:text="@string/sqlclientone150" />
+
             <TextView
                 android:id="@+id/sqlServerOne151"
                 style="@style/tvStyle"
                 android:text="@string/sqlserverone151" />
+
             <TextView
                 android:id="@+id/sqlClientTwo152"
                 style="@style/tvStyle"
                 android:text="@string/sqlclienttwo152" />
+
             <TextView
                 android:id="@+id/sqlServerTwo153"
                 style="@style/tvStyle"
                 android:text="@string/sqlservertwo153" />
+
             <TextView
                 android:id="@+id/sqlDemo154"
                 style="@style/tvStyle"
                 android:text="@string/sqldemo154" />
+
             <TextView
                 android:id="@+id/simpleCursorAdapter155"
                 style="@style/tvStyle"
                 android:text="@string/simpleCursorAdapter155" />
+
             <TextView
                 android:id="@+id/contentObserver160"
                 style="@style/tvStyle"
                 android:text="@string/contentobserverSms160" />
+
             <TextView
                 android:id="@+id/contentResolverContacts161"
                 style="@style/tvStyle"
                 android:text="@string/contentResolverContacts161" />
+
+            <TextView
+                android:id="@+id/loadManager170"
+                style="@style/tvStyle"
+                android:text="@string/loadmanager170" />
+
+            <TextView
+                android:id="@+id/loadManagerContact171"
+                style="@style/tvStyle"
+                android:text="@string/loadmanagercontact171" />
+
+            <TextView
+                android:id="@+id/LoadImage172"
+                style="@style/tvStyle"
+                android:text="@string/loadImage172" />
+
+            <TextView
+                android:id="@+id/HandlerImage180"
+                style="@style/tvStyle"
+                android:text="@string/handlerimage180" />
+
+            <TextView
+                android:id="@+id/HandlerCycleImage181"
+                style="@style/tvStyle"
+                android:text="@string/HandlerCycleImage181" />
+
+            <TextView
+                android:id="@+id/HandlerLightCycle182"
+                style="@style/tvStyle"
+                android:text="@string/HandlerLightCycle182" />
+
+            <TextView
+                android:id="@+id/HandlerUpdateUI183"
+                style="@style/tvStyle"
+                android:text="@string/handlerupdateui183" />
+
+            <TextView
+                android:id="@+id/HandlerLooper184"
+                style="@style/tvStyle"
+                android:text="@string/HandlerLooper184" />
+
+            <TextView
+                android:id="@+id/AcitionBarDemo190"
+                style="@style/tvStyle"
+                android:text="@string/acitionbardemo190" />
+
+            <TextView
+                android:id="@+id/AcitionBarProvider191"
+                style="@style/tvStyle"
+                android:text="@string/acitionbarprovider191" />
+
+            <TextView
+                android:id="@+id/AcitionBarTab192"
+                style="@style/tvStyle"
+                android:text="@string/AcitionBarTab192" />
+
+            <TextView
+                android:id="@+id/AcitionBarList193"
+                style="@style/tvStyle"
+                android:text="@string/acitionbarlist193" />
+
+            <TextView
+                android:id="@+id/AcitionBarCustomView194"
+                style="@style/tvStyle"
+                android:text="@string/acitionbarcustomview194" />
+            <TextView
+                android:id="@+id/Asstes195"
+                style="@style/tvStyle"
+                android:text="@string/asstes195" />
 
         </LinearLayout>
     </ScrollView>

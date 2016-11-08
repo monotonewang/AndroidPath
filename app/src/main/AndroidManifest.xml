@@ -126,7 +126,27 @@
         <activity android:name=".storge.sql.simplecusoradapter155.MainActivity155" />
         <activity android:name=".storge.contentobserver160.MainActivity160" />
         <activity android:name=".storge.contentResolverContacts161.MainActivity161" />
+        <activity android:name=".storge.loadmanger170.MainActivity170" />
+        <!--LoadManager-->
+        <activity android:name=".storge.loadmanagercontact171.MainActivity171" />
+        <activity android:name=".storge.loadmanagercontact171.SearchContactActivity171" />
+        <activity android:name=".storge.loadmanagercontact171.ShowContactActivity171" />
+        <activity android:name=".storge.loadmanagercontact171.ShowCustomProviderActivity171" />
+        <!--handler-->
+        <activity android:name=".handler.handerimage180.MainActivity180" />
+        <activity android:name=".handler.handercycleiamge181.MainActivity181" />
+        <activity android:name=".handler.handlerlightcycle182.MainActivity182" />
+        <activity android:name=".handler.updateui183.MainActivity183" />
+        <activity android:name=".handler.handlerlopper184.MainActivity184" />
 
+        <!--actionbar-->
+        <activity android:name=".container.actionbar190.demo190.MainActivity190" />
+        <activity android:name=".container.actionbar190.demo190.SecondActivity190" />
+        <activity android:name=".container.actionbar190.provider191.MainActivity191" />
+        <activity android:name=".container.actionbar190.tab192.MainActivity192" />
+        <activity android:name=".container.actionbar190.list193.MainActivity193" />
+        <activity android:name=".container.actionbar190.customview.MainActivity194" />
+        <activity android:name=".container.asstes195.MainActivity195" />
     </application>
 
 </manifest>
