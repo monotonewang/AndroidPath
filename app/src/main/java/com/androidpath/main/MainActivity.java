@@ -41,6 +41,7 @@ import com.androidpath.controls.viewtest34.MainActivity34;
 import com.androidpath.fragment.dialogframgment.MainActivity120;
 import com.androidpath.fragment.dynicaddfragment123.MainActivity123;
 import com.androidpath.fragment.fragmentpassvalue122.MainActivity122;
+import com.androidpath.fragment.radiofragment124.MainActivity124;
 import com.androidpath.fragment.staticfragment121.MainActivity121;
 import com.androidpath.listview.adddata81.MainActivity81;
 import com.androidpath.listview.baseadapter80.MainActivity80;
@@ -51,6 +52,7 @@ import com.androidpath.listview.listviewexpandable101.MainActivity101;
 import com.androidpath.listview.listviewjoke90.MainActivity90;
 import com.androidpath.listview.lvemptyview103.SecondActivity103;
 import com.androidpath.listview.simpleadapter82.MainActivity82;
+import com.androidpath.storge.sharedproference130.MainActivity130;
 import com.androidpath.widget.view.HandActivity;
 
 public class MainActivity extends BaseActivity {
@@ -203,6 +205,12 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.DynicAddFragment123:
                 startActivity(new Intent(MainActivity.this, MainActivity123.class));
+                break;
+            case R.id.RadioFragment124:
+                startActivity(new Intent(MainActivity.this, MainActivity124.class));
+                break;
+            case R.id.SharedProference130:
+                startActivity(new Intent(MainActivity.this, MainActivity130.class));
                 break;
             default:
 

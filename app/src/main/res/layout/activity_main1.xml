@@ -248,6 +248,14 @@
                 android:id="@+id/DynicAddFragment123"
                 style="@style/tvStyle"
                 android:text="@string/dynicaddfragment123" />
+            <TextView
+                android:id="@+id/RadioFragment124"
+                style="@style/tvStyle"
+                android:text="@string/radiofragment124" />
+            <TextView
+                android:id="@+id/SharedProference130"
+                style="@style/tvStyle"
+                android:text="@string/sharedproference130" />
 
         </LinearLayout>
     </ScrollView>

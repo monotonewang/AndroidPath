@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#b000"/>
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/msg_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:button="@null"
+            android:drawableTop="@drawable/msg_radio_selector"
+            android:gravity="center"
+            android:text="微信" />
+          <RadioButton
+            android:id="@+id/conu_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:drawableTop="@drawable/comu_radio_selector"
+            android:text="通信录" />
+            <RadioButton
+            android:id="@+id/find_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/find_radio_selector"
+            android:text="发现" />
+             <RadioButton
+            android:id="@+id/me_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/me_radio_selector"
+            android:text="我" />
+    </RadioGroup>
+
+</LinearLayout>

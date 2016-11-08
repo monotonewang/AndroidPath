@@ -52,6 +52,8 @@
     <string name="staticfragment121">StaticFragment121</string>
     <string name="dynicaddfragment123">DynicAddFragment123</string>
     <string name="passvaluefragement122">PassValueFragement122</string>
+    <string name="radiofragment124">RadioFragment124</string>
+    <string name="sharedproference130">SharedProference130</string>
 
     <string-array name="job_array">
         <item>程序员</item>

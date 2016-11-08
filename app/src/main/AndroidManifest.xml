@@ -112,7 +112,9 @@
         <activity android:name=".fragment.staticfragment121.MainActivity121" />
         <activity android:name=".fragment.fragmentpassvalue122.MainActivity122" />
         <activity android:name=".fragment.dynicaddfragment123.MainActivity123" />
-
+        <activity android:name=".fragment.radiofragment124.MainActivity124" />
+        <!--storge-->
+        <activity android:name=".storge.sharedproference130.MainActivity130" />
 
     </application>
 
