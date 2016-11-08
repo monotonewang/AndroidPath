@@ -19,6 +19,8 @@ import com.androidpath.async.progresslow73.MainActivity73;
 import com.androidpath.broadcast.localboradcastOne232.MainActivity232;
 import com.androidpath.broadcast.localboradcastTwo233.MainActivity233;
 import com.androidpath.broadcast.sendbroadcast231.MainActivity231;
+import com.androidpath.broadcast.serverclient234.client.MainActivity235;
+import com.androidpath.broadcast.serverclient234.server.MainActivity234;
 import com.androidpath.broadcast.staticdymic230.MainActivity230;
 import com.androidpath.fragment.dialogframgment.MainActivity120;
 import com.androidpath.fragment.dynicaddfragment123.MainActivity123;
@@ -30,6 +32,11 @@ import com.androidpath.handler.handerimage180.MainActivity180;
 import com.androidpath.handler.handlerlightcycle182.MainActivity182;
 import com.androidpath.handler.handlerlopper184.MainActivity184;
 import com.androidpath.handler.updateui183.MainActivity183;
+import com.androidpath.service.intentservice244.MainActivity244;
+import com.androidpath.service.localbroadservice242.MainActivity242;
+import com.androidpath.service.mediaservice243.MainActivity243;
+import com.androidpath.service.servicedemo241.MainActivity241;
+import com.androidpath.service.stickservice245.MainActivity245;
 import com.androidpath.storge.contentResolverContacts161.MainActivity161;
 import com.androidpath.storge.contentobserver160.MainActivity160;
 import com.androidpath.storge.fileStorgetwo132.MainActivity132;
@@ -45,6 +52,9 @@ import com.androidpath.storge.sql.sqlclienttwo152.MainActivity152;
 import com.androidpath.storge.sql.sqldemo154.MainActivity154;
 import com.androidpath.storge.sql.sqlserverone151.MainActivity151;
 import com.androidpath.storge.sql.sqlservertwo153.MainActivity153;
+import com.androidpath.view.cbk.chabaike211.MainActivity211;
+import com.androidpath.view.cbk.chabaike216.MainActivity216;
+import com.androidpath.view.cbk.chabaike240.MainActivity240;
 import com.androidpath.view.container.actionbar190.customview.MainActivity194;
 import com.androidpath.view.container.actionbar190.demo190.MainActivity190;
 import com.androidpath.view.container.actionbar190.list193.MainActivity193;
@@ -83,8 +93,6 @@ import com.androidpath.view.normal.spinner.spinnerlink52.MainActivity52;
 import com.androidpath.view.normal.spinner.spinnersimpleAdapter44.MainActivity44;
 import com.androidpath.view.normal.viewtest34.MainActivity34;
 import com.androidpath.view.viewpager.actionbar215.MainActivity215;
-import com.androidpath.view.viewpager.chabaike211.MainActivity211;
-import com.androidpath.view.viewpager.chabaike216.MainActivity216;
 import com.androidpath.view.viewpager.circle212.MainActivity212;
 import com.androidpath.view.viewpager.fragment214.MainActivity214;
 import com.androidpath.view.viewpager.tabone220.MainActivity220;
@@ -363,6 +371,30 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.LocalBroadCastTwo233:
                 startActivity(new Intent(MainActivity.this, MainActivity233.class));
+                break;
+            case R.id.BroadCastServer234:
+                startActivity(new Intent(MainActivity.this, MainActivity234.class));
+                break;
+            case R.id.BroadCastClient235:
+                startActivity(new Intent(MainActivity.this, MainActivity235.class));
+                break;
+            case R.id.ChaBaiKe240:
+                startActivity(new Intent(MainActivity.this, MainActivity240.class));
+                break;
+            case R.id.ServiceDemo241:
+                startActivity(new Intent(MainActivity.this, MainActivity241.class));
+                break;
+            case R.id.LocalBroadCastService242:
+                startActivity(new Intent(MainActivity.this, MainActivity242.class));
+                break;
+            case R.id.MeidaService243:
+                startActivity(new Intent(MainActivity.this, MainActivity243.class));
+                break;
+            case R.id.IntentService244:
+                startActivity(new Intent(MainActivity.this, MainActivity244.class));
+                break;
+            case R.id.StickService245:
+                startActivity(new Intent(MainActivity.this, MainActivity245.class));
                 break;
             default:
 

@@ -92,6 +92,14 @@
     <string name="SendBroadCast231">SendBroadCast231</string>
     <string name="localbroadcastone232">LocalBroadCastOne232</string>
     <string name="LocalBroadCastTwo233">LocalBroadCastTwo233</string>
+    <string name="BroadCastServer234">BroadCastServer234</string>
+    <string name="BroadCastClient235">BroadCastClient235</string>
+    <string name="ChaBaiKe240">ChaBaiKe240</string>
+    <string name="servicedemo241">ServiceDemo241</string>
+    <string name="LocalBroadCastService242">LocalBroadCastService242</string>
+    <string name="MeidaService243">MeidaService243</string>
+    <string name="intentservice244">IntentService244</string>
+    <string name="StickService245">StickService245</string>
 
     <string-array name="job_array">
         <item>程序员</item>

@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name=".main.ApplicationMain"
@@ -149,28 +150,53 @@
         <activity android:name=".view.container.asstes195.MainActivity195" />
         <!--viewpager-->
         <activity android:name=".view.viewpager.textview210.MainActivity210" />
-        <activity android:name=".view.viewpager.chabaike211.MainActivity211" />
+        <activity android:name=".view.cbk.chabaike211.MainActivity211" />
         <activity android:name=".view.viewpager.circle212.MainActivity212" />
         <activity android:name=".view.viewpager.fragment214.MainActivity214" />
         <activity android:name=".view.viewpager.actionbar215.MainActivity215" />
         <activity android:name=".view.viewpager.tabone220.MainActivity220" />
         <activity android:name=".view.viewpager.tabtwo221.MainActivity221" />
-        <activity android:name=".view.viewpager.chabaike216.MainActivity216" />
+        <activity android:name=".view.cbk.chabaike216.MainActivity216" />
+        <activity android:name=".view.cbk.chabaike240.MainActivity240" />
         <!--webview-->
         <activity android:name=".view.webview213.MainActivity213" />
         <!--broadcastreceiver-->
-        <activity android:name=".broadcast.staticdymic230.MainActivity230"/>
-        <!-- 静态注册广播 -->
+        <activity android:name=".broadcast.staticdymic230.MainActivity230" />
+        <!-- static注册广播 -->
         <receiver android:name="com.androidpath.broadcast.staticdymic230.MyReceiver2">
             <intent-filter>
-                <action android:name="Intent.ACTION_BOOT_COMPLETED"/>
-                <action android:name="android.action.intent.myself"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="Intent.ACTION_BOOT_COMPLETED" />
+                <action android:name="android.action.intent.myself" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-        <activity android:name=".broadcast.sendbroadcast231.MainActivity231"/>
-        <activity android:name=".broadcast.localboradcastOne232.MainActivity232"/>
-        <activity android:name=".broadcast.localboradcastTwo233.MainActivity233"/>
+
+        <activity android:name=".broadcast.sendbroadcast231.MainActivity231" />
+        <activity android:name=".broadcast.localboradcastOne232.MainActivity232" />
+        <activity android:name=".broadcast.localboradcastTwo233.MainActivity233" />
+        <activity android:name=".broadcast.serverclient234.server.MainActivity234" />
+        <activity android:name=".broadcast.serverclient234.client.MainActivity235" />
+
+        <receiver
+            android:name="com.androidpath.broadcast.serverclient234.server.MyReceiverPermssion"
+            android:permission="android.action.permission.mypermiss2">
+            <intent-filter>
+                <action android:name="android.action.intent.abcd" />
+            </intent-filter>
+        </receiver>
+        <!--service-->
+        <activity android:name=".service.servicedemo241.MainActivity241" />
+        <service android:name="com.androidpath.service.servicedemo241.MyService" />
+        <activity android:name=".service.localbroadservice242.MainActivity242" />
+
+        <service android:name="com.androidpath.service.localbroadservice242.TimerSerivce" />
+        <activity android:name=".service.mediaservice243.MainActivity243" />
+        <service android:name=".service.mediaservice243.service.MediaService" />
+        <activity android:name=".service.intentservice244.MainActivity244" />
+        <service android:name=".service.intentservice244.DownLoadService" />
+        <activity android:name=".service.stickservice245.MainActivity245" />
+        <service android:name=".service.stickservice245.StickService" />
     </application>
 
 </manifest>

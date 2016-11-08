@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.androidpath.view.cbk.chabaike216.custem.CacheImageView
+        <com.androidpath.view.cbk.chabaike240.custem.CacheImageView
             android:id="@+id/iv_pic1"
             android:layout_width="0dp"
             android:layout_height="80dp"
@@ -28,7 +28,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/list_default_image" />
 
-        <com.androidpath.view.cbk.chabaike216.custem.CacheImageView
+        <com.androidpath.view.cbk.chabaike240.custem.CacheImageView
             android:id="@+id/iv_pic2"
             android:layout_width="0dp"
             android:layout_height="80dp"
@@ -37,7 +37,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/list_default_image" />
 
-        <com.androidpath.view.cbk.chabaike216.custem.CacheImageView
+        <com.androidpath.view.cbk.chabaike240.custem.CacheImageView
             android:id="@+id/iv_pic3"
             android:layout_width="0dp"
             android:layout_height="80dp"

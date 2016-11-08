@@ -4,8 +4,8 @@
     android:layout_height="match_parent"
     android:padding="5dp"
     android:orientation="vertical" >
-
-    <com.androidpath.view.cbk.chabaike216.custem.CacheImageView
+    
+    <com.androidpath.view.cbk.chabaike240.custem.CacheImageView
         android:id="@+id/iv_pic"
         android:layout_width="100dp"
         android:layout_height="80dp"

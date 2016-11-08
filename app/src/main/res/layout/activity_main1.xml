@@ -451,6 +451,46 @@
                 style="@style/tvStyle"
                 android:text="@string/LocalBroadCastTwo233" />
 
+            <TextView
+                android:id="@+id/BroadCastServer234"
+                style="@style/tvStyle"
+                android:text="@string/BroadCastServer234" />
+
+            <TextView
+                android:id="@+id/BroadCastClient235"
+                style="@style/tvStyle"
+                android:text="@string/BroadCastClient235" />
+
+            <TextView
+                android:id="@+id/ChaBaiKe240"
+                style="@style/tvStyle"
+                android:text="@string/ChaBaiKe240" />
+
+            <TextView
+                android:id="@+id/ServiceDemo241"
+                style="@style/tvStyle"
+                android:text="@string/servicedemo241" />
+
+            <TextView
+                android:id="@+id/LocalBroadCastService242"
+                style="@style/tvStyle"
+                android:text="@string/LocalBroadCastService242" />
+
+            <TextView
+                android:id="@+id/MeidaService243"
+                style="@style/tvStyle"
+                android:text="@string/MeidaService243" />
+
+            <TextView
+                android:id="@+id/IntentService244"
+                style="@style/tvStyle"
+                android:text="@string/intentservice244" />
+
+            <TextView
+                android:id="@+id/StickService245"
+                style="@style/tvStyle"
+                android:text="@string/StickService245" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
