@@ -158,8 +158,19 @@
         <activity android:name=".view.viewpager.chabaike216.MainActivity216" />
         <!--webview-->
         <activity android:name=".view.webview213.MainActivity213" />
-
-
+        <!--broadcastreceiver-->
+        <activity android:name=".broadcast.staticdymic230.MainActivity230"/>
+        <!-- 静态注册广播 -->
+        <receiver android:name="com.androidpath.broadcast.staticdymic230.MyReceiver2">
+            <intent-filter>
+                <action android:name="Intent.ACTION_BOOT_COMPLETED"/>
+                <action android:name="android.action.intent.myself"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name=".broadcast.sendbroadcast231.MainActivity231"/>
+        <activity android:name=".broadcast.localboradcastOne232.MainActivity232"/>
+        <activity android:name=".broadcast.localboradcastTwo233.MainActivity233"/>
     </application>
 
 </manifest>

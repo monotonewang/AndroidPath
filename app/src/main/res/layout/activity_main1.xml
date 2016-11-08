@@ -415,6 +415,7 @@
                 android:id="@+id/ActionBarViewPager215"
                 style="@style/tvStyle"
                 android:text="@string/actionbarviewpager215" />
+
             <TextView
                 android:id="@+id/ChaBaiKe216"
                 style="@style/tvStyle"
@@ -429,6 +430,27 @@
                 android:id="@+id/TabViewPagerTwo221"
                 style="@style/tvStyle"
                 android:text="@string/TabViewPagerTwo221" />
+
+            <TextView
+                android:id="@+id/BroadCastReceiver230"
+                style="@style/tvStyle"
+                android:text="@string/BroadCastReceiver230" />
+
+            <TextView
+                android:id="@+id/SendBroadCast231"
+                style="@style/tvStyle"
+                android:text="@string/SendBroadCast231" />
+
+            <TextView
+                android:id="@+id/LocalBroadCastOne232"
+                style="@style/tvStyle"
+                android:text="@string/localbroadcastone232" />
+
+            <TextView
+                android:id="@+id/LocalBroadCastTwo233"
+                style="@style/tvStyle"
+                android:text="@string/LocalBroadCastTwo233" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

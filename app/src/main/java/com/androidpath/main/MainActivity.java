@@ -16,6 +16,10 @@ import com.androidpath.async.demoone70.MainActivity70;
 import com.androidpath.async.demotwo71.MainActivity71;
 import com.androidpath.async.getimagestrong72.MainActivity72;
 import com.androidpath.async.progresslow73.MainActivity73;
+import com.androidpath.broadcast.localboradcastOne232.MainActivity232;
+import com.androidpath.broadcast.localboradcastTwo233.MainActivity233;
+import com.androidpath.broadcast.sendbroadcast231.MainActivity231;
+import com.androidpath.broadcast.staticdymic230.MainActivity230;
 import com.androidpath.fragment.dialogframgment.MainActivity120;
 import com.androidpath.fragment.dynicaddfragment123.MainActivity123;
 import com.androidpath.fragment.fragmentpassvalue122.MainActivity122;
@@ -348,7 +352,18 @@ public class MainActivity extends BaseActivity {
             case R.id.TabViewPagerTwo221:
                 startActivity(new Intent(MainActivity.this, MainActivity221.class));
                 break;
-
+            case R.id.BroadCastReceiver230:
+                startActivity(new Intent(MainActivity.this, MainActivity230.class));
+                break;
+            case R.id.SendBroadCast231:
+                startActivity(new Intent(MainActivity.this, MainActivity231.class));
+                break;
+            case R.id.LocalBroadCastOne232:
+                startActivity(new Intent(MainActivity.this, MainActivity232.class));
+                break;
+            case R.id.LocalBroadCastTwo233:
+                startActivity(new Intent(MainActivity.this, MainActivity233.class));
+                break;
             default:
 
                 break;
