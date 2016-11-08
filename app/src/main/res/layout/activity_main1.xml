@@ -240,22 +240,71 @@
                 android:id="@+id/StaticFragment121"
                 style="@style/tvStyle"
                 android:text="@string/staticfragment121" />
+
             <TextView
                 android:id="@+id/PassValueFragement122"
                 style="@style/tvStyle"
                 android:text="@string/passvaluefragement122" />
+
             <TextView
                 android:id="@+id/DynicAddFragment123"
                 style="@style/tvStyle"
                 android:text="@string/dynicaddfragment123" />
+
             <TextView
                 android:id="@+id/RadioFragment124"
                 style="@style/tvStyle"
                 android:text="@string/radiofragment124" />
+
             <TextView
                 android:id="@+id/SharedProference130"
                 style="@style/tvStyle"
                 android:text="@string/sharedproference130" />
+
+            <TextView
+                android:id="@+id/fileStorge131"
+                style="@style/tvStyle"
+                android:text="@string/filestorge131" />
+            <TextView
+                android:id="@+id/fileStorgeTwo132"
+                style="@style/tvStyle"
+                android:text="@string/filestorgetwo132" />
+            <TextView
+                android:id="@+id/sqlDemo140"
+                style="@style/tvStyle"
+                android:text="@string/sqlDemo140" />
+            <TextView
+                android:id="@+id/sqlClientOne150"
+                style="@style/tvStyle"
+                android:text="@string/sqlclientone150" />
+            <TextView
+                android:id="@+id/sqlServerOne151"
+                style="@style/tvStyle"
+                android:text="@string/sqlserverone151" />
+            <TextView
+                android:id="@+id/sqlClientTwo152"
+                style="@style/tvStyle"
+                android:text="@string/sqlclienttwo152" />
+            <TextView
+                android:id="@+id/sqlServerTwo153"
+                style="@style/tvStyle"
+                android:text="@string/sqlservertwo153" />
+            <TextView
+                android:id="@+id/sqlDemo154"
+                style="@style/tvStyle"
+                android:text="@string/sqldemo154" />
+            <TextView
+                android:id="@+id/simpleCursorAdapter155"
+                style="@style/tvStyle"
+                android:text="@string/simpleCursorAdapter155" />
+            <TextView
+                android:id="@+id/contentObserver160"
+                style="@style/tvStyle"
+                android:text="@string/contentobserverSms160" />
+            <TextView
+                android:id="@+id/contentResolverContacts161"
+                style="@style/tvStyle"
+                android:text="@string/contentResolverContacts161" />
 
         </LinearLayout>
     </ScrollView>

@@ -52,7 +52,18 @@ import com.androidpath.listview.listviewexpandable101.MainActivity101;
 import com.androidpath.listview.listviewjoke90.MainActivity90;
 import com.androidpath.listview.lvemptyview103.SecondActivity103;
 import com.androidpath.listview.simpleadapter82.MainActivity82;
+import com.androidpath.storge.contentResolverContacts161.MainActivity161;
+import com.androidpath.storge.contentobserver160.MainActivity160;
+import com.androidpath.storge.fileStorgetwo132.MainActivity132;
+import com.androidpath.storge.filestorge131.MainActivity131;
 import com.androidpath.storge.sharedproference130.MainActivity130;
+import com.androidpath.storge.sql.simplecusoradapter155.MainActivity155;
+import com.androidpath.storge.sql.sql140.MainActivity140;
+import com.androidpath.storge.sql.sqlclientone150.MainActivity150;
+import com.androidpath.storge.sql.sqlclienttwo152.MainActivity152;
+import com.androidpath.storge.sql.sqldemo154.MainActivity154;
+import com.androidpath.storge.sql.sqlserverone151.MainActivity151;
+import com.androidpath.storge.sql.sqlservertwo153.MainActivity153;
 import com.androidpath.widget.view.HandActivity;
 
 public class MainActivity extends BaseActivity {
@@ -211,6 +222,39 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.SharedProference130:
                 startActivity(new Intent(MainActivity.this, MainActivity130.class));
+                break;
+            case R.id.fileStorge131:
+                startActivity(new Intent(MainActivity.this, MainActivity131.class));
+                break;
+            case R.id.fileStorgeTwo132:
+                startActivity(new Intent(MainActivity.this, MainActivity132.class));
+                break;
+            case R.id.sqlDemo140:
+                startActivity(new Intent(MainActivity.this, MainActivity140.class));
+                break;
+            case R.id.sqlClientOne150:
+                startActivity(new Intent(MainActivity.this, MainActivity150.class));
+                break;
+            case R.id.sqlServerOne151:
+                startActivity(new Intent(MainActivity.this, MainActivity151.class));
+                break;
+            case R.id.sqlClientTwo152:
+                startActivity(new Intent(MainActivity.this, MainActivity152.class));
+                break;
+            case R.id.sqlServerTwo153:
+                startActivity(new Intent(MainActivity.this, MainActivity153.class));
+                break;
+            case R.id.sqlDemo154:
+                startActivity(new Intent(MainActivity.this, MainActivity154.class));
+                break;
+            case R.id.simpleCursorAdapter155:
+                startActivity(new Intent(MainActivity.this, MainActivity155.class));
+                break;
+            case R.id.contentObserver160:
+                startActivity(new Intent(MainActivity.this, MainActivity160.class));
+                break;
+            case R.id.contentResolverContacts161:
+                startActivity(new Intent(MainActivity.this, MainActivity161.class));
                 break;
             default:
 

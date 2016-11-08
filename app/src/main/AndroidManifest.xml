@@ -115,6 +115,17 @@
         <activity android:name=".fragment.radiofragment124.MainActivity124" />
         <!--storge-->
         <activity android:name=".storge.sharedproference130.MainActivity130" />
+        <activity android:name=".storge.filestorge131.MainActivity131" />
+        <activity android:name=".storge.fileStorgetwo132.MainActivity132" />
+        <activity android:name=".storge.sql.sql140.MainActivity140" />
+        <activity android:name=".storge.sql.sqlclientone150.MainActivity150" />
+        <activity android:name=".storge.sql.sqlserverone151.MainActivity151" />
+        <activity android:name=".storge.sql.sqlclienttwo152.MainActivity152" />
+        <activity android:name=".storge.sql.sqlservertwo153.MainActivity153" />
+        <activity android:name=".storge.sql.sqldemo154.MainActivity154" />
+        <activity android:name=".storge.sql.simplecusoradapter155.MainActivity155" />
+        <activity android:name=".storge.contentobserver160.MainActivity160" />
+        <activity android:name=".storge.contentResolverContacts161.MainActivity161" />
 
     </application>
 

@@ -42,7 +42,6 @@
     <string name="aleatdialog110">AleatDialog110</string>
     <string name="contextmenu111">ContextMenu111</string>
     <string name="notification112">Notification112</string>
-    <string name="help">帮助</string>
     <string name="optionmenu113">OptionMenu113</string>
     <string name="popupmenu114">PopupMenu114</string>
     <string name="submenu115">SubMenu115</string>
@@ -54,6 +53,18 @@
     <string name="passvaluefragement122">PassValueFragement122</string>
     <string name="radiofragment124">RadioFragment124</string>
     <string name="sharedproference130">SharedProference130</string>
+    <string name="filestorge131">fileStorge131</string>
+    <string name="filestorgetwo132">fileStorgeTwo132</string>
+    <string name="sqlDemo140">sqlDemo140</string>
+    <string name="sqlclientone150">sqlClientOne150</string>
+    <string name="sqlserver151">sqlServer151</string>
+    <string name="sqlserverone151">sqlServerOne151</string>
+    <string name="sqlclienttwo152">sqlClientTwo152</string>
+    <string name="sqlservertwo153">sqlServerTwo153</string>
+    <string name="sqldemo154">sqlDemo154</string>
+    <string name="simpleCursorAdapter155">simpleCursorAdapter155</string>
+    <string name="contentobserverSms160">contentobserverSms160</string>
+    <string name="contentResolverContacts161">contentResolverContacts161</string>
 
     <string-array name="job_array">
         <item>程序员</item>
