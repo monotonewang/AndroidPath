@@ -491,6 +491,11 @@
                 style="@style/tvStyle"
                 android:text="@string/StickService245" />
 
+            <TextView
+                android:id="@+id/MeidaService246"
+                style="@style/tvStyle"
+                android:text="@string/MeidaService246" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

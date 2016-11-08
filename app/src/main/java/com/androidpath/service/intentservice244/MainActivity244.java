@@ -64,7 +64,7 @@ public class MainActivity244 extends Activity {
 	
 	public void start(View v){
 		for(int i = 0; i < url.length; i++){
-			Intent intent = new Intent(this, DownLoadService.class);
+			Intent intent = new Intent(this, DownLoadService244.class);
 			intent.putExtra("path", url[i]);
 			startService(intent);
 		}

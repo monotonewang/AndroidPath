@@ -13,6 +13,6 @@ public class MainActivity245 extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main245);
 		
-		startService(new Intent(this, StickService.class));
+		startService(new Intent(this, StickService245.class));
 	}
 }
