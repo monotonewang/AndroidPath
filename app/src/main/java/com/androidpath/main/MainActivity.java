@@ -80,7 +80,7 @@ import com.androidpath.view.normal.spinner.spinnersimpleAdapter44.MainActivity44
 import com.androidpath.view.normal.viewtest34.MainActivity34;
 import com.androidpath.view.viewpager.actionbar215.MainActivity215;
 import com.androidpath.view.viewpager.chabaike211.MainActivity211;
-import com.androidpath.view.viewpager.cicle212.MainActivity212;
+import com.androidpath.view.viewpager.circle212.MainActivity212;
 import com.androidpath.view.viewpager.fragment214.MainActivity214;
 import com.androidpath.view.viewpager.tabone220.MainActivity220;
 import com.androidpath.view.viewpager.tabtwo221.MainActivity221;

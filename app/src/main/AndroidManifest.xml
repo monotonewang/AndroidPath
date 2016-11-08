@@ -150,7 +150,7 @@
         <!--viewpager-->
         <activity android:name=".view.viewpager.textview210.MainActivity210" />
         <activity android:name=".view.viewpager.chabaike211.MainActivity211" />
-        <activity android:name=".view.viewpager.cicle212.MainActivity212" />
+        <activity android:name=".view.viewpager.circle212.MainActivity212" />
         <activity android:name=".view.viewpager.fragment214.MainActivity214" />
         <activity android:name=".view.viewpager.actionbar215.MainActivity215" />
         <activity android:name=".view.viewpager.tabone220.MainActivity220" />

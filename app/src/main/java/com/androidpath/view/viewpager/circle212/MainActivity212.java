@@ -1,4 +1,4 @@
-package com.androidpath.view.viewpager.cicle212;
+package com.androidpath.view.viewpager.circle212;
 
 import android.app.Activity;
 import android.os.Bundle;
