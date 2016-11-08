@@ -415,6 +415,10 @@
                 android:id="@+id/ActionBarViewPager215"
                 style="@style/tvStyle"
                 android:text="@string/actionbarviewpager215" />
+            <TextView
+                android:id="@+id/ChaBaiKe216"
+                style="@style/tvStyle"
+                android:text="@string/chabaike216" />
 
             <TextView
                 android:id="@+id/TabViewPager220"

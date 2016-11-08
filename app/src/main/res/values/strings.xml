@@ -87,6 +87,7 @@
     <string name="actionbarviewpager215">ActionBarViewPager215</string>
     <string name="tabviewpager220">TabViewPager220</string>
     <string name="TabViewPagerTwo221">TabViewPagerTwo221</string>
+    <string name="chabaike216">ChaBaiKe216</string>
 
     <string-array name="job_array">
         <item>程序员</item>

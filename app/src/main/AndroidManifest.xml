@@ -155,6 +155,7 @@
         <activity android:name=".view.viewpager.actionbar215.MainActivity215" />
         <activity android:name=".view.viewpager.tabone220.MainActivity220" />
         <activity android:name=".view.viewpager.tabtwo221.MainActivity221" />
+        <activity android:name=".view.viewpager.chabaike216.MainActivity216" />
         <!--webview-->
         <activity android:name=".view.webview213.MainActivity213" />
 

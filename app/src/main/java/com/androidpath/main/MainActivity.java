@@ -80,6 +80,7 @@ import com.androidpath.view.normal.spinner.spinnersimpleAdapter44.MainActivity44
 import com.androidpath.view.normal.viewtest34.MainActivity34;
 import com.androidpath.view.viewpager.actionbar215.MainActivity215;
 import com.androidpath.view.viewpager.chabaike211.MainActivity211;
+import com.androidpath.view.viewpager.chabaike216.MainActivity216;
 import com.androidpath.view.viewpager.circle212.MainActivity212;
 import com.androidpath.view.viewpager.fragment214.MainActivity214;
 import com.androidpath.view.viewpager.tabone220.MainActivity220;
@@ -338,12 +339,16 @@ public class MainActivity extends BaseActivity {
             case R.id.ActionBarViewPager215:
                 startActivity(new Intent(MainActivity.this, MainActivity215.class));
                 break;
+            case R.id.ChaBaiKe216:
+                startActivity(new Intent(MainActivity.this, MainActivity216.class));
+                break;
             case R.id.TabViewPager220:
                 startActivity(new Intent(MainActivity.this, MainActivity220.class));
                 break;
             case R.id.TabViewPagerTwo221:
                 startActivity(new Intent(MainActivity.this, MainActivity221.class));
                 break;
+
             default:
 
                 break;
