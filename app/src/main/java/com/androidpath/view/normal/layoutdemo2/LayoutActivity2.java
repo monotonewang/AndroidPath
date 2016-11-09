@@ -22,8 +22,7 @@ public class LayoutActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layoutdemo2);
-        fragmentManager = getFragmentManager()
-        ;
+        fragmentManager = getFragmentManager();
 //        layout2Fragment = new Layout2Fragment();
         layout2Fragment = Layout2Fragment.getInstance(R.layout.linear_layout2, 0);
         transaction = fragmentManager.beginTransaction();

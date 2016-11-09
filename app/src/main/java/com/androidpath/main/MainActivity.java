@@ -53,6 +53,7 @@ import com.androidpath.storge.sql.sqlclienttwo152.MainActivity152;
 import com.androidpath.storge.sql.sqldemo154.MainActivity154;
 import com.androidpath.storge.sql.sqlserverone151.MainActivity151;
 import com.androidpath.storge.sql.sqlservertwo153.MainActivity153;
+import com.androidpath.util.language.LanguageActivity;
 import com.androidpath.view.cbk.chabaike211.MainActivity211;
 import com.androidpath.view.cbk.chabaike216.MainActivity216;
 import com.androidpath.view.cbk.chabaike240.MainActivity240;
@@ -109,13 +110,24 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main1);
+
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
 
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.layoutdemo2:
                 startActivity(new Intent(MainActivity.this, LayoutActivity2.class));
                 break;
+            case R.id.languageSettings:
+                startActivity(new Intent(MainActivity.this, LanguageActivity.class));
+                break;
+
             case R.id.buttonselectordemo3:
                 startActivity(new Intent(MainActivity.this, ButtonSelectorActivtiy3.class));
                 break;

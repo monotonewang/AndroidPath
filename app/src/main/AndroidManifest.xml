@@ -14,6 +14,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".main.WelcomeActivity" />
         <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +24,7 @@
         </activity>
         <!--this is layout activity-->
         <activity android:name=".view.normal.layoutdemo2.LayoutActivity2" />
+        <activity android:name=".util.language.LanguageActivity" />
         <!--this is buttonselector activity-->
         <activity android:name=".view.normal.buttonselector30.ButtonSelectorActivtiy3" />
         <!--this is buttontest and buttonclick activity-->

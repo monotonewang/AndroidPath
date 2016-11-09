@@ -16,10 +16,22 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/layoutdemo2"
-                style="@style/tvStyle"
-                android:text="@string/layoutdemo2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/layoutdemo2"
+                    style="@style/tvStyle"
+                    android:text="@string/layoutdemo2" />
+
+                <TextView
+                    android:id="@+id/languageSettings"
+                    style="@style/tvStyle"
+                    android:text="@string/languagesettings" />
+            </LinearLayout>
+
 
             <TextView
                 android:id="@+id/buttonselectordemo3"
