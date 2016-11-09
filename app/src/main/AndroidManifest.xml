@@ -202,6 +202,8 @@
 
         <activity android:name=".service.mediaservice246.MainActivity246" />
         <service android:name=".service.mediaservice246.service.MediaService246" />
+        <!--SurfaceView-->
+        <activity android:name=".view.custom.surfaceview.SurfaceViewMainActivity" />
     </application>
 
 </manifest>

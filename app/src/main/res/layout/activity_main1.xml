@@ -496,6 +496,12 @@
                 android:id="@+id/IntentService248"
                 style="@style/tvStyle"
                 android:text="@string/IntentService248" />
+
+            <TextView
+                android:id="@+id/SurfaceViewBird"
+                style="@style/tvStyle"
+                android:text="@string/surfaceviewbird" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

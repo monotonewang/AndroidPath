@@ -70,6 +70,7 @@ import com.androidpath.view.container.optionmenu113.MainActivity113;
 import com.androidpath.view.container.popupmenu114.MainActivity114;
 import com.androidpath.view.container.subMenu115.MainActivity115;
 import com.androidpath.view.container.toastdemo116.MainActivity116;
+import com.androidpath.view.custom.surfaceview.SurfaceViewMainActivity;
 import com.androidpath.view.listview.adddata81.MainActivity81;
 import com.androidpath.view.listview.baseadapter80.MainActivity80;
 import com.androidpath.view.listview.baseadapterpack100.MainActivity100;
@@ -399,6 +400,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.IntentService248:
                 startActivity(new Intent(MainActivity.this, MainActivity248.class));
+                break;
+            case R.id.SurfaceViewBird:
+                startActivity(new Intent(MainActivity.this, SurfaceViewMainActivity.class));
                 break;
             default:
 
