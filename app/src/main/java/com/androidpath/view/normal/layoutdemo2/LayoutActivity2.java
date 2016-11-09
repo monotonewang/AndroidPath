@@ -1,5 +1,6 @@
 package com.androidpath.view.normal.layoutdemo2;
 
+import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -49,6 +50,7 @@ public class LayoutActivity2 extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @SuppressLint("CommitTransaction")
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.layoutdemo2LinearLayout:
