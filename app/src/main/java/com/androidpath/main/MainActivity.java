@@ -1,7 +1,9 @@
 package com.androidpath.main;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 
 import com.androidpath.R;
@@ -106,6 +108,8 @@ import com.androidpath.widget.view.HandActivity;
 
 public class MainActivity extends BaseActivity {
 
+    private AlertDialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,6 +122,27 @@ public class MainActivity extends BaseActivity {
         super.onStart();
     }
 
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("exit");
+        builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        builder.setNegativeButton("no", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                if (dialog != null) {
+                    dialog.dismiss();
+                }
+            }
+        });
+        dialog = builder.show();
+    }
 
     public void onClick(View view) {
         switch (view.getId()) {
