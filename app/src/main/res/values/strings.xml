@@ -101,6 +101,8 @@
     <string name="intentservice244">IntentService244</string>
     <string name="StickService245">StickService245</string>
     <string name="MeidaService246">MeidaService246</string>
+    <string name="IntentService248">IntentService248</string>
+    <string name="stickservice247">StickService247</string>
 
     <string-array name="job_array">
         <item>程序员</item>

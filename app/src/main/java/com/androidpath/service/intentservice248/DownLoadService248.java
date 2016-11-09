@@ -1,4 +1,4 @@
-package com.androidpath.service.intentservice244;
+package com.androidpath.service.intentservice248;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -25,12 +25,12 @@ import java.net.URL;
  * @author Ken
  *
  */
-public class DownLoadService244 extends IntentService {
+public class DownLoadService248 extends IntentService {
 
 	private LocalBroadcastManager localBroadcastManager;
 	
-	public DownLoadService244() {
-		super("DownLoadService244");//该参数，表示给子线程定义一个名称
+	public DownLoadService248() {
+		super("DownLoadService248");//该参数，表示给子线程定义一个名称
 	}
 	
 	@Override

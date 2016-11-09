@@ -1,4 +1,4 @@
-package com.androidpath.service.stickservice245;
+package com.androidpath.service.stickservice247;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
@@ -8,7 +8,7 @@ import android.os.IBinder;
 
 import java.util.List;
 
-public class StickService245 extends Service {
+public class StickService247 extends Service {
 
     private ActivityManager activityManager;
 
@@ -57,15 +57,15 @@ public class StickService245 extends Service {
                 for (RunningServiceInfo runServiceInfo : runServiceInfoList) {
                     //判断这些正在运行的服务中，有没有和当前Service同名的服务
                     if (runServiceInfo.service.getClassName().equals(
-                            StickService245.class.getName())) {
+                            StickService247.class.getName())) {
                         flag = true;
                         break;
                     }
                 }
                 if (!flag) {
                     //如果没有 则重启
-                    startService(new Intent(StickService245.this,
-                            StickService245.class));
+                    startService(new Intent(StickService247.this,
+                            StickService247.class));
                     break;
                 }
 

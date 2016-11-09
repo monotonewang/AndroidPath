@@ -481,21 +481,21 @@
                 style="@style/tvStyle"
                 android:text="@string/MeidaService243" />
 
-            <TextView
-                android:id="@+id/IntentService244"
-                style="@style/tvStyle"
-                android:text="@string/intentservice244" />
-
-            <TextView
-                android:id="@+id/StickService245"
-                style="@style/tvStyle"
-                android:text="@string/StickService245" />
 
             <TextView
                 android:id="@+id/MeidaService246"
                 style="@style/tvStyle"
                 android:text="@string/MeidaService246" />
 
+            <TextView
+                android:id="@+id/StickService247"
+                style="@style/tvStyle"
+                android:text="@string/stickservice247" />
+
+            <TextView
+                android:id="@+id/IntentService248"
+                style="@style/tvStyle"
+                android:text="@string/IntentService248" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

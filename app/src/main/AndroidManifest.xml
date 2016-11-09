@@ -194,11 +194,11 @@
         <activity android:name=".service.mediaservice.mediaservice243.MainActivity243" />
         <service android:name=".service.mediaservice.mediaservice243.MediaService243" />
 
-        <activity android:name=".service.intentservice244.MainActivity244" />
-        <service android:name=".service.intentservice244.DownLoadService244" />
+        <activity android:name=".service.intentservice248.MainActivity248" />
+        <service android:name=".service.intentservice248.DownLoadService248" />
 
-        <activity android:name=".service.stickservice245.MainActivity245" />
-        <service android:name=".service.stickservice245.StickService245" />
+        <activity android:name=".service.stickservice247.MainActivity247" />
+        <service android:name=".service.stickservice247.StickService247" />
 
         <activity android:name=".service.mediaservice246.MainActivity246" />
         <service android:name=".service.mediaservice246.service.MediaService246" />

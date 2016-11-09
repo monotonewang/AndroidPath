@@ -1,4 +1,4 @@
-package com.androidpath.service.intentservice244;
+package com.androidpath.service.intentservice248;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -13,7 +13,7 @@ import android.widget.ImageView;
 
 import com.androidpath.R;
 
-public class MainActivity244 extends Activity {
+public class MainActivity248 extends Activity {
 
 	private String[] url = {
 			"http://litchiapi.jstv.com/Attachs/Map/7985/9db00649770a4537bf52d334d5e8e2af_cover_padmini.JPG",
@@ -28,7 +28,7 @@ public class MainActivity244 extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main244);
+		setContentView(R.layout.activity_main248);
 		
 		localBroadcastManager = LocalBroadcastManager.getInstance(this);
 		myReceiver = new MyReceiver();
@@ -64,7 +64,7 @@ public class MainActivity244 extends Activity {
 	
 	public void start(View v){
 		for(int i = 0; i < url.length; i++){
-			Intent intent = new Intent(this, DownLoadService244.class);
+			Intent intent = new Intent(this, DownLoadService248.class);
 			intent.putExtra("path", url[i]);
 			startService(intent);
 		}

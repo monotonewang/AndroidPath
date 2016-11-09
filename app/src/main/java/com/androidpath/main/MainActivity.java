@@ -32,12 +32,12 @@ import com.androidpath.handler.handerimage180.MainActivity180;
 import com.androidpath.handler.handlerlightcycle182.MainActivity182;
 import com.androidpath.handler.handlerlopper184.MainActivity184;
 import com.androidpath.handler.updateui183.MainActivity183;
-import com.androidpath.service.intentservice244.MainActivity244;
+import com.androidpath.service.intentservice248.MainActivity248;
 import com.androidpath.service.localbroadservice242.MainActivity242;
 import com.androidpath.service.mediaservice.mediaservice243.MainActivity243;
 import com.androidpath.service.mediaservice246.MainActivity246;
 import com.androidpath.service.servicedemo241.MainActivity241;
-import com.androidpath.service.stickservice245.MainActivity245;
+import com.androidpath.service.stickservice247.MainActivity247;
 import com.androidpath.storge.contentResolverContacts161.MainActivity161;
 import com.androidpath.storge.contentobserver160.MainActivity160;
 import com.androidpath.storge.fileStorgetwo132.MainActivity132;
@@ -391,14 +391,14 @@ public class MainActivity extends BaseActivity {
             case R.id.MeidaService243:
                 startActivity(new Intent(MainActivity.this, MainActivity243.class));
                 break;
-            case R.id.IntentService244:
-                startActivity(new Intent(MainActivity.this,MainActivity244.class));
-                break;
-            case R.id.StickService245:
-                startActivity(new Intent(MainActivity.this, MainActivity245.class));
-                break;
             case R.id.MeidaService246:
                 startActivity(new Intent(MainActivity.this, MainActivity246.class));
+                break;
+            case R.id.StickService247:
+                startActivity(new Intent(MainActivity.this, MainActivity247.class));
+                break;
+            case R.id.IntentService248:
+                startActivity(new Intent(MainActivity.this, MainActivity248.class));
                 break;
             default:
 
