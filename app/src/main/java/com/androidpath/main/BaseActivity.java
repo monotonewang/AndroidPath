@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 
 import com.androidpath.util.ConfigUtils;
+import com.androidpath.util.ConstantUtils;
 
 import java.util.Locale;
 
@@ -32,14 +33,11 @@ public class BaseActivity extends AppCompatActivity {
         Resources rs = getResources();
         Configuration configuration = rs.getConfiguration();
         DisplayMetrics dm = rs.getDisplayMetrics();
-//        Locale locales = configuration.locale;
-//        Toast.makeText(this, "dlanguage" + locales.getLanguage(), Toast.LENGTH_SHORT).show();
         int languageIndex = ConfigUtils.getAPPLanguage(BaseActivity.this);
 
-        if (languageIndex == 1) {
+        if (languageIndex == ConstantUtils.LANGUAGE_ENGLISH) {
             configuration.locale = new Locale("en");
-        } else if (languageIndex == 2) {
-//            configuration.locale = new Locale("zh");
+        } else if (languageIndex == ConstantUtils.LANGUAGE_CHINESE) {
             configuration.locale = Locale.SIMPLIFIED_CHINESE;
         }
         rs.updateConfiguration(configuration, dm);

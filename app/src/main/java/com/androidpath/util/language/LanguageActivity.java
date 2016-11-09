@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.androidpath.R;
 import com.androidpath.main.BaseActivity;
+import com.androidpath.util.ConstantUtils;
 
 /**
  * deso: AndroidPath TODO<br/>
@@ -24,10 +25,10 @@ public class LanguageActivity extends BaseActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tvEnglish:
-                updateLanguage(1);
+                updateLanguage(ConstantUtils.LANGUAGE_ENGLISH);
                 break;
             case R.id.tvChinese:
-                updateLanguage(2);
+                updateLanguage(ConstantUtils.LANGUAGE_CHINESE);
                 break;
         }
         System.exit(0);
