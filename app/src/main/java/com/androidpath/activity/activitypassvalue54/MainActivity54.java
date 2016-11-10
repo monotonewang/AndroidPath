@@ -67,7 +67,6 @@ public class MainActivity54 extends BaseActivity implements OnClickListener {
             //将bundle放入intent
             intent.putExtras(bundle);
 
-
             //启动activity
             startActivity(intent);
         }
