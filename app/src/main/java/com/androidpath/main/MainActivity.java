@@ -107,6 +107,9 @@ import com.androidpath.view.viewpager.textview210.MainActivity210;
 import com.androidpath.view.webview213.MainActivity213;
 import com.androidpath.widget.view.HandActivity;
 
+/**
+ * zgjxfuqingwang@gmail.com
+ */
 public class MainActivity extends BaseActivity {
 
     private AlertDialog dialog;
