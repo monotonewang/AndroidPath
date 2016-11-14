@@ -91,6 +91,7 @@
         <activity android:name=".view.normal.imageviewdeal75.MainActivity75" />
         <!--This is listview activity-->
         <activity android:name=".view.listview.baseadapter80.MainActivity80" />
+        <activity android:name=".view.listview.firstlistview.MainActivityFirstLV" />
         <activity android:name=".view.listview.adddata81.MainActivity81" />
         <activity android:name=".view.listview.simpleadapter82.MainActivity82" />
         <activity android:name=".view.listview.listviewdataparse83.MainActivity83" />

@@ -77,6 +77,7 @@ import com.androidpath.view.custom.surfaceview.SurfaceViewMainActivity;
 import com.androidpath.view.listview.adddata81.MainActivity81;
 import com.androidpath.view.listview.baseadapter80.MainActivity80;
 import com.androidpath.view.listview.baseadapterpack100.MainActivity100;
+import com.androidpath.view.listview.firstlistview.MainActivityFirstLV;
 import com.androidpath.view.listview.gradview102.MainActivity102;
 import com.androidpath.view.listview.listviewdataparse83.MainActivity83;
 import com.androidpath.view.listview.listviewexpandable101.MainActivity101;
@@ -231,6 +232,10 @@ public class MainActivity extends BaseActivity {
             case R.id.listViewAdapter80:
                 startActivity(new Intent(MainActivity.this, MainActivity80.class));
                 break;
+            case R.id.FirstListView:
+                startActivity(new Intent(MainActivity.this, MainActivityFirstLV.class));
+                break;
+
             case R.id.listViewAddData81:
                 startActivity(new Intent(MainActivity.this, MainActivity81.class));
                 break;
