@@ -7,6 +7,12 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <!--GL SurfaceView-->
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+    <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture" />
+    <supports-gl-texture android:name="GL_OES_compressed_paletted_texture" />
+
     <application
         android:name=".main.ApplicationMain"
         android:allowBackup="true"
@@ -207,6 +213,8 @@
         <service android:name=".service.mediaservice246.service.MediaService246" />
         <!--SurfaceView-->
         <activity android:name=".view.custom.surfaceview.SurfaceViewMainActivity" />
+        <!-- GL SurfaceView-->
+        <activity android:name=".view.glsurfaceview.GLSurfaceViewActivity" />
     </application>
 
 </manifest>

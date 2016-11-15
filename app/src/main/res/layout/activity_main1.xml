@@ -162,6 +162,7 @@
                 android:id="@+id/listViewAdapter80"
                 style="@style/tvStyle"
                 android:text="@string/listviewadapter80" />
+
             <TextView
                 android:id="@+id/FirstListView"
                 style="@style/tvStyle"
@@ -517,6 +518,11 @@
                 android:id="@+id/SurfaceViewBird"
                 style="@style/tvStyle"
                 android:text="@string/surfaceviewbird" />
+
+            <TextView
+                android:id="@+id/GLSurfaceView"
+                style="@style/tvStyle"
+                android:text="@string/GLSurfaceView" />
 
         </LinearLayout>
     </ScrollView>
