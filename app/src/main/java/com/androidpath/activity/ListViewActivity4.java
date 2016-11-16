@@ -25,7 +25,7 @@ public class ListViewActivity4 extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view);
         final LayoutInflater mInflater = LayoutInflater.from(this);
-        ArrayList arrayList = FileUtils.getArrayList(this, R.raw.layoutbutton);
+        ArrayList arrayList = FileUtils.getArrayList(this, R.raw.listviewdemo);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
         mFlowLayout = (TagFlowLayout) findViewById(R.id.listview_flowlayout);
         mFlowLayout.setAdapter(mAdapter = new TagAdapter<String>(mVals) {

@@ -1,7 +1,7 @@
-activityJump50
-activityPassValue50
-activityPassValue55
-activityGetResult60
-activityTaskDemo61
+ActivityJump50
+ActivityPassValue50
+ActivityPassValue55
+ActivityGetResult60
+ActivityTaskDemo61
 ActivityFlagDemo74
 ActivitySaveInstance76
