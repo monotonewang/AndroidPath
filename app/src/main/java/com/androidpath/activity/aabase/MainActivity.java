@@ -7,17 +7,17 @@ import android.support.v7.app.AlertDialog;
 import android.view.View;
 
 import com.androidpath.R;
-import com.androidpath.activity.aabsecondactivity.AlertActivity5;
-import com.androidpath.activity.aabsecondactivity.AsyncActivity3;
-import com.androidpath.activity.aabsecondactivity.BroadcastActivity10;
-import com.androidpath.activity.aabsecondactivity.FragmentActivity6;
-import com.androidpath.activity.aabsecondactivity.HandlerActivity8;
-import com.androidpath.activity.aabsecondactivity.LayoutButtonActivity1;
-import com.androidpath.activity.aabsecondactivity.ListViewActivity4;
-import com.androidpath.activity.aabsecondactivity.LiveCycleActivity2;
-import com.androidpath.activity.aabsecondactivity.ServiceActivity11;
-import com.androidpath.activity.aabsecondactivity.StorgeActivity7;
-import com.androidpath.activity.aabsecondactivity.ViewPagerActivity9;
+import com.androidpath.activity.aabase.asecondactivity.AlertActivity5;
+import com.androidpath.activity.aabase.asecondactivity.AsyncActivity3;
+import com.androidpath.activity.aabase.asecondactivity.BroadcastActivity10;
+import com.androidpath.activity.aabase.asecondactivity.FragmentActivity6;
+import com.androidpath.activity.aabase.asecondactivity.HandlerActivity8;
+import com.androidpath.activity.aabase.asecondactivity.LayoutButtonActivity1;
+import com.androidpath.activity.aabase.asecondactivity.ListViewActivity4;
+import com.androidpath.activity.aabase.asecondactivity.LiveCycleActivity2;
+import com.androidpath.activity.aabase.asecondactivity.ServiceActivity11;
+import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
+import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
 
 /**
  * zgjxfuqingwang@gmail.com

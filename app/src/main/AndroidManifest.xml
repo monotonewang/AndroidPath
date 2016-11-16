@@ -218,17 +218,17 @@
         <activity android:name=".view.glsurfaceview.GLSurfaceViewActivity" />
         <!-- Hot Area Activty -->
         <activity android:name=".view.hostarea.HotAreaActivity" />
-        <activity android:name=".activity.aabsecondactivity.LayoutButtonActivity1" />
-        <activity android:name=".activity.aabsecondactivity.LiveCycleActivity2" />
-        <activity android:name=".activity.aabsecondactivity.AsyncActivity3" />
-        <activity android:name=".activity.aabsecondactivity.ListViewActivity4" />
-        <activity android:name=".activity.aabsecondactivity.AlertActivity5" />
-        <activity android:name=".activity.aabsecondactivity.FragmentActivity6" />
-        <activity android:name=".activity.aabsecondactivity.StorgeActivity7" />
-        <activity android:name=".activity.aabsecondactivity.HandlerActivity8" />
-        <activity android:name=".activity.aabsecondactivity.ViewPagerActivity9" />
-        <activity android:name=".activity.aabsecondactivity.BroadcastActivity10" />
-        <activity android:name=".activity.aabsecondactivity.ServiceActivity11"></activity>
+        <activity android:name=".activity.aabase.asecondactivity.LayoutButtonActivity1" />
+        <activity android:name=".activity.aabase.asecondactivity.LiveCycleActivity2" />
+        <activity android:name=".activity.aabase.asecondactivity.AsyncActivity3" />
+        <activity android:name=".activity.aabase.asecondactivity.ListViewActivity4" />
+        <activity android:name=".activity.aabase.asecondactivity.AlertActivity5" />
+        <activity android:name=".activity.aabase.asecondactivity.FragmentActivity6" />
+        <activity android:name=".activity.aabase.asecondactivity.StorgeActivity7" />
+        <activity android:name=".activity.aabase.asecondactivity.HandlerActivity8" />
+        <activity android:name=".activity.aabase.asecondactivity.ViewPagerActivity9" />
+        <activity android:name=".activity.aabase.asecondactivity.BroadcastActivity10" />
+        <activity android:name=".activity.aabase.asecondactivity.ServiceActivity11"></activity>
     </application>
 
 </manifest>

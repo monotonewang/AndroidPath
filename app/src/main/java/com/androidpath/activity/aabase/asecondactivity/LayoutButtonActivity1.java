@@ -1,4 +1,4 @@
-package com.androidpath.activity.aabsecondactivity;
+package com.androidpath.activity.aabase.asecondactivity;
 
 import android.content.Intent;
 import android.os.Bundle;
