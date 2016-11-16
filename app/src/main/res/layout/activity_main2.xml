@@ -61,6 +61,10 @@
                 android:id="@+id/broadcastDemo10"
                 style="@style/tvStyle"
                 android:text="@string/broadcastdemo10" />
+            <TextView
+                android:id="@+id/serviceDemo11"
+                style="@style/tvStyle"
+                android:text="@string/serviceDemo11" />
 
         </LinearLayout>
     </ScrollView>

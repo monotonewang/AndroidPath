@@ -47,7 +47,7 @@
         <activity android:name=".activity.aalayout.imageviewtest.MainActivity33" />
         <!-- this is viewTest activity -->
         <activity android:name=".activity.aalayout.viewtest34.MainActivity34" />
-        <activity android:name=".widget.view.HandActivity" />
+        <activity android:name=".view.widget.handview.HandActivity" />
         <activity android:name=".activity.aalayout.buttonbgcolor40.MainActivity40" />
         <activity android:name=".activity.aalayout.checkradio41.MainActivity41" />
         <activity android:name=".activity.aalayout.spinner.spinnerdemo42.MainActivity42" />
@@ -153,20 +153,20 @@
         <activity android:name=".activity.agstorge.asstes195.MainActivity195" />
         <!-- viewpager -->
         <activity android:name=".activity.aiviewpager.textview210.MainActivity210" />
-        <activity android:name=".view.cbk.chabaike211.MainActivity211" />
+        <activity android:name=".activity.aiviewpager.cbk.chabaike211.MainActivity211" />
         <activity android:name=".activity.aiviewpager.circle212.MainActivity212" />
         <activity android:name=".activity.aiviewpager.fragment214.MainActivity214" />
         <activity android:name=".activity.aiviewpager.actionbar215.MainActivity215" />
         <activity android:name=".activity.aiviewpager.tabone220.MainActivity220" />
         <activity android:name=".activity.aiviewpager.tabtwo221.MainActivity221" />
-        <activity android:name=".view.cbk.chabaike216.MainActivity216" />
-        <activity android:name=".view.cbk.chabaike240.MainActivity240" />
+        <activity android:name=".activity.aiviewpager.cbk.chabaike216.MainActivity216" />
+        <activity android:name=".activity.aiviewpager.cbk.chabaike240.MainActivity240" />
         <!-- webview -->
         <activity android:name=".activity.aiviewpager.webview213.MainActivity213" />
         <!-- broadcastreceiver -->
-        <activity android:name=".broadcast.staticdymic230.MainActivity230" />
+        <activity android:name=".activity.ajbroadcast.staticdymic230.MainActivity230" />
         <!-- static注册广播 -->
-        <receiver android:name=".broadcast.staticdymic230.MyReceiver2">
+        <receiver android:name=".activity.ajbroadcast.staticdymic230.MyReceiver2">
             <intent-filter>
                 <action android:name="Intent.ACTION_BOOT_COMPLETED" />
                 <action android:name="android.action.intent.myself" />
@@ -175,59 +175,60 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".broadcast.sendbroadcast231.MainActivity231" />
-        <activity android:name=".broadcast.localboradcastOne232.MainActivity232" />
-        <activity android:name=".broadcast.localboradcastTwo233.MainActivity233" />
-        <activity android:name=".broadcast.serverclient234.server.MainActivity234" />
-        <activity android:name=".broadcast.serverclient234.client.MainActivity235" />
+        <activity android:name=".activity.ajbroadcast.sendbroadcast231.MainActivity231" />
+        <activity android:name=".activity.ajbroadcast.localboradcastOne232.MainActivity232" />
+        <activity android:name=".activity.ajbroadcast.localboradcastTwo233.MainActivity233" />
+        <activity android:name=".activity.ajbroadcast.serverclient234.server.MainActivity234" />
+        <activity android:name=".activity.ajbroadcast.serverclient234.client.MainActivity235" />
 
         <receiver
-            android:name=".broadcast.serverclient234.server.MyReceiverPermssion"
+            android:name=".activity.ajbroadcast.serverclient234.server.MyReceiverPermssion"
             android:permission="android.action.permission.mypermiss2">
             <intent-filter>
                 <action android:name="android.action.intent.abcd" />
             </intent-filter>
         </receiver>
         <!-- service -->
-        <activity android:name=".service.servicedemo241.MainActivity241" />
+        <activity android:name=".activity.akservice.servicedemo241.MainActivity241" />
 
-        <service android:name=".service.servicedemo241.MyService" />
+        <service android:name=".activity.akservice.servicedemo241.MyService" />
 
-        <activity android:name=".service.localbroadservice242.MainActivity242" />
+        <activity android:name=".activity.akservice.localbroadservice242.MainActivity242" />
 
-        <service android:name=".service.localbroadservice242.TimerSerivce" />
+        <service android:name=".activity.akservice.localbroadservice242.TimerSerivce" />
 
-        <activity android:name=".service.mediaservice.mediaservice243.MainActivity243" />
+        <activity android:name=".activity.akservice.mediaservice.mediaservice243.MainActivity243" />
 
-        <service android:name=".service.mediaservice.mediaservice243.MediaService243" />
+        <service android:name=".activity.akservice.mediaservice.mediaservice243.MediaService243" />
 
-        <activity android:name=".service.intentservice248.MainActivity248" />
+        <activity android:name=".activity.akservice.intentservice248.MainActivity248" />
 
-        <service android:name=".service.intentservice248.DownLoadService248" />
+        <service android:name=".activity.akservice.intentservice248.DownLoadService248" />
 
-        <activity android:name=".service.stickservice247.MainActivity247" />
+        <activity android:name=".activity.akservice.stickservice247.MainActivity247" />
 
-        <service android:name=".service.stickservice247.StickService247" />
+        <service android:name=".activity.akservice.stickservice247.StickService247" />
 
-        <activity android:name=".service.mediaservice246.MainActivity246" />
+        <activity android:name=".activity.akservice.mediaservice246.MainActivity246" />
 
-        <service android:name=".service.mediaservice246.service.MediaService246" />
+        <service android:name=".activity.akservice.mediaservice246.service.MediaService246" />
         <!-- SurfaceView -->
         <activity android:name=".view.custom.surfaceview.SurfaceViewMainActivity" />
         <!-- GL SurfaceView -->
         <activity android:name=".view.glsurfaceview.GLSurfaceViewActivity" />
         <!-- Hot Area Activty -->
         <activity android:name=".view.hostarea.HotAreaActivity" />
-        <activity android:name=".activity.LayoutButtonActivity1" />
-        <activity android:name=".activity.LiveCycleActivity2" />
-        <activity android:name=".activity.AsyncActivity3" />
-        <activity android:name=".activity.ListViewActivity4" />
-        <activity android:name=".activity.AlertActivity5" />
-        <activity android:name=".activity.FragmentActivity6" />
-        <activity android:name=".activity.StorgeActivity7" />
-        <activity android:name=".activity.HandlerActivity8" />
-        <activity android:name=".activity.ViewPagerActivity9" />
-        <activity android:name=".activity.BroadcastActivity"></activity>
+        <activity android:name=".activity.aabsecondactivity.LayoutButtonActivity1" />
+        <activity android:name=".activity.aabsecondactivity.LiveCycleActivity2" />
+        <activity android:name=".activity.aabsecondactivity.AsyncActivity3" />
+        <activity android:name=".activity.aabsecondactivity.ListViewActivity4" />
+        <activity android:name=".activity.aabsecondactivity.AlertActivity5" />
+        <activity android:name=".activity.aabsecondactivity.FragmentActivity6" />
+        <activity android:name=".activity.aabsecondactivity.StorgeActivity7" />
+        <activity android:name=".activity.aabsecondactivity.HandlerActivity8" />
+        <activity android:name=".activity.aabsecondactivity.ViewPagerActivity9" />
+        <activity android:name=".activity.aabsecondactivity.BroadcastActivity10" />
+        <activity android:name=".activity.aabsecondactivity.ServiceActivity11"></activity>
     </application>
 
 </manifest>

@@ -4,4 +4,5 @@
     <string name="buttonSelector">选择器测试</string>
     <string name="button">按钮</string>
     <string name="imagebutton">带图片的按钮</string>
+    <string name="spinner_title">请选择职业</string>
 </resources>
