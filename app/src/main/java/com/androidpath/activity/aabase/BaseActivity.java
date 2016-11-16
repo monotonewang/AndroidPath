@@ -18,7 +18,7 @@ import java.util.Locale;
  * author: 7 <br/>
  * since: V ${version} <br/>
  */
-
+//zgjxfuqingwang@gmail.com
 public class BaseActivity extends AppCompatActivity {
 
 
