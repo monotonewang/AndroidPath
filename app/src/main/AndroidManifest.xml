@@ -152,17 +152,17 @@
         <activity android:name=".activity.aealert.actionbar190.customview.MainActivity194" />
         <activity android:name=".activity.agstorge.asstes195.MainActivity195" />
         <!-- viewpager -->
-        <activity android:name=".view.viewpager.textview210.MainActivity210" />
+        <activity android:name=".activity.aiviewpager.textview210.MainActivity210" />
         <activity android:name=".view.cbk.chabaike211.MainActivity211" />
-        <activity android:name=".view.viewpager.circle212.MainActivity212" />
-        <activity android:name=".view.viewpager.fragment214.MainActivity214" />
-        <activity android:name=".view.viewpager.actionbar215.MainActivity215" />
-        <activity android:name=".view.viewpager.tabone220.MainActivity220" />
-        <activity android:name=".view.viewpager.tabtwo221.MainActivity221" />
+        <activity android:name=".activity.aiviewpager.circle212.MainActivity212" />
+        <activity android:name=".activity.aiviewpager.fragment214.MainActivity214" />
+        <activity android:name=".activity.aiviewpager.actionbar215.MainActivity215" />
+        <activity android:name=".activity.aiviewpager.tabone220.MainActivity220" />
+        <activity android:name=".activity.aiviewpager.tabtwo221.MainActivity221" />
         <activity android:name=".view.cbk.chabaike216.MainActivity216" />
         <activity android:name=".view.cbk.chabaike240.MainActivity240" />
         <!-- webview -->
-        <activity android:name=".view.webview213.MainActivity213" />
+        <activity android:name=".activity.aiviewpager.webview213.MainActivity213" />
         <!-- broadcastreceiver -->
         <activity android:name=".broadcast.staticdymic230.MainActivity230" />
         <!-- static注册广播 -->
@@ -225,7 +225,8 @@
         <activity android:name=".activity.AlertActivity5" />
         <activity android:name=".activity.FragmentActivity6" />
         <activity android:name=".activity.StorgeActivity7" />
-        <activity android:name=".activity.HandlerActivity8"></activity>
+        <activity android:name=".activity.HandlerActivity8" />
+        <activity android:name=".activity.ViewPagerActivity9"/>
     </application>
 
 </manifest>

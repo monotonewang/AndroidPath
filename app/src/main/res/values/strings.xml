@@ -122,6 +122,7 @@
     <string name="fragmentdemo6">fragmentDemo6</string>
     <string name="storgedemo7">storgeDemo7</string>
     <string name="handlerdemo8">handlerDemo8</string>
+    <string name="viewPagerDemo9">viewPagerDemo9</string>
 
     <string-array name="job_array">
         <item>程序员</item>

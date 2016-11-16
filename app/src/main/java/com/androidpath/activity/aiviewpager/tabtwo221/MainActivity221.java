@@ -1,4 +1,4 @@
-package com.androidpath.view.viewpager.tabtwo221;
+package com.androidpath.activity.aiviewpager.tabtwo221;
 
 import android.app.Activity;
 import android.content.Context;

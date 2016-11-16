@@ -1,4 +1,4 @@
-package com.androidpath.view.webview213;
+package com.androidpath.activity.aiviewpager.webview213;
 
 import android.content.Context;
 import android.webkit.JavascriptInterface;

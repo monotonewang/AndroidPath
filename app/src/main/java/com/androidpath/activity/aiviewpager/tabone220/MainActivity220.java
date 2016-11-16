@@ -1,4 +1,4 @@
-package com.androidpath.view.viewpager.tabone220;
+package com.androidpath.activity.aiviewpager.tabone220;
 
 import android.app.Activity;
 import android.content.Context;

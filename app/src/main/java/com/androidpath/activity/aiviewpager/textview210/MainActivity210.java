@@ -1,4 +1,4 @@
-package com.androidpath.view.viewpager.textview210;
+package com.androidpath.activity.aiviewpager.textview210;
 
 import android.app.Activity;
 import android.content.Context;
@@ -38,7 +38,7 @@ public class MainActivity210 extends Activity {
 		viewPager = (ViewPager) findViewById(R.id.vp_id);
 		datas = new ArrayList();
 		for(int i = 0; i < 5; i++){
-			datas.add("����ҳ��" + i);
+			datas.add("数据源" + i);
 		}
 		
 		myPagerAdapter = new MyPagerAdapter(this, datas);

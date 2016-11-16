@@ -1,4 +1,4 @@
-package com.androidpath.view.viewpager.fragment214;
+package com.androidpath.activity.aiviewpager.fragment214;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

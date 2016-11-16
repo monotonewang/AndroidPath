@@ -53,6 +53,10 @@
                 android:id="@+id/handlerDemo8"
                 style="@style/tvStyle"
                 android:text="@string/handlerdemo8" />
+            <TextView
+                android:id="@+id/viewPagerDemo9"
+                style="@style/tvStyle"
+                android:text="@string/viewPagerDemo9" />
 
         </LinearLayout>
     </ScrollView>
