@@ -2,8 +2,6 @@ package com.androidpath.util;
 
 import android.content.Context;
 
-import com.androidpath.R;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,8 +22,8 @@ public class FileUtils {
      * @param context
      * @return
      */
-    public static ArrayList getArrayList(Context context) {
-        InputStream inputStream = context.getResources().openRawResource(R.raw.layoutbutton);
+    public static ArrayList getArrayList(Context context,int res) {
+        InputStream inputStream = context.getResources().openRawResource(res);
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
         String line;

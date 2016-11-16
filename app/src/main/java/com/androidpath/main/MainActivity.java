@@ -7,7 +7,11 @@ import android.support.v7.app.AlertDialog;
 import android.view.View;
 
 import com.androidpath.R;
-import com.androidpath.activity.LayoutButton;
+import com.androidpath.activity.AlertActivity5;
+import com.androidpath.activity.AsyncActivity3;
+import com.androidpath.activity.LayoutButtonActivity1;
+import com.androidpath.activity.ListViewActivity4;
+import com.androidpath.activity.LiveCycleActivity2;
 import com.androidpath.activity.activityjump50.MainActivity50;
 import com.androidpath.activity.activitypassvalue54.MainActivity54;
 import com.androidpath.activity.applicationpassvalue55.MainActivity55;
@@ -56,7 +60,6 @@ import com.androidpath.storge.sql.sqlclienttwo152.MainActivity152;
 import com.androidpath.storge.sql.sqldemo154.MainActivity154;
 import com.androidpath.storge.sql.sqlserverone151.MainActivity151;
 import com.androidpath.storge.sql.sqlservertwo153.MainActivity153;
-import com.androidpath.util.language.LanguageActivity;
 import com.androidpath.view.cbk.chabaike211.MainActivity211;
 import com.androidpath.view.cbk.chabaike216.MainActivity216;
 import com.androidpath.view.cbk.chabaike240.MainActivity240;
@@ -87,11 +90,8 @@ import com.androidpath.view.listview.listviewjoke90.MainActivity90;
 import com.androidpath.view.listview.lvemptyview103.SecondActivity103;
 import com.androidpath.view.listview.simpleadapter82.MainActivity82;
 import com.androidpath.view.normal.buttonbgcolor40.MainActivity40;
-import com.androidpath.view.normal.buttonselector30.ButtonSelectorActivtiy3;
 import com.androidpath.view.normal.checkradio41.MainActivity41;
-import com.androidpath.view.normal.clickreponse31.ButtonTestActivity31;
 import com.androidpath.view.normal.edittext.autocompletetext51.MainActivity51;
-import com.androidpath.view.normal.edittext.edittextdemo32.MainActivity32;
 import com.androidpath.view.normal.imageviewdeal75.MainActivity75;
 import com.androidpath.view.normal.imageviewtest.MainActivity33;
 import com.androidpath.view.normal.spinner.spinnerdemo42.MainActivity42;
@@ -119,7 +119,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main1);
+        setContentView(R.layout.activity_main1);
         setContentView(R.layout.activity_main2);
     }
 
@@ -152,20 +152,20 @@ public class MainActivity extends BaseActivity {
 
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.LayoutButton:
-                startActivity(new Intent(MainActivity.this, LayoutButton.class));
+            case R.id.layoutButton1:
+                startActivity(new Intent(MainActivity.this, LayoutButtonActivity1.class));
                 break;
-            case R.id.languageSettings:
-                startActivity(new Intent(MainActivity.this, LanguageActivity.class));
+            case R.id.activityLiveCycle2:
+                startActivity(new Intent(MainActivity.this, LiveCycleActivity2.class));
                 break;
-            case R.id.buttonselectordemo3:
-                startActivity(new Intent(MainActivity.this, ButtonSelectorActivtiy3.class));
+            case R.id.asyncDemo3:
+                startActivity(new Intent(MainActivity.this, AsyncActivity3.class));
                 break;
-            case R.id.buttontestactivity31:
-                startActivity(new Intent(MainActivity.this, ButtonTestActivity31.class));
+            case R.id.listViewActivity4:
+                startActivity(new Intent(MainActivity.this, ListViewActivity4.class));
                 break;
-            case R.id.edittextdemo32:
-                startActivity(new Intent(MainActivity.this, MainActivity32.class));
+            case R.id.alertActivity5:
+                startActivity(new Intent(MainActivity.this, AlertActivity5.class));
                 break;
             case R.id.imageviewTest33:
                 startActivity(new Intent(MainActivity.this, MainActivity33.class));

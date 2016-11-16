@@ -111,7 +111,14 @@
     <string name="tvchinese">tvChinese</string>
     <string name="tvenglish">tvEnglish</string>
     <string name="GLSurfaceView">GLSurfaceView</string>
-    <string name="layoutbutton">LayoutButton</string>
+    <string name="layoutbutton">layoutButton</string>
+    <string name="activityLiveCycle">activityLiveCycle</string>
+    <string name="asyncdemo">asyncDemo</string>
+    <string name="layoutbutton1">layoutButton1</string>
+    <string name="activitylivecycle2">activityLiveCycle2</string>
+    <string name="asyncdemo3">asyncDemo3</string>
+    <string name="listviewactivity4">listViewActivity4</string>
+    <string name="alertactivity5">alertActivity5</string>
 
     <string-array name="job_array">
         <item>程序员</item>

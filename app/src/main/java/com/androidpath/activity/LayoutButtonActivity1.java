@@ -23,7 +23,7 @@ import java.util.ArrayList;
  * since: V ${version} <br/>
  */
 
-public class LayoutButton extends BaseActivity {
+public class LayoutButtonActivity1 extends BaseActivity {
     private TagAdapter<String> mAdapter;
     private TagFlowLayout mFlowLayout;
     private String[] mVals;
@@ -33,7 +33,7 @@ public class LayoutButton extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout_button);
         final LayoutInflater mInflater = LayoutInflater.from(this);
-        ArrayList arrayList = FileUtils.getArrayList(this);
+        ArrayList arrayList = FileUtils.getArrayList(this,R.raw.layoutbutton);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
         mFlowLayout = (TagFlowLayout) findViewById(R.id.layout_flowlayout);
         mFlowLayout.setAdapter(mAdapter = new TagAdapter<String>(mVals) {
@@ -48,7 +48,7 @@ public class LayoutButton extends BaseActivity {
         mFlowLayout.setOnTagClickListener(new TagFlowLayout.OnTagClickListener() {
             @Override
             public boolean onTagClick(View view, int position, FlowLayout parent) {
-                Toast.makeText(LayoutButton.this, "" + position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(LayoutButtonActivity1.this, "" + position, Toast.LENGTH_SHORT).show();
                 return true;
             }
         });
