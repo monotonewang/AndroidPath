@@ -56,7 +56,6 @@ public class MainActivity210 extends Activity {
 			 */
 			@Override
 			public void onPageSelected(int position) {
-//				Log.d("print", "��ǰ�±�---->" + position);
 			}
 
 			/**
@@ -120,7 +119,6 @@ public class MainActivity210 extends Activity {
 		 */
 		@Override
 		public void destroyItem(ViewGroup container, int position, Object object) {
-//			Log.d("print", "��ǰ�Ƴ����±꣺" + position);
 			container.removeView(tvDATAS.get(position));
 		}
 
@@ -129,7 +127,6 @@ public class MainActivity210 extends Activity {
 		 */
 		@Override
 		public Object instantiateItem(ViewGroup container, int position) {
-//			Log.d("print", "��ǰ��ӵ��±꣺" + position);
 			container.addView(tvDATAS.get(position));
 			return tvDATAS.get(position);
 		}

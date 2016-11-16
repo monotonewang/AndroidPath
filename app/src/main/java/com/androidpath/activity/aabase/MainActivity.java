@@ -9,6 +9,7 @@ import android.view.View;
 import com.androidpath.R;
 import com.androidpath.activity.AlertActivity5;
 import com.androidpath.activity.AsyncActivity3;
+import com.androidpath.activity.BroadcastActivity;
 import com.androidpath.activity.FragmentActivity6;
 import com.androidpath.activity.HandlerActivity8;
 import com.androidpath.activity.LayoutButtonActivity1;
@@ -16,7 +17,6 @@ import com.androidpath.activity.ListViewActivity4;
 import com.androidpath.activity.LiveCycleActivity2;
 import com.androidpath.activity.StorgeActivity7;
 import com.androidpath.activity.ViewPagerActivity9;
-import com.androidpath.activity.aalayout.checkradio41.MainActivity41;
 import com.androidpath.activity.aalayout.edittext.autocompletetext51.MainActivity51;
 import com.androidpath.activity.aalayout.imageviewdeal75.MainActivity75;
 import com.androidpath.activity.aalayout.spinner.spinnerdemo42.MainActivity42;
@@ -83,6 +83,13 @@ import com.androidpath.activity.ahhandler.handerimage180.MainActivity180;
 import com.androidpath.activity.ahhandler.handlerlightcycle182.MainActivity182;
 import com.androidpath.activity.ahhandler.handlerlopper184.MainActivity184;
 import com.androidpath.activity.ahhandler.updateui183.MainActivity183;
+import com.androidpath.activity.aiviewpager.actionbar215.MainActivity215;
+import com.androidpath.activity.aiviewpager.circle212.MainActivity212;
+import com.androidpath.activity.aiviewpager.fragment214.MainActivity214;
+import com.androidpath.activity.aiviewpager.tabone220.MainActivity220;
+import com.androidpath.activity.aiviewpager.tabtwo221.MainActivity221;
+import com.androidpath.activity.aiviewpager.textview210.MainActivity210;
+import com.androidpath.activity.aiviewpager.webview213.MainActivity213;
 import com.androidpath.broadcast.localboradcastOne232.MainActivity232;
 import com.androidpath.broadcast.localboradcastTwo233.MainActivity233;
 import com.androidpath.broadcast.sendbroadcast231.MainActivity231;
@@ -100,13 +107,6 @@ import com.androidpath.view.cbk.chabaike216.MainActivity216;
 import com.androidpath.view.cbk.chabaike240.MainActivity240;
 import com.androidpath.view.custom.surfaceview.SurfaceViewMainActivity;
 import com.androidpath.view.glsurfaceview.GLSurfaceViewActivity;
-import com.androidpath.activity.aiviewpager.actionbar215.MainActivity215;
-import com.androidpath.activity.aiviewpager.circle212.MainActivity212;
-import com.androidpath.activity.aiviewpager.fragment214.MainActivity214;
-import com.androidpath.activity.aiviewpager.tabone220.MainActivity220;
-import com.androidpath.activity.aiviewpager.tabtwo221.MainActivity221;
-import com.androidpath.activity.aiviewpager.textview210.MainActivity210;
-import com.androidpath.activity.aiviewpager.webview213.MainActivity213;
 
 /**
  * zgjxfuqingwang@gmail.com
@@ -179,8 +179,8 @@ public class MainActivity extends BaseActivity {
             case R.id.viewPagerDemo9:
                 startActivity(new Intent(MainActivity.this, ViewPagerActivity9.class));
                 break;
-            case R.id.checkRadio41:
-                startActivity(new Intent(MainActivity.this, MainActivity41.class));
+            case R.id.broadcastDemo10:
+                startActivity(new Intent(MainActivity.this, BroadcastActivity.class));
                 break;
             case R.id.spinnerDemo42:
                 startActivity(new Intent(MainActivity.this, MainActivity42.class));

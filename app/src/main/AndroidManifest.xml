@@ -226,7 +226,8 @@
         <activity android:name=".activity.FragmentActivity6" />
         <activity android:name=".activity.StorgeActivity7" />
         <activity android:name=".activity.HandlerActivity8" />
-        <activity android:name=".activity.ViewPagerActivity9"/>
+        <activity android:name=".activity.ViewPagerActivity9" />
+        <activity android:name=".activity.BroadcastActivity"></activity>
     </application>
 
 </manifest>
