@@ -27,7 +27,7 @@ import java.util.Set;
  * author: 7 <br/>
  * since: V ${version} <br/>
  */
-
+//zgjxfuqingwang@gmail.com
 public class MainFlowlayoutActivity extends BaseActivity {
     private TagAdapter<String> mAdapter;
     private String[] mVals = new String[]
