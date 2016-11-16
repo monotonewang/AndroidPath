@@ -5,4 +5,7 @@
     <dimen name="activity_tv_margin">8dp</dimen>
     <dimen name="activity_tv_padding">8dp</dimen>
     <dimen name="activity_tv_size">10sp</dimen>
+
+    <!--area-->
+    <dimen name="margin_large">20dp</dimen>
 </resources>

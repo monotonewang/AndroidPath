@@ -14,6 +14,7 @@ import com.androidpath.util.language.LanguageActivity;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
 import com.androidpath.view.flowlayout.libs.TagFlowLayout;
+import com.androidpath.view.hostarea.HotAreaActivity;
 import com.androidpath.view.normal.buttonselector30.ButtonSelectorActivtiy3;
 import com.androidpath.view.normal.clickreponse31.ButtonTestActivity31;
 import com.androidpath.view.normal.layoutdemo2.LayoutActivity2;
@@ -30,7 +31,7 @@ import java.util.Set;
 public class MainFlowlayoutActivity extends BaseActivity {
     private TagAdapter<String> mAdapter;
     private String[] mVals = new String[]
-            {"layoutdemo2", "languagesettings", "buttonselectordemo3 ", "buttontestactivity31", "edittextdemo32", "imageviewtest33",
+            {"layoutdemo2", "languagesettings", "buttonselectordemo3 ", "buttontestactivity31", "HotArea", "edittextdemo32", "imageviewtest33",
                     "viewtest34", "handview", "buttonbgcolor40", "checkradio41", "spinnerdemo42",
                     "spinnerdemo43", "aysncdemotwo71", "activityjump50", "activitypassvalue50", "autoCompleteText51", "spinnerlink52", "activitypassvalue55", "getresult60", "taskdemo61", "aysncdemoone70",
                     "aysncgetimage72", "Weclome", "Button ImageView", "TextView", "Helloworld",
@@ -67,7 +68,7 @@ public class MainFlowlayoutActivity extends BaseActivity {
             public boolean onTagClick(View view, int position, FlowLayout parent) {
 //                Toast.makeText(getActivity(), mVals[position], Toast.LENGTH_SHORT).show();
                 Toast.makeText(MainFlowlayoutActivity.this, position + "", Toast.LENGTH_SHORT).show();
-                switch (position){
+                switch (position) {
                     case 0:
                         startActivity(new Intent(MainFlowlayoutActivity.this, LayoutActivity2.class));
                         break;
@@ -80,6 +81,9 @@ public class MainFlowlayoutActivity extends BaseActivity {
                         break;
                     case 3:
                         startActivity(new Intent(MainFlowlayoutActivity.this, ButtonTestActivity31.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(MainFlowlayoutActivity.this, HotAreaActivity.class));
                         break;
                     default:
 
