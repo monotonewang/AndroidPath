@@ -4,13 +4,13 @@
     android:orientation="vertical">
 
     <fragment 
-        android:name="com.androidpath.fragment.staticfragment121.ContentFragment"
+        android:name="com.androidpath.activity.affragment.staticfragment121.ContentFragment"
         android:id="@+id/title_fragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
      <fragment 
-        android:name="com.androidpath.fragment.staticfragment121.TitleFragment"
+        android:name="com.androidpath.activity.affragment.staticfragment121.TitleFragment"
         android:id="@+id/content_fragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"

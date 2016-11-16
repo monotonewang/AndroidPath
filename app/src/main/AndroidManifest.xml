@@ -31,92 +31,92 @@
         </activity>
         <activity android:name=".view.flowlayout.MainFlowlayoutActivity" />
         <!-- this is layout activity -->
-        <activity android:name=".view.normal.layoutdemo2.LayoutActivity2" />
+        <activity android:name=".activity.aalayout.layoutdemo2.LayoutActivity2" />
         <activity android:name=".util.language.LanguageActivity" />
         <!-- this is buttonselector activity -->
-        <activity android:name=".view.normal.buttonselector30.ButtonSelectorActivtiy3" />
+        <activity android:name=".activity.aalayout.buttonselector30.ButtonSelectorActivtiy3" />
         <!-- this is buttontest and buttonclick activity -->
-        <activity android:name=".view.normal.clickreponse31.ButtonTestActivity31" />
-        <activity android:name=".view.normal.clickreponse31.ButtonClickListenActivity31" />
-        <activity android:name=".view.normal.clickreponse31.ButtonClickListenActivity32" />
-        <activity android:name=".view.normal.clickreponse31.ButtonClickListenActivity33" />
+        <activity android:name=".activity.aalayout.clickreponse31.ButtonTestActivity31" />
+        <activity android:name=".activity.aalayout.clickreponse31.ButtonClickListenActivity31" />
+        <activity android:name=".activity.aalayout.clickreponse31.ButtonClickListenActivity32" />
+        <activity android:name=".activity.aalayout.clickreponse31.ButtonClickListenActivity33" />
 
         <!-- this is editTextDemo activity -->
-        <activity android:name=".view.normal.edittext.edittextdemo32.MainActivity32" />
+        <activity android:name=".activity.aalayout.edittext.edittextdemo32.MainActivity32" />
         <!-- this is imageviewTest activity -->
-        <activity android:name=".view.normal.imageviewtest.MainActivity33" />
+        <activity android:name=".activity.aalayout.imageviewtest.MainActivity33" />
         <!-- this is viewTest activity -->
-        <activity android:name=".view.normal.viewtest34.MainActivity34" />
+        <activity android:name=".activity.aalayout.viewtest34.MainActivity34" />
         <activity android:name=".widget.view.HandActivity" />
-        <activity android:name=".view.normal.buttonbgcolor40.MainActivity40" />
-        <activity android:name=".view.normal.checkradio41.MainActivity41" />
-        <activity android:name=".view.normal.spinner.spinnerdemo42.MainActivity42" />
-        <activity android:name=".view.normal.spinner.spinnerdemo43.MainActivity43" />
-        <activity android:name=".view.normal.spinner.spinnersimpleAdapter44.MainActivity44" />
+        <activity android:name=".activity.aalayout.buttonbgcolor40.MainActivity40" />
+        <activity android:name=".activity.aalayout.checkradio41.MainActivity41" />
+        <activity android:name=".activity.aalayout.spinner.spinnerdemo42.MainActivity42" />
+        <activity android:name=".activity.aalayout.spinner.spinnerdemo43.MainActivity43" />
+        <activity android:name=".activity.aalayout.spinner.spinnersimpleAdapter44.MainActivity44" />
         <!-- this is activityJump activity -->
-        <activity android:name=".activity.activityjump50.MainActivity50" />
-        <activity android:name=".activity.activityjump50.OtherActivity50" />
-        <activity android:name=".activity.activityjump50.SecondActivity50" />
-        <activity android:name=".view.normal.edittext.autocompletetext51.MainActivity51" />
-        <activity android:name=".view.normal.spinner.spinnerlink52.MainActivity52" />
+        <activity android:name=".activity.abactivity.activityjump50.MainActivity50" />
+        <activity android:name=".activity.abactivity.activityjump50.OtherActivity50" />
+        <activity android:name=".activity.abactivity.activityjump50.SecondActivity50" />
+        <activity android:name=".activity.aalayout.edittext.autocompletetext51.MainActivity51" />
+        <activity android:name=".activity.aalayout.spinner.spinnerlink52.MainActivity52" />
         <!-- this is activityPassValue activity -->
-        <activity android:name=".activity.activitypassvalue54.MainActivity54" />
-        <activity android:name=".activity.activitypassvalue54.ResultActivity54" />
-        <activity android:name=".activity.activitypassvalue54.SecondActivity54" />
-        <activity android:name=".activity.applicationpassvalue55.MainActivity55" />
-        <activity android:name=".activity.applicationpassvalue55.ResultActivity55" />
-        <activity android:name=".activity.applicationpassvalue55.SecondActivity55" />
-        <activity android:name=".activity.getresult60.MainActivity60" />
-        <activity android:name=".activity.getresult60.SecondActivity60" />
-        <activity android:name=".activity.saveinstance76.MainActivity76" />
+        <activity android:name=".activity.abactivity.activitypassvalue54.MainActivity54" />
+        <activity android:name=".activity.abactivity.activitypassvalue54.ResultActivity54" />
+        <activity android:name=".activity.abactivity.activitypassvalue54.SecondActivity54" />
+        <activity android:name=".activity.abactivity.applicationpassvalue55.MainActivity55" />
+        <activity android:name=".activity.abactivity.applicationpassvalue55.ResultActivity55" />
+        <activity android:name=".activity.abactivity.applicationpassvalue55.SecondActivity55" />
+        <activity android:name=".activity.abactivity.getresult60.MainActivity60" />
+        <activity android:name=".activity.abactivity.getresult60.SecondActivity60" />
+        <activity android:name=".activity.abactivity.saveinstance76.MainActivity76" />
         <activity
-            android:name=".activity.taskdemo61.MainActivity61"
+            android:name=".activity.abactivity.taskdemo61.MainActivity61"
             android:label="this is first page" />
         <activity
-            android:name=".activity.taskdemo61.SecondActivity61"
+            android:name=".activity.abactivity.taskdemo61.SecondActivity61"
             android:label="this is second page"
             android:launchMode="singleInstance" />
         <activity
-            android:name=".activity.taskdemo61.ThirdActivity61"
+            android:name=".activity.abactivity.taskdemo61.ThirdActivity61"
             android:label="this is third page" />
         <activity
-            android:name=".activity.taskdemo61.FourthActivity61"
+            android:name=".activity.abactivity.taskdemo61.FourthActivity61"
             android:label="this is fouth page" />
-        <activity android:name=".activity.flagdemo74.MainActivity74" />
-        <activity android:name=".activity.flagdemo74.SecondActivity74" />
-        <activity android:name=".async.demoone70.MainActivity70" />
-        <activity android:name=".async.demotwo71.MainActivity71" />
-        <activity android:name=".async.getimagestrong72.MainActivity72" />
-        <activity android:name=".async.progresslow73.MainActivity73" />
-        <activity android:name=".view.normal.imageviewdeal75.MainActivity75" />
+        <activity android:name=".activity.abactivity.flagdemo74.MainActivity74" />
+        <activity android:name=".activity.abactivity.flagdemo74.SecondActivity74" />
+        <activity android:name=".activity.acasync.demoone70.MainActivity70" />
+        <activity android:name=".activity.acasync.demotwo71.MainActivity71" />
+        <activity android:name=".activity.acasync.getimagestrong72.MainActivity72" />
+        <activity android:name=".activity.acasync.progresslow73.MainActivity73" />
+        <activity android:name=".activity.aalayout.imageviewdeal75.MainActivity75" />
         <!-- This is listview activity -->
-        <activity android:name=".view.listview.baseadapter80.MainActivity80" />
-        <activity android:name=".view.listview.firstlistview.MainActivityFirstLV" />
-        <activity android:name=".view.listview.adddata81.MainActivity81" />
-        <activity android:name=".view.listview.simpleadapter82.MainActivity82" />
-        <activity android:name=".view.listview.listviewdataparse83.MainActivity83" />
-        <activity android:name=".view.listview.listviewjoke90.MainActivity90" />
-        <activity android:name=".view.listview.baseadapterpack100.MainActivity100" />
-        <activity android:name=".view.listview.listviewexpandable101.MainActivity101" />
-        <activity android:name=".view.listview.gradview102.MainActivity102" />
-        <activity android:name=".view.listview.gradview102.HeadImageActivity102" />
-        <activity android:name=".view.listview.lvemptyview103.MainActivity103" />
-        <activity android:name=".view.listview.lvemptyview103.SecondActivity103" />
+        <activity android:name=".activity.adlistview.baseadapter80.MainActivity80" />
+        <activity android:name=".activity.adlistview.firstlistview.MainActivityFirstLV" />
+        <activity android:name=".activity.adlistview.adddata81.MainActivity81" />
+        <activity android:name=".activity.adlistview.simpleadapter82.MainActivity82" />
+        <activity android:name=".activity.adlistview.listviewdataparse83.MainActivity83" />
+        <activity android:name=".activity.adlistview.listviewjoke90.MainActivity90" />
+        <activity android:name=".activity.adlistview.baseadapterpack100.MainActivity100" />
+        <activity android:name=".activity.adlistview.listviewexpandable101.MainActivity101" />
+        <activity android:name=".activity.adlistview.gradview102.MainActivity102" />
+        <activity android:name=".activity.adlistview.gradview102.HeadImageActivity102" />
+        <activity android:name=".activity.adlistview.lvemptyview103.MainActivity103" />
+        <activity android:name=".activity.adlistview.lvemptyview103.SecondActivity103" />
         <!-- container -->
-        <activity android:name=".view.container.alertdialog110.MainActivity110" />
-        <activity android:name=".view.container.contextmenu111.MainActivity111" />
-        <activity android:name=".view.container.notification112.MainActivity112" />
-        <activity android:name=".view.container.optionmenu113.MainActivity113" />
-        <activity android:name=".view.container.popupmenu114.MainActivity114" />
-        <activity android:name=".view.container.subMenu115.MainActivity115" />
-        <activity android:name=".view.container.toastdemo116.MainActivity116" />
-        <activity android:name=".view.container.dymicaddmenu117.MainActivity117" />
+        <activity android:name=".activity.aealert.alertdialog110.MainActivity110" />
+        <activity android:name=".activity.aealert.contextmenu111.MainActivity111" />
+        <activity android:name=".activity.aealert.notification112.MainActivity112" />
+        <activity android:name=".activity.aealert.optionmenu113.MainActivity113" />
+        <activity android:name=".activity.aealert.popupmenu114.MainActivity114" />
+        <activity android:name=".activity.aealert.subMenu115.MainActivity115" />
+        <activity android:name=".activity.aealert.toastdemo116.MainActivity116" />
+        <activity android:name=".activity.aealert.dymicaddmenu117.MainActivity117" />
         <!-- fragment -->
-        <activity android:name=".fragment.dialogframgment.MainActivity120" />
-        <activity android:name=".fragment.staticfragment121.MainActivity121" />
-        <activity android:name=".fragment.fragmentpassvalue122.MainActivity122" />
-        <activity android:name=".fragment.dynicaddfragment123.MainActivity123" />
-        <activity android:name=".fragment.radiofragment124.MainActivity124" />
+        <activity android:name=".activity.affragment.dialogframgment.MainActivity120" />
+        <activity android:name=".activity.affragment.staticfragment121.MainActivity121" />
+        <activity android:name=".activity.affragment.fragmentpassvalue122.MainActivity122" />
+        <activity android:name=".activity.affragment.dynicaddfragment123.MainActivity123" />
+        <activity android:name=".activity.affragment.radiofragment124.MainActivity124" />
         <!-- storge -->
         <activity android:name=".storge.sharedproference130.MainActivity130" />
         <activity android:name=".storge.filestorge131.MainActivity131" />
@@ -144,13 +144,13 @@
         <activity android:name=".handler.handlerlopper184.MainActivity184" />
 
         <!-- actionbar -->
-        <activity android:name=".view.container.actionbar190.demo190.MainActivity190" />
-        <activity android:name=".view.container.actionbar190.demo190.SecondActivity190" />
-        <activity android:name=".view.container.actionbar190.provider191.MainActivity191" />
-        <activity android:name=".view.container.actionbar190.tab192.MainActivity192" />
-        <activity android:name=".view.container.actionbar190.list193.MainActivity193" />
-        <activity android:name=".view.container.actionbar190.customview.MainActivity194" />
-        <activity android:name=".view.container.asstes195.MainActivity195" />
+        <activity android:name=".activity.aealert.actionbar190.demo190.MainActivity190" />
+        <activity android:name=".activity.aealert.actionbar190.demo190.SecondActivity190" />
+        <activity android:name=".activity.aealert.actionbar190.provider191.MainActivity191" />
+        <activity android:name=".activity.aealert.actionbar190.tab192.MainActivity192" />
+        <activity android:name=".activity.aealert.actionbar190.list193.MainActivity193" />
+        <activity android:name=".activity.aealert.actionbar190.customview.MainActivity194" />
+        <activity android:name=".activity.aealert.asstes195.MainActivity195" />
         <!-- viewpager -->
         <activity android:name=".view.viewpager.textview210.MainActivity210" />
         <activity android:name=".view.cbk.chabaike211.MainActivity211" />

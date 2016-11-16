@@ -15,9 +15,9 @@ import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
 import com.androidpath.view.flowlayout.libs.TagFlowLayout;
 import com.androidpath.view.hostarea.HotAreaActivity;
-import com.androidpath.view.normal.buttonselector30.ButtonSelectorActivtiy3;
-import com.androidpath.view.normal.clickreponse31.ButtonTestActivity31;
-import com.androidpath.view.normal.layoutdemo2.LayoutActivity2;
+import com.androidpath.activity.aalayout.buttonselector30.ButtonSelectorActivtiy3;
+import com.androidpath.activity.aalayout.clickreponse31.ButtonTestActivity31;
+import com.androidpath.activity.aalayout.layoutdemo2.LayoutActivity2;
 
 import java.util.Set;
 
