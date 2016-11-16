@@ -75,7 +75,6 @@ public class MainFlowlayoutActivity extends BaseActivity {
                     case 1:
                         startActivity(new Intent(MainFlowlayoutActivity.this, LanguageActivity.class));
                         break;
-
                     case 2:
                         startActivity(new Intent(MainFlowlayoutActivity.this, ButtonSelectorActivtiy3.class));
                         break;
