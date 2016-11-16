@@ -1,12 +1,16 @@
 package com.androidpath.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.async.demoone70.MainActivity70;
+import com.androidpath.async.demotwo71.MainActivity71;
+import com.androidpath.async.getimagestrong72.MainActivity72;
+import com.androidpath.async.progresslow73.MainActivity73;
 import com.androidpath.main.BaseActivity;
 import com.androidpath.util.FileUtils;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
@@ -40,7 +44,21 @@ public class AsyncActivity3 extends BaseActivity {
         mFlowLayout.setOnTagClickListener(new TagFlowLayout.OnTagClickListener() {
             @Override
             public boolean onTagClick(View view, int position, FlowLayout parent) {
-                Toast.makeText(AsyncActivity3.this, "" + position, Toast.LENGTH_SHORT).show();
+                switch (position){
+                    case 0:
+                        startActivity(new Intent(AsyncActivity3.this, MainActivity70.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(AsyncActivity3.this, MainActivity71.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(AsyncActivity3.this, MainActivity72.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(AsyncActivity3.this, MainActivity73.class));
+                        break;
+
+                }
                 return true;
             }
         });

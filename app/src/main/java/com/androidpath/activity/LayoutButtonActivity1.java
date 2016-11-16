@@ -35,7 +35,6 @@ import java.util.ArrayList;
  * since: V ${version} <br/>
  */
 
-
 public class LayoutButtonActivity1 extends BaseActivity {
     private TagAdapter<String> mAdapter;
     private TagFlowLayout mFlowLayout;
@@ -115,7 +114,6 @@ public class LayoutButtonActivity1 extends BaseActivity {
                 return true;
             }
         });
-
     }
 
 }

@@ -1,13 +1,20 @@
 package com.androidpath.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.activityjump50.MainActivity50;
+import com.androidpath.activity.activitypassvalue54.MainActivity54;
+import com.androidpath.activity.applicationpassvalue55.MainActivity55;
+import com.androidpath.activity.flagdemo74.MainActivity74;
+import com.androidpath.activity.getresult60.MainActivity60;
+import com.androidpath.activity.saveinstance76.MainActivity76;
+import com.androidpath.activity.taskdemo61.MainActivity61;
 import com.androidpath.main.BaseActivity;
 import com.androidpath.util.FileUtils;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
@@ -46,10 +53,40 @@ public class LiveCycleActivity2 extends BaseActivity {
                 return tv;
             }
         });
+        //ActivityJump50
+        //ActivityPassValue54
+        //ActivityPassValue55
+        //ActivityGetResult60
+        //ActivityTaskDemo61
+        //ActivityFlagDemo74
+        //ActivitySaveInstance76
         mFlowLayout.setOnTagClickListener(new TagFlowLayout.OnTagClickListener() {
             @Override
             public boolean onTagClick(View view, int position, FlowLayout parent) {
-                Toast.makeText(LiveCycleActivity2.this, "" + position, Toast.LENGTH_SHORT).show();
+               switch (position){
+                   case 0:
+                       startActivity(new Intent(LiveCycleActivity2.this, MainActivity50.class));
+                       break;
+                   case 1:
+                       startActivity(new Intent(LiveCycleActivity2.this, MainActivity54.class));
+                       break;
+                   case 2:
+                       startActivity(new Intent(LiveCycleActivity2.this, MainActivity55.class));
+                       break;
+                   case 3:
+                       startActivity(new Intent(LiveCycleActivity2.this, MainActivity60.class));
+                       break;
+                   case 4:
+                       startActivity(new Intent(LiveCycleActivity2.this, MainActivity61.class));
+                       break;
+                   case 5:
+                       startActivity(new Intent(LiveCycleActivity2.this, MainActivity74.class));
+                       break;
+                   case 6:
+                       startActivity(new Intent(LiveCycleActivity2.this, MainActivity76.class));
+                       break;
+
+               }
                 return true;
             }
         });
