@@ -27,7 +27,7 @@ import java.util.Set;
  * author: 7 <br/>
  * since: V ${version} <br/>
  */
-//zgjxfuqingwang@gmail.com
+
 public class MainFlowlayoutActivity extends BaseActivity {
     private TagAdapter<String> mAdapter;
     private String[] mVals = new String[]
@@ -75,6 +75,7 @@ public class MainFlowlayoutActivity extends BaseActivity {
                     case 1:
                         startActivity(new Intent(MainFlowlayoutActivity.this, LanguageActivity.class));
                         break;
+
                     case 2:
                         startActivity(new Intent(MainFlowlayoutActivity.this, ButtonSelectorActivtiy3.class));
                         break;

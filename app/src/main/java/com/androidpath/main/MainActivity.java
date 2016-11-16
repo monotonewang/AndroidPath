@@ -7,6 +7,7 @@ import android.support.v7.app.AlertDialog;
 import android.view.View;
 
 import com.androidpath.R;
+import com.androidpath.activity.LayoutButton;
 import com.androidpath.activity.activityjump50.MainActivity50;
 import com.androidpath.activity.activitypassvalue54.MainActivity54;
 import com.androidpath.activity.applicationpassvalue55.MainActivity55;
@@ -93,7 +94,6 @@ import com.androidpath.view.normal.edittext.autocompletetext51.MainActivity51;
 import com.androidpath.view.normal.edittext.edittextdemo32.MainActivity32;
 import com.androidpath.view.normal.imageviewdeal75.MainActivity75;
 import com.androidpath.view.normal.imageviewtest.MainActivity33;
-import com.androidpath.view.normal.layoutdemo2.LayoutActivity2;
 import com.androidpath.view.normal.spinner.spinnerdemo42.MainActivity42;
 import com.androidpath.view.normal.spinner.spinnerdemo43.MainActivity43;
 import com.androidpath.view.normal.spinner.spinnerlink52.MainActivity52;
@@ -114,12 +114,13 @@ import com.androidpath.widget.view.HandActivity;
 public class MainActivity extends BaseActivity {
 
     private AlertDialog dialog;
+    private String TAG = "ContentValues";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main1);
-
+//        setContentView(R.layout.activity_main1);
+        setContentView(R.layout.activity_main2);
     }
 
     @Override
@@ -151,13 +152,12 @@ public class MainActivity extends BaseActivity {
 
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.layoutdemo2:
-                startActivity(new Intent(MainActivity.this, LayoutActivity2.class));
+            case R.id.LayoutButton:
+                startActivity(new Intent(MainActivity.this, LayoutButton.class));
                 break;
             case R.id.languageSettings:
                 startActivity(new Intent(MainActivity.this, LanguageActivity.class));
                 break;
-
             case R.id.buttonselectordemo3:
                 startActivity(new Intent(MainActivity.this, ButtonSelectorActivtiy3.class));
                 break;
@@ -239,7 +239,6 @@ public class MainActivity extends BaseActivity {
             case R.id.FirstListView:
                 startActivity(new Intent(MainActivity.this, MainActivityFirstLV.class));
                 break;
-
             case R.id.listViewAddData81:
                 startActivity(new Intent(MainActivity.this, MainActivity81.class));
                 break;
