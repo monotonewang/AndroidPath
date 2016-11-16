@@ -29,7 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.flowlayout.MainFlowlayoutActivity"/>
+        <activity android:name=".view.flowlayout.MainFlowlayoutActivity" />
         <!-- this is layout activity -->
         <activity android:name=".view.normal.layoutdemo2.LayoutActivity2" />
         <activity android:name=".util.language.LanguageActivity" />
@@ -222,7 +222,8 @@
         <activity android:name=".activity.LiveCycleActivity2" />
         <activity android:name=".activity.AsyncActivity3" />
         <activity android:name=".activity.ListViewActivity4" />
-        <activity android:name=".activity.AlertActivity5"/>
+        <activity android:name=".activity.AlertActivity5" />
+        <activity android:name=".activity.FragmentActivity6"></activity>
     </application>
 
 </manifest>

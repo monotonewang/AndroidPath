@@ -38,6 +38,11 @@
                 android:id="@+id/alertActivity5"
                 style="@style/tvStyle"
                 android:text="@string/alertactivity5" />
+            <TextView
+                android:id="@+id/fragmentDemo6"
+                style="@style/tvStyle"
+                android:text="@string/fragmentdemo6" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

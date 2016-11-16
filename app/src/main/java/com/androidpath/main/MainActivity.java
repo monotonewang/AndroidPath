@@ -9,6 +9,7 @@ import android.view.View;
 import com.androidpath.R;
 import com.androidpath.activity.AlertActivity5;
 import com.androidpath.activity.AsyncActivity3;
+import com.androidpath.activity.FragmentActivity6;
 import com.androidpath.activity.LayoutButtonActivity1;
 import com.androidpath.activity.ListViewActivity4;
 import com.androidpath.activity.LiveCycleActivity2;
@@ -93,7 +94,6 @@ import com.androidpath.view.normal.buttonbgcolor40.MainActivity40;
 import com.androidpath.view.normal.checkradio41.MainActivity41;
 import com.androidpath.view.normal.edittext.autocompletetext51.MainActivity51;
 import com.androidpath.view.normal.imageviewdeal75.MainActivity75;
-import com.androidpath.view.normal.imageviewtest.MainActivity33;
 import com.androidpath.view.normal.spinner.spinnerdemo42.MainActivity42;
 import com.androidpath.view.normal.spinner.spinnerdemo43.MainActivity43;
 import com.androidpath.view.normal.spinner.spinnerlink52.MainActivity52;
@@ -167,8 +167,8 @@ public class MainActivity extends BaseActivity {
             case R.id.alertActivity5:
                 startActivity(new Intent(MainActivity.this, AlertActivity5.class));
                 break;
-            case R.id.imageviewTest33:
-                startActivity(new Intent(MainActivity.this, MainActivity33.class));
+            case R.id.fragmentDemo6:
+                startActivity(new Intent(MainActivity.this, FragmentActivity6.class));
                 break;
             case R.id.viewTest34:
                 startActivity(new Intent(MainActivity.this, MainActivity34.class));

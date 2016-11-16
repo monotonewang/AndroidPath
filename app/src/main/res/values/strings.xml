@@ -119,6 +119,7 @@
     <string name="asyncdemo3">asyncDemo3</string>
     <string name="listviewactivity4">listViewActivity4</string>
     <string name="alertactivity5">alertActivity5</string>
+    <string name="fragmentdemo6">fragmentDemo6</string>
 
     <string-array name="job_array">
         <item>程序员</item>

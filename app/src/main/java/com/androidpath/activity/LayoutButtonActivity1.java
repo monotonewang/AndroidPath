@@ -35,7 +35,7 @@ import java.util.ArrayList;
  * since: V ${version} <br/>
  */
 
-public class LayoutButtonActivity1 extends BaseActivity {
+public class LayoutButtonActivity1 extends BaseActivity implements TagFlowLayout.OnTagClickListener {
     private TagAdapter<String> mAdapter;
     private TagFlowLayout mFlowLayout;
     private String[] mVals;
@@ -57,7 +57,7 @@ public class LayoutButtonActivity1 extends BaseActivity {
                 return tv;
             }
         });
-
+        mFlowLayout.setOnTagClickListener(this);
 //        LayoutDemo2
 //        ButtonSelectorDemo3
 //        ButtonTestactivity31
@@ -70,50 +70,49 @@ public class LayoutButtonActivity1 extends BaseActivity {
 //        SpinnerDemo43
 //        SpinnerSimpleAdapter44
 //        SpinnerLink52
-        mFlowLayout.setOnTagClickListener(new TagFlowLayout.OnTagClickListener() {
-            @Override
-            public boolean onTagClick(View view, int position, FlowLayout parent) {
-                switch (position) {
-                    case 0:
-                        startActivity(new Intent(LayoutButtonActivity1.this, LayoutActivity2.class));
-                        break;
-                    case 1:
-                        startActivity(new Intent(LayoutButtonActivity1.this, ButtonSelectorActivtiy3.class));
-                        break;
-                    case 2:
-                        startActivity(new Intent(LayoutButtonActivity1.this, ButtonTestActivity31.class));
-                        break;
-                    case 3:
-                        startActivity(new Intent(LayoutButtonActivity1.this, MainActivity32.class));
-                        break;
-                    case 4:
-                        startActivity(new Intent(LayoutButtonActivity1.this, MainActivity33.class));
-                        break;
-                    case 5:
-                        startActivity(new Intent(LayoutButtonActivity1.this, MainActivity34.class));
-                        break;
-                    case 6:
-                        startActivity(new Intent(LayoutButtonActivity1.this, MainActivity40.class));
-                        break;
-                    case 7:
-                        startActivity(new Intent(LayoutButtonActivity1.this, MainActivity41.class));
-                        break;
-                    case 8:
-                        startActivity(new Intent(LayoutButtonActivity1.this, MainActivity42.class));
-                        break;
-                    case 9:
-                        startActivity(new Intent(LayoutButtonActivity1.this, MainActivity43.class));
-                        break;
-                    case 10:
-                        startActivity(new Intent(LayoutButtonActivity1.this, MainActivity44.class));
-                        break;
-                    case 11:
-                        startActivity(new Intent(LayoutButtonActivity1.this, MainActivity52.class));
-                        break;
-                }
-                return true;
-            }
-        });
+
     }
 
+    @Override
+    public boolean onTagClick(View view, int position, FlowLayout parent) {
+        switch (position) {
+            case 0:
+                startActivity(new Intent(LayoutButtonActivity1.this, LayoutActivity2.class));
+                break;
+            case 1:
+                startActivity(new Intent(LayoutButtonActivity1.this, ButtonSelectorActivtiy3.class));
+                break;
+            case 2:
+                startActivity(new Intent(LayoutButtonActivity1.this, ButtonTestActivity31.class));
+                break;
+            case 3:
+                startActivity(new Intent(LayoutButtonActivity1.this, MainActivity32.class));
+                break;
+            case 4:
+                startActivity(new Intent(LayoutButtonActivity1.this, MainActivity33.class));
+                break;
+            case 5:
+                startActivity(new Intent(LayoutButtonActivity1.this, MainActivity34.class));
+                break;
+            case 6:
+                startActivity(new Intent(LayoutButtonActivity1.this, MainActivity40.class));
+                break;
+            case 7:
+                startActivity(new Intent(LayoutButtonActivity1.this, MainActivity41.class));
+                break;
+            case 8:
+                startActivity(new Intent(LayoutButtonActivity1.this, MainActivity42.class));
+                break;
+            case 9:
+                startActivity(new Intent(LayoutButtonActivity1.this, MainActivity43.class));
+                break;
+            case 10:
+                startActivity(new Intent(LayoutButtonActivity1.this, MainActivity44.class));
+                break;
+            case 11:
+                startActivity(new Intent(LayoutButtonActivity1.this, MainActivity52.class));
+                break;
+        }
+        return true;
+    }
 }

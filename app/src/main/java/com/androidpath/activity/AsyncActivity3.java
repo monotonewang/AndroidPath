@@ -27,7 +27,6 @@ public class AsyncActivity3 extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_async);
-        setContentView(R.layout.activity_live_cycle);
         final LayoutInflater mInflater = LayoutInflater.from(this);
         ArrayList arrayList = FileUtils.getArrayList(this,R.raw.asyncdemo);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
