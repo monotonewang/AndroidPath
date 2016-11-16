@@ -12,7 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.androidpath.R;
-import com.androidpath.main.ApplicationMain;
+import com.androidpath.activity.aabase.ApplicationMain;
 
 /**
  * application pass value

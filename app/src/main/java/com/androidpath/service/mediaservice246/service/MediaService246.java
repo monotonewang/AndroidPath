@@ -15,7 +15,7 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.widget.RemoteViews;
 
 import com.androidpath.R;
-import com.androidpath.main.MainActivity;
+import com.androidpath.activity.aabase.MainActivity;
 import com.androidpath.service.mediaservice246.modle.MusicEntity;
 import com.androidpath.service.mediaservice246.util.Constants;
 

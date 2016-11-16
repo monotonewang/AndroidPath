@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.androidpath.R;
-import com.androidpath.main.ApplicationMain;
+import com.androidpath.activity.aabase.ApplicationMain;
 
 public class SecondActivity55 extends Activity {
 

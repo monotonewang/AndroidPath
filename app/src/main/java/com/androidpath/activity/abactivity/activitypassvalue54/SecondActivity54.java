@@ -3,7 +3,7 @@ package com.androidpath.activity.abactivity.activitypassvalue54;
 import android.os.Bundle;
 
 import com.androidpath.R;
-import com.androidpath.main.BaseActivity;
+import com.androidpath.activity.aabase.BaseActivity;
 
 public class SecondActivity54 extends BaseActivity {
 

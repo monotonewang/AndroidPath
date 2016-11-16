@@ -12,7 +12,7 @@ import com.androidpath.activity.affragment.dynicaddfragment123.MainActivity123;
 import com.androidpath.activity.affragment.fragmentpassvalue122.MainActivity122;
 import com.androidpath.activity.affragment.radiofragment124.MainActivity124;
 import com.androidpath.activity.affragment.staticfragment121.MainActivity121;
-import com.androidpath.main.BaseActivity;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.util.FileUtils;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;

@@ -11,7 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.androidpath.R;
-import com.androidpath.main.BaseActivity;
+import com.androidpath.activity.aabase.BaseActivity;
 
 public class MainActivity54 extends BaseActivity implements OnClickListener {
 

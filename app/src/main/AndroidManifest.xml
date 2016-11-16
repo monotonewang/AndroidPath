@@ -16,13 +16,13 @@
     <supports-gl-texture android:name="GL_OES_compressed_paletted_texture" />
 
     <application
-        android:name=".main.ApplicationMain"
+        android:name=".activity.aabase.ApplicationMain"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".main.MainActivity">
+        <activity android:name=".activity.aabase.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -118,30 +118,30 @@
         <activity android:name=".activity.affragment.dynicaddfragment123.MainActivity123" />
         <activity android:name=".activity.affragment.radiofragment124.MainActivity124" />
         <!-- storge -->
-        <activity android:name=".storge.sharedproference130.MainActivity130" />
-        <activity android:name=".storge.filestorge131.MainActivity131" />
-        <activity android:name=".storge.fileStorgetwo132.MainActivity132" />
-        <activity android:name=".storge.sql.sql140.MainActivity140" />
-        <activity android:name=".storge.sql.sqlclientone150.MainActivity150" />
-        <activity android:name=".storge.sql.sqlserverone151.MainActivity151" />
-        <activity android:name=".storge.sql.sqlclienttwo152.MainActivity152" />
-        <activity android:name=".storge.sql.sqlservertwo153.MainActivity153" />
-        <activity android:name=".storge.sql.sqldemo154.MainActivity154" />
-        <activity android:name=".storge.sql.simplecusoradapter155.MainActivity155" />
-        <activity android:name=".storge.contentobserver160.MainActivity160" />
-        <activity android:name=".storge.contentResolverContacts161.MainActivity161" />
-        <activity android:name=".storge.loadmanger170.MainActivity170" />
+        <activity android:name=".activity.agstorge.sharedproference130.MainActivity130" />
+        <activity android:name=".activity.agstorge.filestorge131.MainActivity131" />
+        <activity android:name=".activity.agstorge.fileStorgetwo132.MainActivity132" />
+        <activity android:name=".activity.agstorge.sql.sql140.MainActivity140" />
+        <activity android:name=".activity.agstorge.sql.sqlclientone150.MainActivity150" />
+        <activity android:name=".activity.agstorge.sql.sqlserverone151.MainActivity151" />
+        <activity android:name=".activity.agstorge.sql.sqlclienttwo152.MainActivity152" />
+        <activity android:name=".activity.agstorge.sql.sqlservertwo153.MainActivity153" />
+        <activity android:name=".activity.agstorge.sql.sqldemo154.MainActivity154" />
+        <activity android:name=".activity.agstorge.sql.simplecusoradapter155.MainActivity155" />
+        <activity android:name=".activity.agstorge.contentobserver160.MainActivity160" />
+        <activity android:name=".activity.agstorge.contentResolverContacts161.MainActivity161" />
+        <activity android:name=".activity.agstorge.loadmanger170.MainActivity170" />
         <!-- LoadManager -->
-        <activity android:name=".storge.loadmanagercontact171.MainActivity171" />
-        <activity android:name=".storge.loadmanagercontact171.SearchContactActivity171" />
-        <activity android:name=".storge.loadmanagercontact171.ShowContactActivity171" />
-        <activity android:name=".storge.loadmanagercontact171.ShowCustomProviderActivity171" />
+        <activity android:name=".activity.agstorge.loadmanagercontact171.MainActivity171" />
+        <activity android:name=".activity.agstorge.loadmanagercontact171.SearchContactActivity171" />
+        <activity android:name=".activity.agstorge.loadmanagercontact171.ShowContactActivity171" />
+        <activity android:name=".activity.agstorge.loadmanagercontact171.ShowCustomProviderActivity171" />
         <!-- handler -->
-        <activity android:name=".handler.handerimage180.MainActivity180" />
-        <activity android:name=".handler.handercycleiamge181.MainActivity181" />
-        <activity android:name=".handler.handlerlightcycle182.MainActivity182" />
-        <activity android:name=".handler.updateui183.MainActivity183" />
-        <activity android:name=".handler.handlerlopper184.MainActivity184" />
+        <activity android:name=".activity.ahhandler.handerimage180.MainActivity180" />
+        <activity android:name=".activity.ahhandler.handercycleiamge181.MainActivity181" />
+        <activity android:name=".activity.ahhandler.handlerlightcycle182.MainActivity182" />
+        <activity android:name=".activity.ahhandler.updateui183.MainActivity183" />
+        <activity android:name=".activity.ahhandler.handlerlopper184.MainActivity184" />
 
         <!-- actionbar -->
         <activity android:name=".activity.aealert.actionbar190.demo190.MainActivity190" />
@@ -150,7 +150,7 @@
         <activity android:name=".activity.aealert.actionbar190.tab192.MainActivity192" />
         <activity android:name=".activity.aealert.actionbar190.list193.MainActivity193" />
         <activity android:name=".activity.aealert.actionbar190.customview.MainActivity194" />
-        <activity android:name=".activity.aealert.asstes195.MainActivity195" />
+        <activity android:name=".activity.agstorge.asstes195.MainActivity195" />
         <!-- viewpager -->
         <activity android:name=".view.viewpager.textview210.MainActivity210" />
         <activity android:name=".view.cbk.chabaike211.MainActivity211" />
@@ -223,7 +223,9 @@
         <activity android:name=".activity.AsyncActivity3" />
         <activity android:name=".activity.ListViewActivity4" />
         <activity android:name=".activity.AlertActivity5" />
-        <activity android:name=".activity.FragmentActivity6"></activity>
+        <activity android:name=".activity.FragmentActivity6" />
+        <activity android:name=".activity.StorgeActivity7" />
+        <activity android:name=".activity.HandlerActivity8"></activity>
     </application>
 
 </manifest>

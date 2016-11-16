@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.androidpath.R;
-import com.androidpath.main.BaseActivity;
+import com.androidpath.activity.aabase.BaseActivity;
 
 public class OtherActivity50 extends BaseActivity {
 

@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.androidpath.R;
-import com.androidpath.main.BaseActivity;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.util.language.LanguageActivity;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;

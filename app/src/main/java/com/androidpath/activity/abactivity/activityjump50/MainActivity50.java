@@ -16,8 +16,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.androidpath.R;
-import com.androidpath.main.ApplicationMain;
-import com.androidpath.main.BaseActivity;
+import com.androidpath.activity.aabase.ApplicationMain;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.io.File;
 

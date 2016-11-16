@@ -27,7 +27,7 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
 import com.androidpath.R;
-import com.androidpath.main.ApplicationMain;
+import com.androidpath.activity.aabase.ApplicationMain;
 import com.androidpath.service.mediaservice246.modle.MusicEntity;
 import com.androidpath.service.mediaservice246.service.MediaService246;
 import com.androidpath.service.mediaservice246.util.Constants;

@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.androidpath.R;
-import com.androidpath.main.BaseActivity;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.view.hostarea.entity.HotArea;
 import com.androidpath.view.hostarea.utils.FileUtils;
 import com.androidpath.view.hostarea.view.HotClickView;

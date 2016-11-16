@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.androidpath.R;
-import com.androidpath.main.BaseActivity;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.util.FileUtils;
 import com.androidpath.activity.aealert.actionbar190.customview.MainActivity194;
 import com.androidpath.activity.aealert.actionbar190.demo190.MainActivity190;

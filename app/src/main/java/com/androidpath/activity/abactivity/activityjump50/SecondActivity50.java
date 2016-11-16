@@ -3,7 +3,7 @@ package com.androidpath.activity.abactivity.activityjump50;
 import android.os.Bundle;
 
 import com.androidpath.R;
-import com.androidpath.main.BaseActivity;
+import com.androidpath.activity.aabase.BaseActivity;
 
 public class SecondActivity50 extends BaseActivity {
 

@@ -15,7 +15,7 @@ import com.androidpath.activity.abactivity.flagdemo74.MainActivity74;
 import com.androidpath.activity.abactivity.getresult60.MainActivity60;
 import com.androidpath.activity.abactivity.saveinstance76.MainActivity76;
 import com.androidpath.activity.abactivity.taskdemo61.MainActivity61;
-import com.androidpath.main.BaseActivity;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.util.FileUtils;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;

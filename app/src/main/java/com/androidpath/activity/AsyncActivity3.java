@@ -11,7 +11,7 @@ import com.androidpath.activity.acasync.demoone70.MainActivity70;
 import com.androidpath.activity.acasync.demotwo71.MainActivity71;
 import com.androidpath.activity.acasync.getimagestrong72.MainActivity72;
 import com.androidpath.activity.acasync.progresslow73.MainActivity73;
-import com.androidpath.main.BaseActivity;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.util.FileUtils;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
