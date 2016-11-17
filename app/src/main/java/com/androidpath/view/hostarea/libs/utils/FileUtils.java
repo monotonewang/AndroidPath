@@ -1,4 +1,4 @@
-package com.androidpath.view.hostarea.utils;
+package com.androidpath.view.hostarea.libs.utils;
 
 import java.io.IOException;
 import java.io.InputStream;

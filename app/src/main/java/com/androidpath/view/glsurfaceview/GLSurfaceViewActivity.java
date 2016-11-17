@@ -4,6 +4,8 @@ import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.androidpath.view.glsurfaceview.libs.MyGLSurfaceView;
+
 public class GLSurfaceViewActivity extends AppCompatActivity {
     private GLSurfaceView mGLView;
 

@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
 
-    <com.androidpath.view.hostarea.view.HotClickView
+    <com.androidpath.view.hostarea.libs.view.HotClickView
         android:id="@+id/a_main_hotview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

@@ -1,4 +1,4 @@
-package com.androidpath.view.glsurfaceview;
+package com.androidpath.view.glsurfaceview.libs;
 
 import android.opengl.GLSurfaceView;
 import android.util.Log;

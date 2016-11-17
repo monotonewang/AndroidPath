@@ -1,10 +1,11 @@
-package com.androidpath.view.widget.handview;
+package com.androidpath.view.widget;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
 import com.androidpath.R;
+import com.androidpath.view.widget.handview.DrawDemo2;
 
 /**
  * deso: AndroidPath TODO<br/>

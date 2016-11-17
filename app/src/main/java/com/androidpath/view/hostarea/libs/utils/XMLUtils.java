@@ -1,8 +1,8 @@
-package com.androidpath.view.hostarea.utils;
+package com.androidpath.view.hostarea.libs.utils;
 
 import android.content.Context;
 
-import com.androidpath.view.hostarea.entity.HotArea;
+import com.androidpath.view.hostarea.libs.entity.HotArea;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

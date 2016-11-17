@@ -1,4 +1,4 @@
-package com.androidpath.view.hostarea.utils;
+package com.androidpath.view.hostarea.libs.utils;
 
 import android.text.TextUtils;
 import android.util.Log;

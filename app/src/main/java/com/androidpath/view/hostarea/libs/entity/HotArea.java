@@ -1,4 +1,4 @@
-package com.androidpath.view.hostarea.entity;
+package com.androidpath.view.hostarea.libs.entity;
 
 import android.graphics.Path;
 import android.graphics.RectF;

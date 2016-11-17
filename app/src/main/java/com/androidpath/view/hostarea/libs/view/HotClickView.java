@@ -1,4 +1,4 @@
-package com.androidpath.view.hostarea.view;
+package com.androidpath.view.hostarea.libs.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -19,9 +19,9 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 
 import com.androidpath.R;
-import com.androidpath.view.hostarea.entity.HotArea;
-import com.androidpath.view.hostarea.utils.LogUtils;
-import com.androidpath.view.hostarea.utils.XMLUtils;
+import com.androidpath.view.hostarea.libs.entity.HotArea;
+import com.androidpath.view.hostarea.libs.utils.LogUtils;
+import com.androidpath.view.hostarea.libs.utils.XMLUtils;
 
 import java.io.InputStream;
 import java.util.HashMap;
