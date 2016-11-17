@@ -213,7 +213,7 @@
 
         <service android:name=".activity.akservice.mediaservice246.service.MediaService246" />
         <!-- SurfaceView -->
-        <activity android:name=".view.custom.surfaceview.SurfaceViewMainActivity" />
+        <activity android:name=".view.surfaceview.SurfaceViewMainActivity" />
         <!-- GL SurfaceView -->
         <activity android:name=".view.glsurfaceview.GLSurfaceViewActivity" />
         <!-- Hot Area Activty -->
@@ -228,7 +228,8 @@
         <activity android:name=".activity.aabase.asecondactivity.HandlerActivity8" />
         <activity android:name=".activity.aabase.asecondactivity.ViewPagerActivity9" />
         <activity android:name=".activity.aabase.asecondactivity.BroadcastActivity10" />
-        <activity android:name=".activity.aabase.asecondactivity.ServiceActivity11"></activity>
+        <activity android:name=".activity.aabase.asecondactivity.ServiceActivity11" />
+        <activity android:name=".view.widget.custom.SloopActivity" />
     </application>
 
 </manifest>

@@ -2,70 +2,95 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
-    <ScrollView
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+        <TextView
+            android:id="@+id/layoutButton1"
+            android:text="@string/layoutbutton1"
+            style="@style/tvStyle"
+            />
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/Settings"
+            android:text="@string/Settings"
+            style="@style/tvStyle"
+            />
+      </RelativeLayout>
 
 
-            <TextView
-                android:id="@+id/layoutButton1"
-                style="@style/tvStyle"
-                android:text="@string/layoutbutton1" />
+      <TextView
+          android:id="@+id/activityLiveCycle2"
+          android:text="@string/activitylivecycle2"
+          style="@style/tvStyle"
+          />
 
-            <TextView
-                android:id="@+id/activityLiveCycle2"
-                style="@style/tvStyle"
-                android:text="@string/activitylivecycle2" />
+      <TextView
+          android:id="@+id/asyncDemo3"
+          android:text="@string/asyncdemo3"
+          style="@style/tvStyle"
+          />
 
-            <TextView
-                android:id="@+id/asyncDemo3"
-                style="@style/tvStyle"
-                android:text="@string/asyncdemo3" />
+      <TextView
+          android:id="@+id/listViewActivity4"
+          android:text="@string/listviewactivity4"
+          style="@style/tvStyle"
+          />
 
-            <TextView
-                android:id="@+id/listViewActivity4"
-                style="@style/tvStyle"
-                android:text="@string/listviewactivity4" />
+      <TextView
+          android:id="@+id/alertActivity5"
+          android:text="@string/alertactivity5"
+          style="@style/tvStyle"
+          />
 
-            <TextView
-                android:id="@+id/alertActivity5"
-                style="@style/tvStyle"
-                android:text="@string/alertactivity5" />
+      <TextView
+          android:id="@+id/fragmentDemo6"
+          android:text="@string/fragmentdemo6"
+          style="@style/tvStyle"
+          />
 
-            <TextView
-                android:id="@+id/fragmentDemo6"
-                style="@style/tvStyle"
-                android:text="@string/fragmentdemo6" />
+      <TextView
+          android:id="@+id/storgeDemo7"
+          android:text="@string/storgedemo7"
+          style="@style/tvStyle"
+          />
 
-            <TextView
-                android:id="@+id/storgeDemo7"
-                style="@style/tvStyle"
-                android:text="@string/storgedemo7" />
+      <TextView
+          android:id="@+id/handlerDemo8"
+          android:text="@string/handlerdemo8"
+          style="@style/tvStyle"
+          />
+      <TextView
+          android:id="@+id/viewPagerDemo9"
+          android:text="@string/viewPagerDemo9"
+          style="@style/tvStyle"
+          />
+      <TextView
+          android:id="@+id/broadcastDemo10"
+          android:text="@string/broadcastdemo10"
+          style="@style/tvStyle"
+          />
+      <TextView
+          android:id="@+id/serviceDemo11"
+          android:text="@string/serviceDemo11"
+          style="@style/tvStyle"
+          />
 
-            <TextView
-                android:id="@+id/handlerDemo8"
-                style="@style/tvStyle"
-                android:text="@string/handlerdemo8" />
-            <TextView
-                android:id="@+id/viewPagerDemo9"
-                style="@style/tvStyle"
-                android:text="@string/viewPagerDemo9" />
-            <TextView
-                android:id="@+id/broadcastDemo10"
-                style="@style/tvStyle"
-                android:text="@string/broadcastdemo10" />
-            <TextView
-                android:id="@+id/serviceDemo11"
-                style="@style/tvStyle"
-                android:text="@string/serviceDemo11" />
-
-        </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+  </ScrollView>
 </LinearLayout>

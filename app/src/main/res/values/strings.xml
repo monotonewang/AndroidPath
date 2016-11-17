@@ -23,6 +23,7 @@
     <string name="viewPagerDemo9">viewPagerDemo9</string>
     <string name="broadcastdemo10">broadcastDemo10</string>
     <string name="serviceDemo11">serviceDemo11</string>
+    <string name="Settings">Settings</string>
 
     <string-array name="job_array">
         <item>程序员</item>

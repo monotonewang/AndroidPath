@@ -18,6 +18,7 @@ import com.androidpath.activity.aabase.asecondactivity.LiveCycleActivity2;
 import com.androidpath.activity.aabase.asecondactivity.ServiceActivity11;
 import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
 import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
+import com.androidpath.view.widget.custom.SloopActivity;
 
 /**
  * zgjxfuqingwang@gmail.com
@@ -40,7 +41,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void onBackPressed() {
-//        super.onBackPressed();
+        //        super.onBackPressed();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("exit");
         builder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
@@ -95,15 +96,17 @@ public class MainActivity extends BaseActivity {
             case R.id.serviceDemo11:
                 startActivity(new Intent(MainActivity.this, ServiceActivity11.class));
                 break;
-//            case R.id.SurfaceViewBird:
-//                startActivity(new Intent(MainActivity.this, SurfaceViewMainActivity.class));
-//                break;
-//            case R.id.GLSurfaceView:
-//                startActivity(new Intent(MainActivity.this, GLSurfaceViewActivity.class));
-//                break;
+            case R.id.Settings:
+                startActivity(new Intent(MainActivity.this, SloopActivity.class));
+                break;
+            //            case R.id.SurfaceViewBird:
+            //                startActivity(new Intent(MainActivity.this, SurfaceViewMainActivity.class));
+            //                break;
+            //            case R.id.GLSurfaceView:
+            //                startActivity(new Intent(MainActivity.this, GLSurfaceViewActivity.class));
+            //                break;
             default:
                 break;
-
         }
     }
 }
