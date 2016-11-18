@@ -1,4 +1,4 @@
-package com.androidpath.view.widget.custom.customview1;
+package com.androidpath.view.widget.custom.canvasshape;
 
 /**
  * deso: AndroidPath TODO<br/>
@@ -8,11 +8,12 @@ package com.androidpath.view.widget.custom.customview1;
  */
 
 public class PieData {
+    int colorIndex;//用户任意选择颜色
+    int per;//选择占得比例
+
     int color;
     int leftAngle;
     int rightAngle;
-    int colorIndex;
-    int per;
     float perCentage;
     float angle;
 

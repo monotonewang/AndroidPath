@@ -1,4 +1,4 @@
-package com.androidpath.view.widget.custom.customview1;
+package com.androidpath.view.widget.custom.canvasshape;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -30,14 +30,14 @@ public class SloopActivity extends BaseActivity {
         arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
         arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
         arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
-        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
-        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
-        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
-        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
-        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
-        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
-        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
-        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
+//        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
+//        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
+//        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
+//        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
+//        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
+//        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
+//        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
+//        arrayList.add(new PieData((int) (Math.random() * a + 1), (int) (Math.random() * b + 1)));
         pieView.setDatas(arrayList);
     }
 }

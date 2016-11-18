@@ -229,7 +229,7 @@
         <activity android:name=".activity.aabase.asecondactivity.ViewPagerActivity9" />
         <activity android:name=".activity.aabase.asecondactivity.BroadcastActivity10" />
         <activity android:name=".activity.aabase.asecondactivity.ServiceActivity11" />
-        <activity android:name=".view.widget.custom.customview1.SloopActivity" />
+        <activity android:name=".view.widget.custom.canvasshape.SloopActivity" />
     </application>
 
 </manifest>
