@@ -97,9 +97,9 @@ public class SloopView extends View {
 //        RectF rectFY = new RectF(100, 100, 800, 400);
 //        canvas.drawOval(rectFY, mPaint);
 // 第二种
-      //  canvas.drawOval(100, 100, 800, 400, mPaint); //need api 21
+        //  canvas.drawOval(100, 100, 800, 400, mPaint); //need api 21
         //圆
-        canvas.drawCircle(500,500,400,mPaint);  // 绘制一个圆心坐标在(500,500)，半径为400 的圆。
+        canvas.drawCircle(500, 500, 400, mPaint);  // 绘制一个圆心坐标在(500,500)，半径为400 的圆。
     }
 
     //public SloopView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
