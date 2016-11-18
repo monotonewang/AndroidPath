@@ -1,4 +1,4 @@
-package com.androidpath.view.widget.custom;
+package com.androidpath.view.widget.custom.customview1;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 
 /**
+ * http://www.gcssloop.com/customview/Canvas_BasicGraphics
  * deso: AndroidPath TODO<br/>
  * time: 2016/11/17 16:37 <br/>
  * author: 7 <br/>
@@ -40,7 +41,7 @@ public class SloopView extends View {
     private void initPaint() {
         mPaint = new Paint();
         mPaint.setColor(Color.RED);
-        mPaint.setStyle(Paint.Style.FILL);
+//        mPaint.setStyle(Paint.Style.FILL);
         mPaint.setStrokeWidth(10f);
     }
 
@@ -99,7 +100,33 @@ public class SloopView extends View {
 // 第二种
         //  canvas.drawOval(100, 100, 800, 400, mPaint); //need api 21
         //圆
-        canvas.drawCircle(500, 500, 400, mPaint);  // 绘制一个圆心坐标在(500,500)，半径为400 的圆。
+//        canvas.drawCircle(500, 500, 400, mPaint);  // 绘制一个圆心坐标在(500,500)，半径为400 的圆。
+//        RectF rectF = new RectF(100, 100, 800, 400);
+//        // 绘制背景矩形
+//        mPaint.setColor(Color.GRAY);
+//        canvas.drawRect(rectF, mPaint);
+//        mPaint.setColor(Color.BLUE);
+//        // 圆弧第一种
+//        RectF rectFY = new RectF(100, 100, 800, 400);
+//        canvas.drawArc(rectF, 0, 90, true, mPaint);
+
+        Paint paint = new Paint();
+        paint.setColor(Color.BLUE);
+        paint.setStrokeWidth(40);     //为了实验效果明显，特地设置描边宽度非常大
+
+// 描边
+        paint.setStyle(Paint.Style.STROKE);
+        canvas.drawCircle(200,200,100,paint);
+
+// 填充
+        paint.setStyle(Paint.Style.FILL);
+        canvas.drawCircle(200,500,100,paint);
+
+// 描边加填充
+        paint.setStyle(Paint.Style.FILL_AND_STROKE);
+        canvas.drawCircle(200, 800, 100, paint);
+
+
     }
 
     //public SloopView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {

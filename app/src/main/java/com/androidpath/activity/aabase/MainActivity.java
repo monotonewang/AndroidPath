@@ -18,7 +18,7 @@ import com.androidpath.activity.aabase.asecondactivity.LiveCycleActivity2;
 import com.androidpath.activity.aabase.asecondactivity.ServiceActivity11;
 import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
 import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
-import com.androidpath.view.widget.custom.SloopActivity;
+import com.androidpath.view.widget.custom.customview1.SloopActivity;
 
 /**
  * zgjxfuqingwang@gmail.com
