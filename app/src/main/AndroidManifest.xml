@@ -234,6 +234,7 @@
         <activity android:name=".view.widget.custom.canvastext.PictureActivity" />
         <activity android:name=".view.widget.custom.canvaspath.PathActivity" />
         <activity android:name=".view.widget.custom.canvasBezier.BezierActivity" />
+        <activity android:name=".view.widget.custom.canvasmesure.PathMesureActivity" />
 
     </application>
 
