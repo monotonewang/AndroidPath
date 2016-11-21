@@ -12,7 +12,7 @@ import java.util.List;
  * author: 7 <br/>
  * since: V ${version} <br/>
  */
-
+//zgjxfuqingwang@gmail.com
 public class ApplicationMain extends Application {
 
     private static List<AppCompatActivity> mActivityList = new LinkedList<>();
