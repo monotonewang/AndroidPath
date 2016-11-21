@@ -18,7 +18,10 @@ import com.androidpath.activity.aabase.asecondactivity.LiveCycleActivity2;
 import com.androidpath.activity.aabase.asecondactivity.ServiceActivity11;
 import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
 import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
+import com.androidpath.view.widget.custom.canvasBezier.BezierActivity;
+import com.androidpath.view.widget.custom.canvaspath.PathActivity;
 import com.androidpath.view.widget.custom.canvasshape.SloopActivity;
+import com.androidpath.view.widget.custom.canvastext.PictureActivity;
 
 /**
  * zgjxfuqingwang@gmail.com
@@ -97,7 +100,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, ServiceActivity11.class));
                 break;
             case R.id.Settings:
-                startActivity(new Intent(MainActivity.this, SloopActivity.class));
+                startActivity(new Intent(MainActivity.this, BezierActivity.class));
                 break;
             //            case R.id.SurfaceViewBird:
             //                startActivity(new Intent(MainActivity.this, SurfaceViewMainActivity.class));
