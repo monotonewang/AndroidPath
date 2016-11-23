@@ -1,13 +1,14 @@
 package com.androidpath.activity.agstorge.loadmanagercontact171;
 
-import android.app.Activity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity171 extends Activity {
+public class MainActivity171 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

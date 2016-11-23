@@ -1,6 +1,5 @@
 package com.androidpath.activity.acasync.demotwo71;
 
-import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -10,6 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,7 +17,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-public class MainActivity71 extends Activity {
+public class MainActivity71 extends BaseActivity {
 
 	private ImageView imageView;
 	int count = 0;

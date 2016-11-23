@@ -1,17 +1,17 @@
 package com.androidpath.activity.aalayout.spinner.spinnersimpleAdapter44;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class MainActivity44 extends Activity {
+public class MainActivity44 extends BaseActivity {
 
 
     @Override

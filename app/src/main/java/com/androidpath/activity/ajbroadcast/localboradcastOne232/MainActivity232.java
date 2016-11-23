@@ -1,6 +1,5 @@
 package com.androidpath.activity.ajbroadcast.localboradcastOne232;
 
-import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +9,7 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 /**
  * 静态注册，receiver的名称是广播接受者类。
@@ -17,7 +17,7 @@ import com.androidpath.R;
  * 其他项目调用要求是action的名称是静态注册的action的名称。
  * 只有有序广播才可以拦截
  */
-public class MainActivity232 extends Activity {
+public class MainActivity232 extends BaseActivity {
 
     private LocalBroadcastManager localBroadcastManager;
     private MyReceiver myReceiver;

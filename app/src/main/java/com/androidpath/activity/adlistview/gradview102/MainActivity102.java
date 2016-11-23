@@ -1,14 +1,14 @@
 package com.androidpath.activity.adlistview.gradview102;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity102 extends Activity {
+public class MainActivity102 extends BaseActivity {
 
     private ImageView headImageView;
 

@@ -1,15 +1,15 @@
 package com.androidpath.activity.affragment.dynicaddfragment123;
 
-import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 //
-public class MainActivity123 extends Activity {
+public class MainActivity123 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

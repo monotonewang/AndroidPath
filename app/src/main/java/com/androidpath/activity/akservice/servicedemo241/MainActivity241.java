@@ -1,11 +1,12 @@
 package com.androidpath.activity.akservice.servicedemo241;
 
-import android.app.Activity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 /**
  * 认识Service：
@@ -32,7 +33,7 @@ import com.androidpath.R;
  * @author Ken
  *
  */
-public class MainActivity241 extends Activity {
+public class MainActivity241 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

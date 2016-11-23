@@ -1,18 +1,18 @@
 package com.androidpath.activity.ahhandler.handlerlightcycle182;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class MainActivity182 extends Activity {
+public class MainActivity182 extends BaseActivity {
 
 	private RelativeLayout rootLayout;
 	View[] views;

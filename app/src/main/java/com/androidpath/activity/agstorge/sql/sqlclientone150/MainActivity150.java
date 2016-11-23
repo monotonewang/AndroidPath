@@ -1,6 +1,5 @@
 package com.androidpath.activity.agstorge.sql.sqlclientone150;
 
-import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -10,8 +9,9 @@ import android.util.Log;
 import android.view.View;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity150 extends Activity {
+public class MainActivity150 extends BaseActivity {
 
 	// uri字符串的结构：
 	// 第一部分content：//类似一种协议，只要是要访问contentprovider提供的数据就定义成 content：//

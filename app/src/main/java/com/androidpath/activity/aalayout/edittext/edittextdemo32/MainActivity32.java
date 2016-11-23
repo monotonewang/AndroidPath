@@ -1,11 +1,11 @@
 package com.androidpath.activity.aalayout.edittext.edittextdemo32;
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity32 extends Activity {
+public class MainActivity32 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

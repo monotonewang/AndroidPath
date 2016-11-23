@@ -1,6 +1,5 @@
 package com.androidpath.activity.aealert.notification112;
 
-import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -16,6 +15,7 @@ import android.view.View;
 import android.widget.RemoteViews;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -24,7 +24,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class MainActivity112 extends Activity {
+public class MainActivity112 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

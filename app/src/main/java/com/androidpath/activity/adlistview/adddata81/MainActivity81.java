@@ -1,17 +1,17 @@
 package com.androidpath.activity.adlistview.adddata81;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity81 extends Activity {
+public class MainActivity81 extends BaseActivity {
 
     private ListView listView;
     private int count = 0;

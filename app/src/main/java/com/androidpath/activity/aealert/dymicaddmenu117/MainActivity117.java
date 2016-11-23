@@ -1,14 +1,14 @@
 package com.androidpath.activity.aealert.dymicaddmenu117;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity117 extends Activity {
+public class MainActivity117 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

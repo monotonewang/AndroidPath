@@ -1,6 +1,6 @@
 package com.androidpath.activity.ahhandler.handlerlopper184;
 
-import android.app.Activity;
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -9,8 +9,9 @@ import android.util.Log;
 import android.view.View;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity184 extends Activity {
+public class MainActivity184 extends BaseActivity {
 	private Handler handler;
 
 	@Override

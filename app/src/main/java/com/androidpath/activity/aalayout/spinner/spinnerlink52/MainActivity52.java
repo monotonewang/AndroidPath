@@ -1,6 +1,5 @@
 package com.androidpath.activity.aalayout.spinner.spinnerlink52;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.aalayout.spinner.spinnerlink52.util.MyXmlParser52;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class MainActivity52 extends Activity {
+public class MainActivity52 extends BaseActivity {
 
 	private List<String> cityList;
 	private Map<String, List<String>> map;

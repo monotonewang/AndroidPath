@@ -1,12 +1,12 @@
 package com.androidpath.activity.aalayout.viewtest34;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity34 extends Activity {
+public class MainActivity34 extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,6 +1,6 @@
 package com.androidpath.activity.aiviewpager.tabtwo221;
 
-import android.app.Activity;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
@@ -16,11 +16,12 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity221 extends Activity implements OnPageChangeListener, OnClickListener {
+public class MainActivity221 extends BaseActivity implements OnPageChangeListener, OnClickListener {
 
 	private String[] datas = {"头条", "直播间", "USA NBA BASKETBALL", "科技", "体育在线"};
 	private List<Integer> viewWidths;//用来存放所有tab组件的宽度

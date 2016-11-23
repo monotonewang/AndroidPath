@@ -1,6 +1,5 @@
 package com.androidpath.activity.aealert.actionbar190.customview;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -12,8 +11,9 @@ import android.widget.SearchView;
 import android.widget.SearchView.OnQueryTextListener;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity194 extends Activity {
+public class MainActivity194 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

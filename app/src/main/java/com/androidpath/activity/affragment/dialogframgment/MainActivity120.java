@@ -1,6 +1,5 @@
 package com.androidpath.activity.affragment.dialogframgment;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -8,8 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity120 extends Activity {
+public class MainActivity120 extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

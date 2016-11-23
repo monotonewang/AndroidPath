@@ -42,5 +42,6 @@
         <item>清蒸鲈鱼</item>
         <item>大闸蟹</item>
     </string-array>
-
+    <string name="menu_name">菜单</string>
+    <string name="dish_name">菜名</string>
 </resources>

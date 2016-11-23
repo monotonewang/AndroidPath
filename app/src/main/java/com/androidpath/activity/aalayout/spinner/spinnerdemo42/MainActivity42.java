@@ -1,13 +1,13 @@
 package com.androidpath.activity.aalayout.spinner.spinnerdemo42;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity42 extends Activity {
+public class MainActivity42 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

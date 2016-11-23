@@ -1,6 +1,5 @@
 package com.androidpath.activity.aealert.actionbar190.provider191;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,8 +7,9 @@ import android.view.MenuItem;
 import android.widget.ShareActionProvider;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity191 extends Activity {
+public class MainActivity191 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -1,6 +1,5 @@
 package com.androidpath.activity.ahhandler.handercycleiamge181;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -10,8 +9,9 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity181 extends Activity {
+public class MainActivity181 extends BaseActivity {
 
 	private ImageView imageView;
 	private int[] imageIds;

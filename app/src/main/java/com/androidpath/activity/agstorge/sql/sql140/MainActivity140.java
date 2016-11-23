@@ -1,6 +1,5 @@
 package com.androidpath.activity.agstorge.sql.sql140;
 
-import android.app.Activity;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -9,8 +8,9 @@ import android.util.Log;
 import android.view.View;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity140 extends Activity {
+public class MainActivity140 extends BaseActivity {
 	// CREATE TABLE tb_newwords (_id INTEGER PRIMARY KEY AUTOINCREMENT , words  , detail );
 	private static final String TABALENAME = "person";
 	private static final String CREATETABLE = "CREATE TABLE " + TABALENAME

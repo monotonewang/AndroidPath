@@ -1,6 +1,5 @@
 package com.androidpath.activity.akservice.mediaservice.mediaservice243;
 
-import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -13,11 +12,12 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class MainActivity243 extends Activity implements OnSeekBarChangeListener {
+public class MainActivity243 extends BaseActivity implements OnSeekBarChangeListener {
 
 	private SeekBar seekBar;
 	private TextView tv;

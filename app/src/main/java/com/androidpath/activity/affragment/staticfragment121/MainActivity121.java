@@ -1,12 +1,12 @@
 package com.androidpath.activity.affragment.staticfragment121;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity121 extends Activity {
+public class MainActivity121 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -10,8 +10,9 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity172 extends Activity implements LoaderCallbacks<Bitmap>{
+public class MainActivity172 extends BaseActivity implements LoaderCallbacks<Bitmap>{
 	String urlString = "http://a3.att.hudong.com/50/30/01300000322847123114301689718.jpg";
 	private LoaderManager loaderManager;
 	private ImageView imageView;

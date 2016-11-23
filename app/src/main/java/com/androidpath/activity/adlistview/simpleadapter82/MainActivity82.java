@@ -1,6 +1,5 @@
 package com.androidpath.activity.adlistview.simpleadapter82;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -10,12 +9,13 @@ import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class MainActivity82 extends Activity {
+public class MainActivity82 extends BaseActivity {
 
 	private List<HashMap<String, Object>> list;
 

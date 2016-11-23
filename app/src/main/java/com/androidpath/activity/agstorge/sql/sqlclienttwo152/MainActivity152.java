@@ -1,6 +1,5 @@
 package com.androidpath.activity.agstorge.sql.sqlclienttwo152;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -14,8 +13,9 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity152 extends Activity {
+public class MainActivity152 extends BaseActivity {
 
 	private ContentResolver resolver;
 	private String stuUriString = "content://com.androidpath.sql.sqlclienttwo152.mycontentprovider/student";

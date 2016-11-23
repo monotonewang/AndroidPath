@@ -1,6 +1,5 @@
 package com.androidpath.activity.agstorge.sql.simplecusoradapter155;
 
-import android.app.Activity;
 import android.content.ContentResolver;
 import android.database.Cursor;
 import android.net.Uri;
@@ -14,10 +13,11 @@ import android.widget.SearchView.OnCloseListener;
 import android.widget.SearchView.OnQueryTextListener;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.regex.Pattern;
 
-public class MainActivity155 extends Activity {
+public class MainActivity155 extends BaseActivity {
 
 	private static final String uriString = "content://com.androidpath.sql.mycontentprovider/student";
 	private ListView listView;

@@ -1,6 +1,5 @@
 package com.androidpath.activity.adlistview.listviewexpandable101;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.View;
@@ -12,8 +11,9 @@ import android.widget.SimpleExpandableListAdapter;
 import android.widget.TextView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity101 extends Activity {
+public class MainActivity101 extends BaseActivity {
 
 	private String provinces[];
 	private String cities[][];

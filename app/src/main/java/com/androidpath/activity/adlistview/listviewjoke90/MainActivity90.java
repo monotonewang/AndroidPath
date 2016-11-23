@@ -1,6 +1,5 @@
 package com.androidpath.activity.adlistview.listviewjoke90;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,12 +9,13 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.adlistview.listviewjoke90.bean.Joke;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity90 extends Activity {
+public class MainActivity90 extends BaseActivity {
 
     private ListView listView;
     //	private String urlString = "http://api.1-blog.com/biz/bizserver/xiaohua/list.do?size=10&page=";

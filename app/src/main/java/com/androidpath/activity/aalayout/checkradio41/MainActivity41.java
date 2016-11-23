@@ -13,8 +13,9 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity41 extends Activity implements OnCheckedChangeListener, OnClickListener {
+public class MainActivity41 extends BaseActivity implements OnCheckedChangeListener, OnClickListener {
 
 	private CheckBox movieBox;//属性：引用，全局变量
 	private CheckBox codingBox;

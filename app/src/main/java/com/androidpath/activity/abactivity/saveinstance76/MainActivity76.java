@@ -1,6 +1,5 @@
 package com.androidpath.activity.abactivity.saveinstance76;
 
-import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -9,8 +8,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity76 extends Activity {
+public class MainActivity76 extends BaseActivity {
 
     private String TAG = "MainActivity76";
     private EditText editText;

@@ -1,11 +1,11 @@
-package com.androidpath.view.widget;
+package com.androidpath.view.widget.handview;
 
-import android.app.Activity;
+
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
 import com.androidpath.R;
-import com.androidpath.view.widget.handview.DrawDemo2;
+import com.androidpath.activity.aabase.BaseActivity;
 
 /**
  * deso: AndroidPath TODO<br/>
@@ -14,7 +14,7 @@ import com.androidpath.view.widget.handview.DrawDemo2;
  * since: V ${version} <br/>
  */
 
-public class HandActivity extends Activity {
+public class HandActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

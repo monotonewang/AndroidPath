@@ -1,14 +1,15 @@
 package com.androidpath.activity.ahhandler.updateui183;
 
-import android.app.Activity;
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity183 extends Activity {
+public class MainActivity183 extends BaseActivity {
 
 	private  boolean flag = true;
 	private TextView textView;

@@ -1,6 +1,5 @@
 package com.androidpath.activity.aalayout.edittext.autocompletetext51;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -10,11 +9,12 @@ import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity51 extends Activity {
+public class MainActivity51 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

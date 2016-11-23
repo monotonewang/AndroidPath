@@ -1,6 +1,5 @@
 package com.androidpath.activity.aalayout.clickreponse31;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -9,6 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 /**
  * deso: AndroidPath TODO<br/>
@@ -17,7 +17,7 @@ import com.androidpath.R;
  * since: V ${version} <br/>
  */
 
-public class ButtonTestActivity31 extends Activity {
+public class ButtonTestActivity31 extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,13 +1,13 @@
 package com.androidpath.activity.ajbroadcast.sendbroadcast231;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity231 extends Activity {
+public class MainActivity231 extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

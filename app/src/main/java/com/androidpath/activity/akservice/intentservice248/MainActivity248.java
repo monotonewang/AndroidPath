@@ -1,6 +1,5 @@
 package com.androidpath.activity.akservice.intentservice248;
 
-import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +11,9 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity248 extends Activity {
+public class MainActivity248 extends BaseActivity {
 
 	private String[] url = {
 			"http://litchiapi.jstv.com/Attachs/Map/7985/9db00649770a4537bf52d334d5e8e2af_cover_padmini.JPG",

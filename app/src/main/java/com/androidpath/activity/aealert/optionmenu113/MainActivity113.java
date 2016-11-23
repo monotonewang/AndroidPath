@@ -1,14 +1,14 @@
 package com.androidpath.activity.aealert.optionmenu113;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity113 extends Activity {
+public class MainActivity113 extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,6 +1,5 @@
 package com.androidpath.activity.aealert.contextmenu111;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
@@ -9,8 +8,9 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity111 extends Activity {
+public class MainActivity111 extends BaseActivity {
 
 	private EditText gendereEditText;
 	private EditText loveEditText;

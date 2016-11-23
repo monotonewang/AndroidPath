@@ -1,6 +1,5 @@
 package com.androidpath.activity.affragment.radiofragment124;
 
-import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -9,8 +8,9 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity124 extends Activity implements OnCheckedChangeListener {
+public class MainActivity124 extends BaseActivity implements OnCheckedChangeListener {
 
 	private FragmentManager fragmentManager;
 	private MsgFragment msgFragment;

@@ -1,6 +1,6 @@
 package com.androidpath.activity.aiviewpager.tabone220;
 
-import android.app.Activity;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
@@ -14,11 +14,12 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity220 extends Activity implements OnPageChangeListener {
+public class MainActivity220 extends BaseActivity implements OnPageChangeListener {
 
 	private HorizontalScrollView horizontalSv;//最外层的横向ScrollView
 	private View view;//下面的光标

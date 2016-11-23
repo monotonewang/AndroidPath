@@ -5,15 +5,15 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 
-public class LayoutActivity2 extends AppCompatActivity {
+public class LayoutActivity2 extends BaseActivity {
 
     private FragmentManager fragmentManager;
     private FragmentTransaction transaction;

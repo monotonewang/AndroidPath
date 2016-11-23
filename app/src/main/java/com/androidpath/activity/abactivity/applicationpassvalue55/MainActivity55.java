@@ -1,6 +1,5 @@
 package com.androidpath.activity.abactivity.applicationpassvalue55;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -13,11 +12,12 @@ import android.widget.Toast;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.ApplicationMain;
+import com.androidpath.activity.aabase.BaseActivity;
 
 /**
  * application pass value
  */
-public class MainActivity55 extends Activity implements OnClickListener {
+public class MainActivity55 extends BaseActivity implements OnClickListener {
 
     private EditText nameEditText;
     private EditText ageEditText;

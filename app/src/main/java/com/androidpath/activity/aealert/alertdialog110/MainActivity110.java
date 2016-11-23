@@ -1,6 +1,5 @@
 package com.androidpath.activity.aealert.alertdialog110;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -13,10 +12,11 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.ArrayList;
 
-public class MainActivity110 extends Activity {
+public class MainActivity110 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

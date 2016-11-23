@@ -1,11 +1,12 @@
 package com.androidpath.activity.aiviewpager.cbk.chabaike211;
 
 
-import android.app.Activity;
+
 import android.os.Bundle;
 import android.widget.ListView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.aiviewpager.cbk.chabaike211.adapter.NewsAdapter;
 import com.androidpath.activity.aiviewpager.cbk.chabaike211.model.NewsEntity;
 import com.androidpath.activity.aiviewpager.cbk.chabaike211.util.Contants;
@@ -14,7 +15,7 @@ import com.androidpath.activity.aiviewpager.cbk.chabaike211.util.JsonUtil;
 
 import java.util.List;
 
-public class MainActivity211 extends Activity implements DownUtil.OnDownComplete {
+public class MainActivity211 extends BaseActivity implements DownUtil.OnDownComplete {
 
     private ListView listView;
     private NewsAdapter newsAdapter;

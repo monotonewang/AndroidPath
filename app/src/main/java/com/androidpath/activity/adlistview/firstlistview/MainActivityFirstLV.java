@@ -1,11 +1,11 @@
 package com.androidpath.activity.adlistview.firstlistview;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ListView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.adlistview.firstlistview.adapter.MyBaseAdapter;
 import com.androidpath.activity.adlistview.firstlistview.async.MyAsyncTask;
 import com.androidpath.activity.adlistview.firstlistview.bean.MyNews;
@@ -13,7 +13,7 @@ import com.androidpath.activity.adlistview.firstlistview.bean.MyNews;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivityFirstLV extends Activity {
+public class MainActivityFirstLV extends BaseActivity {
 	private List<MyNews> list;
 	private MyBaseAdapter adapter;
 

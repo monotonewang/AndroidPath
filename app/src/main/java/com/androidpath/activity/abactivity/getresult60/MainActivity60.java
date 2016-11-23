@@ -1,6 +1,5 @@
 package com.androidpath.activity.abactivity.getresult60;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,8 +7,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity60 extends Activity {
+public class MainActivity60 extends BaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

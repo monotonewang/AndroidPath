@@ -1,6 +1,5 @@
 package com.androidpath.activity.adlistview.gradview102;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,12 +8,13 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.adlistview.gradview102.bean.Person;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HeadImageActivity102 extends Activity implements OnItemClickListener {
+public class HeadImageActivity102 extends BaseActivity implements OnItemClickListener {
 
 	private List<Person> list;
 

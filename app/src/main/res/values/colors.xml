@@ -5,4 +5,10 @@
     <color name="colorAccent">#FF4081</color>
     <color name="pressed_color33">#880000ff</color>
     <color name="normal_color33">#bb000000</color>
+    <color name="red">#ea0f1e</color>
+    <color name="black">#000</color>
+    <color name="light_gray">#efefef</color>
+    <color name="white">#FFF</color>
+    <color name="light_black">#fd383838</color>
+    <color name="gray">#e7e4e4</color>
 </resources>

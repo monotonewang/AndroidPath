@@ -1,6 +1,6 @@
 package com.androidpath.activity.agstorge.sql.sqldemo154;
 
-import android.app.Activity;
+
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -8,12 +8,13 @@ import android.support.v4.widget.SimpleCursorAdapter;
 import android.widget.ListView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.agstorge.sql.sqldemo154.bean.Person;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity154 extends Activity {
+public class MainActivity154 extends BaseActivity {
 	private static final String TABALENAME = "person";
 	
 	private SQLiteDatabase db;

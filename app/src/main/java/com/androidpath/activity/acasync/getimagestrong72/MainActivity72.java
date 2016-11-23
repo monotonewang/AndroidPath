@@ -1,14 +1,14 @@
 package com.androidpath.activity.acasync.getimagestrong72;
 
-import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity72 extends Activity {
+public class MainActivity72 extends BaseActivity {
 
 	private ImageView imageView;
 	int count = 0;

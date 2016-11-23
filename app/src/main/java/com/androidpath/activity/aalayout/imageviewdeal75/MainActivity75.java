@@ -1,6 +1,5 @@
 package com.androidpath.activity.aalayout.imageviewdeal75;
 
-import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
@@ -17,11 +16,12 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
-public class MainActivity75 extends Activity {
+public class MainActivity75 extends BaseActivity {
 
 	private ImageView imageView;
 

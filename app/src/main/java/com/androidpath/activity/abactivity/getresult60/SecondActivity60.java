@@ -1,6 +1,5 @@
 package com.androidpath.activity.abactivity.getresult60;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,8 +7,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class SecondActivity60 extends Activity {
+public class SecondActivity60 extends BaseActivity {
 
 	private String[] cityArrays;
 	private Spinner spinner;

@@ -1,6 +1,5 @@
 package com.androidpath.activity.affragment.fragmentpassvalue122;
 
-import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -10,8 +9,9 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity122 extends Activity implements OnCheckedChangeListener,
+public class MainActivity122 extends BaseActivity implements OnCheckedChangeListener,
 		MyFragment.OnFragmentItemClickListener {
 
 	private FragmentManager fragmentManager;

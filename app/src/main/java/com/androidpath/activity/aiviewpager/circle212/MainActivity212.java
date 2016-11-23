@@ -1,6 +1,5 @@
 package com.androidpath.activity.aiviewpager.circle212;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -14,11 +13,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity212 extends Activity implements OnPageChangeListener, OnClickListener {
+public class MainActivity212 extends BaseActivity implements OnPageChangeListener, OnClickListener {
 	
 	private ViewPager viewPager;
 	private List<ImageView> datas;

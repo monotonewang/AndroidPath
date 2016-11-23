@@ -1,6 +1,5 @@
 package com.androidpath.activity.acasync.demoone70;
 
-import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -10,6 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,7 +18,7 @@ import java.net.URL;
 
 
 //有问题的代码
-public class MainActivity70 extends Activity {
+public class MainActivity70 extends BaseActivity {
 
     private ImageView imageView;
     int count = 0;

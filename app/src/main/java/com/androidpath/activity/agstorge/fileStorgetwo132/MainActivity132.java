@@ -1,7 +1,6 @@
 package com.androidpath.activity.agstorge.fileStorgetwo132;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.StatFs;
@@ -10,10 +9,11 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.io.File;
 
-public class MainActivity132 extends Activity {
+public class MainActivity132 extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

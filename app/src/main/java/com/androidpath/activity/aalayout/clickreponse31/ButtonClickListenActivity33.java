@@ -1,6 +1,5 @@
 package com.androidpath.activity.aalayout.clickreponse31;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -8,8 +7,9 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class ButtonClickListenActivity33 extends Activity implements OnClickListener {
+public class ButtonClickListenActivity33 extends BaseActivity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub

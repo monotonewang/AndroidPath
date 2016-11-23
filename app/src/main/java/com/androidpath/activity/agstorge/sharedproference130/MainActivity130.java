@@ -1,6 +1,6 @@
 package com.androidpath.activity.agstorge.sharedproference130;
 
-import android.app.Activity;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -13,8 +13,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity130 extends Activity {
+public class MainActivity130 extends BaseActivity {
 
 	private Button button;
 	private EditText nameedEditText;

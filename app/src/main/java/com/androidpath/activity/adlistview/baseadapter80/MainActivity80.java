@@ -1,18 +1,18 @@
 package com.androidpath.activity.adlistview.baseadapter80;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.adlistview.baseadapter80.adapter.MyBaseAdapter80;
 import com.androidpath.activity.adlistview.baseadapter80.bean.MyMenu80;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity80 extends Activity {
+public class MainActivity80 extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

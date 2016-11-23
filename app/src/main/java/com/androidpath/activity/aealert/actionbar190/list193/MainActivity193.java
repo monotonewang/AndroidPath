@@ -2,7 +2,6 @@ package com.androidpath.activity.aealert.actionbar190.list193;
 
 import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
@@ -10,12 +9,13 @@ import android.widget.GridView;
 import android.widget.SimpleAdapter;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class MainActivity193 extends Activity implements OnNavigationListener{
+public class MainActivity193 extends BaseActivity implements OnNavigationListener{
 
 	private GridView gridView;
 

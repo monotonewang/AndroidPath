@@ -1,6 +1,5 @@
 package com.androidpath.activity.ajbroadcast.staticdymic230;
 
-import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 /**
  * 动态注册
@@ -31,7 +31,7 @@ import com.androidpath.R;
  * 2、必须给程序赋予开机启动的权限
  * 3、从android3.1以后，程序必须启动一次后，才可接收到开机启动的广播
  */
-public class MainActivity230 extends Activity {
+public class MainActivity230 extends BaseActivity {
 
 	private MyReceiver myReceiver;
 	

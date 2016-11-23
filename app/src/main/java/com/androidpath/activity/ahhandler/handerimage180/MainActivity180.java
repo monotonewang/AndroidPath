@@ -1,6 +1,6 @@
 package com.androidpath.activity.ahhandler.handerimage180;
 
-import android.app.Activity;
+
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,8 +10,9 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity180 extends Activity {
+public class MainActivity180 extends BaseActivity {
 	String urlString = "http://a3.att.hudong.com/50/30/01300000322847123114301689718.jpg";
 
 	private ImageView imageView;

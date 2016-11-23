@@ -2,11 +2,12 @@ package com.androidpath.view.glsurfaceview;
 
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
+
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.view.glsurfaceview.libs.MyGLSurfaceView;
 
-public class GLSurfaceViewActivity extends AppCompatActivity {
+public class GLSurfaceViewActivity extends BaseActivity {
     private GLSurfaceView mGLView;
 
     @Override

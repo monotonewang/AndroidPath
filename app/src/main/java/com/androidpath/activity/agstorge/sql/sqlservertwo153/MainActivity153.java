@@ -1,6 +1,8 @@
 package com.androidpath.activity.agstorge.sql.sqlservertwo153;
 
-import android.app.Activity;
+import com.androidpath.activity.aabase.BaseActivity;
+
+import android.content.ContentResolver;
 import android.content.ContentResolver;
 import android.database.ContentObserver;
 import android.database.Cursor;
@@ -12,8 +14,9 @@ import android.util.Log;
 import android.widget.ListView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity153 extends Activity {
+public class MainActivity153 extends BaseActivity {
 
 	private ListView listView;
 	private ContentResolver resolver;

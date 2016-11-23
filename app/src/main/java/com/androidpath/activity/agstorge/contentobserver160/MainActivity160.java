@@ -1,6 +1,5 @@
 package com.androidpath.activity.agstorge.contentobserver160;
 
-import android.app.Activity;
 import android.content.ContentResolver;
 import android.database.ContentObserver;
 import android.database.Cursor;
@@ -11,8 +10,9 @@ import android.telephony.SmsManager;
 import android.util.Log;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity160 extends Activity {
+public class MainActivity160 extends BaseActivity {
 	Uri smsUri = Telephony.Sms.CONTENT_URI;  //包括所有的信息："content://sms"
 	Uri inboxUri = Telephony.Sms.Inbox.CONTENT_URI;//收件箱："content://mms/inbox"
 	Uri outboxUri = Telephony.Sms.Outbox.CONTENT_URI;//发件箱：

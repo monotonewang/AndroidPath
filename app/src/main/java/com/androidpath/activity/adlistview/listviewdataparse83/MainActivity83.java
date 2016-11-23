@@ -1,6 +1,5 @@
 package com.androidpath.activity.adlistview.listviewdataparse83;
 
-import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.adlistview.listviewdataparse83.bean.Weather;
 import com.androidpath.activity.adlistview.listviewdataparse83.util.MyHttpUtil;
 import com.androidpath.activity.adlistview.listviewdataparse83.util.MyJsonParser;
@@ -18,7 +18,7 @@ import com.androidpath.activity.adlistview.listviewdataparse83.util.MyJsonParser
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity83 extends Activity {
+public class MainActivity83 extends BaseActivity {
 
 	public class MyAsyncTask extends AsyncTask<Void, Void, List<Weather>> {
 

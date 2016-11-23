@@ -1,6 +1,5 @@
 package com.androidpath.activity.aiviewpager.webview213;
 
-import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
@@ -9,8 +8,9 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity213 extends Activity {
+public class MainActivity213 extends BaseActivity {
 
 	private WebView webView;
 	

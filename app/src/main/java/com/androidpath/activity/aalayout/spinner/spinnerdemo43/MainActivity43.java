@@ -1,6 +1,5 @@
 package com.androidpath.activity.aalayout.spinner.spinnerdemo43;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -10,11 +9,12 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity43 extends Activity {
+public class MainActivity43 extends BaseActivity {
 
 	private List<String> list;
 	int count = 0;

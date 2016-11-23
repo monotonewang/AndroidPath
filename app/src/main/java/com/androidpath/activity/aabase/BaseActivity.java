@@ -27,6 +27,9 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         ApplicationMain.addActivity(this);
         updateLanguage(ConfigUtils.getAPPLanguage(BaseActivity.this));
+
+//        RefWatcher refWatcher = ApplicationMain.getRefWatcher(this);
+//        refWatcher.watch(this);
     }
 
     protected void updateLanguage(int index) {

@@ -1,7 +1,6 @@
 package com.androidpath.activity.akservice.mediaservice246;
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.CursorLoader;
 import android.content.DialogInterface;
@@ -28,13 +27,14 @@ import android.widget.Toast;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.ApplicationMain;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.akservice.mediaservice246.modle.MusicEntity;
 import com.androidpath.activity.akservice.mediaservice246.service.MediaService246;
 import com.androidpath.activity.akservice.mediaservice246.util.Constants;
 
 import java.util.ArrayList;
 
-public class MainActivity246 extends Activity implements OnItemClickListener {
+public class MainActivity246 extends BaseActivity implements OnItemClickListener {
 
     private ListView lv;
     private SimpleCursorAdapter simpleCursorAdapter;

@@ -3,14 +3,14 @@ package com.androidpath.activity.aealert.actionbar190.tab192;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.ActionBar.TabListener;
-import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.util.Log;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity192 extends Activity implements TabListener {
+public class MainActivity192 extends BaseActivity implements TabListener {
 
 	private MyFragment contactFragment;
 	private MyFragment msgFragment;

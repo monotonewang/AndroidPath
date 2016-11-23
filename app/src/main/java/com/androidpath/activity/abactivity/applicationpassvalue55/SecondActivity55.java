@@ -1,13 +1,13 @@
 package com.androidpath.activity.abactivity.applicationpassvalue55;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.ApplicationMain;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class SecondActivity55 extends Activity {
+public class SecondActivity55 extends BaseActivity {
 
     private ApplicationMain myGloable;
 

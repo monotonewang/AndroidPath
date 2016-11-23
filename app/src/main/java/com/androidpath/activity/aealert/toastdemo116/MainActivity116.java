@@ -1,6 +1,5 @@
 package com.androidpath.activity.aealert.toastdemo116;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -8,8 +7,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity116 extends Activity {
+public class MainActivity116 extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

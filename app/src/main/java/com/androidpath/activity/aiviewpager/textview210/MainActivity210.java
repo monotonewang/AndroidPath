@@ -1,6 +1,5 @@
 package com.androidpath.activity.aiviewpager.textview210;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
@@ -13,11 +12,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity210 extends Activity {
+public class MainActivity210 extends BaseActivity {
 
 	private ViewPager viewPager;
 	private List<String> datas;//数据源

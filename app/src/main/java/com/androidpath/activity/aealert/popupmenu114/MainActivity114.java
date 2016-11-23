@@ -1,6 +1,5 @@
 package com.androidpath.activity.aealert.popupmenu114;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -10,8 +9,9 @@ import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.Toast;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 
-public class MainActivity114 extends Activity implements OnMenuItemClickListener {
+public class MainActivity114 extends BaseActivity implements OnMenuItemClickListener {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
