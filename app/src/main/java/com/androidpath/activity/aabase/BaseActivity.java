@@ -28,6 +28,9 @@ public class BaseActivity extends AppCompatActivity {
         ApplicationMain.addActivity(this);
         updateLanguage(ConfigUtils.getAPPLanguage(BaseActivity.this));
 
+//        沉浸式
+//        StatusBarUtil.setStatusBarTrans(this, false);
+
 //        RefWatcher refWatcher = ApplicationMain.getRefWatcher(this);
 //        refWatcher.watch(this);
     }
