@@ -69,7 +69,7 @@ public class MainActivity193 extends BaseActivity implements OnNavigationListene
 	//参数一就是位置
 	@Override
 	public boolean onNavigationItemSelected(int itemPosition, long itemId) {
-		Log.e("onNavigationItemSelected", itemPosition+":"+itemId);
+//		Log.e("onNavigationItemSelected", itemPosition+":"+itemId);
 		gridView.setNumColumns(itemPosition+1);
 		return true;
 	}
