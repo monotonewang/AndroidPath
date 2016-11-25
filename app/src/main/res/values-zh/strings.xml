@@ -4,4 +4,44 @@
     <string name="button">按钮</string>
     <string name="imagebutton">带图片的按钮</string>
     <string name="spinner_title">请选择职业</string>
+    <string name="app_name">AndroidPath</string>
+    <string name="action_settings2">setting</string>
+    <string name="hello_world">helloword</string>
+    <!--42-->
+    <string name="submenu115">SubMenu115</string>
+    <string name="dymicaddmenu117">DymicAddMenu117</string>
+    <string name="tvchinese">tvChinese</string>
+    <string name="tvenglish">tvEnglish</string>
+    <string name="layoutbutton1">layoutButton1</string>
+    <string name="activitylivecycle2">activityLiveCycle2</string>
+    <string name="asyncdemo3">asyncDemo3</string>
+    <string name="listviewactivity4">listViewActivity4</string>
+    <string name="alertactivity5">alertActivity5</string>
+    <string name="fragmentdemo6">fragmentDemo6</string>
+    <string name="storgedemo7">storgeDemo7</string>
+    <string name="handlerdemo8">handlerDemo8</string>
+    <string name="viewPagerDemo9">viewPagerDemo9</string>
+    <string name="broadcastdemo10">broadcastDemo10</string>
+    <string name="serviceDemo11">serviceDemo11</string>
+    <string name="Settings">Settings</string>
+
+    <string-array name="job_array">
+        <item>程序员</item>
+        <item>公务员</item>
+        <item>架构师</item>
+        <item>律师</item>
+        <item>医生</item>
+        <item>厨师</item>
+    </string-array>
+
+    <string-array name="menu_array">
+        <item>鱼香肉丝</item>
+        <item>红烧肉</item>
+        <item>佛跳墙</item>
+        <item>油闷大虾</item>
+        <item>清蒸鲈鱼</item>
+        <item>大闸蟹</item>
+    </string-array>
+    <string name="menu_name">菜单</string>
+    <string name="dish_name">菜名</string>
 </resources>

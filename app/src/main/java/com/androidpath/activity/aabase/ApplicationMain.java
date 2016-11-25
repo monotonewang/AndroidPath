@@ -1,18 +1,10 @@
 package com.androidpath.activity.aabase;
 
 import android.app.Application;
-import android.content.Context;
-import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
-
-import com.squareup.leakcanary.LeakCanary;
-import com.squareup.leakcanary.RefWatcher;
 
 import java.util.LinkedList;
 import java.util.List;
-
-import static android.os.Build.VERSION.SDK_INT;
-import static android.os.Build.VERSION_CODES.GINGERBREAD;
 
 /**
  * deso: AndroidPath TODO<br/>
@@ -26,7 +18,7 @@ public class ApplicationMain extends Application {
     private static List<AppCompatActivity> mActivityList = new LinkedList<>();
     //application pass value
     private String name, age, gender;
-    private RefWatcher refWatcher;
+//    private RefWatcher refWatcher;
 
     public String getName() {
         return name;
@@ -55,28 +47,28 @@ public class ApplicationMain extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        if (LeakCanary.isInAnalyzerProcess(this)) {
-            return;
-        }
-        enabledStrictMode();
-        refWatcher = LeakCanary.install(this);
+//        if (LeakCanary.isInAnalyzerProcess(this)) {
+//            return;
+//        }
+//        enabledStrictMode();
+//        refWatcher = LeakCanary.install(this);
 
     }
 
-    public static RefWatcher getRefWatcher(Context context){
-        ApplicationMain applicationContext = (ApplicationMain) context.getApplicationContext();
-        return applicationContext.refWatcher;
-    }
-
-    private void enabledStrictMode() {
-        if (SDK_INT >= GINGERBREAD) {
-            StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder() //
-                    .detectAll() //
-                    .penaltyLog() //
-                    .penaltyDeath() //
-                    .build());
-        }
-    }
+//    public static RefWatcher getRefWatcher(Context context){
+//        ApplicationMain applicationContext = (ApplicationMain) context.getApplicationContext();
+//        return applicationContext.refWatcher;
+//    }
+//
+//    private void enabledStrictMode() {
+//        if (SDK_INT >= GINGERBREAD) {
+//            StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder() //
+//                    .detectAll() //
+//                    .penaltyLog() //
+//                    .penaltyDeath() //
+//                    .build());
+//        }
+//    }
 
     public static void addActivity(AppCompatActivity appCompatActivity) {
         if (mActivityList != null) {
