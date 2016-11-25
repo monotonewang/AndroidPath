@@ -21,7 +21,6 @@ public class MainActivity90 extends BaseActivity {
     //	private String urlString = "http://api.1-blog.com/biz/bizserver/xiaohua/list.do?size=10&page=";
     private String urlString = "http://api.laifudao.com/open/xiaohua.json";
     private List<Joke> list = new ArrayList<>();
-    ;
     private JokeAdapter jokeAdapter;
 
     private int currentPage = 0;
@@ -86,12 +85,8 @@ public class MainActivity90 extends BaseActivity {
                                 + " totalItemCount:" + totalItemCount);
 
                 //如果为真就是滑动到了最后一个记录
-                if (firstVisibleItem + visibleItemCount == totalItemCount) {
-                    //如果显示到最后一条记录就将isBottom设置为true，在停止滚动后利用isBottom判断是否出现”继续加载“的按钮
-                    isBottom = true;
-                } else {
-                    isBottom = false;
-                }
+                //如果显示到最后一条记录就将isBottom设置为true，在停止滚动后利用isBottom判断是否出现”继续加载“的按钮
+                isBottom = firstVisibleItem + visibleItemCount == totalItemCount;
             }
         });
     }

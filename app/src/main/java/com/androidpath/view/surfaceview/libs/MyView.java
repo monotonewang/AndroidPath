@@ -27,7 +27,7 @@ public class MyView extends SurfaceView implements SurfaceHolder.Callback {
      * 定义一个枚举表示游戏的状态
      */
     private enum GameStatus {
-        WAITTING, RUNNING, STOP;
+        WAITTING, RUNNING, STOP
     }
 
     /**

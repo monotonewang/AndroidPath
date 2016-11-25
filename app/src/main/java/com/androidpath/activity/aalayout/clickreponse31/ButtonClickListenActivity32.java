@@ -25,7 +25,7 @@ public class ButtonClickListenActivity32 extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Toast.makeText(ButtonClickListenActivity32.this, "用匿名内部类对象监听", 1).show();
+				Toast.makeText(ButtonClickListenActivity32.this, "用匿名内部类对象监听", Toast.LENGTH_LONG).show();
 			}
 		});
 		

@@ -45,5 +45,5 @@ public class ShowCustomProviderActivity171 extends ListActivity implements Loade
 	public void onLoaderReset(Loader<Cursor> loader) {
 		// TODO Auto-generated method stub
 		adapter.swapCursor(null);
-	};
+	}
 }

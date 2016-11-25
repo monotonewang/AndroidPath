@@ -113,7 +113,7 @@ public class MainActivity112 extends BaseActivity {
 					e.printStackTrace();
 				}
 				
-			};
+			}
 		}.start();
 		
 	}

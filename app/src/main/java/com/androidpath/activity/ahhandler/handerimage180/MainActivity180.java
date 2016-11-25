@@ -57,7 +57,7 @@ public class MainActivity180 extends BaseActivity {
 				
 //				imageView.setImageBitmap(bitmap);
 				
-			};
+			}
 		}.start();
 	}
 }

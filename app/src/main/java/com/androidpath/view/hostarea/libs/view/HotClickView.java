@@ -114,7 +114,6 @@ public class HotClickView extends View {
             invalidate();
         }
 
-        ;
     };
 
     public HotClickView(Context context) {
@@ -801,6 +800,6 @@ public class HotClickView extends View {
      * 点击 热图 区域 选中效果
      */
     public interface OnClickListener {
-        public void OnClick(View view, HotArea hotArea);
+        void OnClick(View view, HotArea hotArea);
     }
 }

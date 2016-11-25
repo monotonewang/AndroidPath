@@ -37,13 +37,13 @@ public class MainActivity193 extends BaseActivity implements OnNavigationListene
 			gridviewData.add(hashMap);
 		}
 		
-		SimpleAdapter gridViewAdapter = new SimpleAdapter(this,
-				gridviewData ,
-				R.layout.item_layout,
-				new String[]{"imageId"}, 
-				new int[]{R.id.imageView1});
-		gridView.setAdapter(gridViewAdapter);
-		
+//		SimpleAdapter gridViewAdapter = new SimpleAdapter(this,
+//				gridviewData ,
+//				R.layout.item_layout,
+//				new String[]{"imageId"},
+//				new int[]{R.id.imageView1});
+//		gridView.setAdapter(gridViewAdapter);
+
 		
 		String[] titles = {"显示一列","显示两列","显示三列","显示四列"};
 		//设置actionbar--下拉列表

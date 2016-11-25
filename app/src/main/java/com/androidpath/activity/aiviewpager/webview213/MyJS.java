@@ -14,6 +14,6 @@ public class MyJS {
 	
 	@JavascriptInterface
 	public void js_method(){
-		Toast.makeText(context, "---->android端的方法被调用", 1).show();
+		Toast.makeText(context, "---->android端的方法被调用", Toast.LENGTH_LONG).show();
 	}
 }

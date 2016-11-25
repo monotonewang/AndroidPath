@@ -107,7 +107,7 @@ public class MyContentProvider extends ContentProvider {
 			//参数二：null代表通知系统中的所有内容观察者
 			getContext().getContentResolver().notifyChange(uri, null);
 			
-			return uri.withAppendedPath(uri, "/id/"+id);
+			return Uri.withAppendedPath(uri, "/id/"+id);
 		}
 		else if (ret == TEAALL) {
 			//应该将数据插入教师表

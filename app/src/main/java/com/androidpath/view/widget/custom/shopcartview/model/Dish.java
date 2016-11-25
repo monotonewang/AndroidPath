@@ -57,12 +57,7 @@ public class Dish {
 
     @Override
     public boolean equals(Object obj) {
-        if(obj==this)return true;
+        return obj == this || obj instanceof Dish && this.dishName.equals(((Dish) obj).dishName) && this.dishPrice == ((Dish) obj).dishPrice && this.dishAmount == ((Dish) obj).dishAmount && this.dishRemain == ((Dish) obj).dishRemain;
 
-        return obj instanceof Dish &&
-                this.dishName.equals(((Dish)obj).dishName) &&
-                this.dishPrice ==  ((Dish)obj).dishPrice &&
-                this.dishAmount == ((Dish)obj).dishAmount &&
-                this.dishRemain == ((Dish)obj).dishRemain;
     }
 }

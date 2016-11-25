@@ -19,6 +19,6 @@
        android:transcriptMode="normal"
        android:background="@drawable/p3"
        android:listSelector="#ff00"
-       android:drawSelectorOnTop="false"></ListView>
+       android:drawSelectorOnTop="false"/>
 
 </LinearLayout>

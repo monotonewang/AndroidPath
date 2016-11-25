@@ -76,9 +76,6 @@ public class Pipe {
         return mPipeWidth;
     }
     public boolean touchBird(Bird bird){
-        if(bird.getX()+bird.getmWidth()>x&&(bird.getY()<height||bird.getY()+bird.getHeight()>height+margin)){
-            return true;
-        }
-        return false;
+        return bird.getX() + bird.getmWidth() > x && (bird.getY() < height || bird.getY() + bird.getHeight() > height + margin);
     }
 }

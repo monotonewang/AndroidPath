@@ -76,7 +76,7 @@ public class MainActivity131 extends BaseActivity {
 			}
 		}
 		else {
-			Toast.makeText(MainActivity131.this, "用户名和年龄不能为空", 1).show();
+			Toast.makeText(MainActivity131.this, "用户名和年龄不能为空", Toast.LENGTH_LONG).show();
 		}
 	}
 
@@ -86,7 +86,7 @@ public class MainActivity131 extends BaseActivity {
 		if (!TextUtils.isEmpty(name)&& !TextUtils.isEmpty(ageString)) {
 		}
 		else {
-			Toast.makeText(MainActivity131.this, "用户名和年龄不能为空", 1).show();
+			Toast.makeText(MainActivity131.this, "用户名和年龄不能为空", Toast.LENGTH_LONG).show();
 			
 		}
 	}

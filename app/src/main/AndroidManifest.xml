@@ -17,7 +17,7 @@
 
     <application
         android:name=".activity.aabase.ApplicationMain"
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -169,7 +169,7 @@
         <!-- static注册广播 -->
         <receiver android:name=".activity.ajbroadcast.staticdymic230.MyReceiver2">
             <intent-filter>
-                <action android:name="Intent.ACTION_BOOT_COMPLETED" />
+                <!--<action android:name="Intent.ACTION_BOOT_COMPLETED" />-->
                 <action android:name="android.action.intent.myself" />
 
                 <category android:name="android.intent.category.DEFAULT" />

@@ -34,9 +34,9 @@ public class ButtonClickListenActivity33 extends BaseActivity implements OnClick
     public void onClick(View v) {
         // TODO Auto-generated method stub
         if (v.getId() == R.id.button) {
-            Toast.makeText(this, "用activity做监听器，点击按钮一。。。。", 0).show();
+            Toast.makeText(this, "用activity做监听器，点击按钮一。。。。", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(this, "用activity做监听器，点击按钮er。。。。", 0).show();
+            Toast.makeText(this, "用activity做监听器，点击按钮er。。。。", Toast.LENGTH_LONG).show();
 
         }
     }

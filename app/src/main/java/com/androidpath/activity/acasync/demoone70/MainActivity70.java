@@ -71,8 +71,6 @@ public class MainActivity70 extends BaseActivity {
                 }
             }
 
-            ;
-
         }.start();
 
         //显示到imageview

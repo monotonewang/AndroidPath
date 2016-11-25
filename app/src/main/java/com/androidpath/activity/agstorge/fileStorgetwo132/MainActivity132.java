@@ -29,7 +29,7 @@ public class MainActivity132 extends BaseActivity {
         StatFs statFs = new StatFs(sdRoot.getAbsolutePath());
         double available = statFs.getAvailableBytes() / 1024.0 / 1024.0 / 1024.0;
         double total = statFs.getTotalBytes() / 1024.0 / 1024.0 / 1024.0;
-        Toast.makeText(this, "total:" + total + " available:" + available, 1).show();
+        Toast.makeText(this, "total:" + total + " available:" + available, Toast.LENGTH_LONG).show();
     }
 
     public void clickPublic(View view) {

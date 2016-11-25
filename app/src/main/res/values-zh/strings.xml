@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="layoutdemo2">布局设置2</string>
     <string name="buttonSelector">选择器测试</string>
     <string name="button">按钮</string>
     <string name="imagebutton">带图片的按钮</string>

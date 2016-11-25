@@ -6,7 +6,6 @@
     <dimen name="activity_tv_padding">8dp</dimen>
     <dimen name="activity_tv_size">10sp</dimen>
     <dimen name="item_menu_word_size">16sp</dimen>
-    <dimen name="item_menu_top_magin">16dp</dimen>
     <dimen name="item_dish_top_margin">5dp</dimen>
     <dimen name="item_dish_horizontal_margin">15dp</dimen>
     <dimen name="item_dish_word_size">18sp</dimen>

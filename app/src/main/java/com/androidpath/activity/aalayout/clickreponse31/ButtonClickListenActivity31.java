@@ -37,10 +37,10 @@ public class ButtonClickListenActivity31 extends BaseActivity {
 			// TODO Auto-generated method stub
 			
 			if (v.getId() == R.id.button) {
-				Toast.makeText(ButtonClickListenActivity31.this, "要下课了！", 1)
+				Toast.makeText(ButtonClickListenActivity31.this, "要下课了！", Toast.LENGTH_LONG)
 				.show();
 			}else {
-				Toast.makeText(ButtonClickListenActivity31.this, "又上课了！", 1)
+				Toast.makeText(ButtonClickListenActivity31.this, "又上课了！", Toast.LENGTH_LONG)
 				.show();
 			}
 			

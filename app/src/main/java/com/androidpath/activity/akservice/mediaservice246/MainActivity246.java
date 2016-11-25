@@ -21,6 +21,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.CursorAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
@@ -194,7 +195,7 @@ public class MainActivity246 extends BaseActivity implements OnItemClickListener
                 null,
                 new String[]{colums[1], colums[2]},
                 new int[]{R.id.tv_name, R.id.tv_path},
-                simpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
+                CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
         if(lv!=null){
             lv.setAdapter(simpleCursorAdapter);
             lv.setOnItemClickListener(this);
