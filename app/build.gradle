@@ -1,6 +1,18 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        realease {
+            keyAlias 'test'
+            if (System.console() != null) {
+                storePassword System.console().readLine("\nKeyStore password: ")
+            }
+            storeFile file('C:/Project/AndroidProject/sign/androidpath.jks')
+            if (System.console() != null) {
+                keyPassword System.console().readLine("\nKey password: ")
+            }
+        }
+    }
     compileSdkVersion 24
     buildToolsVersion "24.0.3"
     defaultConfig {
@@ -12,12 +24,13 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
-        debug{
+        debug {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         release {
             minifyEnabled true
+            signingConfig signingConfigs.realease
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -25,8 +38,8 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-//    androidTestCompile 'com.android.support.test:runner:0.2'
-//    androidTestCompile 'com.android.support.test:rules:0.2'
+    //    androidTestCompile 'com.android.support.test:runner:0.2'
+    //    androidTestCompile 'com.android.support.test:rules:0.2'
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
