@@ -47,5 +47,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile files('libs/gson-2.2.1.jar')
     compile 'com.android.support:recyclerview-v7:24.0.+'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
 }
