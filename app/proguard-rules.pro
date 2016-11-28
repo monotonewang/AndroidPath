@@ -49,12 +49,14 @@
 -keep public class * extends android.support.v4.app.Fragment
 -keep public class * extends android.app.Fragment
 
+
 # 保持测试相关的代码
 -dontnote junit.framework.**
 -dontnote junit.runner.**
 -dontwarn android.test.**
 -dontwarn android.support.test.**
 -dontwarn org.junit.**
+-dontwarn okio.**
 
 # retrofit
 # Platform calls Class.forName on types which do not exist on Android to determine platform.
