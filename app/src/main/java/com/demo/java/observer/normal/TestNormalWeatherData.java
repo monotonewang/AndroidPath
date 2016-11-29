@@ -1,4 +1,4 @@
-package com.demo.java.normal;
+package com.demo.java.observer.normal;
 
 import java.util.List;
 

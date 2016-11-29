@@ -1,6 +1,6 @@
 package com.androidpath.androidtest.junittest;
 
-import com.androidpath.junittest.Calculator;
+import com.demo.java.junittest.Calculator;
 
 import org.junit.After;
 import org.junit.Before;
