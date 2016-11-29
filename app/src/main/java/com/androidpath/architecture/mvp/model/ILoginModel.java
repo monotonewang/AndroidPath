@@ -1,5 +1,7 @@
 package com.androidpath.architecture.mvp.model;
 
+import com.androidpath.architecture.mvp.bean.User;
+
 /**
  * deso: AndroidPath TODO<br/>
  * time: 2016/11/29 14:55 <br/>
@@ -10,4 +12,5 @@ package com.androidpath.architecture.mvp.model;
 public interface ILoginModel {
     //登陆方法，通过该方法向服务器发送登陆请求。
     void login(String name, String password);
+    void login2(User user);
 }

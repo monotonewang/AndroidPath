@@ -1,8 +1,9 @@
 package com.androidpath.architecture.mvp.presenter;
 
-import com.androidpath.architecture.mvp.view.ILoginView;
+import com.androidpath.architecture.mvp.bean.User;
 import com.androidpath.architecture.mvp.model.ILoginModel;
 import com.androidpath.architecture.mvp.model.LoginModelImpl;
+import com.androidpath.architecture.mvp.view.ILoginView;
 
 /**
  * deso: AndroidPath TODO<br/>
@@ -28,6 +29,9 @@ public class LoginPresenterImpl implements ILoginPresenter {
         //先展示progress
         loginView.showLogin();
         loginModel.login(username, password);
+
+        User user = new User(username, password);
+        loginModel.login2(user);
     }
 
     @Override

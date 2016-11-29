@@ -2,6 +2,7 @@ package com.androidpath.architecture.mvp.model;
 
 import android.os.Handler;
 
+import com.androidpath.architecture.mvp.bean.User;
 import com.androidpath.architecture.mvp.presenter.ILoginPresenter;
 
 /**
@@ -31,6 +32,19 @@ public class LoginModelImpl implements ILoginModel {
         }, 2000);
     }
 
+    @Override
+    public void login2(final User user) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if(user.getUsername().equals("admin")&&user.getPassword().equals("admin")){
+                    iLoginPresenter.loginSuccend();
+                }else{
+                    iLoginPresenter.loginFailed();
+                }
+            }
+        }, 2000);
+    }
 
 
 //    @Override

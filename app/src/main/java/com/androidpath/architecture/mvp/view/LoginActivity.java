@@ -18,7 +18,9 @@ import com.androidpath.architecture.mvp.presenter.LoginPresenterImpl;
  * author: 7 <br/>
  * since: V ${version} <br/>
  */
-
+//http://tangpj.com/2016/09/23/mvp-structure-one/  -->juejin
+//http://blog.csdn.net/lmj623565791/article/details/46596109  -->csdn
+//http://www.jianshu.com/p/4bcf53995fc3   -->jianshu
 public class LoginActivity extends BaseActivity implements ILoginView{
     private LoginPresenterImpl loginPresenter;
     private ProgressBar progressBar;
