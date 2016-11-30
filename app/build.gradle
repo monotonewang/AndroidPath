@@ -49,4 +49,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:24.0.+'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+
+//    compile "org.glassfish.javax.annotation:10.0-b28"
+
 }
