@@ -22,7 +22,7 @@ import com.androidpath.project.music.service.MediaPlayerService;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends FragmentActivity implements OnFragmentPublicItemClickListener,OnFragmentSongClickListener {
+public class MusicMainActivity extends FragmentActivity implements OnFragmentPublicItemClickListener,OnFragmentSongClickListener {
 	
 	private LinearLayout linearLayout;
 	private HorizontalScrollView horizontalScrollView;
@@ -132,7 +132,7 @@ public class MainActivity extends FragmentActivity implements OnFragmentPublicIt
 		// TODO Auto-generated method stub
 		if(msg!=null){
 			listMusicName = msg;
-//			Log.e("MainActivity", listMusicName);
+//			Log.e("MusicMainActivity", listMusicName);
 			viewPager.setCurrentItem(2);
 		}
 	}
@@ -141,7 +141,7 @@ public class MainActivity extends FragmentActivity implements OnFragmentPublicIt
 	public void OnFragmentSongItemClick(int position) {
 		// TODO Auto-generated method stub
 		if(String.valueOf(position)!=null){
-//			Log.e("MainActivity", listMusicName);
+//			Log.e("MusicMainActivity", listMusicName);
 			viewPager.setCurrentItem(3);
 		}
 	}

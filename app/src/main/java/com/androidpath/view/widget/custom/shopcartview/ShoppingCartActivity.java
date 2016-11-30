@@ -36,7 +36,7 @@ import java.util.ArrayList;
  */
 
 public class ShoppingCartActivity extends BaseActivity implements LeftMenuAdapter.onItemSelectedListener,ShopCartImp {
-    private final static String TAG = "MainActivity";
+    private final static String TAG = "MusicMainActivity";
     private RecyclerView leftMenu;//左侧菜单栏
     private RecyclerView rightMenu;//右侧菜单栏
     private TextView headerView;

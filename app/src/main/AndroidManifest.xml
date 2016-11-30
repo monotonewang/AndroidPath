@@ -239,6 +239,8 @@
         <activity android:name=".view.widget.custom.shopcartview.ShoppingCartActivity" />
         <activity android:name=".library.Retrofit.activity.RetrofitActivity"/>
         <activity android:name=".architecture.mvp.view.LoginActivity"/>
+        <!--project music-->
+        <activity android:name=".project.music.MusicMainActivity"/>
     </application>
 
 </manifest>

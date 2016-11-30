@@ -100,10 +100,10 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
                 break;
             //            case R.id.SurfaceViewBird:
-            //                startActivity(new Intent(MainActivity.this, SurfaceViewMainActivity.class));
+            //                startActivity(new Intent(MusicMainActivity.this, SurfaceViewMainActivity.class));
             //                break;
             //            case R.id.GLSurfaceView:
-            //                startActivity(new Intent(MainActivity.this, GLSurfaceViewActivity.class));
+            //                startActivity(new Intent(MusicMainActivity.this, GLSurfaceViewActivity.class));
             //                break;
             default:
                 break;
