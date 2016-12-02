@@ -18,7 +18,6 @@ import com.androidpath.activity.aabase.asecondactivity.LiveCycleActivity2;
 import com.androidpath.activity.aabase.asecondactivity.ServiceActivity11;
 import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
 import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
-import com.androidpath.architecture.mvp.view.LoginActivity;
 import com.androidpath.library.retrofit.activity.RetrofitActivity;
 
 /**
