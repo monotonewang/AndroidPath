@@ -1,6 +1,6 @@
-package com.androidpath.library.retrofit.inter;
+package com.androidpath.library.retrofitxxx.inter;
 
-import com.androidpath.library.retrofit.utils.Constants;
+import com.androidpath.library.retrofitxxx.utils.Constants;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -28,7 +28,7 @@ public interface MyRetrofitService {
     Call<ResponseBody>  getJsonByHttp(@Path("user")String user);
 
     @GET("users/{user}/repos")
-    Call<ResponseBody> listRepos(@Path("user") String user);
+    Call<ResponseBody> getJsonByNum(@Path("user") String user);
 
     @POST(Constants.urlPost)
     Call<ResponseBody> getJsonByPost();

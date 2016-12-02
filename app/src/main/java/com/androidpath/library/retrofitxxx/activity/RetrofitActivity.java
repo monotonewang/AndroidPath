@@ -1,25 +1,31 @@
-package com.androidpath.library.retrofit.activity;
+package com.androidpath.library.retrofitxxx.activity;
 
 import android.os.Bundle;
 import android.util.Log;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.BaseActivity;
-import com.androidpath.library.retrofit.inter.MyRetrofitService;
-import com.androidpath.library.retrofit.utils.Constants;
+import com.androidpath.library.retrofitxxx.inter.MyRetrofitService;
+import com.androidpath.library.retrofitxxx.utils.Constants;
+
 
 import java.io.IOException;
 
+import okhttp3.OkHttpClient;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.GET;
+import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public class RetrofitActivity extends BaseActivity {
 
     private Retrofit retrofit;
+
     private String TAG = "RetrofitActivity";
 
     @Override
@@ -62,7 +68,7 @@ public class RetrofitActivity extends BaseActivity {
     //PATH用法
     private void getGitHubData() {
         MyRetrofitService service = retrofit.create(MyRetrofitService.class);
-        Call<ResponseBody> repos = service.listRepos("montotone");
+        Call<ResponseBody> repos = service.getJsonByNum("montotone");
         repos.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
@@ -132,14 +138,35 @@ public class RetrofitActivity extends BaseActivity {
      * Get方法测试
      */
     private void getMethodTest() {
+        Retrofit retrofit = new Retrofit.Builder()
+                .client(new OkHttpClient())//设置底层请求库
+                .baseUrl(Constants.homeUrl)
+                .build();
 
         MyRetrofitService service = retrofit.create(MyRetrofitService.class);
-        Call<ResponseBody> firstJson = service.getFirstJson();
-        firstJson.enqueue(new Callback<ResponseBody>() {
+
+//        Call<ResponseBody> firstJson = service.getFirstJson();
+//        firstJson.enqueue(new Callback<ResponseBody>() {
+//            @Override
+//            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+//                try {
+//                    Log.e(TAG, "onResponse: "+ response.body().string());
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<ResponseBody> call, Throwable t) {
+//                Log.e(TAG, "onFailure: "+ t.getMessage());
+//            }
+//        });
+        Call<ResponseBody> call = service.getJsonByNum("3 ");
+        call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 try {
-                    System.out.println(response.body().string());
+                    Log.e(TAG, "onResponse: " + response.body().string());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -147,9 +174,8 @@ public class RetrofitActivity extends BaseActivity {
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
-                System.out.println(t.getMessage());
+                Log.e(TAG, "onFailure: " + t.getMessage());
             }
         });
     }
-
 }
