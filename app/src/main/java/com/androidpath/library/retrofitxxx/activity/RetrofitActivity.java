@@ -32,8 +32,9 @@ public class RetrofitActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_retrofit);
+        //创建一个Retrofit对象
         retrofit = new Retrofit.Builder()
-                .baseUrl(Constants.url)
+                .baseUrl(Constants.homeUrl)
 //                .baseUrl(Constants.API_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
@@ -52,7 +53,9 @@ public class RetrofitActivity extends BaseActivity {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 try {
-                    Log.e(TAG, response.body().string());
+                    String name = Thread.currentThread().getName();
+                    //主线程
+                    Log.e(TAG, response.body().string()+"threadname="+name);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
