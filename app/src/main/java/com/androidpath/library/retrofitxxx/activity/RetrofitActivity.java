@@ -10,6 +10,8 @@ import com.androidpath.library.retrofitxxx.utils.Constants;
 
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import okhttp3.OkHttpClient;
 import okhttp3.ResponseBody;
@@ -41,9 +43,32 @@ public class RetrofitActivity extends BaseActivity {
 //        getMethodTest();
 //        getJsonByParam();
 //        getJsonByHttp();
-        getJsonByPost();
+//        getJsonByPost();
 //        getGitHubData();
+        getJsonByQueryMap();
+    }
 
+    private void getJsonByQueryMap() {
+        MyRetrofitService service = retrofit.create(MyRetrofitService.class);
+        Map<String,String> map=new HashMap<>();
+        map.put("username","zhangsan");
+        map.put("password","test");
+        Call<ResponseBody> jsonByQueryMap = service.getJsonByQueryMap(map);
+        jsonByQueryMap.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                try {
+                    Log.e(TAG, "onResponse: "+response.body().string() );
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
     }
 
     private void getJsonByPost() {
