@@ -1,7 +1,11 @@
 package com.androidpath.library.retrofitxxx.activity;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.BaseActivity;
@@ -10,6 +14,7 @@ import com.androidpath.library.retrofitxxx.utils.Constants;
 
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,6 +34,7 @@ public class RetrofitActivity extends BaseActivity {
     private Retrofit retrofit;
 
     private String TAG = "RetrofitActivity";
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +51,75 @@ public class RetrofitActivity extends BaseActivity {
 //        getJsonByHttp();
 //        getJsonByPost();
 //        getGitHubData();
-        getJsonByQueryMap();
+//        getJsonByQueryMap();
+//        getJsonByFiledMap();
+//        getByURL();
+        imageView = (ImageView) findViewById(R.id.imageviewre);
+        getImageDownload();
+    }
+    //down image
+    private void getImageDownload() {
+        MyRetrofitService service = retrofit.create(MyRetrofitService.class);
+        Call<ResponseBody> imageDownload = service.getImageDownload();
+        imageDownload.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                String name=Thread.currentThread().getName();
+                InputStream inputStream = response.body().byteStream();
+                Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
+                imageView.setImageBitmap(bitmap);
+                Log.e(TAG, "onResponse: "+name);
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
+    }
+
+    private void getJsonByFiledMap() {
+        MyRetrofitService service = retrofit.create(MyRetrofitService.class);
+        Map<String,String> map=new HashMap<>();
+        map.put("username","zhangsan");
+        map.put("password","test");
+        Call<ResponseBody> jsonByQueryMap = service.getJsonByFiledMap(map);
+        jsonByQueryMap.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                try {
+                    Log.e(TAG, "onResponse: "+response.body().string() );
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
+    }
+
+    //@URL baseurl not use
+    private void getByURL() {
+        MyRetrofitService service = retrofit.create(MyRetrofitService.class);
+        Call<ResponseBody> byURL = service.getByURL(Constants.Url);
+        byURL.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                try {
+                    Log.e(TAG, "onResponse: "+response.body().string() );
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
     }
 
     private void getJsonByQueryMap() {

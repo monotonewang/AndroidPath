@@ -8,7 +8,9 @@ package com.androidpath.library.retrofitxxx.utils;
  */
 
 public interface Constants {
-    String url = "http://192.168.3.31:8080/ServletMirror/";
+
+    String Url="http://192.168.1.105:8080/ServletMirror/ServletMyInterFace?num=9";
+    String companyUrl = "http://192.168.3.31:8080/ServletMirror/";
     String homeUrl="http://192.168.1.105:8080/ServletMirror/";
     String urlGet="ServletMyInterFace?num=9";
     String urlGetnum="ServletMyInterFace";//Query
@@ -17,6 +19,8 @@ public interface Constants {
     String gitUrl="https://api.github.com/users/montotone/repos";
 
     String urlPost="ServletMyInterFace?num=9";
+
+    String getByDown="ServletDownLoad";
 
 //    http://localhost:8080/ServletMirror/ServletMyInterFace?num=16
 }
