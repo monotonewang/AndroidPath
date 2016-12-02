@@ -1,4 +1,4 @@
-package com.androidpath.library.Retrofit.utils;
+package com.androidpath.library.retrofit.utils;
 
 /**
  * deso: AndroidPath TODO<br/>
@@ -8,6 +8,7 @@ package com.androidpath.library.Retrofit.utils;
  */
 
 public interface Constants {
-    String urlGet="servletmyfirstinterface";
     String url = "http://192.168.3.31:8080/ServletMirror/";
+    String homeUrl="http://192.168.1.105:8080/ServletMirror/";
+    String urlGet="ServletMyInterFace";
 }

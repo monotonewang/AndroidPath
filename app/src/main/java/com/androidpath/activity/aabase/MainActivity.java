@@ -19,6 +19,7 @@ import com.androidpath.activity.aabase.asecondactivity.ServiceActivity11;
 import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
 import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
 import com.androidpath.architecture.mvp.view.LoginActivity;
+import com.androidpath.library.retrofit.activity.RetrofitActivity;
 
 /**
  * zgjxfuqingwang@gmail.com
@@ -97,7 +98,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, ServiceActivity11.class));
                 break;
             case R.id.Settings:
-                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                startActivity(new Intent(MainActivity.this, RetrofitActivity.class));
                 break;
             //            case R.id.SurfaceViewBird:
             //                startActivity(new Intent(MusicMainActivity.this, SurfaceViewMainActivity.class));

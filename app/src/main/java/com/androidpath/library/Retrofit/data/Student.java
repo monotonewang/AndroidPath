@@ -1,4 +1,4 @@
-package com.androidpath.library.Retrofit.data;
+package com.androidpath.library.retrofit.data;
 
 /**
  * deso: AndroidPath TODO<br/>
