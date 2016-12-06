@@ -8,20 +8,20 @@ import android.widget.TextView;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.BaseActivity;
-import com.androidpath.util.FileUtils;
+import com.androidpath.activity.aiviewpager.actionbar215.MainActivity215;
 import com.androidpath.activity.aiviewpager.cbk.chabaike211.MainActivity211;
 import com.androidpath.activity.aiviewpager.cbk.chabaike216.MainActivity216;
 import com.androidpath.activity.aiviewpager.cbk.chabaike240.MainActivity240;
-import com.androidpath.view.flowlayout.libs.FlowLayout;
-import com.androidpath.view.flowlayout.libs.TagAdapter;
-import com.androidpath.view.flowlayout.libs.TagFlowLayout;
-import com.androidpath.activity.aiviewpager.actionbar215.MainActivity215;
 import com.androidpath.activity.aiviewpager.circle212.MainActivity212;
 import com.androidpath.activity.aiviewpager.fragment214.MainActivity214;
 import com.androidpath.activity.aiviewpager.tabone220.MainActivity220;
 import com.androidpath.activity.aiviewpager.tabtwo221.MainActivity221;
 import com.androidpath.activity.aiviewpager.textview210.MainActivity210;
 import com.androidpath.activity.aiviewpager.webview213.MainActivity213;
+import com.androidpath.util.FileUtilssss;
+import com.androidpath.view.flowlayout.libs.FlowLayout;
+import com.androidpath.view.flowlayout.libs.TagAdapter;
+import com.androidpath.view.flowlayout.libs.TagFlowLayout;
 
 import java.util.ArrayList;
 
@@ -35,7 +35,7 @@ public class ViewPagerActivity9 extends BaseActivity implements TagFlowLayout.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_pager9);
         final LayoutInflater mInflater = LayoutInflater.from(this);
-        ArrayList arrayList = FileUtils.getArrayList(this, R.raw.viewpagerdemo);
+        ArrayList arrayList = FileUtilssss.getArrayList(this, R.raw.viewpagerdemo);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
         mFlowLayout = (TagFlowLayout) findViewById(R.id.viewpager_flowlayout);
         mFlowLayout.setAdapter(mAdapter = new TagAdapter<String>(mVals) {

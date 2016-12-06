@@ -7,12 +7,12 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.acasync.demoone70.MainActivity70;
 import com.androidpath.activity.acasync.demotwo71.MainActivity71;
 import com.androidpath.activity.acasync.getimagestrong72.MainActivity72;
 import com.androidpath.activity.acasync.progresslow73.MainActivity73;
-import com.androidpath.activity.aabase.BaseActivity;
-import com.androidpath.util.FileUtils;
+import com.androidpath.util.FileUtilssss;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
 import com.androidpath.view.flowlayout.libs.TagFlowLayout;
@@ -28,7 +28,7 @@ public class AsyncActivity3 extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_async);
         final LayoutInflater mInflater = LayoutInflater.from(this);
-        ArrayList arrayList = FileUtils.getArrayList(this,R.raw.asyncdemo);
+        ArrayList arrayList = FileUtilssss.getArrayList(this,R.raw.asyncdemo);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
         mFlowLayout = (TagFlowLayout) findViewById(R.id.live_cycle_flowlayout);
         mFlowLayout.setAdapter(mAdapter = new TagAdapter<String>(mVals) {

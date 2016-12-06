@@ -7,13 +7,13 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.affragment.dialogframgment.MainActivity120;
 import com.androidpath.activity.affragment.dynicaddfragment123.MainActivity123;
 import com.androidpath.activity.affragment.fragmentpassvalue122.MainActivity122;
 import com.androidpath.activity.affragment.radiofragment124.MainActivity124;
 import com.androidpath.activity.affragment.staticfragment121.MainActivity121;
-import com.androidpath.activity.aabase.BaseActivity;
-import com.androidpath.util.FileUtils;
+import com.androidpath.util.FileUtilssss;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
 import com.androidpath.view.flowlayout.libs.TagFlowLayout;
@@ -30,7 +30,7 @@ public class FragmentActivity6 extends BaseActivity implements TagFlowLayout.OnT
         setContentView(R.layout.activity_fragment);
 
         final LayoutInflater mInflater = LayoutInflater.from(this);
-        ArrayList arrayList = FileUtils.getArrayList(this, R.raw.fragmentdemo);
+        ArrayList arrayList = FileUtilssss.getArrayList(this, R.raw.fragmentdemo);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
         mFlowLayout = (TagFlowLayout) findViewById(R.id.fragment_flowlayout);
         mFlowLayout.setAdapter(mAdapter = new TagAdapter<String>(mVals) {

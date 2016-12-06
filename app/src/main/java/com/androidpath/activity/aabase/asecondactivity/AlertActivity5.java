@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.BaseActivity;
-import com.androidpath.util.FileUtils;
 import com.androidpath.activity.aealert.actionbar190.customview.MainActivity194;
 import com.androidpath.activity.aealert.actionbar190.demo190.MainActivity190;
 import com.androidpath.activity.aealert.actionbar190.list193.MainActivity193;
@@ -22,6 +21,7 @@ import com.androidpath.activity.aealert.optionmenu113.MainActivity113;
 import com.androidpath.activity.aealert.popupmenu114.MainActivity114;
 import com.androidpath.activity.aealert.subMenu115.MainActivity115;
 import com.androidpath.activity.aealert.toastdemo116.MainActivity116;
+import com.androidpath.util.FileUtilssss;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
 import com.androidpath.view.flowlayout.libs.TagFlowLayout;
@@ -38,7 +38,7 @@ public class AlertActivity5 extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert);
         final LayoutInflater mInflater = LayoutInflater.from(this);
-        ArrayList arrayList = FileUtils.getArrayList(this, R.raw.alertdemo);
+        ArrayList arrayList = FileUtilssss.getArrayList(this, R.raw.alertdemo);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
         mFlowLayout = (TagFlowLayout) findViewById(R.id.alert_flowlayout);
         mFlowLayout.setAdapter(mAdapter = new TagAdapter<String>(mVals) {

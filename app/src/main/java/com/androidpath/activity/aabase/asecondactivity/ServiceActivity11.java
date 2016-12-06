@@ -14,7 +14,7 @@ import com.androidpath.activity.akservice.mediaservice.mediaservice243.MainActiv
 import com.androidpath.activity.akservice.mediaservice246.MainActivity246;
 import com.androidpath.activity.akservice.servicedemo241.MainActivity241;
 import com.androidpath.activity.akservice.stickservice247.MainActivity247;
-import com.androidpath.util.FileUtils;
+import com.androidpath.util.FileUtilssss;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
 import com.androidpath.view.flowlayout.libs.TagFlowLayout;
@@ -31,7 +31,7 @@ public class ServiceActivity11 extends BaseActivity implements TagFlowLayout.OnT
         setContentView(R.layout.activity_service11);
 
         final LayoutInflater mInflater = LayoutInflater.from(this);
-        ArrayList arrayList = FileUtils.getArrayList(this, R.raw.servicedemo);
+        ArrayList arrayList = FileUtilssss.getArrayList(this, R.raw.servicedemo);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
         mFlowLayout = (TagFlowLayout) findViewById(R.id.sevice_flowlayout);
         mFlowLayout.setAdapter(mAdapter = new TagAdapter<String>(mVals) {

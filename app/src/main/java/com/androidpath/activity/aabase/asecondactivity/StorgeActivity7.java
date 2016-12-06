@@ -24,7 +24,7 @@ import com.androidpath.activity.agstorge.sql.sqlclienttwo152.MainActivity152;
 import com.androidpath.activity.agstorge.sql.sqldemo154.MainActivity154;
 import com.androidpath.activity.agstorge.sql.sqlserverone151.MainActivity151;
 import com.androidpath.activity.agstorge.sql.sqlservertwo153.MainActivity153;
-import com.androidpath.util.FileUtils;
+import com.androidpath.util.FileUtilssss;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
 import com.androidpath.view.flowlayout.libs.TagFlowLayout;
@@ -42,7 +42,7 @@ public class StorgeActivity7 extends BaseActivity implements TagFlowLayout.OnTag
         setContentView(R.layout.activity_storge7);
 
         final LayoutInflater mInflater = LayoutInflater.from(this);
-        ArrayList arrayList = FileUtils.getArrayList(this, R.raw.storgedemo);
+        ArrayList arrayList = FileUtilssss.getArrayList(this, R.raw.storgedemo);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
         mFlowLayout = (TagFlowLayout) findViewById(R.id.storge_flowlayout);
         mFlowLayout.setAdapter(mAdapter = new TagAdapter<String>(mVals) {

@@ -13,7 +13,7 @@ import com.androidpath.activity.ahhandler.handerimage180.MainActivity180;
 import com.androidpath.activity.ahhandler.handlerlightcycle182.MainActivity182;
 import com.androidpath.activity.ahhandler.handlerlopper184.MainActivity184;
 import com.androidpath.activity.ahhandler.updateui183.MainActivity183;
-import com.androidpath.util.FileUtils;
+import com.androidpath.util.FileUtilssss;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
 import com.androidpath.view.flowlayout.libs.TagFlowLayout;
@@ -31,7 +31,7 @@ public class HandlerActivity8 extends BaseActivity implements TagFlowLayout.OnTa
         setContentView(R.layout.activity_handler8);
 
         final LayoutInflater mInflater = LayoutInflater.from(this);
-        ArrayList arrayList = FileUtils.getArrayList(this, R.raw.handlerdemo);
+        ArrayList arrayList = FileUtilssss.getArrayList(this, R.raw.handlerdemo);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
         mFlowLayout = (TagFlowLayout) findViewById(R.id.handler_flowlayout);
         mFlowLayout.setAdapter(mAdapter = new TagAdapter<String>(mVals) {

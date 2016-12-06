@@ -14,7 +14,7 @@ import com.androidpath.activity.ajbroadcast.sendbroadcast231.MainActivity231;
 import com.androidpath.activity.ajbroadcast.serverclient234.client.MainActivity235;
 import com.androidpath.activity.ajbroadcast.serverclient234.server.MainActivity234;
 import com.androidpath.activity.ajbroadcast.staticdymic230.MainActivity230;
-import com.androidpath.util.FileUtils;
+import com.androidpath.util.FileUtilssss;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
 import com.androidpath.view.flowlayout.libs.TagFlowLayout;
@@ -32,7 +32,7 @@ public class BroadcastActivity10 extends BaseActivity implements TagFlowLayout.O
         setContentView(R.layout.activity_broadcast);
 
         final LayoutInflater mInflater = LayoutInflater.from(this);
-        ArrayList arrayList = FileUtils.getArrayList(this, R.raw.broadcastdemo);
+        ArrayList arrayList = FileUtilssss.getArrayList(this, R.raw.broadcastdemo);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
         mFlowLayout = (TagFlowLayout) findViewById(R.id.broadcast_flowlayout);
         mFlowLayout.setAdapter(mAdapter = new TagAdapter<String>(mVals) {

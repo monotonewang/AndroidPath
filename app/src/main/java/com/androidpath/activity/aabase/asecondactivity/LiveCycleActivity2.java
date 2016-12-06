@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.abactivity.activityjump50.MainActivity50;
 import com.androidpath.activity.abactivity.activitypassvalue54.MainActivity54;
 import com.androidpath.activity.abactivity.applicationpassvalue55.MainActivity55;
@@ -15,8 +16,7 @@ import com.androidpath.activity.abactivity.flagdemo74.MainActivity74;
 import com.androidpath.activity.abactivity.getresult60.MainActivity60;
 import com.androidpath.activity.abactivity.saveinstance76.MainActivity76;
 import com.androidpath.activity.abactivity.taskdemo61.MainActivity61;
-import com.androidpath.activity.aabase.BaseActivity;
-import com.androidpath.util.FileUtils;
+import com.androidpath.util.FileUtilssss;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
 import com.androidpath.view.flowlayout.libs.TagFlowLayout;
@@ -41,7 +41,7 @@ public class LiveCycleActivity2 extends BaseActivity {
 
         setContentView(R.layout.activity_live_cycle);
         final LayoutInflater mInflater = LayoutInflater.from(this);
-        ArrayList arrayList = FileUtils.getArrayList(this,R.raw.activitylivecycle);
+        ArrayList arrayList = FileUtilssss.getArrayList(this,R.raw.activitylivecyclesss);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
         mFlowLayout = (TagFlowLayout) findViewById(R.id.live_cycle_flowlayout);
         mFlowLayout.setAdapter(mAdapter = new TagAdapter<String>(mVals) {

@@ -9,10 +9,6 @@ import android.widget.TextView;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.BaseActivity;
-import com.androidpath.util.FileUtils;
-import com.androidpath.view.flowlayout.libs.FlowLayout;
-import com.androidpath.view.flowlayout.libs.TagAdapter;
-import com.androidpath.view.flowlayout.libs.TagFlowLayout;
 import com.androidpath.activity.aalayout.buttonbgcolor40.MainActivity40;
 import com.androidpath.activity.aalayout.buttonselector30.ButtonSelectorActivtiy3;
 import com.androidpath.activity.aalayout.checkradio41.MainActivity41;
@@ -25,6 +21,10 @@ import com.androidpath.activity.aalayout.spinner.spinnerdemo43.MainActivity43;
 import com.androidpath.activity.aalayout.spinner.spinnerlink52.MainActivity52;
 import com.androidpath.activity.aalayout.spinner.spinnersimpleAdapter44.MainActivity44;
 import com.androidpath.activity.aalayout.viewtest34.MainActivity34;
+import com.androidpath.util.FileUtilssss;
+import com.androidpath.view.flowlayout.libs.FlowLayout;
+import com.androidpath.view.flowlayout.libs.TagAdapter;
+import com.androidpath.view.flowlayout.libs.TagFlowLayout;
 
 import java.util.ArrayList;
 
@@ -45,7 +45,7 @@ public class LayoutButtonActivity1 extends BaseActivity implements TagFlowLayout
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout_button);
         final LayoutInflater mInflater = LayoutInflater.from(this);
-        ArrayList arrayList = FileUtils.getArrayList(this, R.raw.layoutbutton);
+        ArrayList arrayList = FileUtilssss.getArrayList(this, R.raw.layoutbutton);
         mVals = (String[]) arrayList.toArray(new String[arrayList.size()]);
         mFlowLayout = (TagFlowLayout) findViewById(R.id.layout_flowlayout);
         mFlowLayout.setAdapter(mAdapter = new TagAdapter<String>(mVals) {
