@@ -1,7 +1,7 @@
-package com.demo.java.observer;
+package com.javapath.observer;
 
-import com.demo.java.observer.inter.Observer;
-import com.demo.java.observer.inter.Subject;
+import com.javapath.observer.inter.Observer;
+import com.javapath.observer.inter.Subject;
 
 import java.util.ArrayList;
 import java.util.List;

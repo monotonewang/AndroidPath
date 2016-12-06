@@ -1,7 +1,7 @@
-package com.demo.java.observer;
+package com.javapath.observer;
 
-import com.demo.java.observer.inter.DisplayElement;
-import com.demo.java.observer.inter.Observer;
+import com.javapath.observer.inter.DisplayElement;
+import com.javapath.observer.inter.Observer;
 
 /**
  * deso: AndroidPath TODO<br/>

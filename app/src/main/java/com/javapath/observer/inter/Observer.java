@@ -1,4 +1,4 @@
-package com.demo.java.observer.inter;
+package com.javapath.observer.inter;
 
 /**
  * deso: AndroidPath TODO<br/>

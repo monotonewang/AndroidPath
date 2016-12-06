@@ -1,4 +1,4 @@
-package com.demo.java.junittest;
+package com.javapath.junittest;
 
 /**
  * deso: TestingExample TODO<br/>
