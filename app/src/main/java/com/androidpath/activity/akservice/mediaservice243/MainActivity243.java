@@ -1,4 +1,4 @@
-package com.androidpath.activity.akservice.mediaservice.mediaservice243;
+package com.androidpath.activity.akservice.mediaservice243;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

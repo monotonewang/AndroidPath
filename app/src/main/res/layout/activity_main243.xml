@@ -25,5 +25,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="00:00/00:00"/>
+    <!--android:progressDrawable="@drawable/volume"-->
+    <!--android:progressDrawable=""-->
+    <com.androidpath.view.widget.seekbar.VolumeSeekbar
+        android:thumb="@drawable/volume_thumb"
+        android:max="15"
+        android:progressDrawable="@drawable/volume"
+        android:id="@+id/seekBarVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

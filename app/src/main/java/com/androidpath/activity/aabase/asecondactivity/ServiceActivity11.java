@@ -10,7 +10,7 @@ import com.androidpath.R;
 import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.akservice.intentservice248.MainActivity248;
 import com.androidpath.activity.akservice.localbroadservice242.MainActivity242;
-import com.androidpath.activity.akservice.mediaservice.mediaservice243.MainActivity243;
+import com.androidpath.activity.akservice.mediaservice243.MainActivity243;
 import com.androidpath.activity.akservice.mediaservice246.MainActivity246;
 import com.androidpath.activity.akservice.servicedemo241.MainActivity241;
 import com.androidpath.activity.akservice.stickservice247.MainActivity247;

@@ -199,9 +199,9 @@
 
         <service android:name=".activity.akservice.localbroadservice242.TimerSerivce" />
 
-        <activity android:name=".activity.akservice.mediaservice.mediaservice243.MainActivity243" />
+        <activity android:name=".activity.akservice.mediaservice243.MainActivity243" />
 
-        <service android:name=".activity.akservice.mediaservice.mediaservice243.MediaService243" />
+        <service android:name=".activity.akservice.mediaservice243.MediaService243" />
 
         <activity android:name=".activity.akservice.intentservice248.MainActivity248" />
 
