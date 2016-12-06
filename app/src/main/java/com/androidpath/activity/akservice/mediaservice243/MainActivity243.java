@@ -4,8 +4,10 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
@@ -24,7 +26,11 @@ public class MainActivity243 extends BaseActivity implements OnSeekBarChangeList
 	
 	private LocalBroadcastManager localBroadcastManager;
 	private MyReceiver myReceiver;
-	
+	private SeekBar seekBarVolume;
+    private AudioManager audioManager;
+    private int maxVolume,currentVolume;
+    private String TAG="MainActivity243";
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -44,6 +50,32 @@ public class MainActivity243 extends BaseActivity implements OnSeekBarChangeList
 		IntentFilter intent = new IntentFilter();
 		intent.addAction("android.action.intent.timer");
 		localBroadcastManager.registerReceiver(myReceiver, intent);
+
+        audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+        maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);    //get max volume
+        currentVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);  //get current volume progress
+
+		seekBarVolume = (SeekBar) findViewById(R.id.seekBarVolume);
+        seekBarVolume.setProgress(currentVolume);
+
+		seekBarVolume.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+			@Override
+			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, progress, 0);  //获取当前值
+                currentVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);  //获取当前值
+                seekBarVolume.setProgress(currentVolume);
+			}
+
+			@Override
+			public void onStartTrackingTouch(SeekBar seekBar) {
+
+			}
+
+			@Override
+			public void onStopTrackingTouch(SeekBar seekBar) {
+
+			}
+		});
 	}
 
 	public void play(View v){
