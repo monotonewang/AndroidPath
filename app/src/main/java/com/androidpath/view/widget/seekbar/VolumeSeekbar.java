@@ -2,20 +2,13 @@ package com.androidpath.view.widget.seekbar;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.SeekBar;
-
-import com.androidpath.R;
 
 /**
  * deso: AndroidPath TODO<br/>
@@ -53,7 +46,7 @@ public class VolumeSeekbar extends SeekBar {
         DisplayMetrics displayMetrics = resources.getDisplayMetrics();
         widthPixels = displayMetrics.widthPixels;
         heightPixels = displayMetrics.heightPixels;
-        Log.e(TAG, "initView: widthPixels=" + widthPixels + "heightPixels=" + heightPixels);
+//        Log.e(TAG, "initView: widthPixels=" + widthPixels + "heightPixels=" + heightPixels);
         paint = new Paint();
         paint.setColor(Color.BLUE);
         paint.setStrokeWidth(3);
@@ -82,9 +75,9 @@ public class VolumeSeekbar extends SeekBar {
     @Override
     protected synchronized void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.volume);
-        Drawable drawable = new BitmapDrawable(getResources(), bitmap);
-        setProgressDrawable(drawable);
+//        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.volume);
+//        Drawable drawable = new BitmapDrawable(getResources(), bitmap);
+//        setProgressDrawable(drawable);
     }
 
     @Override

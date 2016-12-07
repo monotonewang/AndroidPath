@@ -4,6 +4,10 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.support.v4.content.LocalBroadcastManager;
@@ -56,6 +60,10 @@ public class MainActivity243 extends BaseActivity implements OnSeekBarChangeList
 
 		seekBarVolume = (SeekBar) findViewById(R.id.seekBarVolume);
         seekBarVolume.setProgress(currentVolume);
+        //设置ProgessDrawable即可有效果
+		Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.volume);
+		Drawable drawable = new BitmapDrawable(getResources(), bitmap);
+		seekBarVolume.setProgressDrawable(drawable);
 
 		seekBarVolume.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
 			@Override
