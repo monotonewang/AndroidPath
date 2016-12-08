@@ -18,7 +18,7 @@ import com.androidpath.activity.aabase.asecondactivity.LiveCycleActivity2;
 import com.androidpath.activity.aabase.asecondactivity.ServiceActivity11;
 import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
 import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
-import com.androidpath.library.retrofitxxx.activity.RetrofitActivity;
+import com.androidpath.library.rxjava.RxActivity;
 
 /**
  * zgjxfuqingwang@gmail.com
@@ -97,7 +97,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, ServiceActivity11.class));
                 break;
             case R.id.Settings:
-                startActivity(new Intent(MainActivity.this, RetrofitActivity.class));
+                startActivity(new Intent(MainActivity.this, RxActivity.class));
                 break;
             //            case R.id.SurfaceViewBird:
             //                startActivity(new Intent(MusicMainActivity.this, SurfaceViewMainActivity.class));
