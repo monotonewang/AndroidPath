@@ -241,7 +241,10 @@
         <activity android:name=".architecture.mvp.view.LoginActivity" />
         <!-- project music -->
         <activity android:name=".project.music.MusicMainActivity" />
-        <activity android:name=".library.rxjava.RxActivity"/>
+        <activity android:name=".library.rxjava.RxActivity" />
+        <!--ButterKnife-->
+        <activity android:name=".library.butterknife.activity.ButterKnifeActivity" />
+
     </application>
 
 </manifest>
