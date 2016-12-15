@@ -2,6 +2,7 @@ package com.androidpath.activity.aabase;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
@@ -18,7 +19,7 @@ import com.androidpath.activity.aabase.asecondactivity.LiveCycleActivity2;
 import com.androidpath.activity.aabase.asecondactivity.ServiceActivity11;
 import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
 import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
-import com.androidpath.library.butterknife.activity.ButterKnifeActivity;
+import com.androidpath.util.fontutil.FontsManager;
 
 /**
  * zgjxfuqingwang@gmail.com
@@ -27,11 +28,13 @@ public class MainActivity extends BaseActivity {
 
     private AlertDialog dialog;
     private String TAG = "ContentValues";
+    private boolean isFontChange = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
     }
 
     @Override
@@ -97,7 +100,15 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, ServiceActivity11.class));
                 break;
             case R.id.Settings:
-                startActivity(new Intent(MainActivity.this, ButterKnifeActivity.class));
+                isFontChange = !isFontChange;
+                if (isFontChange) {
+                    FontsManager.initFormAssets(this, "fonts/testFont.ttf");//初始化，传入 typeface
+                    FontsManager.changeFonts(this);//change activity font
+                } else {
+                    FontsManager.init(Typeface.DEFAULT);
+                    FontsManager.changeFonts(this);
+                }
+//                startActivity(new Intent(MainActivity.this, ButterKnifeActivity.class));
                 break;
             //            case R.id.SurfaceViewBird:
             //                startActivity(new Intent(MusicMainActivity.this, SurfaceViewMainActivity.class));
