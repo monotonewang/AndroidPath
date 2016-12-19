@@ -19,6 +19,7 @@ import com.androidpath.activity.aabase.asecondactivity.LiveCycleActivity2;
 import com.androidpath.activity.aabase.asecondactivity.ServiceActivity11;
 import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
 import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
+import com.androidpath.activity.acasync.networkconn.NetWorkConn20161219;
 import com.androidpath.util.fontutil.FontsManager;
 
 /**
@@ -100,15 +101,9 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, ServiceActivity11.class));
                 break;
             case R.id.Settings:
-                isFontChange = !isFontChange;
-                if (isFontChange) {
-                    FontsManager.initFormAssets(this, "fonts/testFont.ttf");//初始化，传入 typeface
-                    FontsManager.changeFonts(this);//change activity font
-                } else {
-                    FontsManager.init(Typeface.DEFAULT);
-                    FontsManager.changeFonts(this);
-                }
-//                startActivity(new Intent(MainActivity.this, ButterKnifeActivity.class));
+
+//                changeFontsByActivity();
+                startActivity(new Intent(MainActivity.this, NetWorkConn20161219.class));
                 break;
             //            case R.id.SurfaceViewBird:
             //                startActivity(new Intent(MusicMainActivity.this, SurfaceViewMainActivity.class));
@@ -118,6 +113,17 @@ public class MainActivity extends BaseActivity {
             //                break;
             default:
                 break;
+        }
+    }
+
+    private void changeFontsByActivity() {
+        isFontChange = !isFontChange;
+        if (isFontChange) {
+            FontsManager.initFormAssets(this, "fonts/testFont.ttf");//初始化，传入 typeface
+            FontsManager.changeFonts(this);//change activity font
+        } else {
+            FontsManager.init(Typeface.DEFAULT);
+            FontsManager.changeFonts(this);
         }
     }
 }

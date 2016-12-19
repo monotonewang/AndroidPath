@@ -90,6 +90,8 @@
         <activity android:name=".activity.acasync.getimagestrong72.MainActivity72" />
         <activity android:name=".activity.acasync.progresslow73.MainActivity73" />
         <activity android:name=".activity.aalayout.imageviewdeal75.MainActivity75" />
+        <activity android:name=".activity.acasync.networkconn.NetWorkConn20161219" />
+
         <!-- This is listview activity -->
         <activity android:name=".activity.adlistview.baseadapter80.MainActivity80" />
         <activity android:name=".activity.adlistview.firstlistview.MainActivityFirstLV" />
