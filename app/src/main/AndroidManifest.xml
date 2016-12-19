@@ -246,6 +246,9 @@
         <activity android:name=".library.rxjava.RxActivity" />
         <!--ButterKnife-->
         <activity android:name=".library.butterknife.activity.ButterKnifeActivity" />
+        <activity android:name=".architecture.meterial.MeterialActivity" />
+
+
 
     </application>
 

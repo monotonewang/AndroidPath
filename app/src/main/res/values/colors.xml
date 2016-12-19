@@ -11,4 +11,6 @@
     <color name="white">#FFF</color>
     <color name="light_black">#fd383838</color>
     <color name="gray">#e7e4e4</color>
+    <!-- MeterialActivity Style -->
+    <color name="my_primary">#ED1C24</color>
 </resources>

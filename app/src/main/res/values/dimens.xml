@@ -26,4 +26,6 @@
     <dimen name="shopping_cart_total_price_word_size">20sp</dimen>
     <!--area-->
     <dimen name="margin_large">20dp</dimen>
+    <!-- MeterialActivity Style -->
+    <dimen name="card_margin">16dp</dimen>
 </resources>

@@ -43,4 +43,9 @@
     </string-array>
     <string name="menu_name">菜单</string>
     <string name="dish_name">菜名</string>
+    <!-- MeterialActivity Style -->
+     <string name="long_text">Android 5.0 Lollipop was one of the most significant Android releases ever,
+        in no small part due to the introduction of material design,
+        a new design language that refreshed the entire Android experience
+    </string>
 </resources>
