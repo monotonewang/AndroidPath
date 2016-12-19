@@ -82,7 +82,7 @@ public class MeterialActivity extends AppCompatActivity implements OnClickListen
 //		if(fab != null)
 //			fab.setOnClickListener(this);
 //	}
-
+	//ss
 	private void setupToolbar(){
 		toolbar = (Toolbar) findViewById(R.id.toolbar);
 		if(toolbar != null)
