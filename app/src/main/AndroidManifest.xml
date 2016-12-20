@@ -244,12 +244,10 @@
         <!-- project music -->
         <activity android:name=".project.music.MusicMainActivity" />
         <activity android:name=".library.rxjava.RxActivity" />
-        <!--ButterKnife-->
+        <!-- ButterKnife -->
         <activity android:name=".library.butterknife.activity.ButterKnifeActivity" />
         <activity android:name=".architecture.meterial.MeterialActivity" />
-
-
-
+        <activity android:name=".view.widget.custom.viewfirst.CustomeViewFirst"></activity>
     </application>
 
 </manifest>
