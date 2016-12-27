@@ -15,7 +15,7 @@
         </attr>
     </declare-styleable>
     <declare-styleable name="PieChart">
-        <attr name="showText" format="enum"></attr>
+        <attr name="showText" format="boolean"></attr>
         <attr name="labelPosition" format="enum">
             <enum name="left" value="0"></enum>
             <enum name="right" value="1"></enum>
