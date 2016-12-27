@@ -48,7 +48,6 @@ public class MusicMainActivity extends FragmentActivity implements OnFragmentPub
 	}
 	
 	private void initView() {
-		// TODO Auto-generated method stub
 		linearLayout=(LinearLayout) findViewById(R.id.ll_id);
 		viewNav=findViewById(R.id.view_nav);
 		horizontalScrollView=(HorizontalScrollView) findViewById(R.id.hsv_id);
@@ -73,7 +72,6 @@ public class MusicMainActivity extends FragmentActivity implements OnFragmentPub
 				
 				@Override
 				public void onClick(View v) {
-					// TODO Auto-generated method stub
 					int tag2 = (int) v.getTag();
 					viewPager.setCurrentItem(tag2);
 				}
@@ -108,7 +106,6 @@ public class MusicMainActivity extends FragmentActivity implements OnFragmentPub
 			
 			@Override
 			public void onPageScrolled(int postion, float arg1, int arg2) {
-				// TODO Auto-generated method stub
 				LayoutParams layoutParams = (LayoutParams) viewNav.getLayoutParams();
 				//计算光标的位置
 				int width=0;
@@ -129,7 +126,6 @@ public class MusicMainActivity extends FragmentActivity implements OnFragmentPub
 
 	@Override
 	public void OnFragmentPublicItemClick(String msg,int position) {
-		// TODO Auto-generated method stub
 		if(msg!=null){
 			listMusicName = msg;
 //			Log.e("MusicMainActivity", listMusicName);
@@ -139,7 +135,6 @@ public class MusicMainActivity extends FragmentActivity implements OnFragmentPub
 
 	@Override
 	public void OnFragmentSongItemClick(int position) {
-		// TODO Auto-generated method stub
 		if(String.valueOf(position)!=null){
 //			Log.e("MusicMainActivity", listMusicName);
 			viewPager.setCurrentItem(3);

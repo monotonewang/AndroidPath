@@ -53,7 +53,6 @@ public class FragmentPlayMusic extends Fragment implements OnClickListener {
 
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			// TODO Auto-generated method stub
 			//拿到歌曲的下载url
 			String SongLibkUrl= intent.getStringExtra("songid");
 			Log.d("FragmentPlayMusic", "songurl="+SongLibkUrl+"");
@@ -62,7 +61,6 @@ public class FragmentPlayMusic extends Fragment implements OnClickListener {
 
 		@Override
 		public void onDownSucc(String url, Object obj) {
-			// TODO Auto-generated method stub
 			String songJson=(String) obj;
 			Log.e("one song info", url);
 			//得到当前一首歌曲的详细信息
@@ -94,15 +92,13 @@ public class FragmentPlayMusic extends Fragment implements OnClickListener {
 	}
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		
+
 		Intent intent=new Intent();
 		intent.setAction("com.example.day25baidumusictest.fragment.MediaPlayerService.PlayOrStop");
 		localBroadcastManagerSongPlayOrStop.sendBroadcast(intent);
 	}
 	@Override
 	public void onAttach(Activity activity) {
-		// TODO Auto-generated method stub
 		super.onAttach(activity);
 		//得到当前用户点击歌曲的url
 		localBroadcastManager=LocalBroadcastManager.getInstance(getActivity());
@@ -119,7 +115,6 @@ public class FragmentPlayMusic extends Fragment implements OnClickListener {
 	}
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 	}
 	@Override
@@ -133,12 +128,10 @@ public class FragmentPlayMusic extends Fragment implements OnClickListener {
 	}
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
 	}
 	@Override
 	public void onDestroy() {
-		// TODO Auto-generated method stub
 		super.onDestroy();
 		localBroadcastManager.unregisterReceiver(myReceiverSongId);
 	}

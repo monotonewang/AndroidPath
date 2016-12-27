@@ -31,10 +31,7 @@ public class JsonParserPublicMusicItem {
 					Log.e("FragmentPublicListItem", "errcode id wrong");
 				}
 			} catch (JSONException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
-			} finally {
-				
 			}
 			
 		}else{

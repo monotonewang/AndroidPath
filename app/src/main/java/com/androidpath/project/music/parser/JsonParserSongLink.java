@@ -31,7 +31,6 @@ public class JsonParserSongLink {
                 }
 
             } catch (JSONException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         } else {

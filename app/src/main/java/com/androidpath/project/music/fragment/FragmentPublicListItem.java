@@ -52,7 +52,6 @@ public class FragmentPublicListItem extends Fragment implements DownUtils.OnDown
 	}
 	@Override
 	public void onAttach(Activity activity) {
-		// TODO Auto-generated method stub
 		super.onAttach(activity);
 		listener=(OnFragmentPublicItemClickListener) activity;
 	}
@@ -66,7 +65,6 @@ public class FragmentPublicListItem extends Fragment implements DownUtils.OnDown
 	}
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
 		intent.setAction("com.example.day25baidumusictest.fragment.FragmentSongListItems");
 		
@@ -87,7 +85,6 @@ public class FragmentPublicListItem extends Fragment implements DownUtils.OnDown
 	}
 	@Override
 	public void onDownSucc(String url, Object obj) {
-		// TODO Auto-generated method stub
 		jsonParser=new ArrayList<PublicListEntity>();
 		if(url.endsWith(urlpath)){
 		
@@ -105,7 +102,6 @@ public class FragmentPublicListItem extends Fragment implements DownUtils.OnDown
 
 				@Override
 				public void bindDatas(ViewHolder viewHolder,PublicListEntity data) {
-					// TODO Auto-generated method stub
 					viewHolder.bindCacheImageView(R.id.iv, data.getThumb());
 					viewHolder.bindTextView(R.id.textView, data.getName());
 				}
@@ -124,7 +120,6 @@ public class FragmentPublicListItem extends Fragment implements DownUtils.OnDown
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
-		// TODO Auto-generated method stub
 		String songPath = a+jsonParser.get(position).getCh_name();
 		listener.OnFragmentPublicItemClick( a+jsonParser.get(position).getCh_name(),position);
 		

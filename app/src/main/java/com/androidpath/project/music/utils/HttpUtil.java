@@ -36,10 +36,8 @@ public class HttpUtil {
 			inputStream.close();
 			return byteArrayOutputStream.toByteArray();
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
 		return null;
@@ -57,7 +55,6 @@ public class HttpUtil {
 				JsonString = new String(bs,"utf-8");
 				return JsonString;
 			} catch (UnsupportedEncodingException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			return null;

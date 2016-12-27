@@ -18,13 +18,11 @@ public class DownUtils {
 			
 			@Override
 			public void run() {
-				// TODO Auto-generated method stub
 				final String json = HttpUtil.getJSONStringByByte(url);
 				handler.post(new Runnable() {
 					
 					@Override
 					public void run() {
-						// TODO Auto-generated method stub
 						onDownComplete.onDownSucc(url,json);
 					}
 				});

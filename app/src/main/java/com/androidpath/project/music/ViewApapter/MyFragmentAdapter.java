@@ -21,7 +21,6 @@ public class MyFragmentAdapter extends FragmentPagerAdapter {
 
 	@Override
 	public Fragment getItem(int arg0) {
-		// TODO Auto-generated method stub
 		if(arg0==0){
 			return FragmentPublicListItem.getInstance(datas[0]);
 		}else if(arg0==2) {
@@ -38,7 +37,6 @@ public class MyFragmentAdapter extends FragmentPagerAdapter {
 
 	@Override
 	public int getCount() {
-		// TODO Auto-generated method stub
 		return datas.length;
 	}
 

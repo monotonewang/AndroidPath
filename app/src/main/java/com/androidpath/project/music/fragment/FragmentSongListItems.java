@@ -76,7 +76,6 @@ public class FragmentSongListItems extends Fragment implements OnItemClickListen
 		}
 		@Override
 		public void onDownSucc(String url, Object obj) {
-			// TODO Auto-generated method stub
 //			Log.e("FragmentSongListItems1", url + "");
 			if(url.equals(stringExtra)){
 				String json=(String) obj;
@@ -95,7 +94,6 @@ public class FragmentSongListItems extends Fragment implements OnItemClickListen
 
 					@Override
 					public void bindDatas(ViewHolder viewHolder,SongItemsEntity data) {
-						// TODO Auto-generated method stub
 						if(data.getThumb()!=null&&data.getArtist()!=null&&data.getSongid()!=null){
 							viewHolder.bindCacheImageView(R.id.songIv,data.getThumb());
 							viewHolder.bindTextView(R.id.songTitle, data.getTitle());
@@ -115,7 +113,6 @@ public class FragmentSongListItems extends Fragment implements OnItemClickListen
 
 	@Override
 	public void onAttach(Activity activity) {
-		// TODO Auto-generated method stub
 		super.onAttach(activity);
 		listener=(OnFragmentSongClickListener) activity;
 		localBroadcastManager = LocalBroadcastManager.getInstance(getActivity());
@@ -131,7 +128,6 @@ public class FragmentSongListItems extends Fragment implements OnItemClickListen
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		View view = inflater.inflate(R.layout.music_frag_song_items, container, false);
 		view2 = (ListView) view.findViewById(R.id.song_item_list);
 		view2.setOnItemClickListener(this);
@@ -140,7 +136,6 @@ public class FragmentSongListItems extends Fragment implements OnItemClickListen
 	}
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
 //		Log.e("FragmentSongListItems3", stringExtra+"");
 			
@@ -154,15 +149,13 @@ public class FragmentSongListItems extends Fragment implements OnItemClickListen
 	}
 	@Override
 	public void onDestroy() {
-		// TODO Auto-generated method stub
 		super.onDestroy();
 		localBroadcastManager.unregisterReceiver(myReceiver);
 	}
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
-		// TODO Auto-generated method stub
-		
+
 		listener.OnFragmentSongItemClick(position);
 		
 		//把点击的position传递到Service
