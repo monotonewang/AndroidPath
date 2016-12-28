@@ -1,12 +1,11 @@
-package com.androidpath.library.retrofitxxx.inter;
+package com.androidpath.library.retrofit.inter;
 
-import com.androidpath.library.retrofitxxx.utils.Constants;
+import com.androidpath.library.retrofit.utils.Constants;
 
 import java.util.Map;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
-import retrofit2.http.Field;
 import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;

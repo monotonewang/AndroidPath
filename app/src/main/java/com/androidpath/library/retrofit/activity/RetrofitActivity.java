@@ -1,16 +1,15 @@
-package com.androidpath.library.retrofitxxx.activity;
+package com.androidpath.library.retrofit.activity;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.ImageView;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.BaseActivity;
-import com.androidpath.library.retrofitxxx.inter.MyRetrofitService;
-import com.androidpath.library.retrofitxxx.utils.Constants;
+import com.androidpath.library.retrofit.inter.MyRetrofitService;
+import com.androidpath.library.retrofit.utils.Constants;
 
 
 import java.io.IOException;
@@ -25,9 +24,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.http.GET;
-import retrofit2.http.Path;
-import retrofit2.http.Query;
 
 public class RetrofitActivity extends BaseActivity {
 
