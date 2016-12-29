@@ -6,6 +6,8 @@ import android.util.Log;
 
 import com.androidpath.R;
 
+import org.junit.Test;
+
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -35,7 +37,8 @@ public class RxActivity extends AppCompatActivity {
 
     }
 
-    private void RxThreadTest4() {
+    @Test
+    public void RxThreadTest4() {
         //main thread
         Observable<Integer> observable = Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
@@ -46,11 +49,11 @@ public class RxActivity extends AppCompatActivity {
             }
         });
         //main thread
-        Consumer<Integer> consumer =new Consumer<Integer>() {
+        Consumer<Integer> consumer = new Consumer<Integer>() {
             @Override
             public void accept(Integer integer) throws Exception {
                 Log.d(TAG, "consumer thread is : " + Thread.currentThread().getName());
-                Log.d(TAG, "consumer"+integer);
+                Log.d(TAG, "consumer" + integer);
             }
         };
 
@@ -85,11 +88,11 @@ public class RxActivity extends AppCompatActivity {
             }
         });
         //main thread
-        Consumer<Integer> consumer =new Consumer<Integer>() {
+        Consumer<Integer> consumer = new Consumer<Integer>() {
             @Override
             public void accept(Integer integer) throws Exception {
                 Log.d(TAG, "consumer thread is : " + Thread.currentThread().getName());
-                Log.d(TAG, "consumer"+integer);
+                Log.d(TAG, "consumer" + integer);
             }
         };
 
@@ -113,11 +116,11 @@ public class RxActivity extends AppCompatActivity {
             }
         });
         //main thread
-        Consumer<Integer> consumer =new Consumer<Integer>() {
+        Consumer<Integer> consumer = new Consumer<Integer>() {
             @Override
             public void accept(Integer integer) throws Exception {
                 Log.d(TAG, "consumer thread is : " + Thread.currentThread().getName());
-                Log.d(TAG, "consumer"+integer);
+                Log.d(TAG, "consumer" + integer);
             }
         };
         observable.subscribeOn(Schedulers.newThread())
@@ -136,16 +139,17 @@ public class RxActivity extends AppCompatActivity {
             }
         });
         //main thread
-        Consumer<Integer> consumer =new Consumer<Integer>() {
+        Consumer<Integer> consumer = new Consumer<Integer>() {
             @Override
             public void accept(Integer integer) throws Exception {
                 Log.d(TAG, "consumer thread is : " + Thread.currentThread().getName());
-                Log.d(TAG, "consumer"+integer);
+                Log.d(TAG, "consumer" + integer);
             }
         };
         observable.subscribe(consumer);
 
     }
+
 
     private void RxComsumerTest4() {
         Observable.create(new ObservableOnSubscribe<Integer>() {
@@ -182,16 +186,17 @@ public class RxActivity extends AppCompatActivity {
         }).subscribe(new Observer<Integer>() {
             private Disposable disposable;//起到拦截的作用
             private int i;
+
             @Override
             public void onSubscribe(Disposable d) {
                 Log.d(TAG, "onSubscribe: ");
-                disposable=d;
+                disposable = d;
             }
 
             @Override
             public void onNext(Integer value) {
-                Log.d(TAG, "onNext: "+value);
-                if(i>2){
+                Log.d(TAG, "onNext: " + value);
+                if (i > 2) {
                     disposable.dispose();
                 }
             }
@@ -246,7 +251,8 @@ public class RxActivity extends AppCompatActivity {
     /**
      * 常规模式
      */
-    private void RxFun1() {
+    @Test
+    public void RxFun1() {
         //创建一个上游 Observable：
         Observable<Integer> observable = Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
@@ -262,22 +268,26 @@ public class RxActivity extends AppCompatActivity {
         Observer<Integer> observer = new Observer<Integer>() {
             @Override
             public void onSubscribe(Disposable d) {
-                Log.d(TAG, "subscribe");
+//                Log.d(TAG, "subscribe");
+                System.out.println("onSubscribe");
             }
 
             @Override
             public void onNext(Integer value) {
-                Log.d(TAG, "" + value);
+//                Log.d(TAG, "" + value);
+                System.out.println("onNext");
             }
 
             @Override
             public void onError(Throwable e) {
-                Log.d(TAG, "error");
+//                Log.d(TAG, "error");
+                System.out.println("onError");
             }
 
             @Override
             public void onComplete() {
-                Log.d(TAG, "complete");
+//                Log.d(TAG, "complete");
+                System.out.println("onComplete");
             }
         };
         //建立连接
