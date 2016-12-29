@@ -13,7 +13,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class MyHttpUtils {
-	// private final static String TAG="MyHttpUtils";
+	// private final staticfactory String TAG="MyHttpUtils";
 	public static String downLoadstring(String urlpath) {
 
 		try {

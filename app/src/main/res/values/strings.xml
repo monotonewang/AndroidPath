@@ -23,6 +23,7 @@
     <string name="broadcastdemo10">broadcastDemo10</string>
     <string name="serviceDemo11">serviceDemo11</string>
     <string name="Settings">Settings</string>
+    <string name="cleanCache">cleanCache</string>
 
     <string-array name="job_array">
         <item>程序员</item>
@@ -48,4 +49,5 @@
         in no small part due to the introduction of material design,
         a new design language that refreshed the entire Android experience
     </string>
+    <string name="size">size</string>
 </resources>

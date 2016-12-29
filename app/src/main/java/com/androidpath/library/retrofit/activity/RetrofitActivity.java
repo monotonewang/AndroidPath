@@ -50,9 +50,41 @@ public class RetrofitActivity extends BaseActivity {
 //        getJsonByQueryMap();
 //        getJsonByFiledMap();
 //        getByURL();
-        imageView = (ImageView) findViewById(R.id.imageviewre);
-        getImageDownload();
+//        imageView = (ImageView) findViewById(R.id.imageviewre);
+//        getImageDownload();
+        getMap3Download();
     }
+
+    private void getMap3Download() {
+        MyRetrofitService service = retrofit.create(MyRetrofitService.class);
+        Call<ResponseBody> mp3 = service.getMap3Download();
+        mp3.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                InputStream inputStream = response.body().byteStream();
+                if (inputStream != null) {
+                    try {
+                        byte[] bytes = new byte[inputStream.available()];
+                        int read = inputStream.read(bytes);
+                        Log.e(TAG, "onResponse: " + read);
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                } else {
+                    Log.e(TAG, "onResponse:  the inputstream is null,");
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
+    }
+
     //down image
     private void getImageDownload() {
         MyRetrofitService service = retrofit.create(MyRetrofitService.class);
@@ -60,11 +92,11 @@ public class RetrofitActivity extends BaseActivity {
         imageDownload.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                String name=Thread.currentThread().getName();
+                String name = Thread.currentThread().getName();
                 InputStream inputStream = response.body().byteStream();
                 Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
                 imageView.setImageBitmap(bitmap);
-                Log.e(TAG, "onResponse: "+name);
+                Log.e(TAG, "onResponse: " + name);
             }
 
             @Override
@@ -76,15 +108,15 @@ public class RetrofitActivity extends BaseActivity {
 
     private void getJsonByFiledMap() {
         MyRetrofitService service = retrofit.create(MyRetrofitService.class);
-        Map<String,String> map=new HashMap<>();
-        map.put("username","zhangsan");
-        map.put("password","test");
+        Map<String, String> map = new HashMap<>();
+        map.put("username", "zhangsan");
+        map.put("password", "test");
         Call<ResponseBody> jsonByQueryMap = service.getJsonByFiledMap(map);
         jsonByQueryMap.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 try {
-                    Log.e(TAG, "onResponse: "+response.body().string() );
+                    Log.e(TAG, "onResponse: " + response.body().string());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -105,7 +137,7 @@ public class RetrofitActivity extends BaseActivity {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 try {
-                    Log.e(TAG, "onResponse: "+response.body().string() );
+                    Log.e(TAG, "onResponse: " + response.body().string());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -120,15 +152,15 @@ public class RetrofitActivity extends BaseActivity {
 
     private void getJsonByQueryMap() {
         MyRetrofitService service = retrofit.create(MyRetrofitService.class);
-        Map<String,String> map=new HashMap<>();
-        map.put("username","zhangsan");
-        map.put("password","test");
+        Map<String, String> map = new HashMap<>();
+        map.put("username", "zhangsan");
+        map.put("password", "test");
         Call<ResponseBody> jsonByQueryMap = service.getJsonByQueryMap(map);
         jsonByQueryMap.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 try {
-                    Log.e(TAG, "onResponse: "+response.body().string() );
+                    Log.e(TAG, "onResponse: " + response.body().string());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -150,7 +182,7 @@ public class RetrofitActivity extends BaseActivity {
                 try {
                     String name = Thread.currentThread().getName();
                     //主线程
-                    Log.e(TAG, response.body().string()+"threadname="+name);
+                    Log.e(TAG, response.body().string() + "threadname=" + name);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

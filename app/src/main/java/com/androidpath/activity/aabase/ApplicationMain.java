@@ -55,7 +55,7 @@ public class ApplicationMain extends Application {
 
     }
 
-//    public static RefWatcher getRefWatcher(Context context){
+//    public staticfactory RefWatcher getRefWatcher(Context context){
 //        ApplicationMain applicationContext = (ApplicationMain) context.getApplicationContext();
 //        return applicationContext.refWatcher;
 //    }

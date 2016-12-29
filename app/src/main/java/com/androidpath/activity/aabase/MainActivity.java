@@ -8,6 +8,7 @@ import android.support.v7.app.AlertDialog;
 import android.view.View;
 
 import com.androidpath.R;
+import com.androidpath.activity.SettingActivity;
 import com.androidpath.activity.aabase.asecondactivity.AlertActivity5;
 import com.androidpath.activity.aabase.asecondactivity.AsyncActivity3;
 import com.androidpath.activity.aabase.asecondactivity.BroadcastActivity10;
@@ -112,6 +113,8 @@ public class MainActivity extends BaseActivity {
             //                startActivity(new Intent(MusicMainActivity.this, GLSurfaceViewActivity.class));
             //                break;
             default:
+            case R.id.all_settings:
+                startActivity(new Intent(MainActivity.this, SettingActivity.class));
                 break;
         }
     }

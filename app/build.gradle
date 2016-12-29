@@ -38,7 +38,7 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
+    compile 'junit:junit:4.12'
     //    androidTestCompile 'com.android.support.test:runner:0.2'
     //    androidTestCompile 'com.android.support.test:rules:0.2'
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -61,4 +61,5 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     //    compile 'com.github.GcsSloop:FontsManager:v+'
 
+    compile 'junit:junit:4.12'
 }

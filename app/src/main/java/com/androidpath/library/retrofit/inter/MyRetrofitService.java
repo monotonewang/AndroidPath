@@ -57,4 +57,8 @@ public interface MyRetrofitService {
     @Streaming//big file download ,must run in child thread
     @GET(Constants.getByDown)
     Call<ResponseBody> getBigFileDownload();
+
+    @Streaming
+    @GET(Constants.fileDownload)
+    Call<ResponseBody> getMap3Download();
 }

@@ -247,7 +247,8 @@
         <!-- ButterKnife -->
         <activity android:name=".library.butterknife.activity.ButterKnifeActivity" />
         <activity android:name=".architecture.meterial.MeterialActivity" />
-        <activity android:name=".view.widget.custom.viewfirst.CustomeViewFirst"></activity>
+        <activity android:name=".view.widget.custom.viewfirst.CustomeViewFirst" />
+        <activity android:name=".activity.SettingActivity" />
     </application>
 
 </manifest>
