@@ -19,7 +19,7 @@ public class TestArray {
                 for (int t = 0; t < arr.length; t++) {
                     if (arr[i] + arr[y] == arr[t]) {
 //					System.out.println("a1=" + a1);
-                        System.out.println("x1=" + arr[i] + "x2=" + arr[y] + "和=" + arr[t]);
+                        System.out.println("x1=" + arr[i] + "----x2=" + arr[y] + "----和=" + arr[t]);
 //						return;
                     }
                 }
