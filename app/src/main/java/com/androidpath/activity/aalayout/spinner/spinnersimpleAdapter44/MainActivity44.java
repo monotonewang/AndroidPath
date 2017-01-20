@@ -36,7 +36,7 @@ public class MainActivity44 extends BaseActivity {
         }
 
 
-//		SimpleAdapter(Context context, List<? extends Map<String, ?>> data, int resource, String[] from, int[] to)
+//		SimpleAdapter(Context context, List<? extendsx Map<String, ?>> data, int resource, String[] from, int[] to)
         SimpleAdapter adapter = new SimpleAdapter(this,
                 list,//数据：是map组成的list集合
                 R.layout.item_layout44,//子视图布局的id
