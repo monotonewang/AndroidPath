@@ -1,4 +1,4 @@
-package com.javapath.oriented;
+package com.javapath.array;
 
 import org.junit.Test;
 

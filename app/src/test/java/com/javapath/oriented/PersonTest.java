@@ -33,6 +33,12 @@ public class PersonTest {
 
     @Test
     public void test(){
-
+        Person person=new Person("zhangsan",1);
+        System.out.println("person.name="+person.getName()+"age"+person.getAge());
+        Person person1=person;
+        person1.name="lisi";
+        person1.age=1;
+        System.out.println("person1.name="+person1.getName()+"age"+person1.getAge());
+        System.out.println("person.name="+person.getName()+"age"+person.getAge());
     }
 }

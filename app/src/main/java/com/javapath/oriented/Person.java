@@ -2,14 +2,18 @@ package com.javapath.oriented;
 
 /**
  * deso: AndroidPath TODO<br/>
- * time: 2017/1/19 17:34 <br/>
+ * time: 2017/1/20 11:39 <br/>
  * author: 7 <br/>
  * since: V ${version} <br/>
  */
 
 public class Person {
-    private String name;
-    private int age;
+    public String name;//not recommend
+    public int age;
+
+
+    public Person() {
+    }
 
     public Person(String name, int age) {
         this.name = name;
