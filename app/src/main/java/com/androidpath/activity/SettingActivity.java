@@ -18,7 +18,7 @@ import butterknife.OnClick;
  * author: 7 <br/>
  * since: V ${version} <br/>
  */
-
+//setting
 public class SettingActivity extends BaseActivity {
 
     @BindView(R.id.tv_clear)
