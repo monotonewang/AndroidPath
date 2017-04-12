@@ -33,70 +33,60 @@ public class TitleFragment extends Fragment {
 
 	@Override
 	public void onAttach(Activity activity) {
-		// TODO Auto-generated method stub
 		super.onAttach(activity);
 		Log.d("TitleFragment", "onAttach.....");
 	}
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		Log.d("TitleFragment", "onCreate.....");
 	}
 
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
 		Log.d("TitleFragment", "onActivityCreated.....");
 	}
 
 	@Override
 	public void onStart() {
-		// TODO Auto-generated method stub
 		super.onStart();
 		Log.d("TitleFragment", "onStart.....");
 	}
 
 	@Override
 	public void onResume() {
-		// TODO Auto-generated method stub
 		super.onResume();
 		Log.d("TitleFragment", "onResume.....");
 	}
 
 	@Override
 	public void onPause() {
-		// TODO Auto-generated method stub
 		super.onPause();
 		Log.d("TitleFragment", "onPause.....");
 	}
 
 	@Override
 	public void onStop() {
-		// TODO Auto-generated method stub
 		super.onStop();
 		Log.d("TitleFragment", "onStop.....");
 	}
 
 	@Override
 	public void onDestroyView() {
-		// TODO Auto-generated method stub
 		super.onDestroyView();
 		Log.d("TitleFragment", "onDestroyView.....");
 	}
 
 	@Override
 	public void onDestroy() {
-		// TODO Auto-generated method stub
 		super.onDestroy();
 		Log.d("TitleFragment", "onDestroy.....");
 	}
 	
 	@Override
 	public void onDetach() {
-		// TODO Auto-generated method stub
 		super.onDetach();
 		Log.d("TitleFragment", "onDetach.....");
 	}

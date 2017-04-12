@@ -12,65 +12,61 @@ import com.androidpath.activity.aabase.BaseActivity;
 
 public class MainActivity124 extends BaseActivity implements OnCheckedChangeListener {
 
-	private FragmentManager fragmentManager;
-	private MsgFragment msgFragment;
-	private ContantFragment contantFragment;
-	FragmentTransaction transaction ;
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main124);
+    public static String TAG = "MainActivity124";
+    private FragmentManager fragmentManager;
+    private MsgFragment msgFragment;
+    private ContantFragment contantFragment;
+    FragmentTransaction transaction;
 
-		RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
-		radioGroup.setOnCheckedChangeListener(this);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main124);
 
-		//fragment的管理器对象
-		fragmentManager = getFragmentManager();
-		msgFragment = new MsgFragment();
-		contantFragment = new ContantFragment();
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
+        radioGroup.setOnCheckedChangeListener(this);
 
-		//获得radiogroup中的下标为0的按钮，设置选中第一项
-		RadioButton radioButton = (RadioButton) radioGroup.getChildAt(0);
-		radioButton.setChecked(true);
+        //fragment的管理器对象
+        fragmentManager = getFragmentManager();
+        msgFragment = new MsgFragment();
+        contantFragment = new ContantFragment();
 
-		//先将所有的fragment加入到容器中，在选中某个选项的时候，隐藏其他的fragment 显示想要看见的
-		transaction = fragmentManager.beginTransaction();
-		transaction.add(R.id.fragment_container, msgFragment);
-		transaction.add(R.id.fragment_container, contantFragment);
-		transaction.commit();
+        //获得radiogroup中的下标为0的按钮，设置选中第一项
+        RadioButton radioButton = (RadioButton) radioGroup.getChildAt(0);
+        radioButton.setChecked(true);
 
-	}
+        //先将所有的fragment加入到容器中，在选中某个选项的时候，隐藏其他的fragment 显示想要看见的
+        transaction = fragmentManager.beginTransaction();
+        transaction.add(R.id.fragment_container, msgFragment);
+        transaction.add(R.id.fragment_container, contantFragment);
+        transaction.commit();
 
-	@Override
-	public void onCheckedChanged(RadioGroup group, int checkedId) {
-		// TODO Auto-generated method stub
+    }
 
-		switch (checkedId) {
-		case R.id.msg_radio:
-			//添加微信的fragment
-			transaction = fragmentManager.beginTransaction();
+    FragmentTransaction transaction1;
 
-			//替换
-//			transaction.replace(R.id.fragment_container, msgFragment, "微信界面");
-
-			transaction.hide(contantFragment);
-			transaction.show(msgFragment);
-
-			transaction.commit();
-			break;
-		case R.id.conu_radio:
-			//添加联系人的fragment
-			transaction = fragmentManager.beginTransaction();
-//			transaction.replace(R.id.fragment_container,contantFragment, "联系人界面");
-
-			transaction.hide(msgFragment);
-			transaction.show(contantFragment);
-
-			transaction.commit();
-			break;
-
-		default:
-			break;
-		}
-	}
+    @Override
+    public void onCheckedChanged(RadioGroup group, int checkedId) {
+        switch (checkedId) {
+            case R.id.msg_radio:
+                //添加微信的fragment
+                transaction1 = fragmentManager.beginTransaction();
+                //替换
+//                transaction1.replace(R.id.fragment_container, msgFragment, "微信界面");
+                transaction1.hide(contantFragment);
+                transaction1.show(msgFragment);
+                transaction1.commit();
+                break;
+            case R.id.conu_radio:
+                //添加联系人的fragment
+                transaction1 = fragmentManager.beginTransaction();
+//                transaction1.replace(R.id.fragment_container, contantFragment, "联系人界面");
+                transaction1.hide(msgFragment);
+                transaction1.show(contantFragment);
+                transaction1.commit();
+                break;
+            default:
+                break;
+        }
+    }
 }
