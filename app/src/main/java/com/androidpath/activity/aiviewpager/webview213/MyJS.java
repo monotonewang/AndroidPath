@@ -7,13 +7,14 @@ import android.widget.Toast;
 public class MyJS {
 
 	public Context context;
-	
+
 	public MyJS(Context context){
 		this.context = context;
 	}
-	
+
 	@JavascriptInterface
 	public void js_method(){
 		Toast.makeText(context, "---->android端的方法被调用", Toast.LENGTH_LONG).show();
 	}
+
 }
