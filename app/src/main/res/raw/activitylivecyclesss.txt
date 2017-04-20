@@ -5,3 +5,4 @@ ActivityGetResult60
 ActivityTaskDemo61
 ActivityFlagDemo74
 ActivitySaveInstance76
+ActivityLifeCircle

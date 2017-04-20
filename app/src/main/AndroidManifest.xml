@@ -70,6 +70,8 @@
         <activity android:name=".activity.abactivity.getresult60.MainActivity60" />
         <activity android:name=".activity.abactivity.getresult60.SecondActivity60" />
         <activity android:name=".activity.abactivity.saveinstance76.MainActivity76" />
+        <activity android:name=".activity.abactivity.activitylivecircle.LiveCircleActivity" />
+
         <activity
             android:name=".activity.abactivity.taskdemo61.MainActivity61"
             android:label="this is first page" />

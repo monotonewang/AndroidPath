@@ -38,7 +38,6 @@ public class MainActivity76 extends BaseActivity {
 
     @Override
     protected void onStart() {
-        // TODO Auto-generated method stub
         super.onStart();
         Log.e(TAG, "onStart: ");
         mediaPlayer.start();
@@ -47,7 +46,6 @@ public class MainActivity76 extends BaseActivity {
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
         super.onRestoreInstanceState(savedInstanceState);
         Log.e(TAG, "onRestoreInstanceState: ");
         //恢复现场，从bundle中获得保护现场的时候存入的数据
@@ -57,21 +55,18 @@ public class MainActivity76 extends BaseActivity {
 
     @Override
     protected void onRestart() {
-        // TODO Auto-generated method stub
         super.onRestart();
         Log.e(TAG, "onRestart: ");
     }
 
     @Override
     protected void onResume() {
-        // TODO Auto-generated method stub
         super.onResume();
         Log.e(TAG, "onResume: ");
     }
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
-        // TODO Auto-generated method stub
         super.onWindowFocusChanged(hasFocus);
         Log.e(TAG, "onWindowFocusChanged: ");
     }
@@ -79,7 +74,6 @@ public class MainActivity76 extends BaseActivity {
 
     @Override
     protected void onPause() {
-        // TODO Auto-generated method stub
         super.onPause();
         Log.e(TAG, "onPause: ");
         mediaPlayer.pause();
@@ -87,7 +81,6 @@ public class MainActivity76 extends BaseActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle bundle) {
-        // TODO Auto-generated method stub
         super.onSaveInstanceState(bundle);
         Log.e(TAG, "onSaveInstanceState: ");
         //保护现场
@@ -99,14 +92,12 @@ public class MainActivity76 extends BaseActivity {
 
     @Override
     protected void onStop() {
-        // TODO Auto-generated method stub
         super.onStop();
         Log.e(TAG, "onStop: ");
     }
 
     @Override
     protected void onDestroy() {
-        // TODO Auto-generated method stub
         super.onDestroy();
         Log.e(TAG, "onDestroy: ");
         mediaPlayer.stop();

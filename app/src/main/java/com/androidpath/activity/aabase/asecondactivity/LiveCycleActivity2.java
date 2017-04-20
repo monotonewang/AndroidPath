@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.androidpath.R;
 import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.abactivity.activityjump50.MainActivity50;
+import com.androidpath.activity.abactivity.activitylivecircle.LiveCircleActivity;
 import com.androidpath.activity.abactivity.activitypassvalue54.MainActivity54;
 import com.androidpath.activity.abactivity.applicationpassvalue55.MainActivity55;
 import com.androidpath.activity.abactivity.flagdemo74.MainActivity74;
@@ -85,6 +86,10 @@ public class LiveCycleActivity2 extends BaseActivity {
                    case 6:
                        startActivity(new Intent(LiveCycleActivity2.this, MainActivity76.class));
                        break;
+                   case 7:
+                       startActivity(new Intent(LiveCycleActivity2.this, LiveCircleActivity.class));
+                       break;
+
 
                }
                 return true;
