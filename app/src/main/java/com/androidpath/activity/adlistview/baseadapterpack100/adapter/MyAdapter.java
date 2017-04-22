@@ -50,7 +50,6 @@ public class MyAdapter extends MyBaseAdapter<Person> {
 			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
 				Toast.makeText(context, "点击了第"+index+"条的按钮", 0).show();
 			}
 		});

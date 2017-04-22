@@ -49,7 +49,6 @@ public class MainActivity183 extends BaseActivity {
 						//run方法中的代码实际上运行在UI线程上
 						@Override
 						public void run() {
-							// TODO Auto-generated method stub
 							textView.setText(""+count);
 						}
 					});
@@ -60,7 +59,6 @@ public class MainActivity183 extends BaseActivity {
 						
 						@Override
 						public void run() {
-							// TODO Auto-generated method stub
 							textView.setText(""+count);
 						}
 					});
@@ -71,7 +69,6 @@ public class MainActivity183 extends BaseActivity {
 						
 						@Override
 						public void run() {
-							// TODO Auto-generated method stub
 							textView.setText(""+count);
 						}
 					});
@@ -85,7 +82,6 @@ public class MainActivity183 extends BaseActivity {
 	
 	@Override
 	protected void onDestroy() {
-		// TODO Auto-generated method stub
 		super.onDestroy();
 		flag = false;
 	}

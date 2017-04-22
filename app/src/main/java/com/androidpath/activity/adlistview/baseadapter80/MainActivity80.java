@@ -1,7 +1,8 @@
 package com.androidpath.activity.adlistview.baseadapter80;
 
 import android.os.Bundle;
-import android.widget.BaseAdapter;
+import android.os.Handler;
+import android.util.Log;
 import android.widget.ListView;
 
 import com.androidpath.R;
@@ -13,6 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity80 extends BaseActivity {
+
+    private String TAG=getClass().getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +34,29 @@ public class MainActivity80 extends BaseActivity {
 
         //创建适配器对象
         //定义类继承Baseadapter,重写相应的方法
-        BaseAdapter adapter = new MyBaseAdapter80(this, list);
+        final MyBaseAdapter80 adapter = new MyBaseAdapter80(this, list);
 
         listView.setAdapter(adapter);
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            int i = 0;
+
+            @Override
+            public void run() {
+                i++;
+                if (i % 2 == 1) {
+                    adapter.setSelect(true);
+                } else {
+                    adapter.setSelect(false);
+                }
+                Log.e(TAG, "run: "+i );
+                    //再次执行设置颜色
+                handler.postDelayed(this, 500);
+
+            }
+        }, 1000);
+
 
     }
 }

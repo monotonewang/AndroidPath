@@ -35,7 +35,6 @@ public class MainActivityFirstLV extends BaseActivity {
 
 			@Override
 			public void SetOnDownLoadCompleteLister(List<MyNews> myList) {
-				// TODO Auto-generated method stub
 				list.addAll(myList);
 				adapter.notifyDataSetChanged();
 				// Log.i(TAG, list.toString()+"a");

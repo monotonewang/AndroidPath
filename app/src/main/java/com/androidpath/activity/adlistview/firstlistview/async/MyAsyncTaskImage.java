@@ -13,13 +13,11 @@ public class MyAsyncTaskImage extends AsyncTask<String, Void, Bitmap> {
 	private String urlPathString;
 
 	public MyAsyncTaskImage(ImageView newImage) {
-		// TODO Auto-generated constructor stub
 		this.newImage = newImage;
 	}
 
 	@Override
 	protected Bitmap doInBackground(String... params) {
-		// TODO Auto-generated method stub
 		urlPathString = params[0];
 		Bitmap bitmap = MyHttpUtils.downLoadBitmap(urlPathString);
 		return bitmap;
@@ -27,7 +25,6 @@ public class MyAsyncTaskImage extends AsyncTask<String, Void, Bitmap> {
 
 	@Override
 	protected void onPostExecute(Bitmap result) {
-		// TODO Auto-generated method stub
 		String url = (String) newImage.getTag();
 		if (urlPathString.equals(url)) {
 			newImage.setVisibility(View.VISIBLE);

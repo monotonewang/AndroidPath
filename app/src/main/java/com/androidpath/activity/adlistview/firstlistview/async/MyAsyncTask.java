@@ -15,7 +15,6 @@ public class MyAsyncTask extends AsyncTask<String, Void, List<MyNews>> {
 
 	@Override
 	protected List<MyNews> doInBackground(String... params) {
-		// TODO Auto-generated method stub
 		String Urlpath = params[0];
 		String jsonString = MyHttpUtils.downLoadstring(Urlpath);
 		// Log.i(TAG, jsonString+"aaa");
@@ -26,7 +25,6 @@ public class MyAsyncTask extends AsyncTask<String, Void, List<MyNews>> {
 
 	@Override
 	protected void onPostExecute(List<MyNews> result) {
-		// TODO Auto-generated method stub
 		OnDownLoadCompleteLister.SetOnDownLoadCompleteLister(result);
 		super.onPostExecute(result);
 	}

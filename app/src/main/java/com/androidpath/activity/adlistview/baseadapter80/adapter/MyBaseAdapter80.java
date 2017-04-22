@@ -18,10 +18,10 @@ public class MyBaseAdapter80 extends BaseAdapter {
 
 	private List<MyMenu80> list;
 	private Context context;
+	private boolean isSelect=false;
 
 	//自定义的构造方法，为了接收数据集合
 	public MyBaseAdapter80(Context context, List<MyMenu80> list) {
-		// TODO Auto-generated constructor stub
 		this.context = context;
 		this.list = list;
 	}
@@ -32,7 +32,6 @@ public class MyBaseAdapter80 extends BaseAdapter {
 	//所以，一般就是数据有多少条就返回多少
 	@Override
 	public int getCount() {
-		// TODO Auto-generated method stub
 		return list.size();
 	}
 
@@ -40,14 +39,12 @@ public class MyBaseAdapter80 extends BaseAdapter {
 	//返回指定位置上的数据对象
 	@Override
 	public Object getItem(int position) {
-		// TODO Auto-generated method stub
 		return list.get(position);
 	}
 
 	//子视图的view对象的id号，一般就把item所处的位置作为id
 	@Override
 	public long getItemId(int position) {
-		// TODO Auto-generated method stub
 		return position;
 	}
 
@@ -58,7 +55,6 @@ public class MyBaseAdapter80 extends BaseAdapter {
 	//参数一：是正在绘制的item的位置
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		// TODO Auto-generated method stub
 		//实例化item_layout,获得其中的view控件，给View控件设置数据
 		View view = View.inflate(context,//上下文
 				R.layout.item_layout80,//要实例化的布局的id
@@ -70,9 +66,17 @@ public class MyBaseAdapter80 extends BaseAdapter {
 		itemImageView.setImageResource(list.get(position).getPicId());
 		
 		TextView itemTextView = (TextView) view.findViewById(R.id.item_text);
-		itemTextView.setText(list.get(position).getName());
-		
+		if(isSelect){
+			itemTextView.setText(list.get(position).getName());
+		}else{
+			itemTextView.setText("change");
+		}
+
 		return view;
 	}
 
+    public void setSelect(boolean select) {
+        isSelect = select;
+        notifyDataSetChanged();
+    }
 }

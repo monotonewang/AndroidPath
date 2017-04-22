@@ -22,7 +22,6 @@ public class MyMenu80 {
 	}
 	public MyMenu80() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	@Override
 	public String toString() {

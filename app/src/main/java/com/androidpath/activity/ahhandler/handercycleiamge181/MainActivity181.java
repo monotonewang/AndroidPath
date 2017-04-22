@@ -45,7 +45,6 @@ public class MainActivity181 extends BaseActivity {
 	
 	@Override
 	protected void onResume() {
-		// TODO Auto-generated method stub
 		super.onResume();
 		flag = true;
 		clickStart(null);
@@ -94,7 +93,6 @@ public class MainActivity181 extends BaseActivity {
 	
 	@Override
 	protected void onStop() {
-		// TODO Auto-generated method stub
 		super.onStop();
 		flag = false;
 	}

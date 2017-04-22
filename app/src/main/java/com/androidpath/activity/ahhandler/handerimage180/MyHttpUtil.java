@@ -20,7 +20,6 @@ public class MyHttpUtil {
 			InputStream inputStream = connection.getInputStream();
 			bitmap = BitmapFactory.decodeStream(inputStream);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
