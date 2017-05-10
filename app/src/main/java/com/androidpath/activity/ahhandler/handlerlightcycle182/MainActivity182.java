@@ -2,6 +2,7 @@ package com.androidpath.activity.ahhandler.handlerlightcycle182;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
 
@@ -18,6 +19,8 @@ public class MainActivity182 extends BaseActivity {
 	View[] views;
 	List<Integer> list;
 	private Handler handler;
+	private String TAG=getClass().getSimpleName();
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -29,9 +32,11 @@ public class MainActivity182 extends BaseActivity {
 		//循环更换每一个控件的颜色
 		handler = new Handler();
 		handler.postDelayed(new Runnable() {
-			
+
 			@Override
 			public void run() {
+				String name = Thread.currentThread().getName();
+				Log.e(TAG, "run: "+name );
 				for (int i = 0; i < views.length; i++) {
 					views[i].setBackgroundColor(list.get(i));
 				}
