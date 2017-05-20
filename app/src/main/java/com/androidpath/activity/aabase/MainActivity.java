@@ -21,6 +21,7 @@ import com.androidpath.activity.aabase.asecondactivity.ServiceActivity11;
 import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
 import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
 import com.androidpath.architecture.meterial.MeterialActivity;
+import com.androidpath.library.rxjava.RxActivity;
 import com.androidpath.util.fontutil.FontsManager;
 
 /**
@@ -114,7 +115,7 @@ public class MainActivity extends BaseActivity {
             //                break;
             default:
             case R.id.all_settings:
-                startActivity(new Intent(MainActivity.this, SettingActivity.class));
+                startActivity(new Intent(MainActivity.this, RxActivity.class));
                 break;
         }
     }

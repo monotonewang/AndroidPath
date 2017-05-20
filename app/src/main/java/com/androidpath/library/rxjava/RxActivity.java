@@ -1,13 +1,21 @@
 package com.androidpath.library.rxjava;
 
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageButton;
 
 import com.androidpath.R;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.Observer;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
@@ -19,6 +27,13 @@ public class RxActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rx);
+
+        ImageButton imageButton= (ImageButton) findViewById(R.id.iv_rx);
+        Drawable drawable= ContextCompat.getDrawable(RxActivity.this,R.mipmap.ic_launcher);
+
+
+        rxSetBitmap(imageButton, drawable);
+        RxJavaThreadTest.rx1();
 //        RxFun1();
 //        RxFun2();
 //        RxDisposableTest3();
@@ -26,7 +41,28 @@ public class RxActivity extends AppCompatActivity {
 //        RxThreadTest1();
 //        RxThreadTest2();
 //        RxThreadTest3();
-        RxThreadTest4();
+//        RxThreadTest4();
+    }
+
+    /**
+     * 通过rxjava设置图片
+     * @param imageButton
+     * @param drawable
+     */
+    private void rxSetBitmap(final ImageButton imageButton, final Drawable drawable) {
+        Observable.create(new ObservableOnSubscribe<Drawable>() {
+            @Override
+            public void subscribe(@NonNull ObservableEmitter<Drawable> e) throws Exception {
+                e.onNext(drawable);
+                e.onComplete();
+                System.out.println("subscribe");
+            }
+        }).subscribe(new Consumer<Drawable>() {
+            @Override
+            public void accept(@NonNull Drawable drawable) throws Exception {
+                imageButton.setImageDrawable(drawable);
+            }
+        });
     }
 
     public void RxThreadTest4() {
