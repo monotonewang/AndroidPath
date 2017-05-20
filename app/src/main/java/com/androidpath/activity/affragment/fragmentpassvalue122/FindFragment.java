@@ -37,7 +37,6 @@ public class FindFragment extends ListFragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		View view = inflater.inflate(R.layout.find_fragment_layout122, container,
 				false);
 		return view;
@@ -47,7 +46,6 @@ public class FindFragment extends ListFragment {
 	// 绑定数据
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
 		// 如果数据集合中没有数据就显示"暂无发现",如果使用的是自定义布局，这句话就不要
 		// setEmptyText("暂无发现");
