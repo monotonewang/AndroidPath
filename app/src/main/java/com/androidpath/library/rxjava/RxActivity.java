@@ -1,21 +1,18 @@
 package com.androidpath.library.rxjava;
 
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageButton;
 
 import com.androidpath.R;
+import com.androidpath.library.rxjava.test.RxJavaThreadTest;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.Observer;
 import io.reactivex.annotations.NonNull;
-import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
@@ -33,7 +30,7 @@ public class RxActivity extends AppCompatActivity {
 
 
         rxSetBitmap(imageButton, drawable);
-        RxJavaThreadTest.rx1();
+        RxJavaThreadTest.rx2();
 //        RxFun1();
 //        RxFun2();
 //        RxDisposableTest3();

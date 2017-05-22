@@ -1,4 +1,4 @@
-package com.androidpath.library.rxjava;
+package com.androidpath.library.rxjava.test;
 
 import org.junit.Test;
 

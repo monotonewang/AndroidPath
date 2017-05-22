@@ -1,4 +1,4 @@
-package com.androidpath.library.rxjava;
+package com.androidpath.library.rxjava.test;
 
 import com.androidpath.activity.aiviewpager.cbk.chabaike240.util.NetWorkUtil;
 import com.androidpath.util.NetWorkUtils;
