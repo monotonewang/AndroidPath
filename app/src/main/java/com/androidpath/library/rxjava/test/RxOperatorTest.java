@@ -1,10 +1,12 @@
 package com.androidpath.library.rxjava.test;
 
+import com.androidpath.library.rxjava.entity.Course;
+import com.androidpath.library.rxjava.entity.Student;
+
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
@@ -34,9 +36,9 @@ public class RxOperatorTest {
         Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
             public void subscribe(@NonNull ObservableEmitter<Integer> e) throws Exception {
-                for(int i=0;i<3;i++){
+                for (int i = 0; i < 3; i++) {
                     e.onNext(i);
-                    System.out.println("e-->"+i);
+                    System.out.println("e-->" + i);
                 }
 
             }
@@ -54,13 +56,13 @@ public class RxOperatorTest {
     }
 
     @Test
-    public void rxFun2(){
+    public void rxFun2() {
         Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
             public void subscribe(@NonNull ObservableEmitter<Integer> e) throws Exception {
-                for(int i=0;i<3;i++){
+                for (int i = 0; i < 3; i++) {
                     e.onNext(i);
-                    System.out.println("e-->"+i);
+                    System.out.println("e-->" + i);
                 }
                 e.onComplete();
             }
@@ -71,7 +73,9 @@ public class RxOperatorTest {
                 for (int i = 0; i < 3; i++) {
                     list.add("I am value " + integer);
                 }
-                return Observable.fromIterable(list).delay(10, TimeUnit.MILLISECONDS);
+//                return Observable.fromArray(list.get(0));
+                return Observable.fromIterable(list);
+//                return Observable.fromIterable(list).delay(10, TimeUnit.MILLISECONDS);
             }
         }).subscribe(new Consumer<String>() {
             @Override
@@ -80,4 +84,31 @@ public class RxOperatorTest {
             }
         });
     }
+
+    /**
+     * flatmap
+     */
+    @Test
+    public void rxFun3() {
+        List<Student> students = new ArrayList<Student>();
+        List<Course> courseList = new ArrayList<Course>();
+        for (int i = 0; i < 10; i++) {
+            Course course = new Course("a", "a");
+            courseList.add(course);
+        }
+        students.add(new Student("a", courseList));
+        System.out.println(students);
+
+
+
+        Observable.fromArray(students)
+                .flatMap(new Function<List<Student>, ObservableSource<Course>>() {
+                    @Override
+                    public ObservableSource<Course> apply(@NonNull List<Student> students) throws Exception {
+                        return Observable.fromArray(students.get(0).getCourseList().get(0));
+                    }
+                }).subscribe((Consumer<Course>) course -> System.out.println(course));
+
+    }
+
 }
