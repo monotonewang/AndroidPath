@@ -24,6 +24,7 @@
     <string name="broadcastdemo10">broadcastDemo10</string>
     <string name="serviceDemo11">serviceDemo11</string>
     <string name="Settings">Settings</string>
+    <string name="cleanCache">cleanCache</string>
 
     <string-array name="job_array">
         <item>程序员</item>
@@ -44,4 +45,9 @@
     </string-array>
     <string name="menu_name">菜单</string>
     <string name="dish_name">菜名</string>
+    <string name="long_text">Android 5.0 Lollipop was one of the most significant Android releases ever,
+        in no small part due to the introduction of material design,
+        a new design language that refreshed the entire Android experience
+    </string>
+    <string name="size">size</string>
 </resources>
