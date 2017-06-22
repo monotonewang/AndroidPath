@@ -13,7 +13,7 @@ android {
             if (System.console() != null) {
                 storePassword System.console().readLine("\nKeyStore password: ")
             }
-            storeFile file('C:/Project/AndroidProject/sign/androidpath.jks')
+//            storeFile file('C:/Project/AndroidProject/sign/androidpath.jks')
             if (System.console() != null) {
                 keyPassword System.console().readLine("\nKey password: ")
             }

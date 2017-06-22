@@ -40,48 +40,42 @@ public class MainActivity60 extends BaseActivity {
 	
 	@Override
 	protected void onStart() {
-		// TODO Auto-generated method stub
 		super.onStart();
 		Log.e("MainActivity60", "onStart....");
-		Toast.makeText(this, "onStart....",0).show();
+		Toast.makeText(this, "onStart....", Toast.LENGTH_SHORT).show();
 	}
 	
 	@Override
 	protected void onResume() {
-		// TODO Auto-generated method stub
 		super.onResume();
 		Log.e("MainActivity60", "onResume....");
-		Toast.makeText(this, "onResume....",0).show();
+		Toast.makeText(this, "onResume....",Toast.LENGTH_SHORT).show();
 	}
 	
 	@Override
 	protected void onRestart() {
-		// TODO Auto-generated method stub
 		super.onRestart();
 		Log.e("MainActivity60", "onRestart....");
-		Toast.makeText(this, "onRestart....",0).show();
+		Toast.makeText(this, "onRestart....",Toast.LENGTH_SHORT).show();
 	}
 	
 	@Override
 	protected void onPause() {
-		// TODO Auto-generated method stub
 		super.onPause();
 		Log.e("MainActivity60", "onPause....");
-		Toast.makeText(this, "onPause....",0).show();
+		Toast.makeText(this, "onPause....",Toast.LENGTH_SHORT).show();
 	}
 	
 	@Override
 	protected void onDestroy() {
-		// TODO Auto-generated method stub
 		super.onDestroy();
 		Log.e("MainActivity60", "onDestroy....");
-		Toast.makeText(this, "onDestroy....",0).show();
+		Toast.makeText(this, "onDestroy....",Toast.LENGTH_SHORT).show();
 	}
 	@Override
 	protected void onStop() {
-		// TODO Auto-generated method stub
 		super.onStop();
 		Log.e("MainActivity60", "onStop....");
-		Toast.makeText(this, "onStop....",0).show();
+		Toast.makeText(this, "onStop....",Toast.LENGTH_SHORT).show();
 	}
 }
