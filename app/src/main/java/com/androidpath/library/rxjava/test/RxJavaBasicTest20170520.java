@@ -1,6 +1,5 @@
 package com.androidpath.library.rxjava.test;
 
-import com.androidpath.activity.aiviewpager.cbk.chabaike240.util.NetWorkUtil;
 import com.androidpath.util.NetWorkUtils;
 
 import org.junit.Test;
@@ -74,6 +73,8 @@ public class RxJavaBasicTest20170520 {
             emitter.onNext(3);
             emitter.onComplete();
         }).subscribe(new Observer<Integer>() {
+
+
             @Override
             public void onSubscribe(Disposable d) {
                 System.out.println("onSubscribe");

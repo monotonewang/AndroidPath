@@ -141,4 +141,14 @@ dependencies {
     //    compile 'com.github.GcsSloop:FontsManager:v+'
     compile 'junit:junit:4.12'
     compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    compile files('lib/httpclient-4.5.3.jar')
+    compile files('lib/commons-codec-1.9.jar')
+    compile files('lib/commons-logging-1.2.jar')
+    compile files('lib/fluent-hc-4.5.3.jar')
+    compile files('lib/httpclient-cache-4.5.3.jar')
+    compile files('lib/httpclient-win-4.5.3.jar')
+    compile files('lib/httpcore-4.4.6.jar')
+    compile files('lib/httpmime-4.5.3.jar')
+    compile files('lib/jna-4.1.0.jar')
+    compile files('lib/jna-platform-4.1.0.jar')
 }
