@@ -40,7 +40,7 @@ public interface MyRetrofitService {
     @POST(Constants.urlPost)
     Call<ResponseBody> getJsonByPost();
 
-    @POST(Constants.urlGetnum)
+    @POST(Constants.gitUrl)
     Call<ResponseBody> getJsonByQueryMap(@QueryMap Map<String,String> params);
 
     @FormUrlEncoded

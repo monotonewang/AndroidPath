@@ -74,6 +74,15 @@ android {
         exclude 'AndroidManifest.xml'
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
+            exclude '*.apk'
+//        多个jar包中的某个文件冲突
+//        exclude 'META-INF/NOTICE.txt'// 这里是具体的冲突文件全路径
+//        exclude 'META-INF/LICENSE.txt'
+            exclude 'META-INF/DEPENDENCIES'
+            exclude 'META-INF/NOTICE'
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/LICENSE.txt'
+            exclude 'META-INF/NOTICE.txt'
         exclude 'pom.properties'
     }
 
