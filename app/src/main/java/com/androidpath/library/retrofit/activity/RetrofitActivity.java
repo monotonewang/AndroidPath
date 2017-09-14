@@ -47,7 +47,7 @@ public class RetrofitActivity extends BaseActivity {
 //        getJsonByHttp();
 //        getJsonByPost();
 //        getGitHubData();
-        getJsonByQueryMap();
+//        getJsonByQueryMap();
 //        getJsonByFiledMap();
 //        getByURL();
 //        imageView = (ImageView) findViewById(R.id.imageviewre);
