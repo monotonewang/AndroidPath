@@ -15,6 +15,7 @@ import io.reactivex.ObservableSource;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
+import io.reactivex.functions.Predicate;
 
 /**
  * RxJava操作符
@@ -66,6 +67,11 @@ public class RxOperatorTest {
                 }
                 e.onComplete();
             }
+        }).filter(new Predicate<Integer>() {
+            @Override
+            public boolean test(@NonNull Integer integer) throws Exception {
+                return integer>=1;
+            }
         }).flatMap(new Function<Integer, ObservableSource<String>>() {
             @Override
             public ObservableSource<String> apply(@NonNull Integer integer) throws Exception {
@@ -80,7 +86,7 @@ public class RxOperatorTest {
         }).subscribe(new Consumer<String>() {
             @Override
             public void accept(@NonNull String s) throws Exception {
-                System.out.println(s);
+                System.out.println("consumer="+s);
             }
         });
     }
@@ -110,5 +116,6 @@ public class RxOperatorTest {
                 }).subscribe((Consumer<Course>) course -> System.out.println(course));
 
     }
+
 
 }
