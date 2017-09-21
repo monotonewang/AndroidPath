@@ -21,6 +21,16 @@ import io.reactivex.functions.Consumer;
 
 public class RxJavaBasicTest20170520 {
 
+
+    @Test
+    public void RxEmpty() {
+        Observable.empty().subscribe(new Consumer<Object>() {
+            @Override
+            public void accept(@NonNull Object o) throws Exception {
+                System.out.println("xxxxxx");
+            }
+        });
+    }
     /**
      * 常规模式
      */

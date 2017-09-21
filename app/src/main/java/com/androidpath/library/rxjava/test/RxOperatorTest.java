@@ -70,7 +70,7 @@ public class RxOperatorTest {
         }).filter(new Predicate<Integer>() {
             @Override
             public boolean test(@NonNull Integer integer) throws Exception {
-                return integer>=1;
+                return integer >= 1;
             }
         }).flatMap(new Function<Integer, ObservableSource<String>>() {
             @Override
@@ -86,9 +86,56 @@ public class RxOperatorTest {
         }).subscribe(new Consumer<String>() {
             @Override
             public void accept(@NonNull String s) throws Exception {
-                System.out.println("consumer="+s);
+                System.out.println("consumer=" + s);
             }
         });
+    }
+
+
+    @Test
+    public void rxToList() {
+        Observable.create(new ObservableOnSubscribe<Integer>() {
+            @Override
+            public void subscribe(@NonNull ObservableEmitter<Integer> e) throws Exception {
+                for (int i = 0; i < 3; i++) {
+                    e.onNext(i);
+                    System.out.println("e-->" + i);
+                }
+                e.onComplete();
+            }
+        }).filter(new Predicate<Integer>() {
+            @Override
+            public boolean test(@NonNull Integer integer) throws Exception {
+                return integer >= 1;
+            }
+        }).toList()
+                .subscribe(new Consumer<List<Integer>>() {
+            @Override
+            public void accept(@NonNull List<Integer> integers) throws Exception {
+                for (int i = 0; i < integers.size(); i++) {
+                    System.out.println("i=" + integers);
+                }
+            }
+        });
+
+
+//                flatMap(new Function<Integer, ObservableSource<String>>() {
+//            @Override
+//            public ObservableSource<String> apply(@NonNull Integer integer) throws Exception {
+//                final List<String> list = new ArrayList<>();
+//                for (int i = 0; i < 3; i++) {
+//                    list.add("I am value " + integer);
+//                }
+////                return Observable.fromArray(list.get(0));
+//                return Observable.fromIterable(list);
+////                return Observable.fromIterable(list).delay(10, TimeUnit.MILLISECONDS);
+//            }
+//        }).subscribe(new Consumer<String>() {
+//            @Override
+//            public void accept(@NonNull String s) throws Exception {
+//                System.out.println("consumer="+s);
+//            }
+//        });
     }
 
     /**
@@ -104,7 +151,6 @@ public class RxOperatorTest {
         }
         students.add(new Student("a", courseList));
         System.out.println(students);
-
 
 
         Observable.fromArray(students)
