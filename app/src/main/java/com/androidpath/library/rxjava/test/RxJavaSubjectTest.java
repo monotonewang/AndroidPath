@@ -57,8 +57,8 @@ public class RxJavaSubjectTest {
         replaySubject.onNext(2);
         replaySubject.onNext(3);
         replaySubject.onNext(4);
+        replaySubject.onError(new RuntimeException("xxxxx"));
         replaySubject.onNext(5);
-
         replaySubject.onComplete();
         replaySubject.subscribe(new Observer() {
             @Override
@@ -74,7 +74,7 @@ public class RxJavaSubjectTest {
 
             @Override
             public void onError(@NonNull Throwable e) {
-                System.out.println("onError");
+                System.out.println("onError"+e.getMessage());
             }
 
             @Override
