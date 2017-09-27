@@ -1,5 +1,6 @@
 package com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.http.inter;
 
+import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.adapter.BaseEntity;
 import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.entity.LanguageResponse;
 
 import io.reactivex.Observable;
@@ -12,6 +13,6 @@ import retrofit2.http.POST;
 public interface GetLanguageApi {
 
     @POST("/v_1_0/operation/language/get")
-    Observable<LanguageResponse> getLanguage();
+    Observable<BaseEntity<LanguageResponse>> getLanguage();
 
 }
