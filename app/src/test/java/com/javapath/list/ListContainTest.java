@@ -30,7 +30,7 @@ public class ListContainTest {
         Student student4 = new Student(1, "1", "shanghai");
 
 
-        boolean contains = studentList.contains(student3);
+        boolean contains = studentList.contains(student4);
         System.out.println("contains" + contains);
     }
 

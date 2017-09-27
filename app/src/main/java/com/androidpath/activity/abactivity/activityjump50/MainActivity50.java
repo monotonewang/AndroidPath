@@ -16,7 +16,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.androidpath.R;
-import com.androidpath.activity.aabase.ApplicationMain;
+import com.androidpath.AndroidApplication;
 import com.androidpath.activity.aabase.BaseActivity;
 
 import java.io.File;
@@ -143,7 +143,7 @@ public class MainActivity50 extends BaseActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 SystemClock.sleep(500);
-                                ApplicationMain.finishAllActivity();
+                                AndroidApplication.finishAllActivity();
                                 android.os.Process.killProcess(android.os.Process.myPid());
                                 System.exit(0);
                             }
@@ -165,7 +165,7 @@ public class MainActivity50 extends BaseActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 SystemClock.sleep(500);
-                                ApplicationMain.finishAllActivity();
+                                AndroidApplication.finishAllActivity();
                                 android.os.Process.killProcess(android.os.Process.myPid());
                                 System.exit(0);
                             }

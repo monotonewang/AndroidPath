@@ -1,6 +1,7 @@
-package com.androidpath.activity.aabase;
+package com.androidpath;
 
 import android.app.Application;
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 
 import java.util.LinkedList;
@@ -13,7 +14,10 @@ import java.util.List;
  * since: V ${version} <br/>
  */
 //zgjxfuqingwang@gmail.com
-public class ApplicationMain extends Application {
+public class AndroidApplication extends Application {
+
+
+    public static Context context;
 
     private static List<AppCompatActivity> mActivityList = new LinkedList<>();
     //application pass value
@@ -44,9 +48,13 @@ public class ApplicationMain extends Application {
         this.gender = gender;
     }
 
+    public static Context getContext(){
+        return context;
+    }
     @Override
     public void onCreate() {
         super.onCreate();
+        context=this;
 //        if (LeakCanary.isInAnalyzerProcess(this)) {
 //            return;
 //        }
@@ -56,7 +64,7 @@ public class ApplicationMain extends Application {
     }
 
 //    public staticfactory RefWatcher getRefWatcher(Context context){
-//        ApplicationMain applicationContext = (ApplicationMain) context.getApplicationContext();
+//        AndroidApplication applicationContext = (AndroidApplication) context.getApplicationContext();
 //        return applicationContext.refWatcher;
 //    }
 //

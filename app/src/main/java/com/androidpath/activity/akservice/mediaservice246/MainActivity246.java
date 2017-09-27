@@ -27,7 +27,7 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
 import com.androidpath.R;
-import com.androidpath.activity.aabase.ApplicationMain;
+import com.androidpath.AndroidApplication;
 import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.akservice.mediaservice246.modle.MusicEntity;
 import com.androidpath.activity.akservice.mediaservice246.service.MediaService246;
@@ -143,7 +143,7 @@ public class MainActivity246 extends BaseActivity implements OnItemClickListener
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 SystemClock.sleep(500);
-                                ApplicationMain.finishAllActivity();
+                                AndroidApplication.finishAllActivity();
                                 Process.killProcess(Process.myPid());
                                 System.exit(0);
                             }
@@ -168,7 +168,7 @@ public class MainActivity246 extends BaseActivity implements OnItemClickListener
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 SystemClock.sleep(500);
-                                ApplicationMain.finishAllActivity();
+                                AndroidApplication.finishAllActivity();
                                 Process.killProcess(Process.myPid());
                                 System.exit(0);
                             }

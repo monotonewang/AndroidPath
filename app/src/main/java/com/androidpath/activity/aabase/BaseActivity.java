@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 
+import com.androidpath.AndroidApplication;
 import com.androidpath.util.ConfigUtils;
 import com.androidpath.util.ConstantUtils;
 
@@ -24,13 +25,13 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ApplicationMain.addActivity(this);
+        AndroidApplication.addActivity(this);
         updateLanguage(ConfigUtils.getAPPLanguage(BaseActivity.this));
 
 //        沉浸式
 //        StatusBarUtil.setStatusBarTrans(this, false);
 
-//        RefWatcher refWatcher = ApplicationMain.getRefWatcher(this);
+//        RefWatcher refWatcher = AndroidApplication.getRefWatcher(this);
 //        refWatcher.watch(this);
     }
 

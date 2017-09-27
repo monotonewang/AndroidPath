@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.androidpath">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -16,7 +17,7 @@
     <supports-gl-texture android:name="GL_OES_compressed_paletted_texture" />
 
     <application
-        android:name=".activity.aabase.ApplicationMain"
+        android:name=".AndroidApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
@@ -136,6 +137,7 @@
         <activity android:name=".activity.agstorge.contentobserver160.MainActivity160" />
         <activity android:name=".activity.agstorge.contentResolverContacts161.MainActivity161" />
         <activity android:name=".activity.agstorge.loadmanger170.MainActivity170" />
+        <activity android:name=".activity.agstorge.sql.sqlfunkilanguage.GetLanguageSQLActivity" />
         <!-- LoadManager -->
         <activity android:name=".activity.agstorge.loadmanagercontact171.MainActivity171" />
         <activity android:name=".activity.agstorge.loadmanagercontact171.SearchContactActivity171" />
@@ -241,7 +243,7 @@
         <activity android:name=".view.widget.custom.canvasBezier.BezierActivity" />
         <activity android:name=".view.widget.custom.canvasmesure.PathMesureActivity" />
         <activity android:name=".view.widget.custom.shopcartview.ShoppingCartActivity" />
-        <activity android:name=".library.retrofit.activity.RetrofitActivity" >
+        <activity android:name=".library.retrofit.activity.RetrofitActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

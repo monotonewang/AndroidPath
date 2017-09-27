@@ -11,7 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.androidpath.R;
-import com.androidpath.activity.aabase.ApplicationMain;
+import com.androidpath.AndroidApplication;
 import com.androidpath.activity.aabase.BaseActivity;
 
 /**
@@ -24,7 +24,7 @@ public class MainActivity55 extends BaseActivity implements OnClickListener {
     private RadioGroup genderGroup;
     private Button button;
     private Button helpbutton;
-    private ApplicationMain myGloable;
+    private AndroidApplication myGloable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class MainActivity55 extends BaseActivity implements OnClickListener {
         helpbutton.setOnClickListener(this);
 
         // get application Object
-        myGloable = (ApplicationMain) getApplication();
+        myGloable = (AndroidApplication) getApplication();
     }
 
     @Override

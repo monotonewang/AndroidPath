@@ -4,19 +4,19 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.androidpath.R;
-import com.androidpath.activity.aabase.ApplicationMain;
+import com.androidpath.AndroidApplication;
 import com.androidpath.activity.aabase.BaseActivity;
 
 public class SecondActivity55 extends BaseActivity {
 
-    private ApplicationMain myGloable;
+    private AndroidApplication myGloable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second55);
 
-        myGloable = (ApplicationMain) getApplication();
+        myGloable = (AndroidApplication) getApplication();
         String gender = myGloable.getGender();
         String name = myGloable.getName();
 
