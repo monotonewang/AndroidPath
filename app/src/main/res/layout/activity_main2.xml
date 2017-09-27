@@ -28,11 +28,7 @@
                         style="@style/tvStyle"
                         android:text="@string/layoutbutton1" />
 
-                    <TextView
-                        android:id="@+id/Settings"
-                        style="@style/tvStyle"
-                        android:layout_alignParentEnd="true"
-                        android:text="@string/Settings" />
+
                 </RelativeLayout>
 
 
@@ -98,6 +94,11 @@
                     android:id="@+id/all_settings"
                     style="@style/tvStyle"
                     android:text="@string/Settings" />
+                <TextView
+                    android:id="@+id/architecture"
+                    style="@style/tvStyle"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/architecture" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

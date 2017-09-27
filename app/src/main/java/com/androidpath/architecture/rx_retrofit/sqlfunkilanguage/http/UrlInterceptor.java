@@ -1,4 +1,4 @@
-package com.androidpath.activity.agstorge.sql.sqlfunkilanguage.http;
+package com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.http;
 
 import java.io.IOException;
 import java.net.URI;

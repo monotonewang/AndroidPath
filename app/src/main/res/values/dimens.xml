@@ -28,4 +28,5 @@
     <dimen name="margin_large">20dp</dimen>
     <!-- MeterialActivity Style -->
     <dimen name="card_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

@@ -1,4 +1,4 @@
-package com.androidpath.activity.agstorge.sql.sqlfunkilanguage.entity;
+package com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.entity;
 
 import java.util.HashMap;
 import java.util.List;

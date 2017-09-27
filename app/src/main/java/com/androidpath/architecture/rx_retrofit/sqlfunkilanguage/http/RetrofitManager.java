@@ -1,6 +1,6 @@
-package com.androidpath.activity.agstorge.sql.sqlfunkilanguage.http;
+package com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.http;
 
-import com.androidpath.activity.agstorge.sql.sqlfunkilanguage.http.inter.GetLanguageApi;
+import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.http.inter.GetLanguageApi;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;

@@ -19,7 +19,7 @@ import com.androidpath.activity.aabase.asecondactivity.LiveCycleActivity2;
 import com.androidpath.activity.aabase.asecondactivity.ServiceActivity11;
 import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
 import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
-import com.androidpath.architecture.meterial.MeterialActivity;
+import com.androidpath.architecture.ArchitectureActivity;
 import com.androidpath.library.rxjava.RxActivity;
 import com.androidpath.util.fontutil.FontsManager;
 
@@ -102,11 +102,8 @@ public class MainActivity extends BaseActivity {
             case R.id.serviceDemo11:
                 startActivity(new Intent(MainActivity.this, ServiceActivity11.class));
                 break;
-            case R.id.Settings:
-
 //                changeFontsByActivity();
-                startActivity(new Intent(MainActivity.this, MeterialActivity.class));
-                break;
+
             //            case R.id.SurfaceViewBird:
             //                startActivity(new Intent(MusicMainActivity.this, SurfaceViewMainActivity.class));
             //                break;
@@ -117,6 +114,10 @@ public class MainActivity extends BaseActivity {
             case R.id.all_settings:
                 startActivity(new Intent(MainActivity.this, RxActivity.class));
                 break;
+            case R.id.architecture:
+                startActivity(new Intent(MainActivity.this, ArchitectureActivity.class));
+                break;
+
         }
     }
 

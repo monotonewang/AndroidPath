@@ -1,12 +1,12 @@
-package com.androidpath.activity.agstorge.sql.sqlfunkilanguage;
+package com.androidpath.architecture.rx_retrofit.sqlfunkilanguage;
 
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.androidpath.activity.agstorge.sql.sqlfunkilanguage.entity.LanguageResponse;
-import com.androidpath.activity.agstorge.sql.sqlfunkilanguage.http.RetrofitManager;
+import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.entity.LanguageResponse;
+import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.http.RetrofitManager;
 
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;

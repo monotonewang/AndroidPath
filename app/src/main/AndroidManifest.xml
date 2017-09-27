@@ -72,7 +72,6 @@
         <activity android:name=".activity.abactivity.getresult60.SecondActivity60" />
         <activity android:name=".activity.abactivity.saveinstance76.MainActivity76" />
         <activity android:name=".activity.abactivity.activitylivecircle.LiveCircleActivity" />
-
         <activity
             android:name=".activity.abactivity.taskdemo61.MainActivity61"
             android:label="this is first page" />
@@ -137,7 +136,7 @@
         <activity android:name=".activity.agstorge.contentobserver160.MainActivity160" />
         <activity android:name=".activity.agstorge.contentResolverContacts161.MainActivity161" />
         <activity android:name=".activity.agstorge.loadmanger170.MainActivity170" />
-        <activity android:name=".activity.agstorge.sql.sqlfunkilanguage.GetLanguageSQLActivity" />
+        <activity android:name=".architecture.rx_retrofit.sqlfunkilanguage.GetLanguageSQLActivity" />
         <!-- LoadManager -->
         <activity android:name=".activity.agstorge.loadmanagercontact171.MainActivity171" />
         <activity android:name=".activity.agstorge.loadmanagercontact171.SearchContactActivity171" />
@@ -259,6 +258,10 @@
         <activity android:name=".architecture.meterial.MeterialActivity" />
         <activity android:name=".view.widget.custom.viewfirst.CustomeViewFirst" />
         <activity android:name=".activity.SettingActivity" />
+        <activity
+            android:name=".architecture.ArchitectureActivity"
+            android:label="@string/title_activity_arcgutecture"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

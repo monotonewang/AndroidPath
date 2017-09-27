@@ -1,6 +1,6 @@
-package com.androidpath.activity.agstorge.sql.sqlfunkilanguage.http.inter;
+package com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.http.inter;
 
-import com.androidpath.activity.agstorge.sql.sqlfunkilanguage.entity.LanguageResponse;
+import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.entity.LanguageResponse;
 
 import io.reactivex.Observable;
 import retrofit2.http.POST;
