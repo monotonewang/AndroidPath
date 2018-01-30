@@ -1,5 +1,4 @@
 LayoutDemo2
-ButtonSelectorDemo3
 ButtonTestactivity31
 EditTextDemo32
 ImageViewTest33
@@ -10,3 +9,4 @@ SpinnerDemo42
 SpinnerDemo43
 SpinnerSimpleAdapter44
 SpinnerLink52
+RatingBar20180130Activity

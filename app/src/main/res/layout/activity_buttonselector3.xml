@@ -4,10 +4,5 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/btn_selector3"
-        android:text="@string/buttonSelector"
-        android:textColor="@color/btn_text_color_selector3" />
+
 </LinearLayout>

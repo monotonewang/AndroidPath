@@ -243,11 +243,13 @@
         <activity android:name=".view.widget.custom.canvasmesure.PathMesureActivity" />
         <activity android:name=".view.widget.custom.shopcartview.ShoppingCartActivity" />
         <activity android:name=".library.retrofit.activity.RetrofitActivity">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".architecture.mvp.view.LoginActivity" />
         <!-- project music -->
@@ -261,7 +263,8 @@
         <activity
             android:name=".architecture.ArchitectureActivity"
             android:label="@string/title_activity_arcgutecture"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.aalayout.ratingbar20180130.RatingBar20180130Activity"></activity>
     </application>
 
 </manifest>

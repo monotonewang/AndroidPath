@@ -10,12 +10,12 @@ import android.widget.TextView;
 import com.androidpath.R;
 import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.activity.aalayout.buttonbgcolor40.MainActivity40;
-import com.androidpath.activity.aalayout.buttonselector30.ButtonSelectorActivtiy3;
 import com.androidpath.activity.aalayout.checkradio41.MainActivity41;
 import com.androidpath.activity.aalayout.clickreponse31.ButtonTestActivity31;
 import com.androidpath.activity.aalayout.edittext.edittextdemo32.MainActivity32;
 import com.androidpath.activity.aalayout.imageviewtest.MainActivity33;
 import com.androidpath.activity.aalayout.layoutdemo2.LayoutActivity2;
+import com.androidpath.activity.aalayout.ratingbar20180130.RatingBar20180130Activity;
 import com.androidpath.activity.aalayout.spinner.spinnerdemo42.MainActivity42;
 import com.androidpath.activity.aalayout.spinner.spinnerdemo43.MainActivity43;
 import com.androidpath.activity.aalayout.spinner.spinnerlink52.MainActivity52;
@@ -70,6 +70,7 @@ public class LayoutButtonActivity1 extends BaseActivity implements TagFlowLayout
 //        SpinnerDemo43
 //        SpinnerSimpleAdapter44
 //        SpinnerLink52
+//        RatingBar20180130Activity
 
     }
 
@@ -80,37 +81,37 @@ public class LayoutButtonActivity1 extends BaseActivity implements TagFlowLayout
                 startActivity(new Intent(LayoutButtonActivity1.this, LayoutActivity2.class));
                 break;
             case 1:
-                startActivity(new Intent(LayoutButtonActivity1.this, ButtonSelectorActivtiy3.class));
-                break;
-            case 2:
                 startActivity(new Intent(LayoutButtonActivity1.this, ButtonTestActivity31.class));
                 break;
-            case 3:
+            case 2:
                 startActivity(new Intent(LayoutButtonActivity1.this, MainActivity32.class));
                 break;
-            case 4:
+            case 3:
                 startActivity(new Intent(LayoutButtonActivity1.this, MainActivity33.class));
                 break;
-            case 5:
+            case 4:
                 startActivity(new Intent(LayoutButtonActivity1.this, MainActivity34.class));
                 break;
-            case 6:
+            case 5:
                 startActivity(new Intent(LayoutButtonActivity1.this, MainActivity40.class));
                 break;
-            case 7:
+            case 6:
                 startActivity(new Intent(LayoutButtonActivity1.this, MainActivity41.class));
                 break;
-            case 8:
+            case 7:
                 startActivity(new Intent(LayoutButtonActivity1.this, MainActivity42.class));
                 break;
-            case 9:
+            case 8:
                 startActivity(new Intent(LayoutButtonActivity1.this, MainActivity43.class));
                 break;
-            case 10:
+            case 9:
                 startActivity(new Intent(LayoutButtonActivity1.this, MainActivity44.class));
                 break;
-            case 11:
+            case 10:
                 startActivity(new Intent(LayoutButtonActivity1.this, MainActivity52.class));
+                break;
+            case 11:
+                startActivity(new Intent(LayoutButtonActivity1.this, RatingBar20180130Activity.class));
                 break;
         }
         return true;
