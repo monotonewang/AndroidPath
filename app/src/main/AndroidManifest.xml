@@ -136,7 +136,7 @@
         <activity android:name=".activity.agstorge.contentobserver160.MainActivity160" />
         <activity android:name=".activity.agstorge.contentResolverContacts161.MainActivity161" />
         <activity android:name=".activity.agstorge.loadmanger170.MainActivity170" />
-        <activity android:name=".architecture.rx_retrofit.sqlfunkilanguage.GetLanguageSQLActivity" />
+        <activity android:name=".project.sqlfunkilanguage.GetLanguageSQLActivity" />
         <!-- LoadManager -->
         <activity android:name=".activity.agstorge.loadmanagercontact171.MainActivity171" />
         <activity android:name=".activity.agstorge.loadmanagercontact171.SearchContactActivity171" />
@@ -243,11 +243,11 @@
         <activity android:name=".view.widget.custom.canvasmesure.PathMesureActivity" />
         <activity android:name=".view.widget.custom.shopcartview.ShoppingCartActivity" />
         <activity android:name=".library.retrofit.activity.RetrofitActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
         <activity android:name=".architecture.mvp.view.LoginActivity" />
         <!-- project music -->

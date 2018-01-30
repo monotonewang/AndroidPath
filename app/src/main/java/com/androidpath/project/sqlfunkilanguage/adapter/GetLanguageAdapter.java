@@ -1,9 +1,9 @@
-package com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.adapter;
+package com.androidpath.project.sqlfunkilanguage.adapter;
 
 import android.support.annotation.Nullable;
 
 import com.androidpath.R;
-import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.entity.LanguageResponse;
+import com.androidpath.project.sqlfunkilanguage.entity.LanguageResponse;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 

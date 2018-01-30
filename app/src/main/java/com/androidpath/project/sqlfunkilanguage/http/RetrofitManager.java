@@ -1,6 +1,6 @@
-package com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.http;
+package com.androidpath.project.sqlfunkilanguage.http;
 
-import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.http.inter.GetLanguageApi;
+import com.androidpath.project.sqlfunkilanguage.http.inter.GetLanguageApi;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;

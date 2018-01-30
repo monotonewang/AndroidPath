@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.androidpath.R;
 import com.androidpath.architecture.meterial.MeterialActivity;
-import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.GetLanguageSQLActivity;
+import com.androidpath.project.sqlfunkilanguage.GetLanguageSQLActivity;
 import com.androidpath.util.FileUtilssss;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;

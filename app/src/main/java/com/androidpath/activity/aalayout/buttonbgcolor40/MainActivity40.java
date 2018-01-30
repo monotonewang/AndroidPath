@@ -1,6 +1,5 @@
 package com.androidpath.activity.aalayout.buttonbgcolor40;
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import com.androidpath.R;

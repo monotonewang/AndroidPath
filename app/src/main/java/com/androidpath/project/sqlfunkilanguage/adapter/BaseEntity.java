@@ -1,4 +1,4 @@
-package com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.adapter;
+package com.androidpath.project.sqlfunkilanguage.adapter;
 
 /**
  * Created by powyin on 2017/6/7.

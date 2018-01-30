@@ -1,4 +1,4 @@
-package com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.entity;
+package com.androidpath.project.sqlfunkilanguage.entity;
 
 import java.util.HashMap;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.androidpath.architecture.rx_retrofit.sqlfunkilanguage;
+package com.androidpath.project.sqlfunkilanguage;
 
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -8,10 +8,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.androidpath.R;
-import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.adapter.BaseEntity;
-import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.adapter.GetLanguageAdapter;
-import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.entity.LanguageResponse;
-import com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.http.RetrofitManager;
+import com.androidpath.project.sqlfunkilanguage.adapter.BaseEntity;
+import com.androidpath.project.sqlfunkilanguage.adapter.GetLanguageAdapter;
+import com.androidpath.project.sqlfunkilanguage.entity.LanguageResponse;
+import com.androidpath.project.sqlfunkilanguage.http.RetrofitManager;
 import com.scwang.smartrefresh.header.MaterialHeader;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.constant.SpinnerStyle;

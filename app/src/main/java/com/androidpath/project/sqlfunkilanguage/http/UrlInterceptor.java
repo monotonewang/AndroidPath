@@ -1,4 +1,4 @@
-package com.androidpath.architecture.rx_retrofit.sqlfunkilanguage.http;
+package com.androidpath.project.sqlfunkilanguage.http;
 
 import java.io.IOException;
 import java.net.URI;

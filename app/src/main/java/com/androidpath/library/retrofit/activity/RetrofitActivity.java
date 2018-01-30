@@ -11,13 +11,18 @@ import com.androidpath.activity.aabase.BaseActivity;
 import com.androidpath.library.retrofit.inter.MyRetrofitService;
 import com.androidpath.library.retrofit.utils.Constants;
 
-
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
+import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -53,6 +58,75 @@ public class RetrofitActivity extends BaseActivity {
 //        imageView = (ImageView) findViewById(R.id.imageviewre);
 //        getImageDownload();
 //        getMap3Download();
+
+//        List<File> files=new ArrayList<>();
+//        files.add(new File(""));
+//        uploadFiles(files);
+
+        uploadFile(new File(""));
+    }
+
+    /**
+     * 上传单个文件
+     *
+     * @param file
+     */
+    private void uploadFile(File file) {
+        if (file == null) {
+            Log.e(TAG, "uploadFile: " + "is null");
+            return;
+        }
+        RequestBody requestBody = RequestBody.create(MultipartBody.FORM, file);
+        MultipartBody.Part part = MultipartBody.Part.createFormData("file", file.getName(), requestBody);
+        String descriptionString = "";
+        RequestBody description = RequestBody.create(MediaType.parse("multipart/form-data"), descriptionString);
+        //third
+        MyRetrofitService service = retrofit.create(MyRetrofitService.class);
+        Call<ResponseBody> mp3 = service.uploadFile(description, part);
+        mp3.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
+    }
+
+    /**
+     * 上传多个文件
+     *
+     * @param files
+     */
+    private void uploadFiles(List<File> files) {
+
+        Map<String, RequestBody> partMapBody = new HashMap<>();
+        for (int i = 0; i < files.size(); i++) {
+            RequestBody requestBody = RequestBody.create(MultipartBody.FORM, files.get(i));
+            String fileName = files.get(i).getName();
+            int i1 = fileName.lastIndexOf(".");
+            String suffix = fileName.substring(i1, fileName.length());
+            String newFileName = UUID.randomUUID().toString() + System.currentTimeMillis() + suffix;
+            Log.e(TAG, "uploadFile: " + newFileName);
+            partMapBody.put("files\";filename=\"" + newFileName, requestBody);
+        }
+
+        MyRetrofitService service = retrofit.create(MyRetrofitService.class);
+        Call<ResponseBody> mp3 = service.uploadFiles(partMapBody);
+        mp3.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
     }
 
     private void getMap3Download() {
