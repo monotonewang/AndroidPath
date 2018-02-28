@@ -24,6 +24,7 @@ import com.androidpath.activity.agstorge.sql.sqlclienttwo152.MainActivity152;
 import com.androidpath.activity.agstorge.sql.sqldemo154.MainActivity154;
 import com.androidpath.activity.agstorge.sql.sqlserverone151.MainActivity151;
 import com.androidpath.activity.agstorge.sql.sqlservertwo153.MainActivity153;
+import com.androidpath.activity.agstorge.sql.sqltransaction.SQLiteTransactionActivity;
 import com.androidpath.util.FileUtilssss;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
@@ -107,6 +108,9 @@ public class StorgeActivity7 extends BaseActivity implements TagFlowLayout.OnTag
                 break;
             case 15:
                 startActivity(new Intent(StorgeActivity7.this, MainActivity195.class));
+                break;
+            case 16:
+                startActivity(new Intent(StorgeActivity7.this, SQLiteTransactionActivity.class));
                 break;
 
         }

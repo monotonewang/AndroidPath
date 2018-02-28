@@ -133,6 +133,7 @@
         <activity android:name=".activity.agstorge.sql.sqlservertwo153.MainActivity153" />
         <activity android:name=".activity.agstorge.sql.sqldemo154.MainActivity154" />
         <activity android:name=".activity.agstorge.sql.simplecusoradapter155.MainActivity155" />
+        <activity android:name=".activity.agstorge.sql.sqltransaction.SQLiteTransactionActivity"/>
         <activity android:name=".activity.agstorge.contentobserver160.MainActivity160" />
         <activity android:name=".activity.agstorge.contentResolverContacts161.MainActivity161" />
         <activity android:name=".activity.agstorge.loadmanger170.MainActivity170" />
