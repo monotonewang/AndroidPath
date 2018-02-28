@@ -77,7 +77,7 @@ public class MySQLLiteOpenHelper extends SQLiteOpenHelper {
             System.out.println("------isEmpty");
             GetAllStationVersionBean getAllStationVersionBean = getJsonFromLocal(mContext);
 
-            boolean isOk = getAllStationVersionBean != null &&getAllStationVersionBean.data!=null&& getAllStationVersionBean.data.stationData != null && !getAllStationVersionBean.data.stationData.isEmpty();
+            boolean isOk = getAllStationVersionBean != null && getAllStationVersionBean.data != null && getAllStationVersionBean.data.stationData != null && !getAllStationVersionBean.data.stationData.isEmpty();
             if (isOk) {
                 List<GetAllStationVersionBean.DataBean.StationDataBean> stationData = getAllStationVersionBean.data.stationData;
                 for (int i = 0; i < stationData.size(); i++) {
@@ -118,8 +118,8 @@ public class MySQLLiteOpenHelper extends SQLiteOpenHelper {
         }
         cursorReadData.close();
         cursor.close();
-        database.close();
-        databaseReadData.close();
+//        database.close();
+//        databaseReadData.close();
         return result;
     }
 
@@ -148,7 +148,7 @@ public class MySQLLiteOpenHelper extends SQLiteOpenHelper {
         values.put(cityId, stationDataBean.cityId);
 
         long insert = database.insert(STATION_TABLE_NAME, null, values);
-        database.close();
+//        database.close();
         return insert;
     }
 
@@ -156,12 +156,12 @@ public class MySQLLiteOpenHelper extends SQLiteOpenHelper {
         SQLiteDatabase database = getWritableDatabase();
 
 
-        String whereCause = stationId + "=?";
+        String whereCause =  "stationId=?";
 
         String[] values = {String.valueOf(stationId)};
 
         long insert = database.delete(STATION_TABLE_NAME, whereCause, values);
-        database.close();
+//        database.close();
         return insert;
     }
 
@@ -181,7 +181,7 @@ public class MySQLLiteOpenHelper extends SQLiteOpenHelper {
 
         long insert = database.update(STATION_TABLE_NAME, values, whereCause, args);
 
-        database.close();
+//        database.close();
         return insert;
     }
 
@@ -223,4 +223,91 @@ public class MySQLLiteOpenHelper extends SQLiteOpenHelper {
 
         return null;
     }
+
+    SQLiteDatabase sqLiteDatabase;
+
+    public synchronized SQLiteDatabase getOneDatabase() {
+        if (sqLiteDatabase != null) {
+            return sqLiteDatabase;
+        } else {
+            sqLiteDatabase = getWritableDatabase();
+            return sqLiteDatabase;
+        }
+    }
+
+    public boolean handleStationList(List<GetAllStationVersionBean.DataBean.StationDataBean> stationData) {
+        boolean result = true;
+        boolean updateResult = false;
+        for (int i = 0; i < stationData.size(); i++) {
+            System.out.println("-----------------------------" + stationData.get(i));
+        }
+        if (stationData.size() > 0) {
+            SQLiteDatabase oneDatabase = getOneDatabase();
+            oneDatabase.beginTransaction();
+            try {
+                for (int i = 0; i < stationData.size(); i++) {
+                    switch (stationData.get(i).operType) {
+                        case 0:
+                            break;
+                        case 1:
+                            long l = insertStationBean(stationData.get(i));
+                            System.out.println("----------------handleStationList-insertStationBean l=" + l);
+                            if (l < 0) {
+                                result = false;
+                            }
+                            break;
+                        case 2:
+                            long stationId = stationData.get(i).stationId;
+                            long l1 = deleteStationBean(stationId);
+
+                            System.out.println("----------------handleStationList-deleteStationBean l1=" + l1 + "stationId=" + stationData.get(i).stationId);
+                            if (l1 < 0) {
+                                result = false;
+                            }
+                            break;
+                        case 3:
+                            System.out.println("----------------handleStationList-update" + stationData.get(i));
+                            long stationIdX = stationData.get(i).stationId;
+                            long lD = deleteStationBean(stationIdX);
+                            long lI = 0;
+
+                            if (lD == 1) {
+                                lI = insertStationBean(stationData.get(i));
+                            }
+
+//                            long l2 = updateStationBean(stationData.get(i));
+
+                            System.out.println("----------------handleStationList-updateStationBean");
+
+                            if (lD < 0 || lI < 0) {
+                                result = false;
+                            }
+                            break;
+                    }
+                }
+
+                if (result) {
+                    System.out.println("----------------handleStationList-setTransactionSuccessful true");
+                    oneDatabase.setTransactionSuccessful();
+                }
+
+            } catch (Exception e) {
+
+            } finally {
+                System.out.println("----------------handleStationList-endTransaction ");
+                oneDatabase.endTransaction();
+                //处理完关闭数据库对象
+                oneDatabase.close();
+                sqLiteDatabase = null;
+            }
+        }
+
+
+        System.out.println("--------------handleStationList-result=" + result);
+
+        System.out.println("--------------handleStationList-updateResult=" + updateResult);
+        return updateResult;
+
+    }
+
 }

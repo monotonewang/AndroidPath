@@ -41,6 +41,7 @@ public class GetAllStationVersionBean {
             public double stationLng;
             public double stationLat;
             public long cityId;
+            public int operType;
 
             public StationDataBean(long id, long stationId, double stationLng, double stationLat, long cityId) {
                 this.id = id;
@@ -48,6 +49,15 @@ public class GetAllStationVersionBean {
                 this.stationLng = stationLng;
                 this.stationLat = stationLat;
                 this.cityId = cityId;
+            }
+
+            public StationDataBean(long id, long stationId, double stationLng, double stationLat, long cityId, int operType) {
+                this.id = id;
+                this.stationId = stationId;
+                this.stationLng = stationLng;
+                this.stationLat = stationLat;
+                this.cityId = cityId;
+                this.operType = operType;
             }
 
             @Override

@@ -11,6 +11,7 @@ import android.view.View;
 import com.androidpath.R;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SQLiteTransactionActivity extends AppCompatActivity {
@@ -50,6 +51,9 @@ public class SQLiteTransactionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                List<GetAllStationVersionBean.DataBean.StationDataBean> getAllStationVersionBean = mySQLLiteOpenHelper.getGetAllStationVersionBean();
+                System.out.println("-----------" + getAllStationVersionBean);
+
             }
         });
 
@@ -60,11 +64,6 @@ public class SQLiteTransactionActivity extends AppCompatActivity {
                 //获取apk打包数据
 //                GetAllStationVersionBean jsonFromLocal = getJsonFromLocal(mContext);
 //                System.out.println(jsonFromLocal);
-
-
-                List<GetAllStationVersionBean.DataBean.StationDataBean> getAllStationVersionBean = mySQLLiteOpenHelper.getGetAllStationVersionBean();
-                System.out.println("-----------" + getAllStationVersionBean);
-
 
 //                mySQLLiteOpenHelper.getReadableDatabase()
 //                List<StationDataBean> allStationBean = getAllStationBean();
@@ -82,27 +81,33 @@ public class SQLiteTransactionActivity extends AppCompatActivity {
         findViewById(R.id.tv_add).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int step = 10000;
 
-                int id = (int) (Math.random() * 10 + step);
-                int stationId = (int) (Math.random() * 10 + step);
-                double stationLng = (int) (Math.random() * 10 + step);
-                double stationLat = (int) (Math.random() * 10 + step);
-                int cityId = (int) (Math.random() * 10 + step);
+                List<GetAllStationVersionBean.DataBean.StationDataBean> getAllStationVersionBean = mySQLLiteOpenHelper.getGetAllStationVersionBean();
 
-                GetAllStationVersionBean.DataBean.StationDataBean stationDataBean = new GetAllStationVersionBean.DataBean.StationDataBean(id, stationId, stationLng, stationLat, cityId);
-                mySQLLiteOpenHelper.insertStationBean(stationDataBean);
+                for(int i=0;i<getAllStationVersionBean.size();i++){
+                    System.out.println(getAllStationVersionBean.get(i));
+                }
+//                int step = 10000;
+//
+//                int id = (int) (Math.random() * 10 + step);
+//                int stationId = (int) (Math.random() * 10 + step);
+//                double stationLng = (int) (Math.random() * 10 + step);
+//                double stationLat = (int) (Math.random() * 10 + step);
+//                int cityId = (int) (Math.random() * 10 + step);
+//
+//                GetAllStationVersionBean.DataBean.StationDataBean stationDataBean = new GetAllStationVersionBean.DataBean.StationDataBean(id, stationId, stationLng, stationLat, cityId);
+//                mySQLLiteOpenHelper.insertStationBean(stationDataBean);
             }
         });
 
 
         findViewById(R.id.tv_delete).setOnClickListener(new View.OnClickListener() {
-            int i = 28;
+            int i = 46;
 
             @Override
             public void onClick(View v) {
                 long l = mySQLLiteOpenHelper.deleteStationBean(i);
-                System.out.println("------tv_delete" + l);
+                System.out.println("------tv_delete" + l+"i="+i);
                 i++;
             }
         });
@@ -140,6 +145,14 @@ public class SQLiteTransactionActivity extends AppCompatActivity {
         findViewById(R.id.tv_tran).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                List<GetAllStationVersionBean.DataBean.StationDataBean> list=new ArrayList<>();
+
+                list.add(new GetAllStationVersionBean.DataBean.StationDataBean(1,46,0.1,0.2,1,2));
+                list.add(new GetAllStationVersionBean.DataBean.StationDataBean(1,100,0.1,0.2,1,1));
+                list.add(new GetAllStationVersionBean.DataBean.StationDataBean(1,102,0.1,0.2,1,1));
+
+                mySQLLiteOpenHelper.handleStationList(list);
 
             }
         });
