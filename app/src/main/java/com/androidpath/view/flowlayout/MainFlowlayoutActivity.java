@@ -27,10 +27,11 @@ import java.util.Set;
  * since: V ${version} <br/>
  */
 
+@Deprecated
 public class MainFlowlayoutActivity extends BaseActivity {
     private TagAdapter<String> mAdapter;
     private String[] mVals = new String[]
-            {"layoutdemo2", "languagesettings",  "buttontestactivity31", "HotArea", "edittextdemo32", "imageviewtest33",
+            {"dragvi", "languagesettings",  "buttontestactivity31", "HotArea", "edittextdemo32", "imageviewtest33",
                     "viewtest34", "handview", "buttonbgcolor40", "checkradio41", "spinnerdemo42",
                     "spinnerdemo43", "aysncdemotwo71", "activityjump50", "activitypassvalue50", "autoCompleteText51", "spinnerlink52", "activitypassvalue55", "getresult60", "taskdemo61", "aysncdemoone70",
                     "aysncgetimage72", "Weclome", "Button ImageView", "TextView", "Helloworld",

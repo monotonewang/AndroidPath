@@ -99,6 +99,11 @@
                     style="@style/tvStyle"
                     android:layout_alignParentEnd="true"
                     android:text="@string/architecture" />
+                <TextView
+                    android:id="@+id/view"
+                    style="@style/tvStyle"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/view" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

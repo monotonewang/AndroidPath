@@ -22,6 +22,7 @@ import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
 import com.androidpath.architecture.ArchitectureActivity;
 import com.androidpath.library.rxjava.RxActivity;
 import com.androidpath.util.fontutil.FontsManager;
+import com.androidpath.view.ViewActivity;
 
 /**
  * zgjxfuqingwang@gmail.com
@@ -116,6 +117,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.architecture:
                 startActivity(new Intent(MainActivity.this, ArchitectureActivity.class));
+                break;
+            case R.id.view:
+                startActivity(new Intent(MainActivity.this, ViewActivity.class));
                 break;
 
         }

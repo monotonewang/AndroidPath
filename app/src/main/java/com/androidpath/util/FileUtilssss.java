@@ -22,7 +22,7 @@ public class FileUtilssss {
      * @param context
      * @return
      */
-    public static ArrayList getArrayList(Context context,int res) {
+    public static ArrayList<String> getArrayList(Context context,int res) {
         InputStream inputStream = context.getResources().openRawResource(res);
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);

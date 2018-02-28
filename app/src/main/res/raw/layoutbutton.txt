@@ -9,4 +9,6 @@ SpinnerDemo42
 SpinnerDemo43
 SpinnerSimpleAdapter44
 SpinnerLink52
-RatingBar20180130Activity
+RatingBar20180130
+QuickContactBadge
+AutoCompleteTextView

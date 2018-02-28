@@ -264,7 +264,12 @@
             android:name=".architecture.ArchitectureActivity"
             android:label="@string/title_activity_arcgutecture"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activity.aalayout.ratingbar20180130.RatingBar20180130Activity"></activity>
+        <activity android:name=".activity.aalayout.ratingbar20180130.RatingBar20180130Activity" />
+        <activity android:name=".view.ViewActivity" />
+        <activity android:name=".view.dragview.ViewDragActivity" />
+        <activity android:name=".activity.aalayout.quickcontactbadge.QuickContactBadgeActivity" />
+        <activity android:name=".activity.aalayout.autocompletetextView.AutoCompleteTextViewActivity" />
+        <activity android:name=".activity.aalayout.adapterviewfilpper.AdapterViewFlipperActivity"></activity>
     </application>
 
 </manifest>

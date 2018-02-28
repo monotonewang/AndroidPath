@@ -24,6 +24,7 @@
     <string name="serviceDemo11">serviceDemo11</string>
     <string name="Settings">Settings</string>
     <string name="architecture">architecture</string>
+    <string name="view">view</string>
     <string name="cleanCache">cleanCache</string>
 
     <string-array name="job_array">

@@ -9,12 +9,14 @@ import android.widget.TextView;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.BaseActivity;
+import com.androidpath.activity.aalayout.autocompletetextView.AutoCompleteTextViewActivity;
 import com.androidpath.activity.aalayout.buttonbgcolor40.MainActivity40;
 import com.androidpath.activity.aalayout.checkradio41.MainActivity41;
 import com.androidpath.activity.aalayout.clickreponse31.ButtonTestActivity31;
 import com.androidpath.activity.aalayout.edittext.edittextdemo32.MainActivity32;
 import com.androidpath.activity.aalayout.imageviewtest.MainActivity33;
 import com.androidpath.activity.aalayout.layoutdemo2.LayoutActivity2;
+import com.androidpath.activity.aalayout.quickcontactbadge.QuickContactBadgeActivity;
 import com.androidpath.activity.aalayout.ratingbar20180130.RatingBar20180130Activity;
 import com.androidpath.activity.aalayout.spinner.spinnerdemo42.MainActivity42;
 import com.androidpath.activity.aalayout.spinner.spinnerdemo43.MainActivity43;
@@ -71,6 +73,8 @@ public class LayoutButtonActivity1 extends BaseActivity implements TagFlowLayout
 //        SpinnerSimpleAdapter44
 //        SpinnerLink52
 //        RatingBar20180130Activity
+//        QuickContactBadgeActivity
+//        AutoCompleteTextViewActivity
 
     }
 
@@ -112,6 +116,12 @@ public class LayoutButtonActivity1 extends BaseActivity implements TagFlowLayout
                 break;
             case 11:
                 startActivity(new Intent(LayoutButtonActivity1.this, RatingBar20180130Activity.class));
+                break;
+            case 12:
+                startActivity(new Intent(LayoutButtonActivity1.this, QuickContactBadgeActivity.class));
+                break;
+            case 13:
+                startActivity(new Intent(LayoutButtonActivity1.this, AutoCompleteTextViewActivity.class));
                 break;
         }
         return true;
