@@ -1,7 +1,7 @@
 package com.androidpath.view.surfaceview;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import com.androidpath.R;
 

@@ -1,7 +1,7 @@
 package com.androidpath.activity.aiviewpager.webview213;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.webkit.WebView;
 
 import com.androidpath.R;

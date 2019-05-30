@@ -1,8 +1,8 @@
 package com.androidpath.activity.aiviewpager.actionbar215;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.ListFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.ListFragment;
 import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;

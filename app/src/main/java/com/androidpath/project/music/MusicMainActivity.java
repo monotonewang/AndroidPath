@@ -2,9 +2,9 @@ package com.androidpath.project.music;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
 import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;

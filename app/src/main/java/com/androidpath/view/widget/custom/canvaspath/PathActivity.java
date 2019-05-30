@@ -1,7 +1,7 @@
 package com.androidpath.view.widget.custom.canvaspath;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.androidpath.activity.aabase.BaseActivity;
 

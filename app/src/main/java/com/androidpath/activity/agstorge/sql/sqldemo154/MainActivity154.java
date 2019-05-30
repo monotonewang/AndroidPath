@@ -4,7 +4,7 @@ package com.androidpath.activity.agstorge.sql.sqldemo154;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.v4.widget.SimpleCursorAdapter;
+import androidx.cursoradapter.widget.SimpleCursorAdapter;
 import android.widget.ListView;
 
 import com.androidpath.R;

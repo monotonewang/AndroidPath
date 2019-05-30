@@ -3,7 +3,7 @@ package com.androidpath.activity.akservice.localbroadservice242;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.v4.content.LocalBroadcastManager;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import java.util.Timer;
 import java.util.TimerTask;

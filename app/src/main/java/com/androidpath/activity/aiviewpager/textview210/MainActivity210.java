@@ -2,9 +2,9 @@ package com.androidpath.activity.aiviewpager.textview210;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;

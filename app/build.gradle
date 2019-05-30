@@ -30,7 +30,7 @@ android {
         targetSdkVersion 28
         versionCode 2
         versionName "1.1"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         debug {
@@ -131,7 +131,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //    androidTestCompile 'com.android.support.test:runner:0.2'
     //    androidTestCompile 'com.android.support.test:rules:0.2'
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0-alpha4', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     //Retrofit
@@ -152,10 +152,10 @@ dependencies {
     testImplementation files('lib/jna-platform-4.1.0.jar')
     implementation 'com.alibaba:fastjson:1.1.61.android'
     implementation 'junit:junit:4.12'
-    implementation 'com.android.support:design:26.1.0'
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support:recyclerview-v7:26.1.0'
-    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.google.android.material:material:1.0.0-beta01'
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0-beta01'
+    implementation 'androidx.cardview:cardview:1.0.0-beta01'
     implementation 'com.squareup.retrofit2:retrofit:2.1.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
     implementation 'io.reactivex.rxjava2:rxjava:2.1.0'
@@ -163,7 +163,7 @@ dependencies {
     implementation 'com.jakewharton:butterknife:8.4.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'

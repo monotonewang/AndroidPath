@@ -1,6 +1,6 @@
 package com.androidpath.project.sqlfunkilanguage.adapter;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.androidpath.R;
 import com.androidpath.project.sqlfunkilanguage.entity.LanguageResponse;

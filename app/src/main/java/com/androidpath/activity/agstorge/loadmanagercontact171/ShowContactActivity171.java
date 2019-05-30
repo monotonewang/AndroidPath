@@ -9,7 +9,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.support.v4.widget.SimpleCursorAdapter;
+import androidx.cursoradapter.widget.SimpleCursorAdapter;
 import android.util.Log;
 
 //实现LoaderCallbacks接口，泛型规定的是loader加载的数据的类型

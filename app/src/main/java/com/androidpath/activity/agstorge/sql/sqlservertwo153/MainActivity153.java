@@ -3,18 +3,16 @@ package com.androidpath.activity.agstorge.sql.sqlservertwo153;
 import com.androidpath.activity.aabase.BaseActivity;
 
 import android.content.ContentResolver;
-import android.content.ContentResolver;
 import android.database.ContentObserver;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.widget.SimpleCursorAdapter;
+import androidx.cursoradapter.widget.SimpleCursorAdapter;
 import android.util.Log;
 import android.widget.ListView;
 
 import com.androidpath.R;
-import com.androidpath.activity.aabase.BaseActivity;
 
 public class MainActivity153 extends BaseActivity {
 

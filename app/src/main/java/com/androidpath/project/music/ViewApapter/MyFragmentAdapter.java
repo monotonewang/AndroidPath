@@ -1,8 +1,8 @@
 package com.androidpath.project.music.ViewApapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.androidpath.project.music.fragment.FragmentPlayMusic;
 import com.androidpath.project.music.fragment.FragmentPublicListItem;
