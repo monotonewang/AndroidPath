@@ -27,7 +27,7 @@ public class Floor {
             x = x % gameWidth;
         }
         //保存图层状态，方便绘制完成之后回滚
-        canvas.save(Canvas.MATRIX_SAVE_FLAG);
+//        canvas.save(Canvas.MATRIX_SAVE_FLAG);
         //移动画布到指定位置画图
         canvas.translate(x, y);
         paint.setShader(mShader);

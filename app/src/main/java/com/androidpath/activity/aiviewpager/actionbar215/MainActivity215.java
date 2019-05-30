@@ -10,11 +10,11 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBar.Tab;
 import android.support.v7.app.ActionBar.TabListener;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 
 import com.androidpath.R;
 
-public class MainActivity215 extends ActionBarActivity implements TabListener, OnPageChangeListener {
+public class MainActivity215 extends AppCompatActivity implements TabListener, OnPageChangeListener {
 
 	private ViewPager viewPager;
 	private ActionBar actionBar;

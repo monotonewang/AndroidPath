@@ -170,6 +170,7 @@
         <activity android:name=".activity.aiviewpager.cbk.chabaike240.MainActivity240" />
         <!-- webview -->
         <activity android:name=".activity.aiviewpager.webview213.MainActivity213" />
+        <activity android:name=".activity.aiviewpager.webview213.MainActivity2131" />
         <!-- broadcastreceiver -->
         <activity android:name=".activity.ajbroadcast.staticdymic230.MainActivity230" />
         <!-- static注册广播 -->

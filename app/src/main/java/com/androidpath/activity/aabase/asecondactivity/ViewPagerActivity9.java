@@ -18,6 +18,8 @@ import com.androidpath.activity.aiviewpager.tabone220.MainActivity220;
 import com.androidpath.activity.aiviewpager.tabtwo221.MainActivity221;
 import com.androidpath.activity.aiviewpager.textview210.MainActivity210;
 import com.androidpath.activity.aiviewpager.webview213.MainActivity213;
+import com.androidpath.activity.aiviewpager.webview213.MainActivity2131;
+import com.androidpath.activity.akservice.servicedemo241.MainActivity241;
 import com.androidpath.util.FileUtilssss;
 import com.androidpath.view.flowlayout.libs.FlowLayout;
 import com.androidpath.view.flowlayout.libs.TagAdapter;
@@ -83,6 +85,9 @@ public class ViewPagerActivity9 extends BaseActivity implements TagFlowLayout.On
                 break;
             case 9:
                 startActivity(new Intent(ViewPagerActivity9.this, MainActivity240.class));
+                break;
+            case 10:
+                startActivity(new Intent(ViewPagerActivity9.this, MainActivity2131.class));
                 break;
         }
         return true;

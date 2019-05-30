@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
@@ -23,12 +22,12 @@ android {
 
         }
     }
-    compileSdkVersion 25
-    buildToolsVersion '25.0.2'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId "com.androidpath"
-        minSdkVersion 19
-        targetSdkVersion 25
+        minSdkVersion 20
+        targetSdkVersion 28
         versionCode 2
         versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -49,7 +48,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    productFlavors {
+
+/*    productFlavors {
         Official {}
         SanLiuLing {}
         HuaWei {}
@@ -65,11 +65,11 @@ android {
         TaoBao {}
         ZhongYiDong {}
         Others {}
-    }
+    }*/
 
-    productFlavors.all { flavor ->
-        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
-    }
+//    productFlavors.all { flavor ->
+//        flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+//    }
 
     packagingOptions {
         exclude 'AndroidManifest.xml'
@@ -87,50 +87,51 @@ android {
         exclude 'pom.properties'
     }
 
-    applicationVariants.all { variant ->
-        variant.outputs.each { output ->
-            def apk = output.outputFile
-            if (apk != null && apk.name.endsWith('.apk')) {
-                def fileName = "kangxiaobai_v${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
-                output.outputFile = new File(apk.parent + "/package", fileName)
-            }
-        }
-    }
 
-//替换AndroidManifest.xml的UMENG_CHANNEL_VALUE字符串为渠道名称
-//    android.applicationVariants.all{ variant ->
-//        variant.processManifest.doLast{
-//            copy{
-//                from("${buildDir}/manifests"){
-//                    include "${variant.dirName}/AndroidManifest.xml"
-//                }
-//                into("${buildDir}/manifests/$variant.name")
-//
-//                filter{
-//                    String line -> line.replaceAll("UMENG_CHANNEL_VALUE", "$variant.name")
-//                }
-//
-//                variant.processResources.manifestFile = file("${buildDir}/manifests/${variant.name}/${variant.dirName}/AndroidManifest.xml")
+//    Android Studio 3.0前写法
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def apk = output.outputFile
+//            if (apk != null && apk.name.endsWith('.apk')) {
+//                def fileName = "kangxiaobai_v${defaultConfig.versionName}_${releaseTime()}.apk"
+////                def fileName = "kangxiaobai_v${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
+//                output.outputFile = new File(apk.parent + "/package", fileName)
 //            }
 //        }
 //    }
-    //    //修改生成的apk名字及输出文件夹
-//    applicationVariants.all { variant ->
-//        variant.outputs.each { output ->
-//            def date = new Date();
-//            def dateformate = date.format('yyyy-MM-dd_HH-mm-ss');
-//            def outputPathName = "C:\\FunKiApk"
-//            output.outputFile = new File(outputPathName + "/" + "Funki_v" + versionName + "_" + dateformate + ".apk")
-//        }
-//    }
+
+//    Android Studio 3.0前写法
+    android.applicationVariants.all{
+        variant->
+            variant.outputs.all{
+                outputFileName="kangxiaobai_v${defaultConfig.versionName}_${releaseTime()}.apk"
+            }
+    }
+
+//替换AndroidManifest.xml的UMENG_CHANNEL_VALUE字符串为渠道名称
+/*    android.applicationVariants.all{ variant ->
+        variant.processManifest.doLast{
+            copy{
+                from("${buildDir}/manifests"){
+                    include "${variant.dirName}/AndroidManifest.xml"
+                }
+                into("${buildDir}/manifests/$variant.name")
+                filter{
+                    String line -> line.replaceAll("UMENG_CHANNEL_VALUE", "$variant.name")
+                }
+                variant.processResources.manifestFile = file("${buildDir}/manifests/${variant.name}/${variant.dirName}/AndroidManifest.xml")
+            }
+        }
+    }*/
+
 }
 
 dependencies {
 
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     //    androidTestCompile 'com.android.support.test:runner:0.2'
     //    androidTestCompile 'com.android.support.test:rules:0.2'
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     //Retrofit
@@ -138,39 +139,39 @@ dependencies {
     //RxJava
     //ButterKnife
     //    compile 'com.github.GcsSloop:FontsManager:v+'
-    compile 'junit:junit:4.12'
-    testCompile files('lib/httpclient-4.5.3.jar')
-    testCompile files('lib/commons-codec-1.9.jar')
-    testCompile files('lib/commons-logging-1.2.jar')
-    testCompile files('lib/fluent-hc-4.5.3.jar')
-    testCompile files('lib/httpclient-cache-4.5.3.jar')
-    testCompile files('lib/httpclient-win-4.5.3.jar')
-    testCompile files('lib/httpcore-4.4.6.jar')
-    testCompile files('lib/httpmime-4.5.3.jar')
-    testCompile files('lib/jna-4.1.0.jar')
-    testCompile files('lib/jna-platform-4.1.0.jar')
-    compile 'com.alibaba:fastjson:1.1.61.android'
-    compile 'junit:junit:4.12'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-    compile 'com.android.support:cardview-v7:25.3.1'
-    compile 'com.squareup.retrofit2:retrofit:2.1.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
-    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
-    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    compile 'com.jakewharton:butterknife:8.4.0'
-    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
-    compile 'com.squareup.okhttp3:logging-interceptor:3.8.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'junit:junit:4.12'
+    testImplementation files('lib/httpclient-4.5.3.jar')
+    testImplementation files('lib/commons-codec-1.9.jar')
+    testImplementation files('lib/commons-logging-1.2.jar')
+    testImplementation files('lib/fluent-hc-4.5.3.jar')
+    testImplementation files('lib/httpclient-cache-4.5.3.jar')
+    testImplementation files('lib/httpclient-win-4.5.3.jar')
+    testImplementation files('lib/httpcore-4.4.6.jar')
+    testImplementation files('lib/httpmime-4.5.3.jar')
+    testImplementation files('lib/jna-4.1.0.jar')
+    testImplementation files('lib/jna-platform-4.1.0.jar')
+    implementation 'com.alibaba:fastjson:1.1.61.android'
+    implementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
-//    2017-09-27 16:49:16
-//    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.12'
-    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
 
-    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
-    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'//没有使用特殊Header，可以不加这行
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'//没有使用特殊Header，可以不加这行
+    //2019-05-30 从jre移到jdk
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:1.2.71"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.21"
 }
 

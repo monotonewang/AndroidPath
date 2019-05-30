@@ -1,0 +1,201 @@
+
+        .box {
+            position: relative;
+            height: 2.5rem;
+            background-color: yellow;
+            margin: 0 auto;
+        }
+
+        .logo {
+            margin: 0px auto 0;
+            display: block;
+            height: 100%;
+            width: 1.25rem;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .search {
+            top: 12px;
+            right: 15px;
+            position: absolute;
+            height: 27px;
+            width: 27px;
+        }
+
+        .search img {
+            width: 100%;
+            height: 100%;
+        }
+        .center_con{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top:  2.5rem;
+            bottom:  2.5rem;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .center_con .banner{
+            width: 100%;
+            height: 15.9375rem;
+        }
+        
+        .menu{
+            background-color: aqua; 
+            width: 100%;
+            margin-top: 1rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .menu li{
+            margin-left: 1.5rem;
+            width: 3.96rem;
+            height: 7.05rem;
+            /* background: url("../imgs/girl.jpg") top 1rem no-repeat; */
+            float: left;
+        }
+
+        .menu li h2{
+            margin-top: 0.3rem;
+            width: 100%;
+            height: 4.5rem;
+            text-align: center;
+            
+        }
+        .menu li a{
+            border-radius:50%;
+            display: block;
+            width: 100%;
+            height: 4.5rem;
+            
+            background:  url("../imgs/girl.jpg") top center no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .category{
+            margin-left: 1.2rem;
+            margin-right: 1.2rem;
+            border-top:1px solid green;
+            margin-top: 15.75rem;
+            width: 89%;
+        }
+        .no_margin{
+            margin-top: 0.4rem;
+        }
+        .bottom_margin{
+            margin-bottom: 2rem;
+        }
+      
+        .category .category_top{
+            line-height: 2.5rem;
+            height: 2.5rem;
+            /* background-color: bisque; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .center_info{
+            flex: 1;
+        }
+        .category_top h2{
+            /* background-color: black; */
+        }
+        
+        .category_banner{
+            width: 100%;
+            height: 15.5rem;
+        }
+
+        .good_list{
+            display: flex;    
+        }
+        .good_list li{
+            border: 0.1px solid green;
+            width: 33.33%;
+        }
+        .good_list li div{
+          text-align: center;
+        }
+        .good_list h4{
+            text-align: center;
+            margin: 0 auto;
+            height: 3.125rem;
+            line-height: 3.125rem;
+        }
+
+        .item_text{
+            font-size: 0.9rem;
+            left: 5%;
+            top: 10.625rem;
+            height: 4.125rem;
+            width: 90%;
+            background-color: #809f9f9f;
+            /* background-color: black; */
+            position: absolute;
+            transition:  all ease 200ms;
+        }
+
+        .good_list img{
+            background-color: aqua;
+            margin: 0 auto;
+            width: 90%;
+            height: 8.625rem;
+        }
+
+        .item_content:hover .item_text{
+            top:4.625rem;
+        }
+        
+        .item_content{
+            overflow: hidden;
+            height: 8.625rem;
+            position: relative;
+        }
+
+        .price{
+            height: 3.125rem;
+            line-height: 3.125rem;
+            text-align: center;
+            color: red;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .footer{
+            bottom:0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            width: 100%;
+            height: 2.5rem;
+        }
+        .footer ul{
+            border-top: .0625rem solid green;
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer ul li{
+            float: left;
+            /* background-color: gold; */
+            width:25%;
+            height: 100%;
+        }
+
+        .footer a{
+            text-align: center; 
+            display: block;
+            width: 100%;
+            height: 100%;
+            
+            line-height: 220%;
+            /* width:23.4375rem; */
+            /* height: 2.5rem; */
+            /* background:  url("../imgs/girl.jpg") top center no-repeat; */
+            /* background-size: 100% 100%; */
+            /* background-size: 23.4375rem 2.5rem; */
+        } 

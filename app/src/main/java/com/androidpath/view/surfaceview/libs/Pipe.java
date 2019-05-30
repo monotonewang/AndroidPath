@@ -53,7 +53,7 @@ public class Pipe {
     }
 
     public void drawPipe(Canvas canvas) {
-        canvas.save(Canvas.MATRIX_SAVE_FLAG);
+//        canvas.save(Canvas.MATRIX_SAVE_FLAG);
         //移动画布到指定位置，假设完整管道为100，需要绘制20，则向上偏移80
         canvas.translate(x, -(rect.bottom - height));
         canvas.drawBitmap(topBitmap, null, rect, null);
