@@ -262,6 +262,8 @@
         <activity android:name=".architecture.meterial.MeterialActivity" />
         <activity android:name=".view.widget.custom.viewfirst.CustomeViewFirst" />
         <activity android:name=".activity.SettingActivity" />
+
+        <activity android:name=".architecture.databinding.DataActivity"/>
         <activity
             android:name=".architecture.ArchitectureActivity"
             android:label="@string/title_activity_arcgutecture"
@@ -272,6 +274,10 @@
         <activity android:name=".activity.aalayout.quickcontactbadge.QuickContactBadgeActivity" />
         <activity android:name=".activity.aalayout.autocompletetextView.AutoCompleteTextViewActivity" />
         <activity android:name=".activity.aalayout.adapterviewfilpper.AdapterViewFlipperActivity"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

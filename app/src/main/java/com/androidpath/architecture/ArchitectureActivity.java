@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.androidpath.R;
+import com.androidpath.architecture.databinding.DataActivity;
 import com.androidpath.architecture.meterial.MeterialActivity;
 import com.androidpath.project.sqlfunkilanguage.GetLanguageSQLActivity;
 import com.androidpath.util.FileUtilssss;
@@ -52,6 +53,9 @@ public class ArchitectureActivity extends AppCompatActivity implements TagFlowLa
                 break;
             case 1:
                 startActivity(new Intent(ArchitectureActivity.this, MeterialActivity.class));
+                break;
+            case 2:
+                startActivity(new Intent(ArchitectureActivity.this, DataActivity.class));
                 break;
 
         }
