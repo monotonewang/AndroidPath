@@ -3,6 +3,7 @@ package com.androidpath;
 import android.app.Application;
 import android.content.Context;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.multidex.MultiDexApplication;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
  * since: V ${version} <br/>
  */
 //zgjxfuqingwang@gmail.com
-public class AndroidApplication extends Application {
+public class AndroidApplication extends MultiDexApplication {
 
 
     public static Context context;
