@@ -13,8 +13,19 @@ import android.widget.Toast
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.mycalc.adapter.CostAdapter
+import com.example.mycalc.adapter.CostClickCallBack
 import com.example.mycalc.bean.CostBean
+import com.example.mycalc.dao.CostDao
+import com.example.mycalc.db.AppDatabase
 import com.example.mycalc.utils.DateUtils
+import io.reactivex.*
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.Disposable
+import io.reactivex.schedulers.Schedulers
+import java.util.function.Consumer
 
 
 /**
@@ -36,6 +47,21 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val editText = view.findViewById<AppCompatEditText>(R.id.products_search_box);
+        val recyclerView = view.findViewById<RecyclerView>(R.id.recycle_view);
+        recyclerView.layoutManager = LinearLayoutManager(context);
+        var costAdapter = CostAdapter();
+        recyclerView.adapter = costAdapter;
+
+        var costbean = CostBean();
+        costbean.text = "212121212";
+        costbean.datetime = DateUtils.getDateStringFormat();
+        list.add(costbean);
+
+//        val arrayListOf = arrayListOf(costbean);
+        val arrayListOf = listOfNotNull(costbean);
+
+//        costAdapter.submitList(arrayListOf);
+
         val tvFirst = view.findViewById<TextView>(R.id.textview_first);
         editText.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
@@ -57,16 +83,43 @@ class FirstFragment : Fragment() {
                     return
                 }
                 //first insert sql
-                var costbean=CostBean();
-                costbean.text=editText.text.toString();
-                costbean.datetime= DateUtils.getDateStringFormat();
+                var costbean = CostBean();
+                costbean.text = editText.text.toString();
+                costbean.datetime = DateUtils.getDateStringFormat();
                 list.add(costbean);
-                tvFirst.setText(list.toString())
+                val costDao = AppApplication.getDatabase().costDao();
 
+
+                Observable.create(object : ObservableOnSubscribe<List<CostBean>> {
+                    override fun subscribe(emitter: ObservableEmitter<List<CostBean>>) {
+                        var a = costDao.insert(costbean);
+                        val loadAll = costDao.loadAllSimple();
+                        emitter.onNext(loadAll)
+                    }
+                }).subscribeOn(Schedulers.io())
+                        .observeOn(AndroidSchedulers.mainThread())
+                        .subscribe(object : Observer<List<CostBean>> {
+                            override fun onComplete() {
+                            }
+
+                            override fun onSubscribe(d: Disposable) {
+                            }
+
+                            override fun onNext(t: List<CostBean>) {
+                                tvFirst.text = t.toString()
+
+
+                            }
+
+                            override fun onError(e: Throwable) {
+                            }
+                        });
             }
         })
         view.findViewById<Button>(R.id.button_first).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+
+
     }
 }

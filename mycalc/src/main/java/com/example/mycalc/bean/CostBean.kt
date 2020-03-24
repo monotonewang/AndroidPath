@@ -1,5 +1,14 @@
 package com.example.mycalc.bean
 
-data class CostBean(var text: String = "",
-                    var datetime: String = ""
-)
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "costs")
+data class CostBean(
+        @PrimaryKey(autoGenerate = true)
+        var id: Int?,
+        var text: String?,
+        var datetime: String?
+) {
+    constructor() : this(null, null, null)
+}
