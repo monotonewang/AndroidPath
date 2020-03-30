@@ -26,7 +26,6 @@ abstract class AppDatabase : RoomDatabase() {
                 synchronized(AppDatabase::class.java) {
                     if (sInstance == null) {
                         sInstance = buildDatabase(context.applicationContext)
-
                         println("xxxxx sInstance=" + sInstance)
                         sInstance?.updateDatabaseCreated(context.applicationContext)
                     }
@@ -36,7 +35,9 @@ abstract class AppDatabase : RoomDatabase() {
         }
 
         fun buildDatabase(context: Context): AppDatabase {
-            return Room.databaseBuilder(context, AppDatabase::class.java, DATABASE_NAME).build();
+            return Room.databaseBuilder(context, AppDatabase::class.java, DATABASE_NAME)
+                    .allowMainThreadQueries()
+                    .build();
         }
 
 
