@@ -1,18 +1,30 @@
 package com.androidpath.library.rxjava;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+
 import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.LifecycleObserver;
+
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.androidpath.R;
+import com.androidpath.activity.aabase.MainActivity;
 import com.androidpath.library.rxjava.test.RxJavaThreadTest;
+
+import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
@@ -25,13 +37,50 @@ public class RxActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rx);
 
-        ImageButton imageButton= (ImageButton) findViewById(R.id.iv_rx);
-        Drawable drawable= ContextCompat.getDrawable(RxActivity.this,R.mipmap.ic_launcher);
+        ImageButton imageButton = (ImageButton) findViewById(R.id.iv_rx);
+        Button btnNext = (Button) findViewById(R.id.btn_next);
+        Drawable drawable = ContextCompat.getDrawable(RxActivity.this, R.mipmap.ic_launcher);
 
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("xxxxxxxxxxxxxxxxxx onClick" + v.toString());
+                startActivity(new Intent(RxActivity.this, MainActivity.class));
+            }
+        });
 
-        rxSetBitmap(imageButton, drawable);
-        RxJavaThreadTest.rx2();
-//        RxFun1();
+        System.out.println("xxxxxxxxxxxxxxxxxx start" );
+
+        getLifecycle().addObserver(new LifecycleObserver() {
+
+        });
+        Observable.interval(0, 1, TimeUnit.SECONDS).observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.io())
+                .subscribe(new Observer<Long>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+
+                        System.out.println("xxxxxxxxxxxxxxxxxx onSubscribe" + d.toString());
+                    }
+
+                    @Override
+                    public void onNext(Long aLong) {
+                        System.out.println("xxxxxxxxxxxxxxxxxx onNext" + aLong);
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        System.out.println("xxxxxxxxxxxxxxxxxx onError" + e.toString());
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        System.out.println("xxxxxxxxxxxxxxxxxx onComplete");
+                    }
+                });
+
+//        rxSetBitmap(imageButton, drawable);
+//        RxJavaThreadTest.rx2();
 //        RxFun2();
 //        RxDisposableTest3();
 //        RxComsumerTest4();
@@ -43,6 +92,7 @@ public class RxActivity extends AppCompatActivity {
 
     /**
      * 通过rxjava设置图片
+     *
      * @param imageButton
      * @param drawable
      */

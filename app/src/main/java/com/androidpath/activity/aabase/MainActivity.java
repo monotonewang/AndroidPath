@@ -4,8 +4,11 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+
 import androidx.appcompat.app.AlertDialog;
+
 import android.view.View;
+import android.widget.Toast;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.asecondactivity.AlertActivity5;
@@ -20,6 +23,7 @@ import com.androidpath.activity.aabase.asecondactivity.ServiceActivity11;
 import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
 import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
 import com.androidpath.architecture.ArchitectureActivity;
+import com.androidpath.library.retrofit.activity.RetrofitActivity;
 import com.androidpath.library.rxjava.RxActivity;
 import com.androidpath.util.fontutil.FontsManager;
 import com.androidpath.view.ViewActivity;
@@ -37,8 +41,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-
-
+        System.out.println("xxxxxxxxxxxxxxxx onCreate");
     }
 
     @Override
@@ -69,6 +72,7 @@ public class MainActivity extends BaseActivity {
     }
 
     public void onClick(View view) {
+        System.out.println("xxxxxxxxxxxxxxxx onClick");
         switch (view.getId()) {
             case R.id.layoutButton1:
                 startActivity(new Intent(MainActivity.this, LayoutButtonActivity1.class));
@@ -103,23 +107,21 @@ public class MainActivity extends BaseActivity {
             case R.id.serviceDemo11:
                 startActivity(new Intent(MainActivity.this, ServiceActivity11.class));
                 break;
-//                changeFontsByActivity();
-
-            //            case R.id.SurfaceViewBird:
-            //                startActivity(new Intent(MusicMainActivity.this, SurfaceViewMainActivity.class));
-            //                break;
-            //            case R.id.GLSurfaceView:
-            //                startActivity(new Intent(MusicMainActivity.this, GLSurfaceViewActivity.class));
-            //                break;
-            default:
             case R.id.all_settings:
-                startActivity(new Intent(MainActivity.this, RxActivity.class));
+                Toast.makeText(getApplicationContext(), "setting", Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(MainActivity.this, RxActivity.class));
                 break;
             case R.id.architecture:
                 startActivity(new Intent(MainActivity.this, ArchitectureActivity.class));
                 break;
             case R.id.view:
                 startActivity(new Intent(MainActivity.this, ViewActivity.class));
+                break;
+            case R.id.library:
+//                startActivity(new Intent(MainActivity.this, RxActivity.class));
+                startActivity(new Intent(MainActivity.this, RetrofitActivity.class));
+                break;
+            default:
                 break;
 
         }

@@ -8,6 +8,7 @@ import android.widget.ImageView;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.BaseActivity;
+import com.androidpath.library.retrofit.data.Person;
 import com.androidpath.library.retrofit.inter.MyRetrofitService;
 import com.androidpath.library.retrofit.utils.Constants;
 
@@ -18,12 +19,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -42,9 +45,17 @@ public class RetrofitActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_retrofit);
         //创建一个Retrofit对象
+        HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
+        httpLoggingInterceptor.level(HttpLoggingInterceptor.Level.BODY);
+        OkHttpClient.Builder addInterceptor = new OkHttpClient.Builder()
+                .connectTimeout(15, TimeUnit.SECONDS)
+                .readTimeout(15, TimeUnit.SECONDS)
+                .writeTimeout(15, TimeUnit.SECONDS)
+                .addInterceptor(httpLoggingInterceptor);// 在此处添加拦截器即可，默认日志级别为BASIC
         retrofit = new Retrofit.Builder()
                 .baseUrl(Constants.homeUrl)
 //                .baseUrl(Constants.API_URL)
+                .client(addInterceptor.build())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 //        getMethodTest();
@@ -63,7 +74,82 @@ public class RetrofitActivity extends BaseActivity {
 //        files.add(new File(""));
 //        uploadFiles(files);
 
-        uploadFile(new File(""));
+//        uploadFile(new File(""));
+//        postJsonToServer();
+        getServerCard();
+        getPersonById();
+    }
+
+    private void getPersonById(){
+        MyRetrofitService service = retrofit.create(MyRetrofitService.class);
+        HashMap<String,String> map = new HashMap<>();
+        map.put("id", "2");
+        Call<ResponseBody> byURL = service.getPerson(map);
+        byURL.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                try {
+                    if (response!=null&&response.body() != null)
+                        Log.e(TAG, "onResponse:getPersonById " + response.body().string());
+                    else
+                        Log.d(TAG, "onResponse:getPersonById xxxxxxx");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
+    }
+
+    private void getServerCard() {
+        MyRetrofitService service = retrofit.create(MyRetrofitService.class);
+        Call<ResponseBody> byURL = service.getCardUrl();
+        byURL.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                try {
+                    Log.e(TAG, "onResponse:getServerCard " + response.body().string());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
+    }
+
+    private void postJsonToServer() {
+        Log.e(TAG, "postJsonToServer:  start");
+        MyRetrofitService service = retrofit.create(MyRetrofitService.class);
+        Person person = new Person();
+        person.setAge(30);
+        person.setName("Android");
+        Call<ResponseBody> jsonByQueryMap = service.postPersonJson(person);
+        jsonByQueryMap.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                try {
+                    if (response.body() != null)
+                        Log.e(TAG, "onResponse: " + response.body().string());
+                    else
+                        Log.d(TAG, "onResponse: xxxxxxx");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+                Log.e(TAG, "onFailure: " + t.getMessage().toString());
+            }
+        });
     }
 
     /**

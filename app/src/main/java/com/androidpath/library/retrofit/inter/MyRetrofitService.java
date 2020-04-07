@@ -1,13 +1,16 @@
 package com.androidpath.library.retrofit.inter;
 
+import com.androidpath.library.retrofit.data.Person;
 import com.androidpath.library.retrofit.utils.Constants;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
@@ -45,6 +48,9 @@ public interface MyRetrofitService {
     @POST(Constants.urlPost)
     Call<ResponseBody> getJsonByPost();
 
+    @POST(Constants.insertPerson)
+    Call<ResponseBody> postPersonJson(@Body Person person);
+
     @POST(Constants.gitUrl)
     Call<ResponseBody> getJsonByQueryMap(@QueryMap Map<String,String> params);
 
@@ -55,9 +61,14 @@ public interface MyRetrofitService {
     @GET
     Call<ResponseBody> getByURL(@Url String url);
 
+    @GET(Constants.cardUrl)
+    Call<ResponseBody> getCardUrl();
+
+    @GET(Constants.personUrl)
+    Call<ResponseBody> getPerson(@QueryMap HashMap<String,String>  hashMap);
+
     @GET(Constants.getByDown)//small file download
     Call<ResponseBody> getImageDownload();
-
 
     @Streaming//big file download ,must run in child thread
     @GET(Constants.getByDown)

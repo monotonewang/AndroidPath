@@ -25,6 +25,7 @@
     <string name="Settings">Settings</string>
     <string name="architecture">architecture</string>
     <string name="view">view</string>
+    <string name="library">library</string>
     <string name="cleanCache">cleanCache</string>
 
     <string-array name="job_array">

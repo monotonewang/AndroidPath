@@ -11,7 +11,8 @@ public interface Constants {
 
     String Url = "http://192.168.1.105:8080/ServletMirror/ServletMyInterFace?num=9";
     String companyUrl = "http://192.168.3.31:8080/ServletMirror/";
-    String homeUrl = "http://192.168.1.105:8080/ServletMirror/";
+//    String homeUrl = "http://192.168.1.105:8080/ServletMirror/";
+    String homeUrl = "http://192.168.1.100:8081/SpringBoot/";
     String urlGet = "ServletMyInterFace?num=9";
     String urlGetnum = "ServletMyInterFace";//Query
     String urlHttpNum = "ServletMyInterFace{num}";//Http Path
@@ -19,6 +20,10 @@ public interface Constants {
     String gitUrl = "https://api.github.com/users/montotone/repos";
 
     String urlPost = "ServletMyInterFace?num=9";
+
+    String insertPerson = "person/insert";
+    String cardUrl = "person/getCard";
+    String personUrl = "person/getPerson";
 
     String getByDown = "ServletDownLoad";
 
