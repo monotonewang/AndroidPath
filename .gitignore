@@ -8,3 +8,4 @@ app/src/main/java/com/androidpath/broadcast/networkreceiver/
 app/src/main/java/com/androidpath/view/screenmatch270/
 build/
 local.properties
+.DS_Store
