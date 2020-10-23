@@ -39,8 +39,6 @@
         <!-- this is layout activity -->
         <activity android:name=".activity.aalayout.layoutdemo2.LayoutActivity2" />
         <activity android:name=".util.language.LanguageActivity" />
-        <!-- this is buttonselector activity -->
-        <activity android:name=".activity.aalayout.buttonselector30.ButtonSelectorActivtiy3" />
         <!-- this is buttontest and buttonclick activity -->
         <activity android:name=".activity.aalayout.clickreponse31.ButtonTestActivity31" />
         <activity android:name=".activity.aalayout.clickreponse31.ButtonClickListenActivity31" />
@@ -97,7 +95,6 @@
         <activity android:name=".activity.acasync.progresslow73.MainActivity73" />
         <activity android:name=".activity.aalayout.imageviewdeal75.MainActivity75" />
         <activity android:name=".activity.acasync.networkconn.NetWorkConn20161219" />
-
         <!-- This is listview activity -->
         <activity android:name=".activity.adlistview.baseadapter80.MainActivity80" />
         <activity android:name=".activity.adlistview.firstlistview.MainActivityFirstLV" />
@@ -153,7 +150,6 @@
         <activity android:name=".activity.ahhandler.handlerlightcycle182.MainActivity182" />
         <activity android:name=".activity.ahhandler.updateui183.MainActivity183" />
         <activity android:name=".activity.ahhandler.handlerlopper184.MainActivity184" />
-
         <!-- actionbar -->
         <activity android:name=".activity.aealert.actionbar190.demo190.MainActivity190" />
         <activity android:name=".activity.aealert.actionbar190.demo190.SecondActivity190" />
@@ -177,54 +173,20 @@
         <activity android:name=".activity.aiviewpager.webview213.MainActivity2131" />
         <!-- broadcastreceiver -->
         <activity android:name=".activity.ajbroadcast.staticdymic230.MainActivity230" />
-        <!-- static注册广播 -->
-        <receiver android:name=".activity.ajbroadcast.staticdymic230.MyReceiver2">
-            <intent-filter>
-
-                <!-- <action android:name="Intent.ACTION_BOOT_COMPLETED" /> -->
-                <action android:name="android.action.intent.myself" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </receiver>
-
         <activity android:name=".activity.ajbroadcast.sendbroadcast231.MainActivity231" />
         <activity android:name=".activity.ajbroadcast.localboradcastOne232.MainActivity232" />
         <activity android:name=".activity.ajbroadcast.localboradcastTwo233.MainActivity233" />
         <activity android:name=".activity.ajbroadcast.serverclient234.server.MainActivity234" />
         <activity android:name=".activity.ajbroadcast.serverclient234.client.MainActivity235" />
-
-        <receiver
-            android:name=".activity.ajbroadcast.serverclient234.server.MyReceiverPermssion"
-            android:permission="android.action.permission.mypermiss2">
-            <intent-filter>
-                <action android:name="android.action.intent.abcd" />
-            </intent-filter>
-        </receiver>
-        <!-- service -->
         <activity android:name=".activity.akservice.servicedemo241.MainActivity241" />
-
-        <service android:name=".activity.akservice.servicedemo241.MyService" />
+        <!-- service -->
+        <service android:name=".activity.akservice.servicedemo241.StartService" />
 
         <activity android:name=".activity.akservice.localbroadservice242.MainActivity242" />
-
-        <service android:name=".activity.akservice.localbroadservice242.TimerSerivce" />
-
         <activity android:name=".activity.akservice.mediaservice243.MainActivity243" />
-
-        <service android:name=".activity.akservice.mediaservice243.MediaService243" />
-
         <activity android:name=".activity.akservice.intentservice248.MainActivity248" />
-
-        <service android:name=".activity.akservice.intentservice248.DownLoadService248" />
-
         <activity android:name=".activity.akservice.stickservice247.MainActivity247" />
-
-        <service android:name=".activity.akservice.stickservice247.StickService247" />
-
         <activity android:name=".activity.akservice.mediaservice246.MainActivity246" />
-
-        <service android:name=".activity.akservice.mediaservice246.service.MediaService246" />
         <!-- SurfaceView -->
         <activity android:name=".view.surfaceview.SurfaceViewMainActivity" />
         <!-- GL SurfaceView -->
@@ -249,13 +211,6 @@
         <activity android:name=".view.widget.custom.canvasmesure.PathMesureActivity" />
         <activity android:name=".view.widget.custom.shopcartview.ShoppingCartActivity" />
         <activity android:name=".library.retrofit.activity.RetrofitActivity">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".architecture.mvp.view.LoginActivity" />
         <!-- project music -->
@@ -278,6 +233,30 @@
         <activity android:name=".activity.aalayout.quickcontactbadge.QuickContactBadgeActivity" />
         <activity android:name=".activity.aalayout.autocompletetextView.AutoCompleteTextViewActivity" />
         <activity android:name=".activity.aalayout.adapterviewfilpper.AdapterViewFlipperActivity"></activity>
+
+        <!-- static注册广播 -->
+        <receiver android:name=".activity.ajbroadcast.staticdymic230.MyReceiver2">
+            <intent-filter>
+
+                <!-- <action android:name="Intent.ACTION_BOOT_COMPLETED" /> -->
+                <action android:name="android.action.intent.myself" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".activity.ajbroadcast.serverclient234.server.MyReceiverPermssion"
+            android:permission="android.action.permission.mypermiss2">
+            <intent-filter>
+                <action android:name="android.action.intent.abcd" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".activity.akservice.localbroadservice242.TimerSerivce" />
+        <service android:name=".activity.akservice.intentservice248.DownLoadService248" />
+        <service android:name=".activity.akservice.mediaservice243.MediaService243" />
+        <service android:name=".activity.akservice.stickservice247.StickService247" />
+        <service android:name=".activity.akservice.mediaservice246.service.MediaService246" />
 
         <meta-data
             android:name="preloaded_fonts"

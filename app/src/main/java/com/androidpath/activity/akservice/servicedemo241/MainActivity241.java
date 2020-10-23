@@ -38,16 +38,18 @@ public class MainActivity241 extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		System.out.println("xxxxxxxxxxxxxxxxxxxxxxx onCreate MainActivity241");
 		setContentView(R.layout.activity_main241);
 	}
 	
 	public void start(View v){
-		Intent intent = new Intent(this, MyService.class);
+		System.out.println("xxxxxxxxxxxxxxxxxxxxxxx start");
+		Intent intent = new Intent(this, StartService.class);
 		startService(intent);
 	}
 	
 	public void stop(View v){
-		Intent intent = new Intent(this, MyService.class);
+		Intent intent = new Intent(this, StartService.class);
 		stopService(intent);
 	}
 }

@@ -11,7 +11,15 @@ import android.util.Log;
 import com.androidpath.R;
 import com.androidpath.activity.aabase.BaseActivity;
 
+//LocalBroadcastManager
+//        This class is deprecated.
+//        LocalBroadcastManager is an application-wide event bus and embraces layer violations in your app:
+//        any component may listen events from any other.
+//        You can replace usage of LocalBroadcastManager with other implementation of observable pattern,
+//        depending on your usecase suitable options may be LiveData or reactive streams.
+
 /**
+ *
  * 静态注册，receiver的名称是广播接受者类。
  * 自己设置一个独一无二的action的名称。
  * 其他项目调用要求是action的名称是静态注册的action的名称。

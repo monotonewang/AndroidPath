@@ -41,7 +41,6 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        System.out.println("xxxxxxxxxxxxxxxx onCreate");
     }
 
     @Override
@@ -105,6 +104,7 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, BroadcastActivity10.class));
                 break;
             case R.id.serviceDemo11:
+                System.out.println("xxxxxxxxxxxxxxxx serviceDemo11");
                 startActivity(new Intent(MainActivity.this, ServiceActivity11.class));
                 break;
             case R.id.all_settings:

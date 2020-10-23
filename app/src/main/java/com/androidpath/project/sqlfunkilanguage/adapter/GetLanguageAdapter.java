@@ -5,7 +5,7 @@ import androidx.annotation.Nullable;
 import com.androidpath.R;
 import com.androidpath.project.sqlfunkilanguage.entity.LanguageResponse;
 import com.chad.library.adapter.base.BaseQuickAdapter;
-import com.chad.library.adapter.base.BaseViewHolder;
+import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import java.util.List;
  * Created by ubuntu on 17-9-27.
  */
 
-public class GetLanguageAdapter extends BaseQuickAdapter<LanguageResponse.LanBean,BaseViewHolder> {
+public class GetLanguageAdapter extends BaseQuickAdapter<LanguageResponse.LanBean, BaseViewHolder> {
 
     public GetLanguageAdapter(@Nullable List<LanguageResponse.LanBean> data) {
         super(R.layout.item_language,data);
