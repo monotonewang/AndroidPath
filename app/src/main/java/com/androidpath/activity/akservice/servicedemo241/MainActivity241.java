@@ -40,16 +40,23 @@ public class MainActivity241 extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		System.out.println("xxxxxxxxxxxxxxxxxxxxxxx onCreate MainActivity241");
 		setContentView(R.layout.activity_main241);
+		findViewById(R.id.start).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				System.out.println("xxxxxxxxxxxxxxxxxxxxxxx start");
+				Intent intent = new Intent(MainActivity241.this, StartService.class);
+				intent.putExtra("name","weiwei");
+				startService(intent);
+			}
+		});
+		findViewById(R.id.stop).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(MainActivity241.this, StartService.class);
+				stopService(intent);
+			}
+		});
 	}
 	
-	public void start(View v){
-		System.out.println("xxxxxxxxxxxxxxxxxxxxxxx start");
-		Intent intent = new Intent(this, StartService.class);
-		startService(intent);
-	}
-	
-	public void stop(View v){
-		Intent intent = new Intent(this, StartService.class);
-		stopService(intent);
-	}
+
 }
