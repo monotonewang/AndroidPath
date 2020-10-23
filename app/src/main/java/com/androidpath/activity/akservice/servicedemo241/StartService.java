@@ -37,7 +37,19 @@ public class StartService extends Service {
 
     @Override
     public IBinder onBind(Intent arg0) {
+        System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" + "--->onBind" + Thread.currentThread().getName());
         return null;
     }
 
+    @Override
+    public void onRebind(Intent intent) {
+        System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" + "--->onRebind" + Thread.currentThread().getName());
+        super.onRebind(intent);
+    }
+
+    @Override
+    public boolean onUnbind(Intent intent) {
+        System.out.println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" + "--->onUnbind" + Thread.currentThread().getName());
+        return super.onUnbind(intent);
+    }
 }

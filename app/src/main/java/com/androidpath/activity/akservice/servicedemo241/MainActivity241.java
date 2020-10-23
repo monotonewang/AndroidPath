@@ -43,7 +43,7 @@ public class MainActivity241 extends BaseActivity {
 		findViewById(R.id.start).setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				System.out.println("xxxxxxxxxxxxxxxxxxxxxxx start");
+				System.out.println("xxxxxxxxxxxxxxxxxxxxxxx onClick start");
 				Intent intent = new Intent(MainActivity241.this, StartService.class);
 				intent.putExtra("name","weiwei");
 				startService(intent);
