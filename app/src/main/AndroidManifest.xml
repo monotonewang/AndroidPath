@@ -23,11 +23,11 @@
         android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        tools:replace="android:allowBackup"
-        android:theme="@style/AppTheme"
         android:networkSecurityConfig="@xml/network_security_config"
-        tools:ignore="GoogleAppIndexingWarning">
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
         <activity android:name=".activity.aabase.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -134,7 +134,7 @@
         <activity android:name=".activity.agstorge.sql.sqlservertwo153.MainActivity153" />
         <activity android:name=".activity.agstorge.sql.sqldemo154.MainActivity154" />
         <activity android:name=".activity.agstorge.sql.simplecusoradapter155.MainActivity155" />
-        <activity android:name=".activity.agstorge.sql.sqltransaction.SQLiteTransactionActivity"/>
+        <activity android:name=".activity.agstorge.sql.sqltransaction.SQLiteTransactionActivity" />
         <activity android:name=".activity.agstorge.contentobserver160.MainActivity160" />
         <activity android:name=".activity.agstorge.contentResolverContacts161.MainActivity161" />
         <activity android:name=".activity.agstorge.loadmanger170.MainActivity170" />
@@ -178,7 +178,9 @@
         <activity android:name=".activity.ajbroadcast.localboradcastTwo233.MainActivity233" />
         <activity android:name=".activity.ajbroadcast.serverclient234.server.MainActivity234" />
         <activity android:name=".activity.ajbroadcast.serverclient234.client.MainActivity235" />
-        <activity android:name=".activity.akservice.servicedemo241.MainActivity241" />
+        <activity
+            android:name=".activity.akservice.servicedemo241.MainActivity241"
+            android:launchMode="singleTop" />
         <!-- service -->
         <service android:name=".activity.akservice.servicedemo241.StartService" />
 
@@ -210,8 +212,7 @@
         <activity android:name=".view.widget.custom.canvasBezier.BezierActivity" />
         <activity android:name=".view.widget.custom.canvasmesure.PathMesureActivity" />
         <activity android:name=".view.widget.custom.shopcartview.ShoppingCartActivity" />
-        <activity android:name=".library.retrofit.activity.RetrofitActivity">
-        </activity>
+        <activity android:name=".library.retrofit.activity.RetrofitActivity"></activity>
         <activity android:name=".architecture.mvp.view.LoginActivity" />
         <!-- project music -->
         <activity android:name=".project.music.MusicMainActivity" />
@@ -222,7 +223,7 @@
         <activity android:name=".view.widget.custom.viewfirst.CustomeViewFirst" />
         <activity android:name=".activity.SettingActivity" />
 
-        <activity android:name=".architecture.databinding.DataActivity"/>
+        <activity android:name=".architecture.databinding.DataActivity" />
         <activity
             android:name=".architecture.ArchitectureActivity"
             android:label="@string/title_activity_arcgutecture"

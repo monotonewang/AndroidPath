@@ -53,5 +53,9 @@
         a new design language that refreshed the entire Android experience
     </string>
     <string name="size">size</string>
-    <string name="title_activity_arcgutecture">ArcgutectureActivity</string>
+    <string name="channel_name" translatable="false">music</string>
+    <string name="channel_description" translatable="false">my music</string>
+
+    <string name="title_activity_arcgutecture" translatable="false">ArcgutectureActivity</string>
+
 </resources>

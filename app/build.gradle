@@ -149,6 +149,7 @@ dependencies {
     testImplementation files('lib/jna-4.1.0.jar')
     testImplementation files('lib/jna-platform-4.1.0.jar')
     implementation 'com.alibaba:fastjson:1.1.64.android'
+//    implementation "com.android.support:support-compat:28.0.3"
     implementation 'junit:junit:4.13'
     // https://mvnrepository.com/artifact/com.google.android.material/material
     implementation 'com.google.android.material:material:1.2.1'
@@ -216,6 +217,8 @@ dependencies {
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     implementation 'cn.bingoogolapple:bga-banner:2.2.4@aar'
     implementation 'com.just.agentweb:agentweb:4.0.2'
+//    implementation 'com.google.android.exoplayer:exoplayer:2.12.1'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.12.1'
 
 }
 
