@@ -2,6 +2,7 @@ package com.example.a2021basic
 
 import androidx.appcompat.app.AppCompatActivity
 import android.annotation.SuppressLint
+import android.app.ProgressDialog.show
 import android.os.Bundle
 import android.os.Handler
 import android.view.MotionEvent
@@ -16,6 +17,7 @@ import android.widget.TextView
  */
 class FullscreenActivity : AppCompatActivity() {
     private lateinit var fullscreenContent: TextView
+    private lateinit var tvGo: TextView
     private lateinit var fullscreenContentControls: LinearLayout
     private val hideHandler = Handler()
 
@@ -71,6 +73,10 @@ class FullscreenActivity : AppCompatActivity() {
 
         // Set up the user interaction to manually show or hide the system UI.
         fullscreenContent = findViewById(R.id.fullscreen_content)
+        tvGo = findViewById(R.id.tv_go)
+        tvGo.setOnClickListener {
+            MainActivity.show(context = this@FullscreenActivity);
+        }
         fullscreenContent.setOnClickListener { toggle() }
 
         fullscreenContentControls = findViewById(R.id.fullscreen_content_controls)
