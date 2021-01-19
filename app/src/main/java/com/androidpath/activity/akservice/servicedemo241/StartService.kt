@@ -49,7 +49,7 @@ class StartService : Service() {
      */
     override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
         var name = ""
-        if (intent != null) name = intent.getStringExtra("name")
+        if (intent != null) name = intent.getStringExtra("name").toString()
         println("xxxxxxxxxxxxx begin thread run")
 
         val thread: Thread = object : Thread() {
@@ -81,7 +81,7 @@ class StartService : Service() {
 //                        .setStyle(NotificationCompat.BigTextStyle()
 //                                .bigText("Much longer text that cannot fit one line..."))
                         .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                        .addAction(R.drawable.a6t,"Previous",prevPendingIntent)
+                        .addAction(R.drawable.a6t,"Previous",pendingIntent)
                         .setContentIntent(pendingIntent)
                 createNotificationChannel()
                 NotificationManagerCompat.from(this@StartService).apply {
