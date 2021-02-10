@@ -1,48 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto">
 
-    <com.wuhenzhizao.titlebar.widget.CommonTitleBar
-        android:id="@+id/titlebar"
+    <data>
+
+        <variable
+            name="vm"
+            type="com.example.a2021basic.viewmodel.MainViewModel" />
+
+        <variable
+            name="vm2"
+            type="com.example.a2021basic.viewmodel.NumberViewModel" />
+    </data>
+
+    <!--    自定义属性移到上面-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        titlebar:statusBarMode="light"
-        titlebar:centerText="主页"
-        titlebar:centerTextColor="#ffffff"
-        titlebar:bottomShadowHeight="0dp"
-        titlebar:showBottomLine="false"
-        titlebar:centerType="textView"
-        titlebar:rightType="textView"
-        titlebar:rightText="切换图标颜色"
-        titlebar:rightTextColor="#ffffff" />
+        android:layout_height="match_parent">
+        <!--        tools:context=".MainActivity"-->
 
-<!--    <com.google.android.material.appbar.AppBarLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:theme="@style/Theme.AndroidPath.AppBarOverlay">-->
+        <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+            android:id="@+id/titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            titlebar:bottomShadowHeight="0dp"
+            titlebar:centerText="主页"
+            titlebar:centerTextColor="#ffffff"
+            titlebar:centerType="textView"
+            titlebar:rightText="切换图标颜色"
+            titlebar:rightTextColor="#ffffff"
+            titlebar:rightType="textView"
+            titlebar:showBottomLine="false"
+            titlebar:statusBarMode="light" />
 
-<!--        <androidx.appcompat.widget.Toolbar-->
-<!--            android:id="@+id/toolbar"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="?attr/actionBarSize"-->
-<!--            android:background="?attr/colorPrimary"-->
-<!--            app:popupTheme="@style/Theme.AndroidPath.PopupOverlay" />-->
+        <!--    <com.google.android.material.appbar.AppBarLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:theme="@style/Theme.AndroidPath.AppBarOverlay">-->
 
-<!--    </com.google.android.material.appbar.AppBarLayout>-->
+        <!--        <androidx.appcompat.widget.Toolbar-->
+        <!--            android:id="@+id/toolbar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="?attr/actionBarSize"-->
+        <!--            android:background="?attr/colorPrimary"-->
+        <!--            app:popupTheme="@style/Theme.AndroidPath.PopupOverlay" />-->
 
-    <include layout="@layout/content_main" />
+        <!--    </com.google.android.material.appbar.AppBarLayout>-->
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        <include
+            android:id="@+id/main"
+            layout="@layout/content_main" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="164dp"
+            android:background="@color/black"
+            android:padding="10dp"
+            android:text='@{vm2.a1.toString()}'
+            android:textColor="@color/white" />
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_text"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="bottom|end"-->
+        <!--            android:layout_margin="64dp"-->
+        <!--            android:background="@color/black"-->
+        <!--            android:text="dfasfdsfdf" />-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

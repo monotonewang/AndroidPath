@@ -12,6 +12,13 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
+    viewBinding {
+        buildFeatures {
+            dataBinding = true
+//            enabled = true
+        }
+    }
+
     defaultConfig {
         applicationId "com.example.a2021basic"
         minSdkVersion 23
