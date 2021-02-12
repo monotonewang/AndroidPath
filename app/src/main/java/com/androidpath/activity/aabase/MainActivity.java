@@ -118,8 +118,8 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, ViewActivity.class));
                 break;
             case R.id.library:
-//                startActivity(new Intent(MainActivity.this, RxActivity.class));
-                startActivity(new Intent(MainActivity.this, RetrofitActivity.class));
+                startActivity(new Intent(MainActivity.this, RxActivity.class));
+//                startActivity(new Intent(MainActivity.this, RetrofitActivity.class));
                 break;
             default:
                 break;

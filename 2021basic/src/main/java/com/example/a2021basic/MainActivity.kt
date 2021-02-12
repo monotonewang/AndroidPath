@@ -46,6 +46,10 @@ class MainActivity : AppCompatActivity() {
         var et2: AppCompatEditText = (mainBinding.main as View)!!.findViewById(R.id.et_2)
         var btnAdd: Button = (mainBinding.main as View)!!.findViewById(R.id.btn_add)
 
+        mainBinding.btnText.setOnClickListener {
+
+        }
+
         numberViewModel.getA1().observe(this, Observer {
             mainBinding.tvText.text = it.toString();
         })

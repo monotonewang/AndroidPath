@@ -7,15 +7,22 @@ import android.os.Bundle;
 import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.LifecycleObserver;
+import androidx.lifecycle.ViewModelProvider;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.androidpath.R;
 import com.androidpath.activity.aabase.MainActivity;
-import com.androidpath.library.rxjava.test.RxJavaThreadTest;
+import com.androidpath.library.rxjava.dao.User;
+import com.androidpath.library.rxjava.dao.UserViewModel;
+import com.androidpath.library.rxjava.dao.ViewModelFactory;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
@@ -24,36 +31,111 @@ import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
+import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
+/**
+ * 2021年02月12日15:34:04
+ * BaseRxJavaSample
+ * https://github.com/android/architecture-components-samples
+ */
 public class RxActivity extends AppCompatActivity {
 
-    private String TAG = "RxActivity";
+    private static final String TAG = RxActivity.class.getSimpleName();
+
+    private TextView mUserName;
+
+    private EditText mUserNameInput;
+
+    private Button mUpdateButton;
+
+    private ViewModelFactory mViewModelFactory;
+
+    private UserViewModel mViewModel;
+
+    private final CompositeDisposable mDisposable = new CompositeDisposable();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rx);
 
+        mUserName = findViewById(R.id.user_name);
+        mUserNameInput = findViewById(R.id.user_name_input);
+        mUpdateButton = findViewById(R.id.update_user);
+
+        TextView tvText = findViewById(R.id.tv_text);
+
+
         ImageButton imageButton = (ImageButton) findViewById(R.id.iv_rx);
         Button btnNext = (Button) findViewById(R.id.btn_next);
         Drawable drawable = ContextCompat.getDrawable(RxActivity.this, R.mipmap.ic_launcher);
 
-        btnNext.setOnClickListener(new View.OnClickListener() {
+        mViewModelFactory = Injection.provideViewModelFactory(this);
+        mViewModel = new ViewModelProvider(this, mViewModelFactory).get(UserViewModel.class);
+        mUpdateButton.setOnClickListener(v -> updateUserName());
+
+        mViewModel.getUsers().observe(RxActivity.this, new androidx.lifecycle.Observer<List<User>>() {
             @Override
-            public void onClick(View v) {
-                System.out.println("xxxxxxxxxxxxxxxxxx onClick" + v.toString());
-                startActivity(new Intent(RxActivity.this, MainActivity.class));
+            public void onChanged(List<User> users) {
+                System.out.println("observe users yes" + users.toString());
             }
         });
 
-        System.out.println("xxxxxxxxxxxxxxxxxx start" );
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Disposable subscribe = Observable.create((ObservableOnSubscribe<List<User>>) e -> {
+                    List<User> value2 = mViewModel.getUsers2();
+//                    List<User> value2 = mViewModel.getUsers().getValue();
+
+                    e.onNext(value2);
+                }).observeOn(AndroidSchedulers.mainThread())
+                        .subscribeOn(Schedulers.io())
+                        .subscribe(new Consumer<List<User>>() {
+                            @Override
+                            public void accept(List<User> studentEntity) throws Exception {
+                                tvText.setText("插入数据：" + studentEntity.toString());
+                            }
+                        });
+            }
+        });
 
         getLifecycle().addObserver(new LifecycleObserver() {
 
         });
+        intervalTest();
+
+//        rxSetBitmap(imageButton, drawable);
+//        RxJavaThreadTest.rx2();
+//        RxFun2();
+//        RxDisposableTest3();
+//        RxComsumerTest4();
+//        RxThreadTest1();
+//        RxThreadTest2();
+//        RxThreadTest3();
+//        RxThreadTest4();
+    }
+
+    private void updateUserName() {
+        String userName = mUserNameInput.getText().toString();
+        // Disable the update button until the user name update has been done
+        mUpdateButton.setEnabled(false);
+        // Subscribe to updating the user name.
+        // Re-enable the button once the user name has been updated
+        mDisposable.add(mViewModel.updateUserName(userName)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(() -> {
+                            mUpdateButton.setEnabled(true);
+                            Log.e(TAG, "yes");
+                        },
+                        throwable -> Log.e(TAG, "Unable to update username", throwable)));
+    }
+
+    private void intervalTest() {
         Observable.interval(0, 1, TimeUnit.SECONDS).observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
                 .subscribe(new Observer<Long>() {
@@ -78,17 +160,8 @@ public class RxActivity extends AppCompatActivity {
                         System.out.println("xxxxxxxxxxxxxxxxxx onComplete");
                     }
                 });
-
-//        rxSetBitmap(imageButton, drawable);
-//        RxJavaThreadTest.rx2();
-//        RxFun2();
-//        RxDisposableTest3();
-//        RxComsumerTest4();
-//        RxThreadTest1();
-//        RxThreadTest2();
-//        RxThreadTest3();
-//        RxThreadTest4();
     }
+
 
     /**
      * 通过rxjava设置图片
