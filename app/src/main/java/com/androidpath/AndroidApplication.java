@@ -2,8 +2,13 @@ package com.androidpath;
 
 import android.app.Application;
 import android.content.Context;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.multidex.MultiDexApplication;
+
+import com.androidpath.db.BasicRoomDatabase;
+import com.androidpath.executors.AppExecutors;
+import com.androidpath.library.room.dao.DataRepository;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -17,6 +22,7 @@ import java.util.List;
 //zgjxfuqingwang@gmail.com
 public class AndroidApplication extends MultiDexApplication {
 
+    private AppExecutors mAppExecutors;
 
     public static Context context;
 
@@ -49,13 +55,15 @@ public class AndroidApplication extends MultiDexApplication {
         this.gender = gender;
     }
 
-    public static Context getContext(){
+    public static Context getContext() {
         return context;
     }
+
     @Override
     public void onCreate() {
         super.onCreate();
-        context=this;
+        context = this;
+        mAppExecutors = new AppExecutors();
 //        if (LeakCanary.isInAnalyzerProcess(this)) {
 //            return;
 //        }
@@ -63,6 +71,15 @@ public class AndroidApplication extends MultiDexApplication {
 //        refWatcher = LeakCanary.install(this);
 
     }
+
+    public BasicRoomDatabase getDatabase() {
+        return BasicRoomDatabase.getInstance(this, mAppExecutors);
+    }
+
+    public DataRepository getRepository() {
+        return DataRepository.getInstance(getDatabase());
+    }
+
 
 //    public staticfactory RefWatcher getRefWatcher(Context context){
 //        AndroidApplication applicationContext = (AndroidApplication) context.getApplicationContext();

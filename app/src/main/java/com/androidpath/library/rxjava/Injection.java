@@ -18,9 +18,9 @@ package com.androidpath.library.rxjava;
 
 import android.content.Context;
 
+import com.androidpath.db.UsersDatabase;
 import com.androidpath.library.rxjava.dao.LocalUserDataSource;
 import com.androidpath.library.rxjava.dao.UserDataSource;
-import com.androidpath.library.rxjava.dao.UsersDatabase;
 import com.androidpath.library.rxjava.dao.ViewModelFactory;
 
 /**

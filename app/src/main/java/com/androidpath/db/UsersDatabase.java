@@ -14,12 +14,23 @@
  * limitations under the License.
  */
 
-package com.androidpath.library.rxjava.dao;
+package com.androidpath.db;
 
+import androidx.annotation.VisibleForTesting;
+import androidx.lifecycle.MutableLiveData;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
+
 import android.content.Context;
+
+import com.androidpath.library.room.dao.CommentDao;
+import com.androidpath.library.room.dao.ProductDao;
+import com.androidpath.library.room.entity.CommentEntity;
+import com.androidpath.library.room.entity.ProductEntity;
+import com.androidpath.library.room.entity.ProductFtsEntity;
+import com.androidpath.library.rxjava.dao.User;
+import com.androidpath.library.rxjava.dao.UserDao;
 
 /**
  * The Room database that contains the Users table
@@ -43,5 +54,4 @@ public abstract class UsersDatabase extends RoomDatabase {
         }
         return INSTANCE;
     }
-
 }

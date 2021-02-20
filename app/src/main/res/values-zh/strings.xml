@@ -53,4 +53,14 @@
         a new design language that refreshed the entire Android experience
     </string>
     <string name="size">size</string>
+
+    <string name="loading_comments">加载评论…</string>
+    <string name="loading_products">加载产品…</string>
+    <string name="search_products_hint">搜索产品…</string>
+    <string name="cd_products_list">产品列表</string>
+    <string name="cd_comments_list">评论列表</string>
+    <string name="cd_product_name">产品数量</string>
+    <string name="cd_search_products">搜索产品</string>
+    <string name="product_price">价格: $%d</string>
+
 </resources>

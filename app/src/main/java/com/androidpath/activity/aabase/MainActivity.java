@@ -24,6 +24,7 @@ import com.androidpath.activity.aabase.asecondactivity.StorgeActivity7;
 import com.androidpath.activity.aabase.asecondactivity.ViewPagerActivity9;
 import com.androidpath.architecture.ArchitectureActivity;
 import com.androidpath.library.retrofit.activity.RetrofitActivity;
+import com.androidpath.library.room.BasicRoomActivity;
 import com.androidpath.library.rxjava.RxActivity;
 import com.androidpath.util.fontutil.FontsManager;
 import com.androidpath.view.ViewActivity;
@@ -118,7 +119,8 @@ public class MainActivity extends BaseActivity {
                 startActivity(new Intent(MainActivity.this, ViewActivity.class));
                 break;
             case R.id.library:
-                startActivity(new Intent(MainActivity.this, RxActivity.class));
+                BasicRoomActivity.show(MainActivity.this);
+//                startActivity(new Intent(MainActivity.this, RxActivity.class));
 //                startActivity(new Intent(MainActivity.this, RetrofitActivity.class));
                 break;
             default:

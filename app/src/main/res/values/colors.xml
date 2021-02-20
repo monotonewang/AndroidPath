@@ -13,4 +13,7 @@
     <color name="gray">#e7e4e4</color>
     <!-- MeterialActivity Style -->
     <color name="my_primary">#ED1C24</color>
+
+
+    <color name="comment_light_background">#d6d6d6</color>
 </resources>
