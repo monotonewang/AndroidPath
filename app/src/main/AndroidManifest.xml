@@ -9,6 +9,11 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <!--    <uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <!--    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
+    <!--    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />-->
+
     <!-- GL SurfaceView -->
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -26,8 +31,18 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute"
         tools:replace="android:allowBackup">
+
+        <!--        <provider-->
+        <!--            android:name="androidx.work.impl.WorkManagerInitializer"-->
+        <!--            android:authorities="${applicationId}.workmanager-init"-->
+        <!--            android:directBootAware="false"-->
+        <!--            android:exported="false"-->
+        <!--            android:multiprocess="true"-->
+        <!--            tools:node="remove"-->
+        <!--            tools:targetApi="n" />-->
+
         <activity android:name=".activity.aabase.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -217,7 +232,8 @@
         <!-- project music -->
         <activity android:name=".project.music.MusicMainActivity" />
         <activity android:name=".library.rxjava.RxActivity" />
-        <activity android:name=".library.room.BasicRoomActivity"/>
+        <activity android:name=".library.room.BasicRoomActivity" />
+        <activity android:name=".library.work_manager.WorkManagerActivity" />
         <!-- ButterKnife -->
         <activity android:name=".library.butterknife.activity.ButterKnifeActivity" />
         <activity android:name=".architecture.meterial.MeterialActivity" />

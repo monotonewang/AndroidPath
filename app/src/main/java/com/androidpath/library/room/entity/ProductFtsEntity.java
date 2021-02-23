@@ -19,6 +19,8 @@ package com.androidpath.library.room.entity;
 import androidx.room.Entity;
 import androidx.room.Fts4;
 
+//https://developer.android.google.cn//training/data-storage/room/defining-data
+
 @Entity(tableName = "productsFts")
 @Fts4(contentEntity = ProductEntity.class)
 public class ProductFtsEntity {

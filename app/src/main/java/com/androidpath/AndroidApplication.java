@@ -1,10 +1,12 @@
 package com.androidpath;
 
-import android.app.Application;
 import android.content.Context;
+import android.util.Log;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.multidex.MultiDexApplication;
+import androidx.work.Configuration;
 
 import com.androidpath.db.BasicRoomDatabase;
 import com.androidpath.executors.AppExecutors;
@@ -20,7 +22,7 @@ import java.util.List;
  * since: V ${version} <br/>
  */
 //zgjxfuqingwang@gmail.com
-public class AndroidApplication extends MultiDexApplication {
+public class AndroidApplication extends MultiDexApplication implements Configuration.Provider {
 
     private AppExecutors mAppExecutors;
 
@@ -118,4 +120,9 @@ public class AndroidApplication extends MultiDexApplication {
     }
 
 
+    @NonNull
+    @Override
+    public Configuration getWorkManagerConfiguration() {
+        return new Configuration.Builder().setMinimumLoggingLevel(Log.VERBOSE).build();
+    }
 }

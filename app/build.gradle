@@ -65,6 +65,11 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+
 /*    productFlavors {
         Official {}
         SanLiuLing {}
@@ -245,6 +250,18 @@ dependencies {
     // https://mvnrepository.com/artifact/androidx.room/room-rxjava3
 //    compile group: 'androidx.room', name: 'room-rxjava3', version: '2.3.0-alpha02'
 //    implementation 'org.antlr:antlr4-runtime:4.7.1'
+
+    def work_version = "2.5.0"
+    // (Java only)
+    implementation "androidx.work:work-runtime:$work_version"
+    // Kotlin + coroutines
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+    // optional - RxJava2 support
+    implementation "androidx.work:work-rxjava2:$work_version"
+    // optional - GCMNetworkManager support 兼容android22以下
+    implementation "androidx.work:work-gcm:$work_version"
+    // optional - Multiprocess support
+    implementation "androidx.work:work-multiprocess:$work_version"
 
 
 }

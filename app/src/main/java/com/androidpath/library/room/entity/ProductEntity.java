@@ -22,6 +22,7 @@ import androidx.room.PrimaryKey;
 
 import com.androidpath.library.room.model.Product;
 
+
 @Entity(tableName = "products")
 public class ProductEntity implements Product {
     @PrimaryKey
